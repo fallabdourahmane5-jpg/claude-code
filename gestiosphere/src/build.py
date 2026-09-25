@@ -104,7 +104,9 @@ def main():
     out = [mats[k] if k in mats else PLACEHOLDERS[k] for k in ORDER]
     import graph_exp
     miss = graph_exp.apply(out)
-    errs = validate(out) + [f'courbe {g} : explication détaillée manquante' for g in miss]
+    import refs_extra
+    miss_refs = refs_extra.apply(out)
+    errs = validate(out) + [f'courbe {g} : explication détaillée manquante' for g in miss] + [f'référence {r} : complément manquant' for r in miss_refs]
     if errs:
         print('\n'.join('ERREUR : ' + e for e in errs))
         sys.exit(1)

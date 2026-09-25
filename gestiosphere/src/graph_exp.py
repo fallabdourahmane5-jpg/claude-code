@@ -217,6 +217,7 @@ def apply(mats):
         for g in m.get('courbes', []):
             if g['id'] in EXP:
                 g['exp'] = render(EXP[g['id']])
+                g['mec'] = EXP[g['id']].get('mecanisme', '')
             else:
                 missing.append(g['id'])
     return missing

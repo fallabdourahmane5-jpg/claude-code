@@ -8,7 +8,7 @@ Application de révision **indépendante d'Écosphère**. Elle reprend la struct
 
 ## Onglets
 
-Accueil par matière · Cours (cours complet, définitions, auteurs et ouvrages, méthode, sujets du chapitre, liens entre chapitres) · Quiz (générateur multi-chapitres, questions ratées) · Fiches · Recherche · Auteurs & ouvrages · Sujets corrigés (chapitres à mobiliser, méthode et pièges, corrigé) · Méthode · Courbes & schémas · Cartes mentales · Formules · Repères · Progrès.
+Accueil par matière · Cours (cours complet, définitions, auteurs et références, méthode, sujets du chapitre, liens entre chapitres) · Quiz (générateur multi-chapitres, questions ratées) · Fiches · Recherche (lexique A–Z, mécanismes, fiche complète par notion) · Auteurs & références (apport au cours, quand le citer, phrase de copie, jeu « Qui suis-je ? ») · Sujets corrigés (chapitres à mobiliser, méthode et pièges, corrigé) · Méthode · Courbes & schémas · Cartes mentales · Formules · Repères · Progrès.
 
 ## Reconstruire
 
