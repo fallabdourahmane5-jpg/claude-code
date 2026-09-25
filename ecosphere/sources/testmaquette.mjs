@@ -1,0 +1,35 @@
+import { chromium } from '/opt/node22/lib/node_modules/playwright/index.mjs';
+const b=await chromium.launch(); const p=await b.newPage();
+const errs=[]; p.on('pageerror',e=>errs.push(e.message.split('\n')[0]));
+await p.goto('file:///tmp/claude-0/-home-user-claude-code/c0291a61-f762-553a-8cee-cee4697398a0/scratchpad/maquette_test.html',{waitUntil:'load',timeout:60000});
+await p.waitForTimeout(5200);
+const r=await p.evaluate(async ()=>{
+  const o={};
+  o.contenu = !!CH_CONTENT[21];
+  o.cours = CH_CONTENT[21] ? CH_CONTENT[21].cours.length : 0;
+  o.notions = CH_CONTENT[21] ? CH_CONTENT[21].notions.length : 0;
+  o.annee = CH_CONTENT[21] ? CH_CONTENT[21].annee : null;
+  o.numAnnee = CH_CONTENT[21] ? CH_CONTENT[21].numAnnee : null;
+  o.map = !!MAP_DATA[21]; o.ctx = !!CH_CONTEXT[21];
+  o.sujets = SUBJECTS_BANK_PREMIUM.filter(s=>s.chapter===21).length;
+  o.quiz = (window.ECOSPHERE_QUESTION_BANK['21']||[]).length;
+  o.quizAdv = window.__ECO_ADV_ALL_BANK.filter(q=>q.ch===21).length;
+  o.registre = window.ECO_CHAP_LABEL ? window.ECO_CHAP_LABEL['21'] : null;
+  o.carte = !!document.querySelector('.cg [data-c="21"]');
+  o.carteNum = document.querySelector('.cg [data-c="21"] .cc-num')?.textContent;
+  // relabel
+  window.showPg('chapter'); await new Promise(r=>setTimeout(r,300));
+  o.enTete = document.querySelector('#pg-chapter .ch-title')?.textContent.trim();
+  window.showPg('quiz'); await new Promise(r=>setTimeout(r,300));
+  o.boutonQuiz = [...document.querySelectorAll('.qo-btn')].map(b=>b.textContent.replace(/\n/g,' ')).slice(-1)[0];
+  window.showPg('search'); await new Promise(r=>setTimeout(r,300));
+  o.recherche = document.getElementById('search-res').textContent.trim();
+  window.renderMaps(21); await new Promise(r=>setTimeout(r,300));
+  o.ongletCarte = [...document.querySelectorAll('.map-btn')].map(b=>b.textContent).join(' | ');
+  window.showPg('subjects'); await new Promise(r=>setTimeout(r,400));
+  o.ongletSujets = document.getElementById('subjTabsPremium').textContent;
+  return o;
+});
+console.log(JSON.stringify(r,null,1));
+console.log('ERREURS JS :', errs.length); [...new Set(errs)].slice(0,4).forEach(e=>console.log('  - '+e));
+await b.close();

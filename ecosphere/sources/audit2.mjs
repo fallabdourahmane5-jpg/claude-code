@@ -1,0 +1,28 @@
+import { chromium } from '/opt/node22/lib/node_modules/playwright/index.mjs';
+const b=await chromium.launch(); const p=await b.newPage();
+await p.goto('file:///tmp/claude-0/-home-user-claude-code/c0291a61-f762-553a-8cee-cee4697398a0/scratchpad/app_v176.html',{waitUntil:'load',timeout:180000});
+await p.waitForTimeout(5500);
+const r=await p.evaluate(async ()=>{
+  const o={};
+  window.showPg('fc'); await new Promise(r=>setTimeout(r,900));
+  const fc=document.getElementById('pg-fc');
+  o.fcFiltres=[...fc.querySelectorAll('button,select,.fchip,.tab')].map(x=>x.textContent.trim()).filter(Boolean).slice(0,28);
+  o.fcTete=(fc.innerText||'').split('\n').slice(0,8);
+  window.showPg('authors'); await new Promise(r=>setTimeout(r,900));
+  const au=document.getElementById('pg-authors');
+  o.auFiltres=[...au.querySelectorAll('button,.fchip,.tab,.a-chip')].map(x=>x.textContent.trim()).filter(Boolean).slice(0,30);
+  o.auTete=(au.innerText||'').split('\n').slice(0,10);
+  const G=n=>{try{return eval(n)}catch(e){return undefined}};
+  const AU=G('AUTHORS')||[];
+  o.exemple=AU.find(a=>a.oeuvres&&a.oeuvres.length);
+  o.sansOeuvres=AU.filter(a=>!a.oeuvres||!a.oeuvres.length).length;
+  o.sansDates=AU.filter(a=>!a.dates).length;
+  return o;
+});
+console.log('=== PAGE FICHES ==='); console.log('entête:', r.fcTete.join(' | '));
+console.log('filtres:', r.fcFiltres.join(' | '));
+console.log('\n=== PAGE AUTEURS ==='); console.log('entête:', r.auTete.join(' | '));
+console.log('filtres:', r.auFiltres.join(' | '));
+console.log('\n=== FICHE AUTEUR TYPE ==='); console.log(JSON.stringify(r.exemple,null,1));
+console.log('auteurs sans œuvres:', r.sansOeuvres, ' sans dates:', r.sansDates);
+await b.close();

@@ -1,0 +1,547 @@
+[
+{
+"term": "Ouverture internationale",
+"def": "Ensemble des liens d’une économie avec le reste du monde : échanges de biens et services, circulation des facteurs de production et mouvements de capitaux.",
+"type": "definition"
+},
+{
+"term": "Ouverture commerciale",
+"def": "Échanges de biens et de services entre les résidents d’un pays et le reste du monde ; dimension strictement commerciale de la mondialisation.",
+"type": "definition"
+},
+{
+"term": "Ouverture productive",
+"def": "Circulation internationale des facteurs de production, notamment le capital productif et le travail.",
+"type": "definition"
+},
+{
+"term": "Ouverture financière",
+"def": "Circulation internationale des capitaux financiers, placements et titres, distincte de l’investissement productif.",
+"type": "definition"
+},
+{
+"term": "Ouverture monétaire",
+"def": "Dimension liée aux mouvements de devises qui accompagnent les échanges et les placements internationaux.",
+"type": "definition"
+},
+{
+"term": "Commerce international",
+"def": "Échanges internationaux de biens et de services entre résidents et non-résidents.",
+"type": "definition"
+},
+{
+"term": "Exportation",
+"def": "Vente par un résident d’un bien ou d’un service à un non-résident.",
+"type": "definition"
+},
+{
+"term": "Importation",
+"def": "Achat par un résident d’un bien ou d’un service auprès d’un non-résident.",
+"type": "definition"
+},
+{
+"term": "IDE",
+"def": "Investissement direct à l’étranger : investissement réalisé dans un autre pays dans une logique productive et de contrôle durable.",
+"type": "definition"
+},
+{
+"term": "Investissement de portefeuille",
+"def": "Achat d’actifs financiers étrangers dans une logique de placement, sans prise de contrôle de l’entreprise.",
+"type": "definition"
+},
+{
+"term": "Capital productif",
+"def": "Capital investi dans des moyens de production, par opposition au capital purement financier.",
+"type": "definition"
+},
+{
+"term": "Capital financier",
+"def": "Capital placé en titres et actifs financiers, mobile et liquide.",
+"type": "definition"
+},
+{
+"term": "Marché des changes",
+"def": "Marché sur lequel s’échangent les devises, passage obligé de la plupart des opérations internationales.",
+"type": "definition"
+},
+{
+"term": "Devise",
+"def": "Monnaie étrangère utilisée dans les transactions internationales.",
+"type": "definition"
+},
+{
+"term": "Bon du Trésor",
+"def": "Titre de dette publique ; son achat par un non-résident illustre l’articulation entre ouverture financière et ouverture monétaire.",
+"type": "definition"
+},
+{
+"term": "Mondialisation",
+"def": "Processus d’interdépendance et d’intégration croissantes des économies, qui dépasse le seul commerce international.",
+"type": "definition"
+},
+{
+"term": "Interdépendance",
+"def": "Situation dans laquelle les économies dépendent mutuellement les unes des autres.",
+"type": "definition"
+},
+{
+"term": "Intégration",
+"def": "Processus par lequel les économies nationales s’articulent en un ensemble de plus en plus unifié.",
+"type": "definition"
+},
+{
+"term": "Charles-Albert Michalet",
+"def": "Économiste montrant que la mondialisation est un processus multidimensionnel, irréductible au commerce international.",
+"type": "definition"
+},
+{
+"term": "Configuration internationale",
+"def": "Première configuration de Michalet : la mondialisation y passe essentiellement par les échanges commerciaux entre nations.",
+"type": "definition"
+},
+{
+"term": "Configuration multinationale",
+"def": "Deuxième configuration de Michalet : les firmes s’implantent à l’étranger et l’investissement direct devient central.",
+"type": "definition"
+},
+{
+"term": "Configuration globale",
+"def": "Troisième configuration de Michalet : la production est fragmentée et les marchés financiers s’unifient à l’échelle mondiale.",
+"type": "definition"
+},
+{
+"term": "Hypermondialisation",
+"def": "Cumul des trois dimensions — commerciale, productive et financière — aboutissant à une ouverture quantitativement sans précédent.",
+"type": "definition"
+},
+{
+"term": "Pierre-Noël Giraud",
+"def": "Économiste analysant les globalisations comme une généralisation des compétitions entre territoires.",
+"type": "definition"
+},
+{
+"term": "Compétition des territoires",
+"def": "Mise en concurrence des espaces nationaux pour attirer capitaux, activités et emplois.",
+"type": "definition"
+},
+{
+"term": "Privilège exorbitant",
+"def": "Avantage conféré aux États-Unis par le statut international du dollar : attirer durablement les capitaux et financer leurs déséquilibres à bas coût.",
+"type": "definition"
+},
+{
+"term": "BRICS",
+"def": "Brésil, Russie, Inde, Chine, Afrique du Sud : grands émergents dont la montée traduit un rééquilibrage de l’économie mondiale.",
+"type": "definition"
+},
+{
+"term": "Rattrapage",
+"def": "Processus par lequel une économie moins avancée comble son écart de développement avec les pays les plus riches.",
+"type": "definition"
+},
+{
+"term": "Divergence",
+"def": "Écartement des trajectoires économiques, notamment entre pays en développement inégalement insérés dans la mondialisation.",
+"type": "definition"
+},
+{
+"term": "Arsenalisation",
+"def": "Usage de la politique économique — sanctions, contrôles des exportations, droits de douane — comme instrument de rapport de force.",
+"type": "definition"
+},
+{
+"term": "Centre / périphérie",
+"def": "Grille de lecture opposant des économies industrialisées dominantes à des économies spécialisées dans les produits primaires.",
+"type": "definition"
+},
+{
+"term": "Raúl Prebisch",
+"def": "Économiste montrant que la spécialisation primaire enferme les périphéries dans une détérioration des termes de l’échange.",
+"type": "definition"
+},
+{
+"term": "Termes de l’échange",
+"def": "Rapport entre le prix des exportations et celui des importations ; leur détérioration oblige à exporter davantage pour importer autant.",
+"type": "definition"
+},
+{
+"term": "DIT traditionnelle",
+"def": "Division internationale du travail fondée sur une spécialisation verticale : matières premières au Sud, industrie au Nord.",
+"type": "definition"
+},
+{
+"term": "Échange inégal",
+"def": "Théorie selon laquelle le commerce mondial repose sur des rapports de domination et transfère de la valeur des périphéries vers le centre.",
+"type": "definition"
+},
+{
+"term": "Acemoglu et Robinson",
+"def": "Auteurs analysant le rôle des institutions extractives dans le blocage du développement.",
+"type": "definition"
+},
+{
+"term": "Institutions extractives",
+"def": "Institutions organisées au profit d’une minorité, qui découragent l’investissement et entravent le développement.",
+"type": "definition"
+},
+{
+"term": "Économie du développement",
+"def": "Branche de l’analyse économique née de l’étude des blocages spécifiques aux pays en développement.",
+"type": "definition"
+},
+{
+"term": "Malédiction des ressources",
+"def": "Paradoxe selon lequel l’abondance de matières premières peut freiner la diversification et le développement au lieu de les favoriser.",
+"type": "definition"
+},
+{
+"term": "FMN",
+"def": "Firme multinationale : entreprise implantée dans plusieurs pays, d’abord en quête de ressources et de marchés.",
+"type": "definition"
+},
+{
+"term": "Firme globale",
+"def": "Firme organisant sa production à l’échelle mondiale en fragmentant ses activités selon les avantages de chaque territoire.",
+"type": "definition"
+},
+{
+"term": "DIPP",
+"def": "Décomposition internationale des processus productifs : fragmentation de la chaîne de valeur entre plusieurs territoires.",
+"type": "definition"
+},
+{
+"term": "Chaîne de valeur mondiale",
+"def": "Fragmentation des étapes de production entre plusieurs pays, chacune localisée là où les conditions sont les plus favorables.",
+"type": "definition"
+},
+{
+"term": "Stratégie offensive",
+"def": "Politique d’insertion active dans la mondialisation, visant la montée en gamme et la conquête de positions, comme celle de la Chine.",
+"type": "definition"
+},
+{
+"term": "Stratégie défensive",
+"def": "Politique visant à protéger l’appareil productif et les positions acquises face à la concurrence internationale.",
+"type": "definition"
+},
+{
+"term": "Ménage consommateur",
+"def": "Généralement gagnant de la mondialisation par l’accès à des biens plus variés et moins chers.",
+"type": "definition"
+},
+{
+"term": "Ménage travailleur",
+"def": "Gagnant ou perdant selon l’exposition de son secteur et de sa qualification à la concurrence internationale.",
+"type": "definition"
+},
+{
+"term": "Ménage épargnant",
+"def": "Susceptible de bénéficier de la globalisation financière par la diversification de ses placements.",
+"type": "definition"
+},
+{
+"term": "Branko Milanovic",
+"def": "Économiste des inégalités mondiales, auteur de la courbe de l’éléphant.",
+"type": "definition"
+},
+{
+"term": "Courbe de l’éléphant",
+"def": "Représentation des gains de revenu par percentile mondial entre 1988 et 2008, montrant un double mouvement d’inégalités.",
+"type": "definition"
+},
+{
+"term": "Big bang des inégalités",
+"def": "Divergence brutale, à partir de la révolution industrielle, entre pays industrialisés et économies restées à l’écart.",
+"type": "definition"
+},
+{
+"term": "Inégalités entre pays",
+"def": "Écarts de revenu entre nations, réduits par le rattrapage des grands émergents.",
+"type": "definition"
+},
+{
+"term": "Inégalités internes",
+"def": "Écarts de revenu à l’intérieur d’un pays, que la mondialisation peut au contraire renforcer.",
+"type": "definition"
+},
+{
+"term": "Balance des paiements",
+"def": "Document comptable enregistrant l’ensemble des opérations entre les résidents d’un pays et le reste du monde.",
+"type": "definition"
+},
+{
+"term": "Compte courant",
+"def": "Composante de la balance des paiements regroupant les échanges de biens, de services, les revenus et les transferts courants.",
+"type": "definition"
+},
+{
+"term": "Solde commercial",
+"def": "Différence entre les exportations et les importations de biens ; il ne se confond pas avec le solde courant.",
+"type": "definition"
+},
+{
+"term": "Solde courant",
+"def": "Solde du compte courant, plus large que le solde commercial car il intègre services, revenus et transferts.",
+"type": "definition"
+},
+{
+"term": "Compte financier",
+"def": "Composante enregistrant les mouvements de capitaux entre résidents et non-résidents.",
+"type": "definition"
+},
+{
+"term": "Compte de capital",
+"def": "Compte intermédiaire enregistrant certains transferts en capital et acquisitions d’actifs non financiers.",
+"type": "definition"
+},
+{
+"term": "Équilibre comptable",
+"def": "Principe selon lequel la balance des paiements est équilibrée par construction : tout déficit courant a une contrepartie financière.",
+"type": "definition"
+},
+{
+"term": "Identité macroéconomique",
+"def": "Relation X − M = (S − I) + (T − G) reliant le solde extérieur à l’épargne privée et au solde public.",
+"type": "definition"
+},
+{
+"term": "Épargne",
+"def": "Partie du revenu non consommée ; son écart à l’investissement détermine en partie le solde extérieur.",
+"type": "definition"
+},
+{
+"term": "Déficit jumeaux",
+"def": "Situation où un déficit public s’accompagne d’un déficit extérieur, illustrée par les États-Unis sous Reagan.",
+"type": "definition"
+},
+{
+"term": "Déficit extérieur",
+"def": "Solde courant négatif ; il traduit un besoin de financement vis-à-vis du reste du monde, sans être nécessairement un problème.",
+"type": "definition"
+},
+{
+"term": "Excédent extérieur",
+"def": "Solde courant positif ; il traduit une capacité de financement, mais peut signaler une demande intérieure insuffisante.",
+"type": "definition"
+},
+{
+"term": "Besoin de financement",
+"def": "Situation d’une économie dont l’investissement excède l’épargne disponible, ce qui appelle des capitaux extérieurs.",
+"type": "definition"
+},
+{
+"term": "Capacité de financement",
+"def": "Situation inverse : l’épargne excède l’investissement et l’économie prête au reste du monde.",
+"type": "definition"
+},
+{
+"term": "Déséquilibres mondiaux",
+"def": "Persistance de larges excédents et déficits courants entre grandes zones, source d’instabilité financière internationale.",
+"type": "definition"
+},
+{
+"term": "Taux d’ouverture",
+"def": "Indicateur traditionnel mesurant le poids du commerce extérieur dans le PIB, calculé à partir des exportations et des importations.",
+"type": "definition"
+},
+{
+"term": "Taux d’exportation",
+"def": "Rapport des exportations au PIB, exprimé en pourcentage.",
+"type": "definition"
+},
+{
+"term": "Commerce en valeur ajoutée",
+"def": "Mesure corrigeant le double comptage des échanges de biens intermédiaires dans les chaînes de valeur mondiales.",
+"type": "definition"
+},
+{
+"term": "Double comptage",
+"def": "Biais des statistiques traditionnelles : un bien franchissant plusieurs fois les frontières est compté à chaque passage.",
+"type": "definition"
+},
+{
+"term": "Biens intermédiaires",
+"def": "Produits incorporés dans une production ultérieure ; leur circulation gonfle les statistiques commerciales brutes.",
+"type": "definition"
+},
+{
+"term": "Contenu en importations des exportations",
+"def": "Part des intrants étrangers dans ce qu’un pays exporte ; il mesure son insertion dans les chaînes de valeur.",
+"type": "definition"
+},
+{
+"term": "Dépendance",
+"def": "Situation d’un pays tributaire de l’étranger pour un intrant, un débouché ou une technologie critique.",
+"type": "definition"
+},
+{
+"term": "Vulnérabilité",
+"def": "Exposition d’une économie aux ruptures d’approvisionnement le long des chaînes de valeur mondiales.",
+"type": "definition"
+},
+{
+"term": "Relocalisation",
+"def": "Rapatriement d’activités productives précédemment délocalisées, motivé par la sécurité des approvisionnements.",
+"type": "definition"
+},
+{
+"term": "Première mondialisation",
+"def": "Phase d’intégration internationale allant du XIXᵉ siècle à 1914, portée par la révolution industrielle et les transports.",
+"type": "definition"
+},
+{
+"term": "Révolution des transports",
+"def": "Chemin de fer, navire à vapeur et canaux, qui abaissent les coûts et rendent possible l’essor des flux internationaux.",
+"type": "definition"
+},
+{
+"term": "Étalon-or",
+"def": "Régime monétaire international de la première mondialisation, garantissant la convertibilité et la stabilité des changes.",
+"type": "definition"
+},
+{
+"term": "Migrations de la première mondialisation",
+"def": "Mouvements de population massifs, notamment européens vers les Amériques, caractéristiques de l’avant-1914.",
+"type": "definition"
+},
+{
+"term": "Première mondialisation financière",
+"def": "Circulation massive de capitaux avant 1914, souvent dirigée du centre européen vers les économies neuves.",
+"type": "definition"
+},
+{
+"term": "Entre-deux-guerres",
+"def": "Période de repli marquée par le protectionnisme, l’effondrement des flux et le basculement de la puissance vers les États-Unis.",
+"type": "definition"
+},
+{
+"term": "Protectionnisme",
+"def": "Politique de restriction des importations par droits de douane, quotas ou normes.",
+"type": "definition"
+},
+{
+"term": "Droits de douane",
+"def": "Taxes sur les importations, instrument central du protectionnisme.",
+"type": "definition"
+},
+{
+"term": "Remondialisation",
+"def": "Réouverture progressive des économies après 1945, appuyée sur de nouvelles institutions internationales.",
+"type": "definition"
+},
+{
+"term": "Nouvelle géographie des échanges",
+"def": "Déplacement du centre de gravité du commerce mondial vers l’Asie émergente.",
+"type": "definition"
+},
+{
+"term": "Mondialisation contemporaine",
+"def": "Phase moins migratoire que la première mondialisation, mais beaucoup plus financière et productive.",
+"type": "definition"
+},
+{
+"term": "Slowbalization",
+"def": "Ralentissement de la progression de l’ouverture après 2008, sans recul massif des flux.",
+"type": "definition"
+},
+{
+"term": "Démondialisation",
+"def": "Recul effectif de l’intégration internationale ; le ralentissement observé depuis 2008 ne suffit pas à l’attester.",
+"type": "definition"
+},
+{
+"term": "Fragmentation",
+"def": "Recomposition des échanges en blocs régionaux ou affinitaires plutôt que repli généralisé.",
+"type": "definition"
+},
+{
+"term": "Régionalisation",
+"def": "Concentration croissante des échanges à l’intérieur de zones géographiques proches.",
+"type": "definition"
+},
+{
+"term": "Crise de 2008",
+"def": "Point d’inflexion à partir duquel la progression du commerce mondial ralentit durablement.",
+"type": "definition"
+},
+{
+"term": "Spécialisation",
+"def": "Concentration d’une économie sur certaines productions ; elle crée des gains mais aussi des différences de trajectoire.",
+"type": "definition"
+},
+{
+"term": "Gains à l’échange",
+"def": "Bénéfices tirés du commerce international, inégalement répartis entre pays et entre groupes sociaux.",
+"type": "definition"
+},
+{
+"term": "Avantage comparatif",
+"def": "Spécialisation selon les coûts relatifs ; celui de la Chine fondé sur le faible coût du travail s’érode avec sa montée en gamme.",
+"type": "definition"
+},
+{
+"term": "Montée en gamme",
+"def": "Déplacement d’une économie vers des productions à plus forte valeur ajoutée.",
+"type": "definition"
+},
+{
+"term": "Délocalisation",
+"def": "Transfert d’une activité productive vers un territoire offrant de meilleures conditions de coût ou d’accès au marché.",
+"type": "definition"
+},
+{
+"term": "Attractivité",
+"def": "Capacité d’un territoire à attirer capitaux, activités et compétences dans la compétition internationale.",
+"type": "definition"
+},
+{
+"term": "Leadership économique",
+"def": "Position dominante dans l’économie mondiale, passée de l’Europe aux États-Unis puis contestée par l’Asie émergente.",
+"type": "definition"
+},
+{
+"term": "Rivalité Chine / États-Unis",
+"def": "Compétition économique et technologique structurant la mondialisation contemporaine.",
+"type": "definition"
+},
+{
+"term": "Souveraineté économique",
+"def": "Capacité d’un État à maîtriser ses approvisionnements, ses technologies et ses choix de politique économique.",
+"type": "definition"
+},
+{
+"term": "Décrochage européen",
+"def": "Recul relatif du poids de l’Union européenne dans le PIB mondial et dans les parts de marché.",
+"type": "definition"
+},
+{
+"term": "Parts de marché",
+"def": "Poids d’un pays dans les exportations mondiales ; indicateur de compétitivité.",
+"type": "definition"
+},
+{
+"term": "Résidents / non-résidents",
+"def": "Distinction comptable fondant la balance des paiements et la mesure des échanges extérieurs.",
+"type": "definition"
+},
+{
+"term": "Transferts courants",
+"def": "Opérations sans contrepartie — aide, envois de fonds des migrants — enregistrées au compte courant.",
+"type": "definition"
+},
+{
+"term": "Revenus primaires",
+"def": "Revenus du travail et du capital échangés avec le reste du monde, composante du compte courant.",
+"type": "definition"
+},
+{
+"term": "Flux de capitaux",
+"def": "Mouvements internationaux de fonds, plus volatils que les échanges de biens et sensibles aux conditions financières.",
+"type": "definition"
+},
+{
+"term": "Interdépendance financière",
+"def": "Imbrication des systèmes financiers nationaux, qui propage rapidement les chocs d’un pays à l’autre.",
+"type": "definition"
+}
+]

@@ -1,0 +1,10 @@
+import { chromium } from '/opt/node22/lib/node_modules/playwright/index.mjs';
+const b=await chromium.launch(); const p=await b.newPage();
+const logs=[]; p.on('console',m=>{const t=m.text(); if(t.includes('[DBG]')) logs.push(t);});
+await p.goto('file:///tmp/claude-0/-home-user-claude-code/c0291a61-f762-553a-8cee-cee4697398a0/scratchpad/app_dbg.html',{waitUntil:'load',timeout:180000});
+await p.waitForTimeout(6000);
+await p.evaluate(async ()=>{ window.showPg('fc'); await new Promise(r=>setTimeout(r,1600)); });
+const n=await p.evaluate(()=>[...document.querySelectorAll('#pg-fc .fc-badge')].filter(x=>/CH\.?\s*21/i.test(x.textContent)).length);
+console.log('appels relabelBadges :'); logs.slice(0,10).forEach(l=>console.log('  '+l));
+console.log('badges CH.21 restants :', n);
+await b.close();
