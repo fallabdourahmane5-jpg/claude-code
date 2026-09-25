@@ -108,7 +108,7 @@ def main():
     if errs:
         print('\n'.join('ERREUR : ' + e for e in errs))
         sys.exit(1)
-    data = {'app': 'gestiosphere', 'niveau': 'Licence 3', 'matieres': out}
+    data = {'app': 'gestiosphere', 'niveau': 'Licence 2', 'matieres': out}
     js = json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
     tpl = open(os.path.join(HERE, 'template.html'), encoding='utf-8').read()
     html = tpl.replace('/*__GS_DATA__*/null', js)

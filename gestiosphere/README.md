@@ -1,4 +1,4 @@
-# Gestiosphère — Licence 3
+# Gestiosphère — Licence 2
 
 Application de révision **indépendante d'Écosphère**. Elle reprend la structure, la navigation et les fonctionnalités d'Écosphère v181, avec d'autres cours.
 

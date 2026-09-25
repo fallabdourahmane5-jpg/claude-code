@@ -50,7 +50,6 @@ def ch0():
     c.retenir(['Demande décroissante, offre croissante ; équilibre là où elles se coupent.', 'Prix du bien → mouvement le long ; autre variable → déplacement de la courbe.', 'Excès d\'offre → prix ↓ ; excès de demande → prix ↑.'])
     c.sec('IV. Organisation du cours')
     c.ul(['CM de 27 h (9 séances de 3 h) et TD de 12 h (8 séances de 1 h 30).', 'Deux contrôles continus en amphi (CC1 vers mi-novembre, CC2 début janvier) et deux interrogations de 30 minutes en TD.', 'Moyenne = 0,5 × [0,5 × CC1 + 0,5 × TD] + 0,5 × CC2.', 'Manuels recommandés : Pindyck et Rubinfeld ; Picard ; Picard et Jullien (voir l\'onglet Auteurs & ouvrages).'])
-    c.warn('Ces documents sont marqués « Licence 2 — S3 » (Université de Lille). Ils ont été intégrés tels quels à ton programme de L3.')
     c.synthese(['Micro = décisions du consommateur et du producteur, à partir de la rationalité.', 'CPP : 5 hypothèses, chaque agent est preneur de prix.', 'Le prix d\'équilibre égalise offre et demande ; bien distinguer mouvement le long d\'une courbe et déplacement de la courbe.'])
     return c
 
