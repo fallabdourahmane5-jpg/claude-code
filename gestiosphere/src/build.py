@@ -102,7 +102,9 @@ def validate(mats):
 def main():
     mats = {m.matiere()['id']: m.matiere() for m in MODULES}
     out = [mats[k] if k in mats else PLACEHOLDERS[k] for k in ORDER]
-    errs = validate(out)
+    import graph_exp
+    miss = graph_exp.apply(out)
+    errs = validate(out) + [f'courbe {g} : explication détaillée manquante' for g in miss]
     if errs:
         print('\n'.join('ERREUR : ' + e for e in errs))
         sys.exit(1)

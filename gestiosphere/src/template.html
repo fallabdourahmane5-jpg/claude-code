@@ -291,6 +291,12 @@ mark{background:rgba(247,230,106,.25);color:var(--warn);border-radius:3px;paddin
 .gr .exp{display:none;margin-top:12px;font-size:.83rem;color:var(--txt2);line-height:1.65}
 .gr .exp.on{display:block}
 .gr .exp li{margin-left:18px;margin-bottom:3px}
+.gx p{margin:0 0 8px;color:var(--txt2);line-height:1.65}
+.gx-l{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--acc);margin:12px 0 5px}
+.gx ol,.gx ul{margin:0 0 6px;padding-left:4px}.gx li{color:var(--txt2);line-height:1.6}
+.gx-r{background:rgba(106,247,162,.06);border:1px solid rgba(106,247,162,.28);border-radius:9px;padding:6px 12px 8px;margin-top:10px}
+.gx-r .gx-l{color:var(--ok);margin-top:4px}.gx-r li{color:var(--txt)}
+.gx-p{margin-top:10px;background:rgba(247,106,106,.07);border-left:3px solid var(--err);border-radius:0 8px 8px 0;padding:8px 12px;color:#f5b3b3;font-size:.82rem;line-height:1.55}
 .gr .gb{margin-top:12px;align-self:flex-start}
 /* MAPS */
 .map-switch{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 20px}
@@ -749,7 +755,7 @@ function renderMethod(){matChips('meth-mchips','meth',renderMethod);
 /* ---------- COURBES ---------- */
 window.renderGraphs=function(){matChips('gr-mchips','gr',renderGraphs);const q=norm(($('gsi')||{}).value);
  const list=GRAPHS.filter(g=>inMat('gr',g.mat)&&(!q||norm(g.titre+' '+strip(g.exp)+' '+(g.tags||[]).join(' ')).includes(q)));
- $('gr-grid').innerHTML=list.map(g=>`<div class="gr" id="gr-${g.id}"><div class="k">${matDot(MAT[g.mat])}${esc(chLabel(g.ch))}</div><h3>${esc(g.titre)}</h3><div class="svgw">${g.svg}</div><button class="btn btn-g btn-sm gb" onclick="this.previousElementSibling&&this.parentNode.querySelector('.exp').classList.toggle('on')">💡 Explication</button><div class="exp">${g.exp}</div></div>`).join('')||'<div class="no-res">Aucune courbe.</div>';};
+ $('gr-grid').innerHTML=list.map(g=>`<div class="gr" id="gr-${g.id}"><div class="k">${matDot(MAT[g.mat])}${esc(chLabel(g.ch))}</div><h3>${esc(g.titre)}</h3><div class="svgw">${g.svg}</div><button class="btn btn-g btn-sm gb" onclick="this.previousElementSibling&&this.parentNode.querySelector('.exp').classList.toggle('on')">💡 Explication détaillée</button><div class="exp">${g.exp}</div></div>`).join('')||'<div class="no-res">Aucune courbe.</div>';};
 window.randomGraph=function(){const l=GRAPHS.filter(g=>inMat('gr',g.mat));if(!l.length)return;const g=pick(l);const e=$('gr-'+g.id);if(e){e.scrollIntoView({behavior:'smooth',block:'center'});e.querySelector('.exp').classList.add('on');e.style.borderColor='var(--acc)';setTimeout(()=>e.style.borderColor='',1500);}};
 
 /* ---------- CARTES ---------- */
