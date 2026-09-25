@@ -91,6 +91,46 @@ class Cours:
         self.parts.append(f'<div class="ex-box"><div class="exh">{titre}</div>{html}</div>')
         return self
 
+    # ---- blocs pédagogiques (style Écosphère) ----
+    def intro(self, titre, texte, questions=()):
+        """Ouverture du chapitre : de quoi on parle et les questions auxquelles il répond."""
+        self._close()
+        q = ''.join(f'<li>{x}</li>' for x in questions)
+        self.parts.append(f'<div class="nb intro-ch"><h2>{titre}</h2><p>{texte}</p>' + (f'<div class="q-box"><div class="qh">Les questions du chapitre</div><ul>{q}</ul></div>' if q else '') + '</div>')
+        return self
+
+    def idee(self, t):
+        self.parts.append(f'<div class="idee"><span class="ih">L\'idée</span>{t}</div>')
+        return self
+
+    def autrement(self, t):
+        self.parts.append(f'<p class="adit"><b>Autrement dit :</b> {t}</p>')
+        return self
+
+    def pourquoi(self, q, r):
+        self.parts.append(f'<div class="why"><div class="wq">❓ {q}</div><div class="wr">{r}</div></div>')
+        return self
+
+    def pas(self, titre, etapes, conclusion=''):
+        li = ''.join(f'<li>{e}</li>' for e in etapes)
+        self.parts.append(f'<div class="step-box"><div class="sh">🧮 {titre}</div><ol>{li}</ol>' + (f'<p class="sc">{conclusion}</p>' if conclusion else '') + '</div>')
+        return self
+
+    def retenir(self, items, titre='Ce qu\'il faut retenir'):
+        li = ''.join(f'<li>{i}</li>' for i in items)
+        self.parts.append(f'<div class="retenir"><div class="rh">✅ {titre}</div><ul>{li}</ul></div>')
+        return self
+
+    def transition(self, t):
+        self.parts.append(f'<p class="trans">➜ {t}</p>')
+        return self
+
+    def synthese(self, items, titre='Ce qu\'il faut absolument retenir'):
+        self._close()
+        li = ''.join(f'<li>{i}</li>' for i in items)
+        self.parts.append(f'<div class="nb synth"><h2>🎯 {titre}</h2><ul>{li}</ul></div>')
+        return self
+
     def raw(self, h):
         self.parts.append(h)
         return self
