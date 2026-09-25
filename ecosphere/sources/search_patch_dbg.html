@@ -1,0 +1,142 @@
+
+<script id="eco-recherche-9-10-21">
+(function(){
+'use strict';
+if(window.__ECO_SEARCH_9_10_21) return;
+window.__ECO_SEARCH_9_10_21 = true;
+
+var CIBLES = [9, 10, 21];
+
+function titreCh(n){
+  try{ if(typeof CH_CONTENT !== 'undefined' && CH_CONTENT[n]) return CH_CONTENT[n].title || ''; }catch(e){}
+  return '';
+}
+function libelleCh(n){
+  return n === 21 ? 'Deuxième année — Chapitre 1' : 'Chapitre ' + n;
+}
+function normal(s){
+  return String(s == null ? '' : s)
+    .toLowerCase()
+    .normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+}
+
+/* Les entrees deja presentes ne doivent pas etre dupliquees :
+   meme cle que addUniqueSearch de l'application (terme | chapitre | type). */
+function cle(e){ return normal(e.term) + '|' + e.ch + '|' + e.type; }
+
+function construire(){
+  try{ console.log('[DIAG] construire, SI=', (typeof SEARCH_INDEX), 'A=', (typeof AUTHORS)); }catch(e){ console.log('[DIAG] typeof a jete', String(e)); }
+  if(typeof SEARCH_INDEX === 'undefined' || typeof AUTHORS === 'undefined') { console.log('[DIAG] sortie anticipee'); return null; }
+  console.log('[DIAG] AUTHORS.length =', AUTHORS.length, 'SI.length =', SEARCH_INDEX.length);
+
+  var vus = Object.create(null);
+  SEARCH_INDEX.forEach(function(e){ vus[cle(e)] = true; });
+
+  var ajouts = [];
+  function pousser(type, ch, term, def, explain, source){
+    if(!term || !def) return;
+    var e = {
+      type: type,
+      term: String(term),
+      def: String(def),
+      ch: ch,
+      action: 'openCh(' + ch + ')',
+      explain: String(explain || def),
+      source: source || 'flashcard'
+    };
+    var k = cle(e);
+    if(vus[k]) return;
+    vus[k] = true;
+    ajouts.push(e);
+  }
+
+  CIBLES.forEach(function(ch){
+    var titre = titreCh(ch);
+    var prefixe = libelleCh(ch) + (titre ? ' — ' + titre : '') + '. ';
+
+    AUTHORS.forEach(function(a){
+      var chaps = [].concat(a.chapters || []);
+      if(chaps.map(String).indexOf(String(ch)) < 0) return;
+
+      var nom     = a.name || '';
+      var dates   = (a.dates && a.dates !== '—') ? a.dates : '';
+      var courant = a.courant || '';
+      var idee    = a.idea || '';
+      var detail  = a.detail || '';
+      var phrase  = a.phrase || '';
+      var oeuvres = [].concat(a.oeuvres || []).filter(Boolean);
+      if(!nom) return;
+
+      /* reference courte : ouvrage principal, sinon dates */
+      var ref = oeuvres.length ? ' — ' + oeuvres[0] : (dates ? ' (' + dates + ')' : '');
+
+      /* 1. fiche auteur rattachee au chapitre */
+      pousser('auteur', ch, nom, detail, prefixe + detail, 'notion');
+
+      /* 2. revision */
+      pousser('auteur-révision', ch,
+        'Que faut-il retenir de ' + nom + ' ?', detail, detail, 'flashcard');
+
+      /* 3. idee -> auteur */
+      if(idee){
+        var rep = nom + (dates ? ' (' + dates + ')' : '') + (courant ? ' — ' + courant : '');
+        pousser('auteur-idée', ch,
+          'Quel auteur associer à l’idée suivante : ' + idee, rep, rep, 'flashcard');
+      }
+
+      /* 4. courant de pensee */
+      if(courant){
+        var d4 = nom + ' appartient au courant ' + courant + '.' + (idee ? ' ' + idee : '');
+        pousser('courant', ch, nom + ' — courant de pensée', d4, d4, 'flashcard');
+      }
+
+      /* 5. mobilisation en dissertation */
+      if(phrase){
+        pousser('mobilisation-auteur', ch,
+          'Comment mobiliser ' + nom + ' dans une copie ?', phrase, phrase, 'flashcard');
+      }
+
+      /* 6. ouvrages */
+      if(oeuvres.length){
+        var d6 = oeuvres.join(' · ');
+        pousser('ouvrage', ch, nom + ' — ouvrage(x) à retenir', d6, d6, 'flashcard');
+      }
+
+      /* 7. idee -> reference */
+      if(detail){
+        var extrait = detail.length > 110 ? detail.slice(0, 110) : detail;
+        pousser('auteur-repère', ch,
+          'Quel auteur ou quelle référence associer à cette idée : ' + extrait,
+          nom + ref, nom + ref, 'flashcard');
+
+        /* 8. reference -> idee */
+        pousser('mobilisation', ch,
+          'Quelle idée de cours mobiliser à partir de ' + nom + ref + ' ?',
+          detail, detail, 'flashcard');
+      }
+    });
+  });
+
+  console.log('[DIAG] ajouts produits =', ajouts.length);
+  return ajouts;
+}
+
+function appliquer(){
+  var ajouts = construire();
+  if(!ajouts) return false;
+  ajouts.forEach(function(e){ SEARCH_INDEX.push(e); });
+  window.__ECO_SEARCH_AJOUTS = ajouts.length;
+  try{ if(typeof doSearch === 'function' && document.querySelector('#pg-search input') &&
+          document.querySelector('#pg-search input').value) doSearch(); }catch(e){}
+  return true;
+}
+
+function boot(){ console.log('[DIAG] boot, FAIT=', window.__ECO_SEARCH_FAIT); if(!window.__ECO_SEARCH_FAIT && appliquer()) window.__ECO_SEARCH_FAIT = true; }
+if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
+else boot();
+setTimeout(boot, 1100);
+setTimeout(boot, 2600);
+})();
+</script>

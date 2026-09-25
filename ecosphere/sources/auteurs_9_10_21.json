@@ -1,0 +1,571 @@
+{
+ "9": [
+  {
+   "name": "Ronald Coase",
+   "dates": "1910-2013",
+   "courant": "Institutionnaliste / droits de propriété",
+   "idea": "Théorème de Coase ; rôle des coûts de transaction",
+   "oeuvres": [
+    "The Problem of Social Cost (1960)"
+   ],
+   "detail": "Si les droits de propriété sont bien définis et les coûts de transaction faibles, les agents peuvent négocier une solution à certaines externalités.",
+   "phrase": "Coase montre que la correction des externalités peut aussi passer par la négociation privée sous certaines conditions."
+  },
+  {
+   "name": "Herbert Simon",
+   "dates": "1916-2001",
+   "courant": "Comportemental",
+   "idea": "Rationalité limitée",
+   "oeuvres": [
+    "Administrative Behavior (1947)"
+   ],
+   "detail": "Montre que les individus n'optimisent pas parfaitement car leur information et leurs capacités cognitives sont limitées.",
+   "phrase": "Simon remplace l'hypothèse de rationalité parfaite par celle de rationalité limitée."
+  },
+  {
+   "name": "Frederick Taylor",
+   "dates": "1856-1915",
+   "courant": "Organisation du travail",
+   "idea": "Organisation scientifique du travail, division et chronométrage",
+   "oeuvres": [
+    "The Principles of Scientific Management (1911)"
+   ],
+   "detail": "Organisation scientifique du travail, division et chronométrage",
+   "phrase": "Taylor rationalise le travail pour accroître la productivité."
+  },
+  {
+   "name": "Alfred Chandler",
+   "dates": "1918-2007",
+   "courant": "Histoire des entreprises",
+   "idea": "Main visible des managers et grande entreprise moderne",
+   "oeuvres": [
+    "The Visible Hand (1977)"
+   ],
+   "detail": "Main visible des managers et grande entreprise moderne",
+   "phrase": "Chandler explique la coordination interne par les managers dans les grandes firmes."
+  },
+  {
+   "name": "Michael Jensen",
+   "dates": "1939-",
+   "courant": "Théorie de l’agence",
+   "idea": "Conflit principal-agent et gouvernance actionnariale",
+   "oeuvres": [
+    "Theory of the Firm (1976)"
+   ],
+   "detail": "Conflit principal-agent et gouvernance actionnariale",
+   "phrase": "Jensen analyse les conflits d’intérêt entre managers et actionnaires."
+  },
+  {
+   "name": "William Meckling",
+   "dates": "1922-1998",
+   "courant": "Théorie de l’agence",
+   "idea": "Co-auteur de la théorie de l’agence",
+   "oeuvres": [
+    "Theory of the Firm (1976)"
+   ],
+   "detail": "Co-auteur de la théorie de l’agence",
+   "phrase": "Meckling est associé à la gouvernance par incitations et contrôle des managers."
+  },
+  {
+   "name": "Abba Lerner",
+   "dates": "1903-1982",
+   "courant": "Post-keynésien / TMM (précurseur)",
+   "idea": "Finance fonctionnelle : l'État doit se mettre au service de la prospérité, la contrainte financière est secondaire",
+   "oeuvres": [
+    "Functional Finance (1943)"
+   ],
+   "detail": "Précurseur de la Théorie Monétaire Moderne. Défend l'idée que les États souverains monétairement ne sont pas contraints financièrement mais seulement par les ressources réelles.",
+   "phrase": "Lerner défend une 'finance fonctionnelle' : l'État doit ajuster ses dépenses et recettes non pour équilibrer son budget mais pour maintenir la prospérité économique."
+  },
+  {
+   "name": "Oliver Williamson",
+   "dates": "1932-2020",
+   "courant": "Néo-institutionnaliste",
+   "idea": "Coûts de transaction ; opportunisme ; internalisation",
+   "oeuvres": [],
+   "detail": "Prolonge Coase et Simon. Montre que certaines entreprises internalisent des activités afin de réduire les coûts de transaction. Ses deux hypothèses majeures sont la rationalité limitée et l’opportunisme des agents.",
+   "phrase": "Pour Williamson, la firme constitue une alternative au marché : elle réduit les coûts de transaction, l’incertitude et l’opportunisme."
+  },
+  {
+   "name": "Armen Alchian",
+   "dates": "1914-2013",
+   "courant": "Approche contractuelle",
+   "idea": "Firme comme nœud de contrats ; travail en équipe",
+   "oeuvres": [],
+   "detail": "Avec Harold Demsetz, analyse la firme comme un « nœud de contrats » entre des acteurs aux intérêts divers tenus de travailler ensemble. La difficulté de mesurer la contribution de chacun justifie le contrôle.",
+   "phrase": "Pour Alchian et Demsetz, la firme n’est pas différente du marché : c’est un ensemble de contrats."
+  },
+  {
+   "name": "Harold Demsetz",
+   "dates": "1930-2019",
+   "courant": "Approche contractuelle",
+   "idea": "Nœud de contrats ; contrôle du travail en équipe",
+   "oeuvres": [],
+   "detail": "Coauteur avec Armen Alchian de l’analyse contractuelle de la firme, où le créancier résiduel perçoit le revenu restant une fois les autres apporteurs rémunérés et a donc intérêt à l’efficacité.",
+   "phrase": "Demsetz montre que le contrôle exercé dans la firme découle de la difficulté à mesurer l’apport de chacun."
+  },
+  {
+   "name": "Alfred Marshall",
+   "dates": "1842-1924",
+   "courant": "Néoclassique",
+   "idea": "Districts industriels ; économies externes",
+   "oeuvres": [
+    "Principes d’économie politique (1890)"
+   ],
+   "detail": "Développe la notion de district industriel : une concentration locale d’entreprises spécialisées qui bénéficient d’une main-d’œuvre, de savoir-faire et de fournisseurs communs.",
+   "phrase": "Marshall théorise dès 1890 les avantages de la concentration géographique des activités."
+  },
+  {
+   "name": "Edward Chamberlin",
+   "dates": "1899-1967",
+   "courant": "Néoclassique",
+   "idea": "Concurrence monopolistique ; différenciation des produits",
+   "oeuvres": [],
+   "detail": "Développe en 1933 la théorie de la concurrence monopolistique : de nombreuses entreprises vendent des produits différenciés, chacune disposant d’un petit pouvoir de marché sur son segment.",
+   "phrase": "Chamberlin montre que la différenciation réduit la substituabilité et confère un pouvoir de marché."
+  },
+  {
+   "name": "William Baumol",
+   "dates": "1922-2017",
+   "courant": "Économie industrielle",
+   "idea": "Théorie des marchés contestables",
+   "oeuvres": [],
+   "detail": "Avec John Panzar et Robert Willig, développe dans les années 1980 la théorie des marchés contestables : un marché est contestable si l’entrée et la sortie sont libres, sans coûts irrécupérables importants.",
+   "phrase": "Pour Baumol, c’est la menace d’entrée, et non le nombre d’entreprises, qui discipline les prix."
+  },
+  {
+   "name": "John Panzar",
+   "dates": "",
+   "courant": "Économie industrielle",
+   "idea": "Marchés contestables",
+   "oeuvres": [],
+   "detail": "Coauteur, avec William Baumol et Robert Willig, de la théorie des marchés contestables développée dans les années 1980.",
+   "phrase": "Panzar contribue à déplacer le critère de la concurrence de l’atomicité vers la libre entrée."
+  },
+  {
+   "name": "Robert Willig",
+   "dates": "",
+   "courant": "Économie industrielle",
+   "idea": "Marchés contestables",
+   "oeuvres": [],
+   "detail": "Coauteur, avec William Baumol et John Panzar, de la théorie des marchés contestables développée dans les années 1980.",
+   "phrase": "Willig participe à montrer qu’un marché concentré peut rester concurrentiel s’il demeure contestable."
+  },
+  {
+   "name": "Edward Mason",
+   "dates": "",
+   "courant": "Économie industrielle",
+   "idea": "Modèle SCP (Structure-Comportements-Performances)",
+   "oeuvres": [],
+   "detail": "À l’origine du modèle SCP au sein de l’économie industrielle, repris et formalisé par Joe Bain dans les années 1950.",
+   "phrase": "Mason pose l’idée que la structure du marché conditionne les comportements des firmes."
+  },
+  {
+   "name": "Joe Bain",
+   "dates": "",
+   "courant": "Économie industrielle",
+   "idea": "Modèle SCP ; barrières à l’entrée",
+   "oeuvres": [],
+   "detail": "Formalise dans les années 1950 le modèle Structure-Comportements-Performances, qui relie la configuration du marché aux stratégies des entreprises puis à leurs résultats.",
+   "phrase": "Bain systématise le lien entre structure de marché, comportements et performances."
+  },
+  {
+   "name": "Emmanuel Combe",
+   "dates": "",
+   "courant": "Économie de la concurrence",
+   "idea": "Politique de la concurrence ; cartels ; approche élargie",
+   "oeuvres": [
+    "La politique de la concurrence (2016)"
+   ],
+   "detail": "Étudie 111 cartels entre 1969 et 2009 et montre qu’ils sont souvent durables, augmentent les prix et apparaissent surtout sur des marchés oligopolistiques. Oppose une approche standard de la concurrence, fondée sur l’atomicité, à une approche élargie fondée sur la contestabilité.",
+   "phrase": "Selon Combe, environ 1 % des fusions ont été refusées entre 2010 et 2020."
+  },
+  {
+   "name": "John D. Rockefeller",
+   "dates": "1839-1937",
+   "courant": "Industriel (figure historique)",
+   "idea": "Standard Oil ; trust pétrolier ; démantèlement de 1911",
+   "oeuvres": [],
+   "detail": "Fonde la Standard Oil Company en 1870 et bâtit un trust pétrolier dominant, démantelé en 1911 en application des lois antitrust américaines. Dans les années 1990, plusieurs sociétés issues de ce démantèlement refusionnent.",
+   "phrase": "Le cas Rockefeller illustre à la fois la puissance des trusts et les limites du démantèlement."
+  },
+  {
+   "name": "Jack Welch",
+   "dates": "1935-2020",
+   "courant": "Dirigeant d’entreprise (figure historique)",
+   "idea": "Gestion de General Electric ; logique managériale",
+   "oeuvres": [],
+   "detail": "Dirige General Electric pendant plus de trente ans. Sa stratégie repose sur les rachats d’entreprises, les restructurations, les licenciements massifs et la recherche permanente de performance.",
+   "phrase": "Welch incarne la logique managériale du conglomérat diversifié."
+  }
+ ],
+ "10": [
+  {
+   "name": "Karl Marx",
+   "dates": "1818-1883",
+   "courant": "Marxiste",
+   "idea": "Plus-value ; exploitation ; lutte des classes",
+   "oeuvres": [
+    "Le Capital (1867)",
+    "Manifeste du Parti communiste (1848)"
+   ],
+   "detail": "Analyse du capitalisme fondée sur la valeur-travail, l'exploitation du prolétariat et les contradictions internes du système.",
+   "phrase": "Marx montre que le profit capitaliste repose sur l'appropriation de la plus-value créée par le travail."
+  },
+  {
+   "name": "Daniel Kahneman",
+   "dates": "1934-2024",
+   "courant": "Économie comportementale",
+   "idea": "Biais cognitifs ; heuristiques",
+   "oeuvres": [
+    "Thinking, Fast and Slow (2011)"
+   ],
+   "detail": "Montre que les choix réels s'écartent souvent de la rationalité standard.",
+   "phrase": "Kahneman montre que les décisions économiques sont souvent guidées par des biais cognitifs."
+  },
+  {
+   "name": "Frederick Taylor",
+   "dates": "1856-1915",
+   "courant": "Organisation du travail",
+   "idea": "Organisation scientifique du travail, division et chronométrage",
+   "oeuvres": [
+    "The Principles of Scientific Management (1911)"
+   ],
+   "detail": "Organisation scientifique du travail, division et chronométrage",
+   "phrase": "Taylor rationalise le travail pour accroître la productivité."
+  },
+  {
+   "name": "Max Weber",
+   "dates": "1864-1920",
+   "courant": "Sociologie",
+   "idea": "Charisme, bureaucratie, domination rationnelle-légale",
+   "oeuvres": [
+    "Économie et société (1922)"
+   ],
+   "detail": "Charisme, bureaucratie, domination rationnelle-légale",
+   "phrase": "Weber permet d’analyser l’autorité de l’entrepreneur et la rationalisation des organisations."
+  },
+  {
+   "name": "Émile Durkheim",
+   "dates": "1858-1917",
+   "courant": "Sociologie (holisme méthodologique)",
+   "idea": "Fait social ; solidarités mécanique et organique ; anomie ; intégration",
+   "oeuvres": [
+    "De la division du travail social (1893)",
+    "Les Règles de la méthode sociologique (1895)",
+    "Le Suicide (1897)"
+   ],
+   "detail": "Fondateur de la sociologie française, créateur de la revue L’Année sociologique en 1896. Invite à traiter les faits sociaux comme des choses. Distingue la solidarité mécanique, fondée sur la ressemblance, et la solidarité organique, fondée sur la complémentarité d’individus spécialisés. Analyse les pathologies du lien social : l’anomie, défaut de régulation, et l’égoïsme, défaut d’intégration.",
+   "phrase": "Pour Durkheim, le travail intègre parce qu’il crée des relations, rattache à un groupe et fournit des normes."
+  },
+  {
+   "name": "Elton Mayo",
+   "dates": "1880-1949",
+   "courant": "École des relations humaines",
+   "idea": "Effet Hawthorne ; facteur humain au travail",
+   "oeuvres": [
+    "The Human Problems of an Industrial Civilization (1933)"
+   ],
+   "detail": "Mène à partir des années 1920 les enquêtes de la Western Electric Company. L’expérience sur l’éclairage puis la Test Room révèlent que la productivité augmente indépendamment des conditions matérielles. Ses travaux donnent naissance à l’École des relations humaines, qui analyse l’entreprise comme un système social.",
+   "phrase": "Mayo critique la conception mécaniste du travail de Taylor : la motivation dépend aussi des relations et du sens."
+  },
+  {
+   "name": "Gérald Bronner",
+   "dates": "",
+   "courant": "Sociologie cognitive",
+   "idea": "Marché cognitif ; avarice cognitive ; démocratie des crédules",
+   "oeuvres": [
+    "La Démocratie des crédules (2013)",
+    "Apocalypse cognitive (2021)"
+   ],
+   "detail": "Analyse le marché cognitif comme un lieu où se rencontrent une offre et une demande d’informations. Montre que la dérégulation de ce marché par Internet ne garantit pas la progression de la rationalité : les invariants mentaux, dont l’avarice cognitive, et les logiques d’audience favorisent les contenus les plus attractifs.",
+   "phrase": "Bronner rapproche l’avarice cognitive du « système 1 » de Kahneman : un mode de pensée rapide, intuitif et automatique."
+  },
+  {
+   "name": "Christian Morel",
+   "dates": "",
+   "courant": "Sociologie des organisations",
+   "idea": "Décisions absurdes ; métarègles",
+   "oeuvres": [],
+   "detail": "Cherche à comprendre pourquoi des organisations rationnelles composées d’individus compétents produisent des décisions absurdes. Il identifie des causes individuelles (crainte de contester l’autorité, autocensure), collectives (conformisme, pensée de groupe) et cognitives, et propose des métarègles pour les prévenir.",
+   "phrase": "Pour Morel, une décision absurde est une œuvre collective, non une faute individuelle."
+  },
+  {
+   "name": "Michel Crozier",
+   "dates": "1922-2013",
+   "courant": "Sociologie des organisations",
+   "idea": "Analyse stratégique ; zone d’incertitude ; cercle vicieux bureaucratique",
+   "oeuvres": [
+    "Le Phénomène bureaucratique (1963)",
+    "L’Acteur et le système (1977, avec Erhard Friedberg)"
+   ],
+   "detail": "Enquête dans une entreprise qu’il appelle le « monopole industriel » — en réalité la SEITA — et montre que les ouvriers d’entretien tirent leur pouvoir de la maîtrise de la réparation des machines. Distingue le monde formel de l’organigramme et le monde informel des relations réelles.",
+   "phrase": "Pour Crozier, le pouvoir est diffus et relationnel : il appartient à qui maîtrise une zone d’incertitude."
+  },
+  {
+   "name": "Erhard Friedberg",
+   "dates": "",
+   "courant": "Sociologie des organisations",
+   "idea": "Analyse stratégique des organisations",
+   "oeuvres": [
+    "L’Acteur et le système (1977, avec Michel Crozier)"
+   ],
+   "detail": "Coauteur avec Michel Crozier de L’Acteur et le système (1977), ouvrage fondateur de l’analyse stratégique des organisations.",
+   "phrase": "Friedberg contribue à penser l’organisation comme un jeu d’acteurs disposant de marges de manœuvre."
+  },
+  {
+   "name": "Robert Castel",
+   "dates": "1933-2013",
+   "courant": "Sociologie du travail",
+   "idea": "Société salariale ; désaffiliation",
+   "oeuvres": [
+    "Les Métamorphoses de la question sociale (1995)"
+   ],
+   "detail": "Étudie l’évolution de la condition salariale et sa fragilisation à partir de la montée du chômage et de la précarité. Montre que la société salariale avait fait de l’emploi un support d’intégration en associant au salaire un statut et des droits sociaux.",
+   "phrase": "Pour Castel, la perte d’emploi enclenche une désaffiliation : perte de protections, de relations et d’identité."
+  },
+  {
+   "name": "Florence Aubenas",
+   "dates": "",
+   "courant": "Journalisme d’immersion",
+   "idea": "Travailleurs précaires ; conditions de vie",
+   "oeuvres": [
+    "Le Quai de Ouistreham (2010)"
+   ],
+   "detail": "Enquête en immersion sur le monde des travailleurs précaires : bas salaires, difficultés de transport, isolement social.",
+   "phrase": "Aubenas donne à voir de l’intérieur la réalité quotidienne de l’emploi précaire."
+  },
+  {
+   "name": "Solomon Asch",
+   "dates": "1907-1996",
+   "courant": "Psychologie sociale",
+   "idea": "Conformisme ; paradigme d’Asch",
+   "oeuvres": [],
+   "detail": "Son expérience de 1951 montre qu’un individu peut adopter publiquement une réponse qu’il sait pourtant erronée sous l’effet de la pression conformiste exercée par le groupe.",
+   "phrase": "L’expérience d’Asch établit le pouvoir du conformisme sur la décision individuelle."
+  },
+  {
+   "name": "Irving Janis",
+   "dates": "1918-1990",
+   "courant": "Psychologie sociale",
+   "idea": "Groupthink (pensée de groupe)",
+   "oeuvres": [],
+   "detail": "Développe en 1982 la notion de Groupthink, ou pensée de groupe : la recherche d’unanimité au sein d’un groupe cohésif étouffe les objections et dégrade la qualité de la décision.",
+   "phrase": "Pour Janis, l’illusion de l’unanimité fait passer le silence pour un accord."
+  },
+  {
+   "name": "Simone Weil",
+   "dates": "1909-1943",
+   "courant": "Philosophie",
+   "idea": "Condition ouvrière ; expérience du travail en usine",
+   "oeuvres": [],
+   "detail": "En 1934, la philosophe fait l’expérience du travail en usine et en tire une analyse de la condition ouvrière vécue de l’intérieur.",
+   "phrase": "Simone Weil décrit l’épreuve concrète du travail industriel et ses effets sur la personne."
+  },
+  {
+   "name": "Werner Sombart",
+   "dates": "1863-1941",
+   "courant": "Sociologie et économie allemandes",
+   "idea": "Sciences sociales allemandes ; revue fondée avec Weber",
+   "oeuvres": [],
+   "detail": "Participe en 1903, avec Max Weber, à la création d’une importante revue allemande de sciences sociales.",
+   "phrase": "Sombart accompagne Weber dans l’institutionnalisation des sciences sociales allemandes."
+  },
+  {
+   "name": "James March",
+   "dates": "1928-2018",
+   "courant": "Théorie des organisations",
+   "idea": "Décision en organisation ; rationalité limitée",
+   "oeuvres": [],
+   "detail": "Chercheur américain dont Michel Crozier contribue à faire connaître les travaux en France, aux côtés de ceux d’Herbert Simon et de Robert Merton.",
+   "phrase": "March appartient au courant qui analyse la décision organisationnelle sous contrainte de rationalité limitée."
+  }
+ ],
+ "21": [
+  {
+   "name": "Adam Smith",
+   "dates": "1723-1790",
+   "courant": "Classique",
+   "idea": "Main invisible ; division du travail ; libéralisme économique",
+   "oeuvres": [
+    "Recherches sur la nature et les causes de la richesse des nations (1776)"
+   ],
+   "detail": "Fondateur majeur du courant classique. Montre que la division du travail accroît fortement la productivité et que la poursuite de l'intérêt individuel peut servir l'intérêt général.",
+   "phrase": "Smith montre que le marché peut coordonner les intérêts individuels grâce à la main invisible."
+  },
+  {
+   "name": "David Ricardo",
+   "dates": "1772-1823",
+   "courant": "Classique",
+   "idea": "Avantages comparatifs ; rendements décroissants ; état stationnaire",
+   "oeuvres": [
+    "Principes de l'économie politique et de l'impôt (1817)"
+   ],
+   "detail": "Explique le libre-échange par les avantages comparatifs et montre que les terres moins fertiles entraînent des rendements décroissants.",
+   "phrase": "Ricardo montre que même un pays moins efficace partout peut gagner à l'échange grâce aux avantages comparatifs."
+  },
+  {
+   "name": "Paul Samuelson",
+   "dates": "1915-2009",
+   "courant": "Néo-keynésien",
+   "idea": "Synthèse néoclassique ; oscillateur ; formalisation économique",
+   "oeuvres": [
+    "Foundations of Economic Analysis (1947)"
+   ],
+   "detail": "Prolonge la synthèse néo-keynésienne et, en macro, relie multiplicateur et accélérateur dans le modèle de l'oscillateur.",
+   "phrase": "Samuelson formalise l'économie moderne et systématise la synthèse néo-keynésienne."
+  },
+  {
+   "name": "Thomas Piketty",
+   "dates": "1971-",
+   "courant": "Inégalités",
+   "idea": "Si r > g, le patrimoine se concentre",
+   "oeuvres": [
+    "Le Capital au XXIe siècle (2013)"
+   ],
+   "detail": "Étudie l'évolution longue des patrimoines et montre qu'un rendement du capital supérieur à la croissance favorise la concentration des richesses.",
+   "phrase": "Piketty montre que lorsque le rendement du capital dépasse la croissance, les inégalités patrimoniales tendent à se creuser."
+  },
+  {
+   "name": "Branko Milanovic",
+   "dates": "1953-",
+   "courant": "Inégalités",
+   "idea": "Courbe de l'éléphant ; gagnants et perdants de la mondialisation",
+   "oeuvres": [
+    "Global Inequality (2016)",
+    "The Three Eras of Global Inequality (2022)"
+   ],
+   "detail": "Analyse les inégalités mondiales et les effets différenciés de la mondialisation selon les groupes sociaux.",
+   "phrase": "Milanovic montre que la mondialisation a profité à certains groupes et en a fragilisé d'autres."
+  },
+  {
+   "name": "Daron Acemoglu",
+   "dates": "1967-",
+   "courant": "Institutionnaliste",
+   "idea": "Institutions inclusives vs extractives",
+   "oeuvres": [
+    "Why Nations Fail (2012)"
+   ],
+   "detail": "Avec James Robinson, explique les écarts de développement par la qualité des institutions politiques et économiques.",
+   "phrase": "Acemoglu montre que des institutions inclusives favorisent l'innovation et la croissance durable."
+  },
+  {
+   "name": "James A. Robinson",
+   "dates": "1960-",
+   "courant": "Institutionnaliste",
+   "idea": "Institutions et trajectoires nationales",
+   "oeuvres": [
+    "Why Nations Fail (2012)"
+   ],
+   "detail": "Co-auteur avec Acemoglu d'une analyse institutionnelle des réussites et échecs de développement.",
+   "phrase": "Robinson montre que la qualité des institutions explique largement la réussite ou l'échec des nations."
+  },
+  {
+   "name": "Ragnar Nurkse",
+   "dates": "1907-1959",
+   "courant": "Développement",
+   "idea": "Cercle vicieux de la pauvreté et insuffisance d’investissement",
+   "oeuvres": [
+    "Problems of Capital Formation in Underdeveloped Countries (1953)"
+   ],
+   "detail": "Cercle vicieux de la pauvreté et insuffisance d’investissement",
+   "phrase": "Nurkse montre comment faible revenu, faible épargne et faible investissement peuvent s’auto-entretenir."
+  },
+  {
+   "name": "Raúl Prebisch",
+   "dates": "1901-1986",
+   "courant": "Structuralisme / CEPAL",
+   "idea": "Centre-périphérie et détérioration des termes de l’échange",
+   "oeuvres": [
+    "Travaux de la CEPAL"
+   ],
+   "detail": "Centre-périphérie et détérioration des termes de l’échange",
+   "phrase": "Prebisch sert à montrer que l’insertion commerciale peut maintenir une dépendance des pays primaires."
+  },
+  {
+   "name": "Paul Bairoch",
+   "dates": "1930-1999",
+   "courant": "Histoire économique",
+   "idea": "Nuance le lien entre libre-échange, protectionnisme et développement",
+   "oeuvres": [
+    "Mythes et paradoxes de l’histoire économique (1993)"
+   ],
+   "detail": "Le document l’utilise pour rappeler que les trajectoires réelles de développement sont plus complexes qu’une opposition simple ouverture/fermeture.",
+   "phrase": "Les trajectoires historiques mêlent souvent protection, marché intérieur et ouverture."
+  },
+  {
+   "name": "Charles-Albert Michalet",
+   "dates": "",
+   "courant": "Économie internationale",
+   "idea": "Mondialisation multidimensionnelle ; trois configurations",
+   "oeuvres": [
+    "Qu’est-ce que la mondialisation ? (2002)"
+   ],
+   "detail": "Montre que la mondialisation ne peut pas être réduite au commerce international. Il distingue trois configurations : internationale, centrée sur les échanges commerciaux ; multinationale, centrée sur l’implantation des firmes et l’investissement direct ; globale, marquée par la fragmentation productive et l’unification financière.",
+   "phrase": "Pour Michalet, la mondialisation est un processus multidimensionnel et cumulatif."
+  },
+  {
+   "name": "Pierre-Noël Giraud",
+   "dates": "",
+   "courant": "Économie internationale",
+   "idea": "Globalisations ; généralisation des compétitions",
+   "oeuvres": [],
+   "detail": "Analyse les globalisations comme une généralisation des compétitions : les territoires ne rivalisent plus seulement par leurs produits, mais pour attirer capitaux, activités et compétences.",
+   "phrase": "Pour Giraud, la mondialisation met les territoires eux-mêmes en concurrence."
+  },
+  {
+   "name": "Friedrich List",
+   "dates": "1789-1846",
+   "courant": "Économie nationale",
+   "idea": "Protectionnisme éducateur ; industries naissantes",
+   "oeuvres": [],
+   "detail": "Affirme en 1841 qu’une industrie naissante ne peut pas toujours affronter immédiatement une industrie étrangère déjà compétitive, et qu’elle doit être temporairement protégée pour acquérir les capacités productives nécessaires.",
+   "phrase": "Pour List, la protection doit être transitoire et orientée vers l’acquisition de compétences."
+  },
+  {
+   "name": "Richard Baldwin",
+   "dates": "",
+   "courant": "Économie internationale",
+   "idea": "Dégroupages ; chaînes de valeur mondiales",
+   "oeuvres": [],
+   "detail": "Analyse la mondialisation à travers le concept de « dégroupage ». Le premier dégroupage sépare le lieu de production du lieu de consommation, rendu possible par la baisse des coûts de transport.",
+   "phrase": "Pour Baldwin, chaque dégroupage redéfinit la géographie de la production mondiale."
+  },
+  {
+   "name": "Hélène Rey",
+   "dates": "",
+   "courant": "Macroéconomie internationale",
+   "idea": "Déséquilibres mondiaux ; modèles de croissance",
+   "oeuvres": [],
+   "detail": "Montre que les déséquilibres extérieurs mondiaux ne sont pas de simples anomalies comptables : ils reflètent des stratégies nationales de croissance elles-mêmes déséquilibrées et les faiblesses structurelles des modèles nationaux.",
+   "phrase": "Pour Hélène Rey, le déséquilibre extérieur renvoie au modèle de croissance qui le produit."
+  },
+  {
+   "name": "Wolfgang Stolper",
+   "dates": "",
+   "courant": "Commerce international",
+   "idea": "Théorème Stolper-Samuelson",
+   "oeuvres": [],
+   "detail": "Coauteur avec Paul Samuelson du théorème montrant que l’ouverture commerciale produit des effets distributifs : elle modifie différemment la rémunération des facteurs de production selon leur abondance et leur usage dans les secteurs exposés.",
+   "phrase": "Le théorème Stolper-Samuelson explique pourquoi le commerce fait des gagnants et des perdants à l’intérieur d’un pays."
+  },
+  {
+   "name": "Alain Béraud",
+   "dates": "",
+   "courant": "Histoire de la pensée économique",
+   "idea": "Structure des flux de capitaux de la première mondialisation",
+   "oeuvres": [],
+   "detail": "Montre que 80 à 90 % des mouvements de capitaux de la première mondialisation correspondent à des investissements de portefeuille, les IDE n’en représentant qu’une faible part.",
+   "phrase": "Selon Béraud, la première mondialisation financière était d’abord une mondialisation de portefeuille."
+  },
+  {
+   "name": "Paul Volcker",
+   "dates": "1927-2019",
+   "courant": "Politique monétaire",
+   "idea": "Désinflation ; choc de taux de 1979",
+   "oeuvres": [],
+   "detail": "Arrive à la tête de la Réserve fédérale américaine en 1979 dans un contexte d’inflation élevée, et engage une politique de forte hausse des taux d’intérêt.",
+   "phrase": "Le tournant Volcker de 1979 marque le passage à une politique monétaire résolument anti-inflationniste."
+  }
+ ]
+}

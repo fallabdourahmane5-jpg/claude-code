@@ -1,0 +1,127 @@
+# -*- coding: utf-8 -*-
+js = r"""
+<script id="eco-recherche-fiches-9-10-21">
+(function(){
+'use strict';
+if(window.__ECO_RECH_910) return;
+window.__ECO_RECH_910 = true;
+
+/* La recherche active (V48) construit son index a la volee depuis FC_DATA,
+   AUTHORS et CH_CONTENT. Les chapitres 9, 10 et 2e annee ch.1 n'avaient
+   aucune fiche des familles « auteur » : ni auteur, ni courant, ni ouvrage,
+   ni mobilisation, contrairement aux chapitres 1 a 8. On les genere depuis
+   la base AUTHORS, au format exact des chapitres existants. */
+
+var CIBLES = [9, 10, 21];
+
+function normal(s){
+  return String(s == null ? '' : s)
+    .toLowerCase()
+    .normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+}
+
+function construire(){
+  if(typeof FC_DATA === 'undefined' || typeof AUTHORS === 'undefined') return null;
+
+  var vus = Object.create(null);
+  FC_DATA.forEach(function(c){ vus[normal(c.term) + '|' + c.ch + '|' + c.type] = true; });
+
+  var ajouts = [];
+  function pousser(type, ch, term, def){
+    if(!term || !def) return;
+    var k = normal(term) + '|' + ch + '|' + type;
+    if(vus[k]) return;
+    vus[k] = true;
+    ajouts.push({term: String(term), def: String(def), type: type, ch: ch, eco910: 1});
+  }
+
+  CIBLES.forEach(function(ch){
+    AUTHORS.forEach(function(a){
+      if([].concat(a.chapters || []).map(String).indexOf(String(ch)) < 0) return;
+
+      var nom     = a.name || '';
+      var dates   = (a.dates && a.dates !== '—') ? a.dates : '';
+      var courant = a.courant || '';
+      var idee    = a.idea || '';
+      var detail  = a.detail || '';
+      var phrase  = a.phrase || '';
+      var oeuvres = [].concat(a.oeuvres || []).filter(Boolean);
+      if(!nom) return;
+
+      var ref = oeuvres.length ? ' — ' + oeuvres[0] : (dates ? ' (' + dates + ')' : '');
+
+      pousser('auteur', ch, nom, detail || idee);
+
+      if(detail){
+        pousser('auteur-révision', ch, 'Que faut-il retenir de ' + nom + ' ?', detail);
+        var extrait = detail.length > 110 ? detail.slice(0, 110) : detail;
+        pousser('auteur-repère', ch,
+          'Quel auteur ou quelle référence associer à cette idée : ' + extrait, nom + ref);
+        pousser('mobilisation', ch,
+          'Quelle idée de cours mobiliser à partir de ' + nom + ref + ' ?', detail);
+      }
+      if(idee){
+        pousser('auteur-idée', ch, 'Quel auteur associer à l’idée suivante : ' + idee,
+          nom + (dates ? ' (' + dates + ')' : '') + (courant ? ' — ' + courant : ''));
+      }
+      if(courant){
+        pousser('courant', ch, nom + ' — courant de pensée',
+          nom + ' appartient au courant ' + courant + '.' + (idee ? ' ' + idee : ''));
+      }
+      if(phrase){
+        pousser('mobilisation-auteur', ch, 'Comment mobiliser ' + nom + ' dans une copie ?', phrase);
+      }
+      if(oeuvres.length){
+        pousser('ouvrage', ch, nom + ' — ouvrage(x) à retenir', oeuvres.join(' · '));
+      }
+    });
+  });
+
+  return ajouts;
+}
+
+function present(){
+  try{
+    for(var i = FC_DATA.length - 1; i >= 0; i--){ if(FC_DATA[i].eco910) return true; }
+  }catch(e){ return true; }
+  return false;
+}
+
+function appliquer(){
+  var ajouts = construire();
+  if(!ajouts || !ajouts.length) return 0;
+  ajouts.forEach(function(c){ FC_DATA.push(c); });
+  window.__ECO_RECH_910_AJOUTS = ajouts.length;
+  /* l'index hérité est reconstruit depuis FC_DATA */
+  try{ if(typeof rebuildSearchIndex === 'function') rebuildSearchIndex(); }catch(e){}
+  return ajouts.length;
+}
+
+/* AUTHORS n'est complete qu'apres le DOMContentLoaded et plusieurs correctifs
+   reconstruisent les donnees : on verifie la presence du marqueur a chaque fois. */
+function assurer(){ try{ if(!present()) appliquer(); }catch(e){} }
+
+if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', assurer);
+else assurer();
+[600, 1400, 2600, 4200, 6500, 9000].forEach(function(t){ setTimeout(assurer, t); });
+
+if(typeof window.doSearch === 'function'){
+  var oldSearch = window.doSearch;
+  window.doSearch = function(){ assurer(); return oldSearch.apply(this, arguments); };
+}
+if(typeof window.showPg === 'function'){
+  var oldPg = window.showPg;
+  window.showPg = function(pg){ if(pg === 'search' || pg === 'fc') assurer(); return oldPg.apply(this, arguments); };
+}
+})();
+</script>
+"""
+open('search_patch2.html','w',encoding='utf-8').write(js)
+# repartir de v180 (sans le patch SEARCH_INDEX inoperant)
+src = open('app_v180.html', encoding='utf-8').read()
+i = src.rfind('</body>')
+assert i > 0
+open('app_v181.html','w',encoding='utf-8').write(src[:i] + js + src[i:])
+print('patch :', len(js), 'caracteres | app_v181.html reconstruit')
