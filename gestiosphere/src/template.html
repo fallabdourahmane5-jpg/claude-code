@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestiosphère — Licence 3</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0d11;--s1:#131720;--s2:#1a2033;--s3:#202840;--bdr:#242d42;--bdr2:#2e3a55;--acc:#7c6af7;--acc2:#f7a26a;--acc3:#6af7c4;--acc4:#f76a6a;--acc5:#f7e66a;--txt:#e8eaf2;--txt2:#8890a8;--txt3:#4d5874;--ok:#6af7a2;--err:#f76a6a;--warn:#f7e66a}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--txt);min-height:100vh;overflow-x:hidden}
+::-webkit-scrollbar{width:5px;height:5px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--bdr);border-radius:3px}
+button{font-family:inherit}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(11,13,17,.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--bdr);height:58px;display:flex;align-items:center;padding:0 16px;gap:6px;overflow-x:auto;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+.nav-logo{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;background:linear-gradient(135deg,var(--acc3),var(--acc));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-right:10px;white-space:nowrap;cursor:pointer}
+.nt{padding:6px 11px;border-radius:8px;cursor:pointer;font-size:.78rem;font-weight:500;color:var(--txt2);border:none;background:none;transition:all .2s;white-space:nowrap}
+.nt:hover{color:var(--txt);background:var(--s2)}
+.nt.on{color:#fff;background:var(--acc)}
+main{padding-top:58px}
+.pg{display:none;animation:fi .3s ease}
+.pg.on{display:block}
+@keyframes fi{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.wrap{max-width:1100px;margin:0 auto;padding:36px 32px 60px}
+.wrap-n{max-width:860px;margin:0 auto;padding:36px 32px 60px}
+.ptitle{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:900;margin-bottom:6px}
+.psub{color:var(--txt2);font-size:.86rem;margin-bottom:22px;line-height:1.6}
+.kicker{font-size:.7rem;letter-spacing:.12em;color:var(--acc2);text-transform:uppercase;font-weight:700;margin-bottom:10px}
+/* MATIERE CHIPS */
+.mchips{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:18px}
+.mchip{padding:6px 13px;border-radius:999px;border:1px solid var(--bdr);background:var(--s1);color:var(--txt2);font-size:.78rem;cursor:pointer;transition:all .2s;font-weight:500}
+.mchip:hover{color:var(--txt);border-color:var(--acc)}
+.mchip.on{background:var(--acc);border-color:var(--acc);color:#fff}
+.mchip.dis{opacity:.45}
+.mdot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:middle}
+/* HERO */
+.hero{max-width:1100px;margin:0 auto;padding:48px 32px 24px}
+.hero-tag{font-size:.7rem;letter-spacing:.12em;color:var(--acc);text-transform:uppercase;font-weight:600;margin-bottom:14px}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.6rem);font-weight:900;line-height:1.08;margin-bottom:16px}
+.hero h1 em{font-style:italic;color:var(--acc3)}
+.hero-sub{color:var(--txt2);font-size:.95rem;line-height:1.6;max-width:560px;margin-bottom:28px}
+.stats-row{display:flex;gap:28px;margin-bottom:10px;flex-wrap:wrap}
+.stat .n{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--acc)}
+.stat .l{font-size:.72rem;color:var(--txt3);text-transform:uppercase;letter-spacing:.08em;margin-top:2px}
+.msec{max-width:1100px;margin:0 auto;padding:10px 32px 18px}
+.msec-h{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:18px 0 14px}
+.msec-h h2{font-family:'Playfair Display',serif;font-size:1.45rem;font-weight:900}
+.msec-h .src{font-size:.74rem;color:var(--txt3);font-family:'JetBrains Mono',monospace}
+/* CHAPTER CARDS */
+.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:14px}
+.cc{background:var(--s1);border:1px solid var(--bdr);border-radius:14px;padding:22px;cursor:pointer;transition:all .2s;position:relative;overflow:hidden}
+.cc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--mc,var(--acc))}
+.cc:hover{border-color:var(--acc);transform:translateY(-2px);box-shadow:0 8px 28px rgba(124,106,247,.12)}
+.cc.soon{cursor:default;opacity:.7;border-style:dashed}.cc.soon:hover{transform:none;box-shadow:none;border-color:var(--bdr)}
+.cc-num{font-size:.68rem;font-family:'JetBrains Mono',monospace;color:var(--txt3);margin-bottom:10px}
+.cc-title{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;margin-bottom:6px;line-height:1.3}
+.cc-desc{font-size:.8rem;color:var(--txt2);line-height:1.5;margin-bottom:14px}
+.cc-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:14px}
+.tag{padding:2px 9px;border-radius:20px;font-size:.68rem;font-weight:500;background:var(--s2);color:var(--txt2);border:1px solid var(--bdr)}
+.cc-btns{display:flex;gap:7px;flex-wrap:wrap}
+.cc-bar{height:3px;background:var(--s2);border-radius:2px;margin-top:14px}.cc-bar i{display:block;height:100%;border-radius:2px;background:linear-gradient(90deg,var(--acc),var(--acc3))}
+.btn{padding:7px 14px;border-radius:8px;cursor:pointer;font-size:.78rem;font-weight:500;border:none;transition:all .2s}
+.btn-p{background:var(--acc);color:#fff}.btn-p:hover{background:#9181f9}
+.btn-g{background:var(--s2);color:var(--txt2);border:1px solid var(--bdr)}.btn-g:hover{color:var(--txt);border-color:var(--acc)}
+.btn-g.on{background:var(--acc);border-color:var(--acc);color:#fff}
+.btn-sm{padding:5px 11px;font-size:.74rem}
+.btn-danger{background:rgba(247,106,106,.12);color:var(--err);border:1px solid rgba(247,106,106,.3)}.btn-danger:hover{background:rgba(247,106,106,.2)}
+/* CHAPTER VIEW */
+.back{display:inline-flex;align-items:center;gap:6px;color:var(--txt2);font-size:.8rem;cursor:pointer;padding:5px 11px;border-radius:7px;background:var(--s2);border:1px solid var(--bdr);margin-bottom:22px;transition:all .2s}
+.back:hover{color:var(--txt);border-color:var(--acc)}
+.cv h1{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:900;margin-bottom:6px}
+.cv .sub{color:var(--txt2);font-size:.85rem;margin-bottom:10px}
+.cv .srcl{font-size:.72rem;color:var(--txt3);font-family:'JetBrains Mono',monospace;margin-bottom:24px}
+.stabs{display:flex;gap:4px;margin-bottom:24px;flex-wrap:wrap}
+.stab{padding:7px 14px;border-radius:8px;cursor:pointer;font-size:.79rem;font-weight:500;color:var(--txt2);background:var(--s1);border:1px solid var(--bdr);transition:all .2s}
+.stab:hover{color:var(--txt)}
+.stab.on{background:var(--acc);color:#fff;border-color:var(--acc)}
+/* COURSE BLOCKS */
+.nb{background:var(--s1);border:1px solid var(--bdr);border-radius:12px;padding:22px;margin-bottom:14px}
+.nb h2{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;margin-bottom:12px;color:var(--txt)}
+.nb h3{font-size:.92rem;font-weight:600;color:var(--acc2);margin:16px 0 8px}
+.nb h4{font-size:.85rem;font-weight:600;color:var(--acc3);margin:12px 0 6px}
+.nb p{color:var(--txt2);line-height:1.7;margin-bottom:10px;font-size:.88rem}
+.nb ul,.nb ol{padding-left:20px;margin-bottom:10px}
+.nb li{color:var(--txt2);line-height:1.7;font-size:.88rem;margin-bottom:3px}
+.nb b,.nb strong{color:var(--txt)}
+.db{background:rgba(124,106,247,.07);border-left:3px solid var(--acc);padding:12px 16px;border-radius:0 8px 8px 0;margin:10px 0}
+.db .dt{font-weight:600;color:var(--acc);font-size:.84rem;margin-bottom:3px}
+.db .dd{color:var(--txt2);font-size:.86rem;line-height:1.6}
+.ab{background:rgba(247,162,106,.07);border-left:3px solid var(--acc2);padding:12px 16px;border-radius:0 8px 8px 0;margin:10px 0}
+.ab .an{font-weight:700;color:var(--acc2);font-size:.86rem;margin-bottom:3px}
+.ab .ai{color:var(--txt2);font-size:.84rem;line-height:1.6}
+.alertb{background:rgba(106,247,196,.07);border:1px solid rgba(106,247,196,.2);padding:10px 14px;border-radius:8px;margin:10px 0}
+.alertb p,.alertb{color:var(--acc3);font-size:.84rem;line-height:1.55}
+.alertb p{margin:0}
+.formula{font-family:'JetBrains Mono',monospace;background:var(--s2);border:1px solid var(--bdr);padding:10px 14px;border-radius:8px;font-size:.86rem;color:var(--acc3);margin:10px 0;overflow-x:auto}
+.warn-box{background:rgba(247,230,106,.07);border-left:3px solid var(--warn);padding:10px 14px;border-radius:0 8px 8px 0;margin:10px 0;color:var(--warn);font-size:.84rem;line-height:1.6}
+.ex-box{background:rgba(106,247,162,.05);border:1px dashed rgba(106,247,162,.3);padding:12px 16px;border-radius:10px;margin:10px 0}
+.ex-box .exh{font-size:.72rem;font-weight:700;color:var(--ok);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+.ex-box p,.ex-box li{color:var(--txt2);font-size:.85rem;line-height:1.6}
+.table-wrap{overflow-x:auto;margin:10px 0}
+table.dt{width:100%;border-collapse:collapse;font-size:.82rem}
+table.dt th{padding:8px 10px;text-align:left;color:var(--txt3);border-bottom:1px solid var(--bdr2);font-weight:600;text-transform:uppercase;font-size:.7rem;letter-spacing:.05em;background:var(--s2)}
+table.dt td{padding:7px 10px;border-bottom:1px solid var(--bdr);color:var(--txt2);vertical-align:top}
+table.dt td.n,table.dt th.n{text-align:right;font-family:'JetBrains Mono',monospace;white-space:nowrap}
+table.dt tr.tot td{color:var(--txt);font-weight:600;border-top:1px solid var(--bdr2)}
+/* JOURNAL */
+.jr{width:100%;border-collapse:collapse;font-size:.8rem;margin:10px 0;font-family:'JetBrains Mono',monospace}
+.jr td{padding:5px 8px;border-bottom:1px dashed var(--bdr);color:var(--txt2)}
+.jr td.cd{width:70px;color:var(--acc3)}.jr td.cc2{width:70px;color:var(--acc2)}
+.jr td.lib{font-family:'DM Sans',sans-serif}
+.jr td.lib.cr{padding-left:34px}
+.jr td.m{text-align:right;width:110px;white-space:nowrap}
+.jr tr.dt2 td{border-bottom:1px solid var(--bdr2);color:var(--txt3);font-family:'DM Sans',sans-serif;font-size:.74rem;text-align:center}
+.jr tr.lbl td{color:var(--txt3);font-style:italic;font-family:'DM Sans',sans-serif;font-size:.76rem}
+.jrw{overflow-x:auto;background:var(--s2);border:1px solid var(--bdr);border-radius:10px;padding:6px 10px;margin:10px 0}
+/* CHIPS LINKS */
+.lchips{display:flex;gap:7px;flex-wrap:wrap;margin:8px 0}
+.lchip{padding:5px 11px;border-radius:999px;font-size:.74rem;background:rgba(106,247,196,.08);border:1px solid rgba(106,247,196,.25);color:var(--acc3);cursor:pointer;transition:all .2s}
+.lchip:hover{background:rgba(106,247,196,.16)}
+.lchip.other{background:rgba(247,162,106,.08);border-color:rgba(247,162,106,.3);color:var(--acc2)}
+/* QUIZ */
+.qprog{margin-bottom:22px}
+.qpbar{height:3px;background:var(--s2);border-radius:2px;margin-bottom:7px}
+.qpfill{height:100%;background:var(--acc);border-radius:2px;transition:width .4s ease}
+.qptxt{font-size:.74rem;color:var(--txt3);font-family:'JetBrains Mono',monospace;display:flex;justify-content:space-between}
+.qcard{background:var(--s1);border:1px solid var(--bdr);border-radius:14px;padding:28px;margin-bottom:18px}
+.qnum{font-size:.68rem;font-family:'JetBrains Mono',monospace;color:var(--acc);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
+.qtxt{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;line-height:1.4;margin-bottom:24px}
+.qopts{display:flex;flex-direction:column;gap:9px}
+.qopt{background:var(--s2);border:1px solid var(--bdr);border-radius:9px;padding:12px 16px;cursor:pointer;transition:all .2s;font-size:.88rem;line-height:1.4;text-align:left;color:var(--txt)}
+.qopt:hover:not([disabled]){border-color:var(--acc);background:rgba(124,106,247,.1)}
+.qopt.ok{background:rgba(106,247,162,.1);border-color:var(--ok);color:var(--ok)}
+.qopt.err{background:rgba(247,106,106,.1);border-color:var(--err);color:var(--err)}
+.qexp{background:rgba(124,106,247,.08);border:1px solid rgba(124,106,247,.2);border-radius:9px;padding:14px 16px;margin-top:14px;font-size:.86rem;color:var(--txt2);line-height:1.6;display:none}
+.qexp.on{display:block}
+.qnav{display:flex;justify-content:space-between;align-items:center;margin-top:16px;gap:10px;flex-wrap:wrap}
+.score-card{background:var(--s1);border:1px solid var(--bdr);border-radius:14px;padding:40px;text-align:center;display:none}
+.score-card.on{display:block}
+.score-big{font-family:'Playfair Display',serif;font-size:4.5rem;font-weight:900;background:linear-gradient(135deg,var(--acc),var(--acc3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1}
+.score-lbl{color:var(--txt2);margin:10px 0 24px;font-size:.9rem}
+.smart{background:var(--s1);border:1px solid var(--bdr);border-radius:16px;padding:24px}
+.smart h2{font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:6px}
+.smart>p{color:var(--txt2);font-size:.85rem;margin-bottom:10px;line-height:1.6}
+.smart-badge{display:inline-block;font-size:.72rem;padding:3px 10px;border-radius:999px;background:rgba(106,247,196,.1);color:var(--acc3);border:1px solid rgba(106,247,196,.25);margin-bottom:16px}
+.ssec{background:var(--s2);border:1px solid var(--bdr);border-radius:12px;padding:16px;margin-bottom:12px}
+.ssec-t{display:flex;justify-content:space-between;font-weight:600;font-size:.9rem;margin-bottom:12px;gap:10px;flex-wrap:wrap}
+.ssec-t span{font-weight:400;font-size:.72rem;color:var(--txt3)}
+.chk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px}
+.chk{display:flex;gap:9px;align-items:center;padding:10px 12px;border-radius:10px;background:var(--s3);border:1px solid var(--bdr);cursor:pointer;font-size:.8rem;color:var(--txt2);line-height:1.3}
+.chk.on{border-color:var(--acc);color:var(--txt);background:rgba(124,106,247,.12)}
+.chk input{accent-color:var(--acc)}
+.chk-mat{font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:var(--txt3);margin:10px 0 6px;font-weight:700}
+.pillrow{display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+.pill{padding:6px 12px;border-radius:999px;border:1px solid var(--bdr);background:var(--s3);color:var(--txt2);font-size:.76rem;cursor:pointer}
+.pill.on{background:var(--acc);border-color:var(--acc);color:#fff}
+.pill span{opacity:.6;margin-left:4px}
+.num-in{width:90px;padding:7px 10px;border-radius:9px;background:var(--bg);border:1px solid var(--bdr);color:var(--txt);font-family:inherit}
+.counter{font-size:.8rem;color:var(--acc3);margin:10px 0}
+.review-item{background:var(--s2);border:1px solid var(--bdr);border-radius:10px;padding:14px;margin-bottom:9px;text-align:left}
+.review-item.ok{border-left:3px solid var(--ok)}.review-item.ko{border-left:3px solid var(--err)}
+.review-head{display:flex;justify-content:space-between;font-size:.72rem;color:var(--txt3);margin-bottom:6px;gap:8px}
+.review-q{font-size:.88rem;margin-bottom:6px}
+.review-a{font-size:.8rem;color:var(--txt2);line-height:1.5}
+/* FLASHCARDS */
+.fc-controls{display:flex;gap:8px;margin-bottom:18px;align-items:center;flex-wrap:wrap}
+.fc-stat{margin-left:auto;font-size:.78rem;color:var(--txt3);font-family:'JetBrains Mono',monospace}
+.fc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:13px}
+.fc{background:var(--s1);border:1px solid var(--bdr);border-radius:12px;padding:22px;cursor:pointer;transition:all .2s;min-height:150px;display:flex;flex-direction:column}
+.fc:hover{border-color:var(--acc);transform:translateY(-2px)}
+.fc.known{border-color:rgba(106,247,162,.35)}
+.fc-badge{font-size:.65rem;font-family:'JetBrains Mono',monospace;color:var(--txt3);text-transform:uppercase;letter-spacing:.08em;margin-bottom:9px}
+.fc-term{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;margin-bottom:6px;line-height:1.35}
+.fc-hint{font-size:.72rem;color:var(--txt3);margin-top:auto;padding-top:10px}
+.fc-def{font-size:.85rem;color:var(--txt2);line-height:1.6}
+.fc .back2{display:none}.fc.flipped .front2{display:none}.fc.flipped .back2{display:flex;flex-direction:column;flex:1}
+.fc-known{padding:5px 11px;border-radius:6px;font-size:.72rem;cursor:pointer;border:1px solid var(--bdr);background:var(--s2);color:var(--txt2);margin-top:12px;align-self:flex-start}
+.fc-known.on{background:rgba(106,247,162,.12);border-color:var(--ok);color:var(--ok)}
+.more{display:flex;justify-content:center;margin-top:18px}
+/* SEARCH */
+.si-wrap{position:relative;margin-bottom:14px}
+.si-icon{position:absolute;left:15px;top:50%;transform:translateY(-50%);color:var(--txt3)}
+.si{width:100%;padding:14px 16px 14px 44px;background:var(--s1);border:1px solid var(--bdr);border-radius:11px;color:var(--txt);font-family:inherit;font-size:.92rem;outline:none;transition:border .2s}
+.si:focus{border-color:var(--acc)}
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}
+.fchip{padding:5px 12px;border-radius:20px;cursor:pointer;font-size:.74rem;border:1px solid var(--bdr);background:var(--s1);color:var(--txt2);transition:all .2s}
+.fchip.on{background:var(--acc2);color:#111;border-color:var(--acc2)}
+.sr{background:var(--s1);border:1px solid var(--bdr);border-radius:11px;padding:15px 17px;margin-bottom:9px;cursor:pointer;transition:all .2s}
+.sr:hover{border-color:var(--acc)}
+.sr-top{display:flex;gap:8px;align-items:center;margin-bottom:5px;flex-wrap:wrap}
+.sr-type{font-size:.64rem;font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.08em;color:var(--acc);padding:2px 7px;border-radius:4px;background:rgba(124,106,247,.12)}
+.sr-ch{font-size:.7rem;color:var(--txt3)}
+.sr-t{font-weight:600;font-size:.92rem;margin-bottom:3px}
+.sr-d{font-size:.82rem;color:var(--txt2);line-height:1.55}
+mark{background:rgba(247,230,106,.25);color:var(--warn);border-radius:3px;padding:0 2px}
+.no-res{text-align:center;color:var(--txt3);padding:40px 10px;font-size:.88rem}
+/* AUTHORS */
+.ag{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.ac{background:var(--s1);border:1px solid var(--bdr);border-radius:12px;padding:18px;cursor:pointer;transition:all .2s}
+.ac:hover{border-color:var(--acc2);transform:translateY(-2px)}
+.ac-kind{font-size:.64rem;font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.08em;color:var(--txt3);margin-bottom:6px}
+.ac-name{font-family:'Playfair Display',serif;font-weight:700;font-size:1.02rem;margin-bottom:3px}
+.ac-dates{font-size:.72rem;color:var(--txt3);font-family:'JetBrains Mono',monospace;margin-bottom:8px}
+.ac-idea{font-size:.8rem;color:var(--txt2);line-height:1.5}
+.ac-c{display:inline-block;font-size:.68rem;padding:2px 8px;border-radius:4px;background:rgba(247,162,106,.12);color:var(--acc2);margin-top:9px}
+.src-flag{display:inline-block;font-size:.62rem;padding:2px 7px;border-radius:4px;margin-left:6px;vertical-align:middle}
+.src-flag.cours{background:rgba(106,247,162,.12);color:var(--ok)}.src-flag.compl{background:rgba(136,144,168,.15);color:var(--txt2)}
+/* MODAL */
+.modal-ov{display:none;position:fixed;inset:0;z-index:300;background:rgba(0,0,0,.75);backdrop-filter:blur(10px);align-items:center;justify-content:center;padding:20px}
+.modal-ov.on{display:flex}
+.modal{background:var(--s1);border:1px solid var(--bdr2);border-radius:18px;padding:28px;max-width:600px;width:100%;max-height:84vh;overflow-y:auto}
+.modal h2{font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:5px}
+.m-dates{font-size:.76rem;color:var(--txt3);font-family:'JetBrains Mono',monospace;margin-bottom:13px}
+.m-courant{font-size:.74rem;padding:2px 9px;border-radius:4px;background:rgba(247,162,106,.12);color:var(--acc2);display:inline-block;margin-bottom:14px}
+.modal p{color:var(--txt2);font-size:.87rem;line-height:1.7;margin-bottom:10px}
+.modal h3{font-size:.76rem;font-weight:600;color:var(--txt3);text-transform:uppercase;letter-spacing:.06em;margin:14px 0 8px}
+.m-oe{font-size:.84rem;color:var(--acc2);font-style:italic;margin-bottom:4px}
+.phrase-box{background:rgba(106,247,196,.06);border:1px solid rgba(106,247,196,.15);border-radius:8px;padding:12px 14px;margin-top:14px;font-size:.84rem;color:var(--acc3);line-height:1.6}
+.mc{float:right;background:var(--s2);border:1px solid var(--bdr);border-radius:7px;padding:5px 11px;cursor:pointer;color:var(--txt2);font-size:.78rem}
+/* SUBJECTS */
+.subj-hero{background:linear-gradient(135deg,rgba(124,106,247,.14),rgba(106,247,196,.06));border:1px solid var(--bdr);border-radius:22px;padding:30px;margin-bottom:20px}
+.subj-hero h1{font-family:'Playfair Display',serif;font-size:2rem;line-height:1.15;margin-bottom:10px}
+.subj-hero p{color:var(--txt2);font-size:.9rem;line-height:1.7;max-width:820px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.toolbar .si{flex:1;min-width:220px;padding-left:16px}
+.tbtn{padding:0 16px;min-height:44px;border-radius:11px;border:1px solid var(--bdr);background:var(--s1);color:var(--txt);font-weight:600;font-size:.82rem;cursor:pointer}
+.tbtn:hover{border-color:var(--acc)}
+.sch-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin:14px 0 24px}
+.sch{background:var(--s1);border:1px solid var(--bdr);border-radius:14px;padding:18px;cursor:pointer;position:relative;overflow:hidden;transition:all .2s}
+.sch:hover{border-color:var(--acc);transform:translateY(-2px)}
+.sch.on{border-color:var(--acc);background:rgba(124,106,247,.1)}
+.sch .k{font-size:.7rem;color:var(--acc2);font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.sch .t{font-weight:700;margin:6px 0 4px;font-size:.95rem;line-height:1.3}
+.sch .c{font-size:.78rem;color:var(--txt2)}
+.slist{display:grid;gap:10px}
+.sitem{background:var(--s1);border:1px solid var(--bdr);border-radius:12px;padding:16px 18px;cursor:pointer;transition:all .2s;display:flex;gap:14px;align-items:flex-start}
+.sitem:hover{border-color:var(--acc)}
+.sitem .num{font-family:'JetBrains Mono',monospace;font-size:.74rem;color:var(--txt3);min-width:34px;padding-top:3px}
+.sitem .body{flex:1}
+.sitem .tt{font-weight:600;font-size:.92rem;line-height:1.4;margin-bottom:6px}
+.sitem .meta{display:flex;gap:6px;flex-wrap:wrap}
+.sbadge{font-size:.66rem;padding:2px 8px;border-radius:999px;background:var(--s2);border:1px solid var(--bdr);color:var(--txt2)}
+.sbadge.type{color:var(--acc);border-color:rgba(124,106,247,.35)}
+.sbadge.done{color:var(--ok);border-color:rgba(106,247,162,.35)}
+.sd{background:var(--s1);border:1px solid var(--bdr);border-radius:16px;padding:26px}
+.sd h2{font-family:'Playfair Display',serif;font-size:1.4rem;line-height:1.3;margin:8px 0 14px}
+.sd-sec{margin-top:18px}
+.sd-sec>.l{font-size:.72rem;color:var(--acc);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+.enonce{background:var(--s2);border:1px solid var(--bdr);border-radius:12px;padding:16px 18px}
+.enonce p,.enonce li,.corr p,.corr li,.comm p,.comm li{color:var(--txt2);font-size:.87rem;line-height:1.7;margin-bottom:6px}
+.enonce ol,.enonce ul,.corr ol,.corr ul,.comm ul{padding-left:20px}
+.corr{display:none;margin-top:10px}
+.corr.on{display:block}
+.corr h3{font-size:.95rem;color:var(--acc2);margin:18px 0 8px;font-weight:700}
+.corr h4{font-size:.86rem;color:var(--acc3);margin:12px 0 6px}
+.comm{background:rgba(247,162,106,.06);border-left:3px solid var(--acc2);border-radius:0 10px 10px 0;padding:12px 16px}
+/* METHOD */
+.meth-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.meth{background:var(--s1);border:1px solid var(--bdr);border-radius:14px;padding:20px}
+.meth h3{font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:10px}
+.meth ol,.meth ul{padding-left:20px}
+.meth li{color:var(--txt2);font-size:.85rem;line-height:1.65;margin-bottom:5px}
+.meth p{color:var(--txt2);font-size:.85rem;line-height:1.65;margin-bottom:8px}
+.meth .trap{margin-top:10px;background:rgba(247,106,106,.07);border-left:3px solid var(--err);padding:9px 12px;border-radius:0 8px 8px 0;font-size:.8rem;color:#f5a3a3;line-height:1.55}
+/* GRAPHS */
+.gr-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px}
+.gr{background:var(--s1);border:1px solid var(--bdr);border-radius:14px;padding:18px;display:flex;flex-direction:column}
+.gr .k{font-size:.68rem;color:var(--txt3);font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+.gr h3{font-family:'Playfair Display',serif;font-size:1.05rem;margin-bottom:10px}
+.gr .svgw{background:#0f131b;border:1px solid var(--bdr);border-radius:10px;padding:8px}
+.gr svg{width:100%;height:auto;display:block}
+.gr .exp{display:none;margin-top:12px;font-size:.83rem;color:var(--txt2);line-height:1.65}
+.gr .exp.on{display:block}
+.gr .exp li{margin-left:18px;margin-bottom:3px}
+.gr .gb{margin-top:12px;align-self:flex-start}
+/* MAPS */
+.map-switch{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 20px}
+.map-btn{padding:9px 14px;border-radius:10px;border:1px solid var(--bdr);background:var(--s1);color:var(--txt2);cursor:pointer;font-size:.8rem;transition:all .2s}
+.map-btn:hover{border-color:var(--acc);color:var(--txt)}
+.map-btn.on{background:var(--acc);color:#fff;border-color:var(--acc)}
+.map-grid{display:grid;grid-template-columns:1.15fr .95fr;gap:16px}
+.map-card{background:var(--s1);border:1px solid var(--bdr);border-radius:14px;padding:22px}
+.map-card h2{font-family:'Playfair Display',serif;font-size:1.25rem;margin-bottom:8px}
+.map-card>p{color:var(--txt2);font-size:.86rem;line-height:1.6;margin-bottom:14px}
+.map-core{display:flex;justify-content:center;margin:10px 0 18px}
+.map-core-node{padding:12px 18px;border-radius:14px;background:linear-gradient(135deg,var(--acc),var(--acc3));color:#0b0d11;font-weight:700;text-align:center;min-width:220px}
+.branch-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.branch{background:var(--s2);border:1px solid var(--bdr);border-radius:12px;padding:14px}
+.branch-title{font-size:.85rem;font-weight:700;color:var(--acc2);margin-bottom:8px}
+.branch ul{padding-left:18px}
+.branch li{font-size:.81rem;color:var(--txt2);line-height:1.55;margin-bottom:4px}
+.schema-list{display:grid;gap:12px}
+.schema-item{background:var(--s2);border:1px solid var(--bdr);border-radius:12px;padding:14px}
+.schema-title{font-size:.88rem;font-weight:700;margin-bottom:10px}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.flow-node{padding:8px 11px;border-radius:10px;background:var(--s3);border:1px solid var(--bdr2);font-size:.77rem;color:var(--txt);line-height:1.35}
+.flow-arrow{color:var(--txt3);font-size:.82rem;font-weight:700}
+.schema-note{margin-top:10px;font-size:.78rem;color:var(--txt2);line-height:1.55;border-top:1px dashed var(--bdr);padding-top:10px}
+.vmap{margin-top:16px;background:var(--s1);border:1px solid var(--bdr);border-radius:14px;padding:16px;overflow-x:auto}
+.vmap svg{min-width:900px;width:100%;height:auto;display:block}
+/* FORMULAS / TIMELINE */
+.grid2{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.cardx{background:var(--s2);border:1px solid var(--bdr);border-radius:10px;padding:12px 14px}
+.cardx b{font-size:.86rem;color:var(--txt)}
+.cardx .f{font-family:'JetBrains Mono',monospace;font-size:.82rem;color:var(--acc3);margin-top:6px;line-height:1.5}
+.cardx .s-note{font-size:.78rem;color:var(--txt2);margin-top:6px;line-height:1.5}
+.tl{border-left:2px solid var(--bdr2);margin-left:8px;padding-left:18px}
+.tl-item{position:relative;margin-bottom:14px;color:var(--txt2);font-size:.86rem;line-height:1.6}
+.tl-item::before{content:'';position:absolute;left:-24px;top:7px;width:10px;height:10px;border-radius:50%;background:var(--acc)}
+.tl-item b{color:var(--acc2);font-family:'JetBrains Mono',monospace}
+/* PROGRESS */
+.prog-ov{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:13px;margin-bottom:28px}
+.pc{background:var(--s1);border:1px solid var(--bdr);border-radius:11px;padding:18px;text-align:center}
+.pc .pn{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:900;color:var(--acc)}
+.pc .pl{font-size:.7rem;color:var(--txt3);margin-top:3px;text-transform:uppercase;letter-spacing:.06em}
+.cp-item{background:var(--s1);border:1px solid var(--bdr);border-radius:11px;padding:14px 18px;margin-bottom:9px;display:flex;align-items:center;gap:14px;cursor:pointer;transition:all .2s}
+.cp-item:hover{border-color:var(--acc)}
+.cp-n{font-family:'JetBrains Mono',monospace;font-size:.74rem;color:var(--txt3);min-width:70px}
+.cp-info{flex:1}
+.cp-title{font-size:.86rem;font-weight:500;margin-bottom:6px}
+.cpbar{height:4px;background:var(--s2);border-radius:2px}
+.cpfill{height:100%;background:linear-gradient(90deg,var(--acc),var(--acc3));border-radius:2px}
+.cp-pct{font-size:.74rem;color:var(--txt3);font-family:'JetBrains Mono',monospace;min-width:92px;text-align:right}
+.hist{font-size:.8rem;color:var(--txt2);padding:8px 0;border-bottom:1px dashed var(--bdr);display:flex;justify-content:space-between;gap:10px}
+.save-box{background:var(--s1);border:1px solid var(--bdr);border-radius:14px;padding:20px;margin-top:22px}
+.save-box h3{font-size:.95rem;margin-bottom:6px}
+.save-box p{font-size:.82rem;color:var(--txt2);margin-bottom:12px;line-height:1.55}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--s3);border:1px solid var(--acc);color:var(--txt);padding:10px 18px;border-radius:10px;font-size:.84rem;z-index:400;display:none}
+.toast.on{display:block}
+@media(max-width:900px){.map-grid{grid-template-columns:1fr}.branch-grid{grid-template-columns:1fr}}
+@media(max-width:640px){
+ nav{padding:0 10px;gap:3px}.nt{padding:5px 7px;font-size:.72rem}
+ .hero,.msec,.wrap,.wrap-n{padding-left:16px;padding-right:16px}
+ .cg,.gr-grid,.meth-grid{grid-template-columns:1fr}
+ .sd,.qcard{padding:18px}
+}
+</style>
+</head>
+<body>
+<nav id="nav">
+  <div class="nav-logo" onclick="showPg('home')">Gestiosphère</div>
+  <button class="nt on" data-pg="home" onclick="showPg('home')">🏠</button>
+  <button class="nt" data-pg="quiz" onclick="showPg('quiz')">🎯 Quiz</button>
+  <button class="nt" data-pg="fc" onclick="showPg('fc')">🃏 Fiches</button>
+  <button class="nt" data-pg="search" onclick="showPg('search')">🔍 Recherche</button>
+  <button class="nt" data-pg="authors" onclick="showPg('authors')">👤 Auteurs & ouvrages</button>
+  <button class="nt" data-pg="subjects" onclick="showPg('subjects')">📝 Sujets</button>
+  <button class="nt" data-pg="method" onclick="showPg('method')">🧠 Méthode</button>
+  <button class="nt" data-pg="graphs" onclick="showPg('graphs')">📈 Courbes & schémas</button>
+  <button class="nt" data-pg="maps" onclick="showPg('maps')">🗺️ Cartes</button>
+  <button class="nt" data-pg="formulas" onclick="showPg('formulas')">📐 Formules</button>
+  <button class="nt" data-pg="timeline" onclick="showPg('timeline')">🕰️ Repères</button>
+  <button class="nt" data-pg="prog" onclick="showPg('prog')">📊 Progrès</button>
+</nav>
+<main>
+<div class="pg on" id="pg-home">
+  <div class="hero">
+    <div class="hero-tag">📚 Licence 3 — Économie & gestion · Toutes les matières</div>
+    <h1>Tes cours de L3,<br><em>réunis en un seul endroit.</em></h1>
+    <div class="hero-sub">Cours complets tirés de tes documents, quiz, fiches, sujets corrigés avec les chapitres à mobiliser, courbes, cartes mentales et formules. Ta progression est sauvegardée automatiquement, séparément d'Écosphère.</div>
+    <div class="stats-row" id="home-stats"></div>
+  </div>
+  <div class="msec"><div class="mchips" id="home-mchips"></div></div>
+  <div id="home-sections"></div>
+</div>
+
+<div class="pg" id="pg-chapter"><div class="wrap-n cv" id="cv"></div></div>
+
+<div class="pg" id="pg-quiz"><div class="wrap-n">
+  <div class="back" onclick="showPg('home')">← Retour</div>
+  <h1 class="ptitle">Quiz</h1>
+  <div class="psub">Questions tirées du contenu exact de tes cours · QCM, vrai/faux, comptes, calculs · questions ratées sauvegardées pour les retravailler.</div>
+  <div id="quiz-sel"></div>
+  <div id="quiz-area" style="display:none">
+    <div id="qprog-area" class="qprog"><div class="qpbar"><div class="qpfill" id="qpfill"></div></div><div class="qptxt"><span id="qptxt"></span><span id="qscore"></span></div></div>
+    <div id="quiz-card"></div>
+    <div class="score-card" id="quiz-score"></div>
+  </div>
+</div></div>
+
+<div class="pg" id="pg-fc"><div class="wrap">
+  <div class="back" onclick="showPg('home')">← Retour</div>
+  <h1 class="ptitle">Fiches</h1>
+  <div class="psub">Clique sur une fiche pour la retourner · marque-la « maîtrisée » · sauvegarde automatique.</div>
+  <div class="mchips" id="fc-mchips"></div>
+  <div class="fc-controls" id="fc-controls"></div>
+  <div class="fc-grid" id="fc-grid"></div>
+  <div class="more" id="fc-more"></div>
+</div></div>
+
+<div class="pg" id="pg-search"><div class="wrap-n">
+  <h1 class="ptitle">Recherche</h1>
+  <div class="psub">Cherche une notion, un compte, un auteur, une formule, un sujet ou un passage de cours, dans toutes les matières.</div>
+  <div class="si-wrap"><span class="si-icon">🔍</span><input class="si" id="si" type="text" placeholder="Ex : amortissement dégressif, 681, TMS, matrice BCG, élasticité…" oninput="doSearch()"></div>
+  <div class="mchips" id="search-mchips"></div>
+  <div class="filters" id="search-filters"></div>
+  <div id="search-res"><div class="no-res">Commence à taper…</div></div>
+</div></div>
+
+<div class="pg" id="pg-authors"><div class="wrap">
+  <h1 class="ptitle">Auteurs & ouvrages</h1>
+  <div class="psub">Les auteurs, ouvrages et textes de référence de chaque matière. Le badge <span class="src-flag cours">cité dans ton cours</span> signale ce qui apparaît dans tes documents, le badge <span class="src-flag compl">repère complémentaire</span> ce qui aide à situer les notions.</div>
+  <div class="si-wrap"><span class="si-icon">🔍</span><input class="si" id="asi" type="text" placeholder="Rechercher un auteur, un ouvrage, une notion…" oninput="renderAuthors()"></div>
+  <div class="mchips" id="auth-mchips"></div>
+  <div class="ag" id="ag"></div>
+</div></div>
+
+<div class="pg" id="pg-subjects"><div class="wrap" id="subj-root"></div></div>
+<div class="pg" id="pg-method"><div class="wrap">
+  <h1 class="ptitle">Méthode</h1>
+  <div class="psub">Comment traiter les exercices et les sujets de chaque matière : étapes, réflexes et pièges classiques.</div>
+  <div class="mchips" id="meth-mchips"></div>
+  <div id="meth-body"></div>
+</div></div>
+<div class="pg" id="pg-graphs"><div class="wrap">
+  <h1 class="ptitle">Courbes & schémas</h1>
+  <div class="psub">Les graphiques et schémas à savoir refaire, avec leur explication. Dessinés d'après tes cours.</div>
+  <div class="toolbar"><input class="si" id="gsi" placeholder="Rechercher une courbe, une notion…" oninput="renderGraphs()"><button class="tbtn" onclick="randomGraph()">🎲 Au hasard</button></div>
+  <div class="mchips" id="gr-mchips"></div>
+  <div class="gr-grid" id="gr-grid"></div>
+</div></div>
+<div class="pg" id="pg-maps"><div class="wrap">
+  <h1 class="ptitle">Cartes mentales & schémas</h1>
+  <div class="psub">Une carte mentale par chapitre et les chaînes logiques à retenir.</div>
+  <div class="mchips" id="map-mchips"></div>
+  <div class="map-switch" id="map-switch"></div>
+  <div id="map-body"></div>
+</div></div>
+<div class="pg" id="pg-formulas"><div class="wrap">
+  <h1 class="ptitle">📐 Formules & règles clés</h1>
+  <div class="psub">Formules, règles de calcul et schémas d'écritures, par matière et par chapitre.</div>
+  <div class="mchips" id="form-mchips"></div>
+  <div id="form-body"></div>
+</div></div>
+<div class="pg" id="pg-timeline"><div class="wrap-n">
+  <h1 class="ptitle">🕰️ Repères</h1>
+  <div class="psub">Dates, textes et auteurs qui permettent de situer les notions.</div>
+  <div class="mchips" id="tl-mchips"></div>
+  <div id="tl-body"></div>
+</div></div>
+<div class="pg" id="pg-prog"><div class="wrap-n">
+  <h1 class="ptitle">Mon progrès</h1>
+  <div class="psub">Sauvegarde automatique dans ce navigateur, séparée de celle d'Écosphère.</div>
+  <div class="prog-ov" id="prog-ov"></div>
+  <div id="prog-body"></div>
+</div></div>
+</main>
+<div class="modal-ov" id="amodal" onclick="if(event.target===this)closeModal()"><div class="modal" id="amodal-in"></div></div>
+<div class="toast" id="toast"></div>
+<input type="file" id="import-file" accept=".json,application/json" style="display:none" onchange="importSave(this)">
+
+<script>
+const GS_DATA = /*__GS_DATA__*/null;
+</script>
+<script>
+(function(){
+'use strict';
+const APP='gestiosphere', SKEY='gs_state', FKEY='gs_failed_questions';
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const norm=s=>String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[’']/g,' ').replace(/[^a-z0-9]+/g,' ').trim();
+const strip=h=>String(h||'').replace(/<[^>]+>/g,' ').replace(/&nbsp;/g,' ').replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/\s+/g,' ').trim();
+const shuffle=a=>{const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;};
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+function toast(t){const e=$('toast');e.textContent=t;e.classList.add('on');clearTimeout(toast._t);toast._t=setTimeout(()=>e.classList.remove('on'),2200);}
+
+/* ---------- STATE (sauvegarde propre à Gestiosphère) ---------- */
+const DEF_STATE={v:1,app:APP,known:{},subjDone:{},quizHist:[],mat:{},lastCh:null};
+let STATE;
+function loadState(){try{const s=JSON.parse(localStorage.getItem(SKEY)||'null');STATE=Object.assign({},DEF_STATE,s&&s.app===APP?s:{});}catch(e){STATE=Object.assign({},DEF_STATE);}
+ ['known','subjDone','mat'].forEach(k=>{if(!STATE[k]||typeof STATE[k]!=='object')STATE[k]={};}); if(!Array.isArray(STATE.quizHist))STATE.quizHist=[];}
+function saveState(){try{localStorage.setItem(SKEY,JSON.stringify(STATE));}catch(e){}}
+function getFailed(){try{const f=JSON.parse(localStorage.getItem(FKEY)||'{}');return f&&typeof f==='object'?f:{};}catch(e){return {};}}
+function setFailed(f){try{localStorage.setItem(FKEY,JSON.stringify(f));}catch(e){}}
+loadState();
+
+/* ---------- DATA ---------- */
+const D=GS_DATA||{matieres:[]};
+const MATS=D.matieres;
+const MAT={};MATS.forEach(m=>MAT[m.id]=m);
+const CH={};const CHS=[];
+MATS.forEach(m=>(m.chapitres||[]).forEach(c=>{c.mat=m.id;CH[c.id]=c;CHS.push(c);}));
+const activeMats=()=>MATS.filter(m=>(m.chapitres||[]).length);
+const chLabel=id=>{const c=CH[id];if(!c)return id;return MAT[c.mat].court+' · Ch.'+c.num;};
+const chFull=id=>{const c=CH[id];if(!c)return id;return MAT[c.mat].court+' · Ch.'+c.num+' — '+c.titre;};
+const matDot=m=>`<span class="mdot" style="background:${m.couleur}"></span>`;
+
+// notions (définitions)
+const NOTIONS=[];CHS.forEach(c=>(c.notions||[]).forEach((n,i)=>NOTIONS.push({id:c.id+'-n'+i,mat:c.mat,ch:c.id,term:n.term,def:n.def})));
+// auteurs
+const AUTHORS=[];MATS.forEach(m=>(m.auteurs||[]).forEach((a,i)=>AUTHORS.push(Object.assign({id:m.id+'-a'+i,mat:m.id},a))));
+// formules
+const FORMULES=[];MATS.forEach(m=>(m.formules||[]).forEach((g,gi)=>(g.items||[]).forEach((f,i)=>FORMULES.push(Object.assign({id:m.id+'-f'+gi+'-'+i,mat:m.id,ch:g.ch,groupe:g.titre},f)))));
+// comptes
+const COMPTES=[];MATS.forEach(m=>(m.comptes||[]).forEach(c=>COMPTES.push(Object.assign({mat:m.id},c))));
+// sujets
+const SUJETS=[];MATS.forEach(m=>(m.sujets||[]).forEach(s=>{s.mat=m.id;SUJETS.push(s);}));
+// courbes
+const GRAPHS=[];MATS.forEach(m=>(m.courbes||[]).forEach(g=>{g.mat=m.id;GRAPHS.push(g);}));
+
+/* ---------- FICHES (flashcards) ---------- */
+const FC=[];
+NOTIONS.forEach(n=>FC.push({id:'fc-'+n.id,mat:n.mat,ch:n.ch,kind:'Définition',front:n.term,back:n.def}));
+CHS.forEach(c=>(c.fiches||[]).forEach((f,i)=>FC.push({id:'fc-'+c.id+'-x'+i,mat:c.mat,ch:c.id,kind:f.kind||'Question',front:f.q,back:f.a})));
+COMPTES.forEach(c=>FC.push({id:'fc-cpt-'+c.num,mat:c.mat,ch:c.ch,kind:'Compte',front:'Compte '+c.num,back:c.lib+(c.note?' — '+c.note:'')}));
+FORMULES.forEach(f=>FC.push({id:'fc-'+f.id,mat:f.mat,ch:f.ch,kind:'Formule',front:f.t,back:f.f+(f.note?' — '+f.note:'')}));
+AUTHORS.forEach(a=>FC.push({id:'fc-'+a.id,mat:a.mat,ch:(a.chapitres||[])[0],kind:'Auteur / ouvrage',front:a.nom+(a.oeuvres&&a.oeuvres.length?' — à retenir':''),back:a.idee+(a.oeuvres&&a.oeuvres.length?' · '+a.oeuvres.join(' ; '):'')}));
+
+/* ---------- QUIZ BANK ---------- */
+function mkQ(o){return Object.assign({type:'qcm'},o);}
+const QBANK=[];
+CHS.forEach(c=>(c.quiz||[]).forEach((q,i)=>QBANK.push(mkQ(Object.assign({id:c.id+'-q'+i,mat:c.mat,ch:c.id,src:'cours'},q)))));
+// questions générées depuis les définitions (distracteurs pris dans la même matière)
+NOTIONS.forEach(n=>{
+ const pool=NOTIONS.filter(x=>x.mat===n.mat&&x.term!==n.term&&norm(x.def)!==norm(n.def));
+ if(pool.length<3)return;
+ const same=pool.filter(x=>x.ch===n.ch), other=pool.filter(x=>x.ch!==n.ch);
+ const dis=shuffle(same).concat(shuffle(other)).slice(0,3);
+ QBANK.push({id:n.id+'-gd',mat:n.mat,ch:n.ch,type:'qcm',tag:'définition',src:'gen',q:'Quelle notion correspond à cette définition : « '+n.def+' » ?',opts:[n.term,...dis.map(x=>x.term)],ans:0,exp:n.term+' : '+n.def});
+ QBANK.push({id:n.id+'-gt',mat:n.mat,ch:n.ch,type:'qcm',tag:'définition',src:'gen',q:'Que désigne « '+n.term+' » ?',opts:[n.def,...dis.map(x=>x.def)],ans:0,exp:n.term+' : '+n.def});
+});
+COMPTES.forEach(c=>{
+ const pool=COMPTES.filter(x=>x.mat===c.mat&&x.num!==c.num&&x.lib!==c.lib);
+ if(pool.length<3)return;
+ const near=pool.filter(x=>x.num[0]===c.num[0]);const dis=shuffle(near).concat(shuffle(pool.filter(x=>x.num[0]!==c.num[0]))).slice(0,3);
+ QBANK.push({id:'cpt-'+c.num,mat:c.mat,ch:c.ch,type:'qcm',tag:'compte',src:'gen',q:'Quel compte enregistre : « '+c.lib+' » ?',opts:[c.num,...dis.map(x=>x.num)],ans:0,exp:c.num+' — '+c.lib+(c.note?'. '+c.note:'')});
+});
+const QTAGS=[['qcm','QCM'],['vf','Vrai / faux'],['définition','Définitions'],['compte','Comptes'],['calcul','Calculs'],['mécanisme','Mécanismes']];
+QBANK.forEach(q=>{q.tags=new Set([q.type==='vf'?'vf':'qcm']);if(q.tag)String(q.tag).split(',').forEach(t=>q.tags.add(t.trim()));});
+
+/* ---------- NAVIGATION ---------- */
+let CUR_PG='home';
+window.showPg=function(id){document.querySelectorAll('.pg').forEach(p=>p.classList.remove('on'));const p=$('pg-'+id);if(p)p.classList.add('on');
+ document.querySelectorAll('#nav .nt').forEach(b=>b.classList.toggle('on',b.dataset.pg===id));CUR_PG=id;window.scrollTo(0,0);
+ const r={home:renderHome,quiz:renderQuizSel,fc:renderFC,search:initSearch,authors:renderAuthors,subjects:renderSubjects,method:renderMethod,graphs:renderGraphs,maps:renderMaps,formulas:renderFormulas,timeline:renderTimeline,prog:renderProg}[id];if(r)r();};
+
+// sélecteur de matière partagé par page
+function matChips(el,key,cb,withAll=true){const cur=STATE.mat[key]||'all';const all=withAll?[{id:'all',nom:'Toutes',couleur:'#8890a8'}]:[];
+ $(el).innerHTML=[...all,...MATS].map(m=>{const dis=m.id!=='all'&&!(m.chapitres||[]).length;return `<button class="mchip ${cur===m.id?'on':''} ${dis?'dis':''}" data-m="${m.id}">${m.id==='all'?'':matDot(m)}${esc(m.nom)}${dis?' · à venir':''}</button>`;}).join('');
+ $(el).querySelectorAll('.mchip').forEach(b=>b.onclick=()=>{STATE.mat[key]=b.dataset.m;saveState();matChips(el,key,cb,withAll);cb();});return cur;}
+const curMat=key=>STATE.mat[key]||'all';
+const inMat=(key,m)=>{const c=curMat(key);return c==='all'||c===m;};
+
+/* ---------- HOME ---------- */
+function chProgress(chId){const cards=FC.filter(f=>f.ch===chId);if(!cards.length)return 0;return Math.round(cards.filter(f=>STATE.known[f.id]).length/cards.length*100);}
+function renderHome(){
+ const nCh=CHS.length;
+ $('home-stats').innerHTML=[[activeMats().length+' / '+MATS.length,'Matières'],[nCh,'Chapitres'],[QBANK.length,'Questions'],[FC.length,'Fiches'],[SUJETS.length,'Sujets corrigés'],[AUTHORS.length,'Auteurs & ouvrages']].map(([n,l])=>`<div class="stat"><div class="n">${n}</div><div class="l">${l}</div></div>`).join('');
+ matChips('home-mchips','home',renderHome);
+ $('home-sections').innerHTML=MATS.filter(m=>inMat('home',m.id)).map(m=>{
+  const chs=m.chapitres||[];
+  const cards=chs.length?chs.map(c=>`<div class="cc" style="--mc:${m.couleur}" onclick="openCh('${c.id}')">
+    <div class="cc-num">// ${esc(m.court.toUpperCase())} · CHAPITRE ${String(c.num).padStart(2,'0')}</div>
+    <div class="cc-title">${esc(c.titre)}</div><div class="cc-desc">${esc(c.desc||'')}</div>
+    <div class="cc-tags">${(c.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div>
+    <div class="cc-btns"><button class="btn btn-p" onclick="event.stopPropagation();openCh('${c.id}')">📖 Cours</button><button class="btn btn-g" onclick="event.stopPropagation();startQuiz(['${c.id}'])">🎯 Quiz</button><button class="btn btn-g" onclick="event.stopPropagation();openSubjectsFor('${c.id}')">📝 Sujets</button></div>
+    <div class="cc-bar" title="Fiches maîtrisées"><i style="width:${chProgress(c.id)}%"></i></div></div>`).join('')
+   :`<div class="cc soon" style="--mc:${m.couleur}"><div class="cc-num">// ${esc(m.court.toUpperCase())}</div><div class="cc-title">${esc(m.nom)} — à venir</div><div class="cc-desc">${esc(m.attente||'Les documents de cette matière n\'ont pas encore été transmis. Elle apparaîtra ici dès qu\'ils seront intégrés.')}</div></div>`;
+  return `<div class="msec"><div class="msec-h"><h2>${matDot(m)}${esc(m.nom)}</h2><span class="src">${esc(m.sourcesResume||'')}</span></div><div class="cg">${cards}</div></div>`;}).join('');
+}
+
+/* ---------- CHAPTER ---------- */
+let CUR_CH=null;
+window.openCh=function(id,sect){const c=CH[id];if(!c)return;CUR_CH=id;STATE.lastCh=id;saveState();const m=MAT[c.mat];
+ const auth=AUTHORS.filter(a=>(a.chapitres||[]).includes(id));
+ const subj=SUJETS.filter(s=>s.ch===id||(s.mobiliser||[]).includes(id));
+ const links=chapterLinks(id);
+ $('cv').innerHTML=`<div class="back" onclick="showPg('home')">← Retour</div>
+ <div class="kicker">${matDot(m)}${esc(m.nom)} · Chapitre ${c.num}</div>
+ <h1>${esc(c.titre)}</h1><div class="sub">${esc(c.sous||'')}</div>
+ <div class="srcl">Sources : ${esc((c.sources||[]).join(' · '))}</div>
+ <div class="stabs">${[['cours','📖 Cours complet'],['notions','📌 Définitions ('+(c.notions||[]).length+')'],['auteurs','👤 Auteurs & ouvrages'],['methode','✏️ Méthode'],['sujets','📝 Sujets ('+subj.length+')'],['liens','🔗 Liens entre chapitres']].map(([k,l])=>`<button class="stab" data-s="${k}" onclick="showSect('${k}')">${l}</button>`).join('')}</div>
+ <div class="csect" id="sect-cours">${c.cours||''}</div>
+ <div class="csect" id="sect-notions">${(c.notions||[]).map(n=>`<div class="db"><div class="dt">${esc(n.term)}</div><div class="dd">${esc(n.def)}</div></div>`).join('')||'<div class="no-res">Aucune définition.</div>'}</div>
+ <div class="csect" id="sect-auteurs">${auth.length?auth.map(a=>`<div class="ab" style="cursor:pointer" onclick="openAuthor('${a.id}')"><div class="an">${esc(a.nom)} ${a.source==='cours'?'<span class="src-flag cours">cité dans ton cours</span>':'<span class="src-flag compl">repère complémentaire</span>'}</div><div class="ai">${esc(a.idee)}${a.oeuvres&&a.oeuvres.length?' — <i>'+esc(a.oeuvres.join(' ; '))+'</i>':''}</div></div>`).join(''):'<div class="no-res">Pas d\'auteur spécifique pour ce chapitre.</div>'}</div>
+ <div class="csect" id="sect-methode">${c.methode||'<div class="no-res">Voir l\'onglet Méthode.</div>'}</div>
+ <div class="csect" id="sect-sujets">${subj.length?`<div class="slist">${subj.map(s=>subjItem(s)).join('')}</div>`:'<div class="no-res">Aucun sujet pour ce chapitre.</div>'}</div>
+ <div class="csect" id="sect-liens">${links}</div>`;
+ showPg('chapter');showSect(sect||'cours');};
+window.showSect=function(k){document.querySelectorAll('#cv .csect').forEach(s=>s.style.display='none');const s=$('sect-'+k);if(s)s.style.display='block';document.querySelectorAll('#cv .stab').forEach(b=>b.classList.toggle('on',b.dataset.s===k));};
+function chapterLinks(id){const c=CH[id];
+ const expl=(c.liens||[]).map(l=>`<div class="ab"><div class="an"><span class="lchip ${CH[l.ch]&&CH[l.ch].mat!==c.mat?'other':''}" onclick="openCh('${l.ch}')">${esc(chFull(l.ch))}</span></div><div class="ai">${esc(l.pourquoi)}</div></div>`).join('');
+ const co={};SUJETS.forEach(s=>{const all=[s.ch,...(s.mobiliser||[])];if(!all.includes(id))return;all.forEach(x=>{if(x!==id&&CH[x])co[x]=(co[x]||0)+1;});});
+ const coHtml=Object.keys(co).length?`<div class="nb"><h3>Chapitres mobilisés ensemble dans les sujets</h3><div class="lchips">${Object.entries(co).sort((a,b)=>b[1]-a[1]).map(([x,n])=>`<span class="lchip ${CH[x].mat!==c.mat?'other':''}" onclick="openCh('${x}')">${esc(chLabel(x))} · ${n} sujet${n>1?'s':''}</span>`).join('')}</div></div>`:'';
+ return (expl?`<div class="nb"><h2>Liens avec les autres chapitres</h2>${expl}</div>`:'')+coHtml||'<div class="no-res">Aucun lien renseigné.</div>';}
+
+/* ---------- QUIZ ---------- */
+let QZ={qs:[],i:0,score:0,answers:[],cfg:null,answered:false};
+let QSEL={chs:new Set(),tags:new Set(),n:20};
+function renderQuizSel(){$('quiz-area').style.display='none';$('quiz-sel').style.display='block';
+ const failedN=Object.values(getFailed()).flat().length;
+ $('quiz-sel').innerHTML=`<div class="smart"><h2>🎯 Générateur de quiz</h2><p>Choisis un ou plusieurs chapitres (de n'importe quelle matière), filtre par type, puis lance une série tirée au hasard, sans doublon.</p><div class="smart-badge">${QBANK.length} questions indexées</div>
+ <div class="ssec"><div class="ssec-t">1. Chapitres <span><a href="#" onclick="qselAll(true);return false" style="color:var(--acc3)">tout cocher</a> · <a href="#" onclick="qselAll(false);return false" style="color:var(--txt2)">tout décocher</a></span></div>
+ ${activeMats().map(m=>`<div class="chk-mat">${matDot(m)}${esc(m.nom)}</div><div class="chk-grid">${m.chapitres.map(c=>`<label class="chk ${QSEL.chs.has(c.id)?'on':''}"><input type="checkbox" value="${c.id}" ${QSEL.chs.has(c.id)?'checked':''} onchange="qselCh(this)">Ch.${c.num} · ${esc(c.titre)}</label>`).join('')}</div>`).join('')}</div>
+ <div class="ssec"><div class="ssec-t">2. Nombre de questions <span>boutons rapides ou saisie libre</span></div><div class="pillrow">${[10,20,30,50,100].map(n=>`<button class="pill ${QSEL.n===n?'on':''}" onclick="qselN(${n})">${n}</button>`).join('')}<input class="num-in" type="number" min="1" max="400" value="${QSEL.n}" oninput="qselN(+this.value,true)"></div></div>
+ <div class="ssec"><div class="ssec-t">3. Types de questions <span>aucun = tous</span></div><div class="pillrow" id="qtags"></div></div>
+ <div class="counter" id="qcounter"></div>
+ <div class="pillrow"><button class="btn btn-p" onclick="genQuiz()">🚀 Générer le quiz</button><button class="btn btn-g" onclick="startFailedQuiz()">⚡ Questions ratées (${failedN})</button>${failedN?'<button class="btn btn-danger btn-sm" onclick="clearFailed()">Vider les ratées</button>':''}</div></div>`;
+ renderQTags();}
+function qPool(){const chs=QSEL.chs;let p=QBANK.filter(q=>!chs.size||chs.has(q.ch));if(QSEL.tags.size)p=p.filter(q=>[...QSEL.tags].some(t=>q.tags.has(t)));return p;}
+function renderQTags(){const base=QBANK.filter(q=>!QSEL.chs.size||QSEL.chs.has(q.ch));$('qtags').innerHTML=QTAGS.map(([t,l])=>{const n=base.filter(q=>q.tags.has(t)).length;return n?`<button class="pill ${QSEL.tags.has(t)?'on':''}" onclick="qselTag('${t}')">${l}<span>${n}</span></button>`:'';}).join('');const p=qPool();$('qcounter').textContent=p.length+' question(s) disponible(s) · '+Math.min(p.length,QSEL.n)+' seront posées';}
+window.qselCh=function(el){el.checked?QSEL.chs.add(el.value):QSEL.chs.delete(el.value);el.closest('.chk').classList.toggle('on',el.checked);renderQTags();};
+window.qselAll=function(v){QSEL.chs=new Set(v?CHS.map(c=>c.id):[]);renderQuizSel();};
+window.qselN=function(n,typed){QSEL.n=Math.max(1,Math.min(400,n||20));if(!typed)renderQuizSel();else renderQTags();};
+window.qselTag=function(t){QSEL.tags.has(t)?QSEL.tags.delete(t):QSEL.tags.add(t);renderQTags();};
+function smartPick(pool,n){const out=[],seen=new Set();for(const q of shuffle(pool)){const k=norm(q.q);if(seen.has(k))continue;seen.add(k);out.push(q);if(out.length>=n)break;}return out;}
+window.genQuiz=function(){const p=qPool();if(!p.length){toast('Aucune question pour cette sélection.');return;}launch(smartPick(p,QSEL.n),{mode:'custom',chs:[...QSEL.chs]});};
+window.startQuiz=function(chs){chs=chs||[];const p=QBANK.filter(q=>!chs.length||chs.includes(q.ch));showPg('quiz');launch(smartPick(p,20),{mode:'chap',chs});};
+window.startFailedQuiz=function(){const arr=Object.values(getFailed()).flat();if(!arr.length){toast('Aucune question ratée enregistrée.');return;}launch(smartPick(arr,Math.min(50,arr.length)),{mode:'failed',chs:[]});};
+window.clearFailed=function(){if(confirm('Vider la liste des questions ratées ?')){setFailed({});renderQuizSel();}};
+function launch(qs,cfg){QZ={qs:qs.map(q=>{const b=Object.assign({},q);b.opts=[...(q.opts||[])];if(b.type==='vf'){b.opts=['Vrai','Faux'];b.ans=(q.ans===true||q.ans===0||q.ans==='vrai')?0:1;}else{const good=b.opts[b.ans];b.opts=shuffle(b.opts);b.ans=b.opts.indexOf(good);}return b;}),i:0,score:0,answers:[],cfg,answered:false};
+ $('quiz-sel').style.display='none';$('quiz-area').style.display='block';$('quiz-score').classList.remove('on');$('qprog-area').style.display='block';renderQ();}
+function renderQ(){const q=QZ.qs[QZ.i];if(!q)return endQuiz();QZ.answered=false;const n=QZ.qs.length;
+ $('qpfill').style.width=(QZ.i/n*100)+'%';$('qptxt').textContent='Question '+(QZ.i+1)+'/'+n;$('qscore').textContent='Score : '+QZ.score;
+ $('quiz-card').innerHTML=`<div class="qcard"><div class="qnum">${esc(chLabel(q.ch))} · ${q.type==='vf'?'Vrai / faux':'QCM'}</div><div class="qtxt">${esc(q.q)}</div><div class="qopts">${q.opts.map((o,i)=>`<button class="qopt" onclick="answerQ(${i})">${String.fromCharCode(65+i)}. ${esc(o)}</button>`).join('')}</div><div class="qexp" id="qexp"></div><div class="qnav" id="qnav" style="display:none"><span style="font-size:.78rem;color:var(--txt3)">${esc(chFull(q.ch))}</span><button class="btn btn-p" onclick="nextQ()">${QZ.i+1<n?'Question suivante →':'Voir mon score'}</button></div></div>`;}
+window.answerQ=function(i){if(QZ.answered)return;QZ.answered=true;const q=QZ.qs[QZ.i];const ok=i===q.ans;
+ document.querySelectorAll('#quiz-card .qopt').forEach((b,j)=>{b.disabled=true;if(j===q.ans)b.classList.add('ok');else if(j===i)b.classList.add('err');});
+ if(ok){QZ.score++;const f=getFailed();if(f[q.ch]){f[q.ch]=f[q.ch].filter(x=>norm(x.q)!==norm(q.q));setFailed(f);}}else{const f=getFailed();(f[q.ch]=f[q.ch]||[]);if(!f[q.ch].some(x=>norm(x.q)===norm(q.q))){const o=Object.assign({},q);o.opts=[...q.opts];f[q.ch].push(o);}setFailed(f);}
+ QZ.answers[QZ.i]={ok,user:q.opts[i],good:q.opts[q.ans]};
+ const e=$('qexp');e.innerHTML=(ok?'✅ <b>Bonne réponse.</b> ':'❌ <b>Réponse attendue : '+esc(q.opts[q.ans])+'.</b> ')+esc(q.exp||'');e.classList.add('on');$('qnav').style.display='flex';$('qscore').textContent='Score : '+QZ.score;};
+window.nextQ=function(){QZ.i++;renderQ();};
+function endQuiz(){$('quiz-card').innerHTML='';$('qprog-area').style.display='none';const n=QZ.qs.length,pct=n?Math.round(QZ.score/n*100):0;
+ STATE.quizHist.unshift({d:new Date().toISOString(),score:QZ.score,n,pct,chs:QZ.cfg.chs,mode:QZ.cfg.mode});STATE.quizHist=STATE.quizHist.slice(0,60);saveState();
+ const sc=$('quiz-score');sc.classList.add('on');sc.innerHTML=`<div class="score-big">${QZ.score}/${n}</div><div class="score-lbl">${pct}% · ${pct>=80?'🎉 Excellent':pct>=60?'👍 Bon niveau':pct>=40?'📚 À consolider':'💪 À retravailler'}</div>
+ <div class="pillrow" style="justify-content:center;margin-bottom:22px"><button class="btn btn-p" onclick="restartQuiz()">🔄 Nouvelle série</button><button class="btn btn-g" onclick="startFailedQuiz()">⚡ Refaire mes erreurs</button><button class="btn btn-g" onclick="renderQuizSel()">⚙️ Changer la sélection</button></div>
+ <div>${QZ.qs.map((q,i)=>{const a=QZ.answers[i]||{ok:false,user:'—',good:q.opts[q.ans]};return `<div class="review-item ${a.ok?'ok':'ko'}"><div class="review-head"><span>Q${i+1} · ${esc(chLabel(q.ch))}</span><b>${a.ok?'✅':'❌'}</b></div><div class="review-q">${esc(q.q)}</div><div class="review-a">Ta réponse : ${esc(a.user)}${a.ok?'':' · Attendu : <b>'+esc(a.good)+'</b>'}<br>${esc(q.exp||'')}</div></div>`;}).join('')}</div>`;}
+window.restartQuiz=function(){const c=QZ.cfg||{mode:'chap',chs:[]};if(c.mode==='failed')return startFailedQuiz();if(c.mode==='custom')return genQuiz();startQuiz(c.chs);};
+window.renderQuizSel=renderQuizSel;
+
+/* ---------- FICHES ---------- */
+let FCF={ch:'all',kind:'all',limit:60};
+function renderFC(){matChips('fc-mchips','fc',()=>{FCF.ch='all';FCF.limit=60;renderFC();});
+ const mats=MATS.filter(m=>inMat('fc',m.id));const chs=CHS.filter(c=>inMat('fc',c.mat));
+ const kinds=['Définition','Question','Compte','Formule','Auteur / ouvrage'];
+ $('fc-controls').innerHTML=`<button class="btn btn-g btn-sm ${FCF.ch==='all'?'on':''}" onclick="fcCh('all')">Tous les chapitres</button>${chs.map(c=>`<button class="btn btn-g btn-sm ${FCF.ch===c.id?'on':''}" onclick="fcCh('${c.id}')">${esc(MAT[c.mat].court)} ${c.num}</button>`).join('')}<button class="btn btn-g btn-sm ${FCF.ch==='review'?'on':''}" onclick="fcCh('review')">⚡ À revoir</button>
+ <select class="num-in" style="width:auto" onchange="fcKind(this.value)"><option value="all">Tous types</option>${kinds.map(k=>`<option ${FCF.kind===k?'selected':''}>${k}</option>`).join('')}</select><div class="fc-stat" id="fc-stat"></div>`;
+ let list=FC.filter(f=>inMat('fc',f.mat));
+ if(FCF.ch==='review')list=list.filter(f=>!STATE.known[f.id]);else if(FCF.ch!=='all')list=list.filter(f=>f.ch===FCF.ch);
+ if(FCF.kind!=='all')list=list.filter(f=>f.kind===FCF.kind);
+ const all=FC.filter(f=>inMat('fc',f.mat));$('fc-stat').textContent=all.filter(f=>STATE.known[f.id]).length+' / '+all.length+' maîtrisées';
+ $('fc-grid').innerHTML=list.slice(0,FCF.limit).map(f=>`<div class="fc ${STATE.known[f.id]?'known':''}" onclick="this.classList.toggle('flipped')"><div class="front2" style="display:flex;flex-direction:column;flex:1"><div class="fc-badge">${esc(chLabel(f.ch))} · ${esc(f.kind)}</div><div class="fc-term">${esc(f.front)}</div><div class="fc-hint">Touchez pour révéler</div></div><div class="back2"><div class="fc-badge">${esc(f.kind)}</div><div class="fc-def">${esc(f.back)}</div><button class="fc-known ${STATE.known[f.id]?'on':''}" onclick="event.stopPropagation();toggleKnown('${f.id}',this)">${STATE.known[f.id]?'✓ Maîtrisée':'Marquer maîtrisée'}</button></div></div>`).join('')||'<div class="no-res">Aucune fiche.</div>';
+ $('fc-more').innerHTML=list.length>FCF.limit?`<button class="btn btn-g" onclick="fcMore()">Afficher plus (${list.length-FCF.limit} restantes)</button>`:'';}
+window.fcCh=c=>{FCF.ch=c;FCF.limit=60;renderFC();};window.fcKind=k=>{FCF.kind=k;renderFC();};window.fcMore=()=>{FCF.limit+=60;renderFC();};
+window.toggleKnown=function(id,b){if(STATE.known[id])delete STATE.known[id];else STATE.known[id]=1;saveState();b.classList.toggle('on',!!STATE.known[id]);b.textContent=STATE.known[id]?'✓ Maîtrisée':'Marquer maîtrisée';b.closest('.fc').classList.toggle('known',!!STATE.known[id]);const all=FC.filter(f=>inMat('fc',f.mat));$('fc-stat').textContent=all.filter(f=>STATE.known[f.id]).length+' / '+all.length+' maîtrisées';};
+
+/* ---------- RECHERCHE ---------- */
+let SIDX=null,SF='all';
+const STYPES=[['all','Tout'],['definition','Définitions'],['cours','Cours'],['compte','Comptes'],['formule','Formules'],['auteur','Auteurs & ouvrages'],['sujet','Sujets'],['courbe','Courbes']];
+function buildIndex(){SIDX=[];
+ NOTIONS.forEach(n=>SIDX.push({type:'definition',mat:n.mat,ch:n.ch,t:n.term,d:n.def,go:()=>openCh(n.ch,'notions')}));
+ CHS.forEach(c=>{const tmp=document.createElement('div');tmp.innerHTML=c.cours||'';let sec='';
+  tmp.querySelectorAll('.nb').forEach(nb=>{const h=nb.querySelector('h2');sec=h?h.textContent:c.titre;const txt=strip(nb.innerHTML);
+   // découpe en passages
+   const parts=txt.split(/(?<=[.;:!?])\s+/);let buf='';parts.forEach(p=>{buf+=(buf?' ':'')+p;if(buf.length>220){SIDX.push({type:'cours',mat:c.mat,ch:c.id,t:sec,d:buf,go:()=>openCh(c.id,'cours')});buf='';}});if(buf)SIDX.push({type:'cours',mat:c.mat,ch:c.id,t:sec,d:buf,go:()=>openCh(c.id,'cours')});});
+  (c.fiches||[]).forEach(f=>SIDX.push({type:'definition',mat:c.mat,ch:c.id,t:f.q,d:f.a,go:()=>openCh(c.id,'cours')}));});
+ COMPTES.forEach(c=>SIDX.push({type:'compte',mat:c.mat,ch:c.ch,t:c.num+' — '+c.lib,d:(c.note||'')+(c.sens?' · '+c.sens:''),key:c.num,go:()=>openCh(c.ch,'cours')}));
+ FORMULES.forEach(f=>SIDX.push({type:'formule',mat:f.mat,ch:f.ch,t:f.t,d:f.f+(f.note?' — '+f.note:''),go:()=>{showPg('formulas');}}));
+ AUTHORS.forEach(a=>SIDX.push({type:'auteur',mat:a.mat,ch:(a.chapitres||[])[0],t:a.nom,d:a.idee+' '+(a.oeuvres||[]).join(' ; '),go:()=>openAuthor(a.id)}));
+ SUJETS.forEach(s=>SIDX.push({type:'sujet',mat:s.mat,ch:s.ch,t:s.titre,d:s.type+' · '+strip(s.enonce).slice(0,220),full:strip(s.enonce+' '+(s.corrige||'')),go:()=>openSubject(s.id)}));
+ GRAPHS.forEach(g=>SIDX.push({type:'courbe',mat:g.mat,ch:g.ch,t:g.titre,d:strip(g.exp).slice(0,220),go:()=>{showPg('graphs');setTimeout(()=>{const e=document.getElementById('gr-'+g.id);if(e){e.scrollIntoView({behavior:'smooth',block:'center'});e.querySelector('.exp').classList.add('on');}},80);}}));
+ SIDX.forEach(r=>{r.nt=norm(r.t);r.nd=norm(r.d+' '+(r.full||''));});}
+function initSearch(){if(!SIDX)buildIndex();matChips('search-mchips','search',doSearch);
+ $('search-filters').innerHTML=STYPES.map(([k,l])=>`<div class="fchip ${SF===k?'on':''}" onclick="setSF('${k}')">${l}</div>`).join('');setTimeout(()=>$('si').focus(),50);doSearch();}
+window.setSF=k=>{SF=k;initSearch();};
+function hl(text,terms){let t=esc(text);terms.forEach(w=>{if(w.length<2)return;const re=new RegExp('('+w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');t=t.replace(re,'<mark>$1</mark>');});return t;}
+window.doSearch=function(){if(!SIDX)buildIndex();const raw=$('si').value.trim();const q=norm(raw);const box=$('search-res');
+ if(q.length<2){box.innerHTML='<div class="no-res">Commence à taper… (au moins 2 caractères)</div>';return;}
+ const words=q.split(' ').filter(Boolean);
+ const res=[];SIDX.forEach((r,i)=>{if(SF!=='all'&&r.type!==SF)return;if(!inMat('search',r.mat))return;let s=0;
+  if(r.key&&r.key.startsWith(q.replace(/ /g,'')))s+=60;
+  if(r.nt===q)s+=50;else if(r.nt.startsWith(q))s+=30;else if(r.nt.includes(q))s+=20;
+  if(r.nd.includes(q))s+=10;
+  let all=true;words.forEach(w=>{const inT=r.nt.includes(w),inD=r.nd.includes(w);if(inT)s+=6;else if(inD)s+=2;else all=false;});
+  if(!all&&s<20)return;if(s>0)res.push([s+({definition:4,compte:3,formule:3,auteur:2,sujet:1}[r.type]||0),i]);});
+ res.sort((a,b)=>b[0]-a[0]);const top=res.slice(0,80);
+ const labels=Object.fromEntries(STYPES);
+ box.innerHTML=top.length?`<div style="font-size:.76rem;color:var(--txt3);margin-bottom:10px">${res.length} résultat(s)${res.length>80?' · 80 premiers affichés':''}</div>`+top.map(([,i])=>{const r=SIDX[i];const origWords=raw.split(/\s+/).filter(Boolean);return `<div class="sr" data-i="${i}"><div class="sr-top"><span class="sr-type">${esc(labels[r.type]||r.type)}</span><span class="sr-ch">${matDot(MAT[r.mat])}${esc(r.ch?chFull(r.ch):MAT[r.mat].nom)}</span></div><div class="sr-t">${hl(r.t,origWords)}</div><div class="sr-d">${hl(r.d.length>300?r.d.slice(0,300)+'…':r.d,origWords)}</div></div>`;}).join(''):'<div class="no-res">Aucun résultat. Essaie un autre mot ou un numéro de compte.</div>';
+ box.querySelectorAll('.sr').forEach(e=>e.onclick=()=>SIDX[+e.dataset.i].go());};
+
+/* ---------- AUTEURS ---------- */
+window.renderAuthors=function(){matChips('auth-mchips','auth',renderAuthors);const q=norm(($('asi')||{}).value);
+ const list=AUTHORS.filter(a=>inMat('auth',a.mat)&&(!q||norm(a.nom+' '+a.idee+' '+(a.oeuvres||[]).join(' ')+' '+(a.courant||'')).includes(q)));
+ $('ag').innerHTML=list.map(a=>`<div class="ac" onclick="openAuthor('${a.id}')"><div class="ac-kind">${matDot(MAT[a.mat])}${esc(MAT[a.mat].court)} · ${esc(a.kind||'Auteur')}</div><div class="ac-name">${esc(a.nom)}</div><div class="ac-dates">${esc(a.dates||'')}</div><div class="ac-idea">${esc(a.idee)}</div>${a.courant?`<span class="ac-c">${esc(a.courant)}</span>`:''}<div>${a.source==='cours'?'<span class="src-flag cours" style="margin:8px 0 0">cité dans ton cours</span>':'<span class="src-flag compl" style="margin:8px 0 0">repère complémentaire</span>'}</div></div>`).join('')||'<div class="no-res">Aucun résultat.</div>';};
+window.openAuthor=function(id){const a=AUTHORS.find(x=>x.id===id);if(!a)return;
+ $('amodal-in').innerHTML=`<button class="mc" onclick="closeModal()">✕</button><h2>${esc(a.nom)}</h2><div class="m-dates">${esc(a.dates||'')} · ${esc(MAT[a.mat].nom)}</div>${a.courant?`<div class="m-courant">${esc(a.courant)}</div>`:''}
+ <p>${esc(a.idee)}</p>${a.desc?`<p>${esc(a.desc)}</p>`:''}
+ ${a.oeuvres&&a.oeuvres.length?`<h3>Ouvrages / textes</h3>${a.oeuvres.map(o=>`<div class="m-oe">${esc(o)}</div>`).join('')}`:''}
+ ${(a.chapitres||[]).length?`<h3>Chapitres concernés</h3><div class="lchips">${a.chapitres.map(c=>`<span class="lchip" onclick="closeModal();openCh('${c}')">${esc(chFull(c))}</span>`).join('')}</div>`:''}
+ ${a.phrase?`<div class="phrase-box">✍️ À réutiliser en copie : ${esc(a.phrase)}</div>`:''}
+ <p style="margin-top:12px;font-size:.76rem;color:var(--txt3)">${a.source==='cours'?'Cité dans tes documents de cours.':'Repère complémentaire, non cité dans tes documents.'}</p>`;$('amodal').classList.add('on');};
+window.closeModal=()=>$('amodal').classList.remove('on');
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+
+/* ---------- SUJETS ---------- */
+let SUBJ={ch:null,q:'',open:null};
+const subjDone=id=>!!STATE.subjDone[id];
+function subjItem(s){return `<div class="sitem" onclick="openSubject('${s.id}')"><div class="num">${esc(s.num||'')}</div><div class="body"><div class="tt">${esc(s.titre)}</div><div class="meta"><span class="sbadge type">${esc(s.type)}</span><span class="sbadge">${esc(chLabel(s.ch))}</span>${(s.mobiliser||[]).filter(x=>x!==s.ch).map(x=>`<span class="sbadge">+ ${esc(chLabel(x))}</span>`).join('')}${s.source?`<span class="sbadge">${esc(s.source)}</span>`:''}${subjDone(s.id)?'<span class="sbadge done">✓ fait</span>':''}</div></div></div>`;}
+function renderSubjects(){const root=$('subj-root');if(SUBJ.open)return renderSubjectDetail();
+ const list=SUJETS.filter(s=>inMat('subj',s.mat)&&(!SUBJ.ch||s.ch===SUBJ.ch||(s.mobiliser||[]).includes(SUBJ.ch))&&(!SUBJ.q||norm(s.titre+' '+strip(s.enonce)+' '+s.type+' '+(s.source||'')).includes(norm(SUBJ.q))));
+ const chs=CHS.filter(c=>inMat('subj',c.mat));
+ root.innerHTML=`<div class="subj-hero"><div class="kicker">Banque de sujets · exercices de TD, DS, cas et questions de synthèse</div><h1>Sujets corrigés</h1><p>Chaque sujet indique les <b>chapitres à mobiliser</b>, y compris dans d'autres matières, une méthode avec les pièges à éviter, puis un corrigé détaillé. Les calculs des corrigés ont été vérifiés par programme. Marque un sujet comme fait pour suivre ta progression.</p></div>
+ <div class="toolbar"><input class="si" id="subj-q" placeholder="Rechercher un sujet, une notion, un compte…" value="${esc(SUBJ.q)}" oninput="SUBJq(this.value)"><button class="tbtn" onclick="randomSubject()">🎲 Sujet aléatoire</button>${SUBJ.ch?`<button class="tbtn" onclick="randomSubject('${SUBJ.ch}')">🎯 Aléatoire du chapitre</button>`:''}</div>
+ <div class="mchips" id="subj-mchips"></div>
+ <div class="sch-grid">${chs.map(c=>{const n=SUJETS.filter(s=>s.ch===c.id||(s.mobiliser||[]).includes(c.id)).length;const d=SUJETS.filter(s=>(s.ch===c.id||(s.mobiliser||[]).includes(c.id))&&subjDone(s.id)).length;return `<div class="sch ${SUBJ.ch===c.id?'on':''}" onclick="SUBJch('${c.id}')"><div class="k">${matDot(MAT[c.mat])}${esc(MAT[c.mat].court)} · Chapitre ${c.num}</div><div class="t">${esc(c.titre)}</div><div class="c">${n} sujet${n>1?'s':''} · ${d} fait${d>1?'s':''}</div></div>`;}).join('')}</div>
+ <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;flex-wrap:wrap;gap:10px"><h2 style="font-family:'Playfair Display',serif">${SUBJ.ch?esc(chFull(SUBJ.ch)):'Tous les sujets'} <span style="font-size:.8rem;color:var(--txt3);font-family:'DM Sans'">(${list.length})</span></h2>${SUBJ.ch?'<button class="btn btn-g btn-sm" onclick="SUBJch(null)">Voir tous les sujets</button>':''}</div>
+ <div class="slist">${list.map(subjItem).join('')||'<div class="no-res">Aucun sujet.</div>'}</div>`;
+ matChips('subj-mchips','subj',()=>{SUBJ.ch=null;renderSubjects();});}
+window.SUBJq=v=>{SUBJ.q=v;const pos=$('subj-q').selectionStart;renderSubjects();const i=$('subj-q');i.focus();i.setSelectionRange(pos,pos);};
+window.SUBJch=c=>{SUBJ.ch=SUBJ.ch===c?null:c;renderSubjects();};
+window.openSubjectsFor=c=>{SUBJ={ch:c,q:'',open:null};STATE.mat.subj='all';showPg('subjects');};
+window.randomSubject=c=>{const l=SUJETS.filter(s=>inMat('subj',s.mat)&&(!c||s.ch===c||(s.mobiliser||[]).includes(c)));if(l.length)openSubject(pick(l).id);};
+window.openSubject=function(id){SUBJ.open=id;if(CUR_PG!=='subjects'){document.querySelectorAll('.pg').forEach(p=>p.classList.remove('on'));$('pg-subjects').classList.add('on');document.querySelectorAll('#nav .nt').forEach(b=>b.classList.toggle('on',b.dataset.pg==='subjects'));CUR_PG='subjects';}renderSubjectDetail();window.scrollTo(0,0);};
+function renderSubjectDetail(){const s=SUJETS.find(x=>x.id===SUBJ.open);if(!s){SUBJ.open=null;return renderSubjects();}
+ const mob=[s.ch,...(s.mobiliser||[]).filter(x=>x!==s.ch)];
+ $('subj-root').innerHTML=`<div class="back" onclick="SUBJ_back()">← Sujets</div><div class="sd">
+ <div class="meta" style="display:flex;gap:6px;flex-wrap:wrap"><span class="sbadge type">${esc(s.type)}</span><span class="sbadge">${matDot(MAT[s.mat])}${esc(MAT[s.mat].nom)}</span>${s.source?`<span class="sbadge">${esc(s.source)}</span>`:''}${subjDone(s.id)?'<span class="sbadge done">✓ fait</span>':''}</div>
+ <h2>${esc(s.titre)}</h2>
+ <div class="sd-sec"><div class="l">Énoncé</div><div class="enonce">${s.enonce}</div></div>
+ <div class="sd-sec"><div class="l">Chapitres à mobiliser</div><div class="lchips">${mob.map(x=>`<span class="lchip ${CH[x]&&CH[x].mat!==s.mat?'other':''}" onclick="openCh('${x}')">${esc(chFull(x))}</span>`).join('')}</div>${s.pourquoi?`<div style="font-size:.82rem;color:var(--txt2);line-height:1.6;margin-top:6px">${s.pourquoi}</div>`:''}</div>
+ ${s.commentaire?`<div class="sd-sec"><div class="l">Méthode & pièges</div><div class="comm">${s.commentaire}</div></div>`:''}
+ <div class="sd-sec"><div class="pillrow"><button class="btn btn-p" onclick="toggleCorr(this)">👁 Afficher le corrigé</button><button class="btn btn-g" onclick="toggleDone('${s.id}')">${subjDone(s.id)?'↺ Marquer non fait':'✓ Marquer comme fait'}</button><button class="btn btn-g" onclick="randomSubject()">🎲 Autre sujet</button></div><div class="corr" id="corr">${s.corrige||''}</div></div></div>`;}
+window.SUBJ_back=()=>{SUBJ.open=null;renderSubjects();};
+window.toggleCorr=b=>{const c=$('corr');c.classList.toggle('on');b.textContent=c.classList.contains('on')?'🙈 Masquer le corrigé':'👁 Afficher le corrigé';};
+window.toggleDone=id=>{if(STATE.subjDone[id])delete STATE.subjDone[id];else STATE.subjDone[id]=new Date().toISOString();saveState();renderSubjectDetail();};
+
+/* ---------- MÉTHODE ---------- */
+function renderMethod(){matChips('meth-mchips','meth',renderMethod);
+ $('meth-body').innerHTML=MATS.filter(m=>inMat('meth',m.id)&&(m.methode||[]).length).map(m=>`<div class="msec-h"><h2>${matDot(m)}${esc(m.nom)}</h2></div><div class="meth-grid">${m.methode.map(x=>`<div class="meth"><h3>${esc(x.titre)}</h3>${x.html}${x.piege?`<div class="trap">⚠️ ${x.piege}</div>`:''}</div>`).join('')}</div>`).join('')||'<div class="no-res">Aucune fiche méthode.</div>';}
+
+/* ---------- COURBES ---------- */
+window.renderGraphs=function(){matChips('gr-mchips','gr',renderGraphs);const q=norm(($('gsi')||{}).value);
+ const list=GRAPHS.filter(g=>inMat('gr',g.mat)&&(!q||norm(g.titre+' '+strip(g.exp)+' '+(g.tags||[]).join(' ')).includes(q)));
+ $('gr-grid').innerHTML=list.map(g=>`<div class="gr" id="gr-${g.id}"><div class="k">${matDot(MAT[g.mat])}${esc(chLabel(g.ch))}</div><h3>${esc(g.titre)}</h3><div class="svgw">${g.svg}</div><button class="btn btn-g btn-sm gb" onclick="this.previousElementSibling&&this.parentNode.querySelector('.exp').classList.toggle('on')">💡 Explication</button><div class="exp">${g.exp}</div></div>`).join('')||'<div class="no-res">Aucune courbe.</div>';};
+window.randomGraph=function(){const l=GRAPHS.filter(g=>inMat('gr',g.mat));if(!l.length)return;const g=pick(l);const e=$('gr-'+g.id);if(e){e.scrollIntoView({behavior:'smooth',block:'center'});e.querySelector('.exp').classList.add('on');e.style.borderColor='var(--acc)';setTimeout(()=>e.style.borderColor='',1500);}};
+
+/* ---------- CARTES ---------- */
+let MAPCH=null;
+function renderMaps(){matChips('map-mchips','map',()=>{MAPCH=null;renderMaps();});
+ const chs=CHS.filter(c=>inMat('map',c.mat)&&c.carte);if(!chs.length){$('map-switch').innerHTML='';$('map-body').innerHTML='<div class="no-res">Aucune carte.</div>';return;}
+ if(!MAPCH||!chs.find(c=>c.id===MAPCH))MAPCH=chs[0].id;
+ $('map-switch').innerHTML=chs.map(c=>`<button class="map-btn ${c.id===MAPCH?'on':''}" onclick="setMap('${c.id}')">${esc(MAT[c.mat].court)} · Ch.${c.num}</button>`).join('');
+ const c=CH[MAPCH],k=c.carte;
+ $('map-body').innerHTML=`<div class="map-grid"><div class="map-card"><h2>${esc(chFull(c.id))}</h2><p>Carte mentale globale du chapitre.</p><div class="map-core"><div class="map-core-node">${esc(k.core)}</div></div><div class="branch-grid">${k.branches.map(b=>`<div class="branch"><div class="branch-title">${esc(b.t)}</div><ul>${b.items.map(i=>`<li>${esc(i)}</li>`).join('')}</ul></div>`).join('')}</div></div>
+ <div class="map-card"><h2>Schémas clés</h2><p>Enchaînements à savoir restituer.</p><div class="schema-list">${(k.schemas||[]).map(s=>`<div class="schema-item"><div class="schema-title">${esc(s.t)}</div><div class="flow">${s.steps.map((x,i)=>(i?'<span class="flow-arrow">→</span>':'')+`<span class="flow-node">${esc(x)}</span>`).join('')}</div>${s.note?`<div class="schema-note">${esc(s.note)}</div>`:''}</div>`).join('')}</div></div></div>
+ <div class="vmap">${visualMap(k)}</div>`;}
+window.setMap=id=>{MAPCH=id;renderMaps();};
+function wrapT(t,max){const w=String(t).split(' ');const lines=[];let l='';w.forEach(x=>{if((l+' '+x).trim().length>max&&l){lines.push(l);l=x;}else l=(l+' '+x).trim();});if(l)lines.push(l);return lines;}
+function visualMap(k){const W=1100,H=Math.max(520,120+Math.ceil(k.branches.length/2)*190),cx=W/2,cy=H/2;const n=k.branches.length;let out='';
+ const cols=['#7c6af7','#f7a26a','#6af7c4','#f7e66a','#f76ab4','#6aa8f7'];
+ k.branches.forEach((b,i)=>{const left=i%2===0;const row=Math.floor(i/2),rows=Math.ceil(n/2);const y=90+row*((H-180)/Math.max(1,rows-1||1));const yy=rows===1?cy:y;const x=left?40:W-340;const col=cols[i%cols.length];
+  const items=b.items.slice(0,5);const bh=34+items.length*20;const bx=x,by=yy-bh/2;
+  out+=`<path d="M${cx},${cy} C${cx+(left?-160:160)},${cy} ${left?bx+300+60:bx-60},${yy} ${left?bx+300:bx},${yy}" fill="none" stroke="${col}" stroke-width="2" opacity=".7"/>`;
+  out+=`<rect x="${bx}" y="${by}" width="300" height="${bh}" rx="12" fill="#1a2033" stroke="${col}"/>`;
+  out+=`<text x="${bx+14}" y="${by+22}" fill="${col}" font-weight="700" font-size="13" font-family="DM Sans">${esc(b.t.length>40?b.t.slice(0,39)+'…':b.t)}</text>`;
+  items.forEach((it,j)=>{out+=`<text x="${bx+14}" y="${by+44+j*20}" fill="#c4c9d8" font-size="11.5" font-family="DM Sans">• ${esc(it.length>46?it.slice(0,45)+'…':it)}</text>`;});});
+ const lines=wrapT(k.core,26);const ch=26+lines.length*18;
+ out+=`<rect x="${cx-130}" y="${cy-ch/2}" width="260" height="${ch}" rx="16" fill="#7c6af7"/>`+lines.map((l,i)=>`<text x="${cx}" y="${cy-ch/2+26+i*18}" text-anchor="middle" fill="#fff" font-weight="700" font-size="14" font-family="DM Sans">${esc(l)}</text>`).join('');
+ return `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">${out}</svg>`;}
+
+/* ---------- FORMULES ---------- */
+function renderFormulas(){matChips('form-mchips','form',renderFormulas);
+ $('form-body').innerHTML=MATS.filter(m=>inMat('form',m.id)&&(m.formules||[]).length).map(m=>`<div class="msec-h"><h2>${matDot(m)}${esc(m.nom)}</h2></div>`+m.formules.map(g=>`<div class="nb"><h2>${esc(g.titre)}</h2>${g.ch?`<div class="lchips" style="margin-bottom:10px"><span class="lchip" onclick="openCh('${g.ch}')">${esc(chFull(g.ch))}</span></div>`:''}<div class="grid2">${g.items.map(f=>`<div class="cardx"><b>${esc(f.t)}</b><div class="f">${esc(f.f)}</div>${f.note?`<div class="s-note">${esc(f.note)}</div>`:''}</div>`).join('')}</div></div>`).join('')).join('')||'<div class="no-res">Aucune formule.</div>';}
+
+/* ---------- REPÈRES ---------- */
+function renderTimeline(){matChips('tl-mchips','tl',renderTimeline);
+ $('tl-body').innerHTML=MATS.filter(m=>inMat('tl',m.id)&&(m.reperes||[]).length).map(m=>`<div class="nb"><h2>${matDot(m)}${esc(m.nom)}</h2><div class="tl">${m.reperes.map(r=>`<div class="tl-item"><b>${esc(r.date)}</b> — ${esc(r.t)}${r.src==='cours'?' <span class="src-flag cours">dans ton cours</span>':''}</div>`).join('')}</div></div>`).join('')||'<div class="no-res">Aucun repère.</div>';}
+
+/* ---------- PROGRÈS & SAUVEGARDES ---------- */
+function renderProg(){const known=Object.keys(STATE.known).filter(k=>FC.some(f=>f.id===k)).length;const hist=STATE.quizHist;const avg=hist.length?Math.round(hist.reduce((a,h)=>a+h.pct,0)/hist.length):0;
+ const done=Object.keys(STATE.subjDone).filter(k=>SUJETS.some(s=>s.id===k)).length;const failed=Object.values(getFailed()).flat().length;
+ $('prog-ov').innerHTML=[[known+' / '+FC.length,'Fiches maîtrisées'],[hist.length,'Quiz terminés'],[avg+'%','Moyenne aux quiz'],[done+' / '+SUJETS.length,'Sujets faits'],[failed,'Questions à revoir']].map(([n,l])=>`<div class="pc"><div class="pn">${n}</div><div class="pl">${l}</div></div>`).join('');
+ $('prog-body').innerHTML=activeMats().map(m=>`<div class="msec-h"><h2 style="font-size:1.15rem">${matDot(m)}${esc(m.nom)}</h2></div>`+m.chapitres.map(c=>{const cards=FC.filter(f=>f.ch===c.id);const k=cards.filter(f=>STATE.known[f.id]).length;const sj=SUJETS.filter(s=>s.ch===c.id);const sd=sj.filter(s=>subjDone(s.id)).length;const p=cards.length?Math.round(k/cards.length*100):0;return `<div class="cp-item" onclick="openCh('${c.id}')"><div class="cp-n">${esc(m.court)} ${c.num}</div><div class="cp-info"><div class="cp-title">${esc(c.titre)}</div><div class="cpbar"><div class="cpfill" style="width:${p}%"></div></div></div><div class="cp-pct">${p}% · ${sd}/${sj.length} sujets</div></div>`;}).join('')).join('')
+ +`<div class="save-box"><h3>🕘 Derniers quiz</h3>${hist.slice(0,10).map(h=>`<div class="hist"><span>${new Date(h.d).toLocaleString('fr-FR')} · ${h.chs&&h.chs.length?esc(h.chs.map(chLabel).join(', ')):h.mode==='failed'?'Questions ratées':'Toutes matières'}</span><b>${h.score}/${h.n} (${h.pct}%)</b></div>`).join('')||'<p>Aucun quiz terminé pour l\'instant.</p>'}</div>
+ <div class="save-box"><h3>💾 Mes sauvegardes</h3><p>Ta progression est enregistrée automatiquement dans ce navigateur, sous des clés propres à Gestiosphère (<code>gs_…</code>). Elle ne touche jamais à celle d'Écosphère. Pour la garder ou la transférer sur un autre appareil, exporte-la dans un fichier.</p><div class="pillrow"><button class="btn btn-p" onclick="exportSave()">⬇️ Exporter ma sauvegarde</button><button class="btn btn-g" onclick="document.getElementById('import-file').click()">⬆️ Importer une sauvegarde</button><button class="btn btn-danger" onclick="resetProg()">🗑 Réinitialiser</button></div></div>`;}
+window.exportSave=function(){const data={app:APP,version:1,date:new Date().toISOString(),state:STATE,failed:getFailed()};const blob=new Blob([JSON.stringify(data,null,1)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='gestiosphere-sauvegarde-'+new Date().toISOString().slice(0,10)+'.json';document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},500);toast('Sauvegarde exportée.');};
+window.importSave=function(inp){const f=inp.files&&inp.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const d=JSON.parse(r.result);if(d.app!==APP||!d.state){alert('Ce fichier n\'est pas une sauvegarde Gestiosphère (les sauvegardes Écosphère ne sont pas compatibles).');return;}STATE=Object.assign({},DEF_STATE,d.state,{app:APP});saveState();setFailed(d.failed||{});toast('Sauvegarde importée.');renderProg();}catch(e){alert('Fichier illisible.');}inp.value='';};r.readAsText(f);};
+window.resetProg=function(){if(!confirm('Réinitialiser toute la progression de Gestiosphère ? (Écosphère n\'est pas concernée)'))return;STATE=Object.assign({},DEF_STATE,{known:{},subjDone:{},quizHist:[],mat:{}});saveState();setFailed({});renderProg();toast('Progression réinitialisée.');};
+
+window.GS={D,CHS,QBANK,FC,SUJETS,NOTIONS,AUTHORS,COMPTES,GRAPHS,FORMULES,buildIndex};
+renderHome();
+})();
+</script>
+</body>
+</html>
