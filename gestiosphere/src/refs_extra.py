@@ -191,6 +191,61 @@ REFS = {
         quand="Dans les recommandations : proposer une voie de croissance et en évaluer le risque.",
         phrase="« D'après la matrice d'Ansoff, la diversification, qui combine nouveaux produits et nouveaux marchés, est l'option de croissance la plus risquée. »",
         cles=['Ansoff', 'diversification', 'pénétration']),
+    # ---------------- Macroéconomie ----------------
+    'Robert Mundell': dict(
+        famille='auteur',
+        apport="Le modèle des chapitres 4 et 5 porte son nom : il a ouvert IS-LM sur l'extérieur et montré qu'avec des capitaux mobiles, le régime de change décide de l'instrument efficace.",
+        quand="Dans toute question sur l'efficacité des politiques en économie ouverte, ou pour introduire le triangle d'incompatibilité.",
+        phrase="« Selon le modèle de Mundell-Fleming, en change flexible et parfaite mobilité des capitaux, la politique monétaire est efficace et la politique budgétaire ne l'est pas. »",
+        cles=['Mundell', 'triangle', 'incompatibilité', 'mobilité des capitaux']),
+    'J. Marcus Fleming': dict(
+        famille='auteur',
+        apport="Coauteur des résultats du chapitre 5 : il a établi, en même temps que Mundell, l'efficacité comparée des politiques selon le régime de change.",
+        quand="Pour citer correctement le « modèle de Mundell-Fleming ».",
+        phrase="« Le modèle de Mundell-Fleming prolonge IS-LM en économie ouverte en y ajoutant la balance des paiements. »",
+        cles=['Fleming', 'Mundell', 'PTINC']),
+    'Alfred Marshall et Abba Lerner': dict(
+        famille='auteur',
+        apport="La condition de Marshall-Lerner dit quand une dépréciation améliore la balance commerciale ; c'est le « si M-L vérifié » qui revient dans tous les mécanismes du cours.",
+        quand="Dès qu'une dépréciation ou une appréciation doit agir sur le compte courant (chapitres 3, 4 et 5).",
+        phrase="« Selon la condition de Marshall-Lerner, une dépréciation réelle améliore la balance commerciale si la somme des valeurs absolues des élasticités-prix dépasse 1. »",
+        cles=['Marshall-Lerner', 'Marshall', 'Lerner', 'élasticité']),
+    'John Maynard Keynes': dict(
+        famille='auteur',
+        apport="Justifie le cadre du modèle : à court terme, la demande gouverne la production ; le chômage est keynésien et une relance de la demande le réduit (effet multiplicateur).",
+        quand="Pour définir le chômage keynésien, l'effet multiplicateur ou justifier une politique de relance.",
+        phrase="« Dans une situation de chômage keynésien, c'est l'insuffisance de la demande effective, et non le coût du travail, qui limite l'emploi. »",
+        cles=['keynésien', 'Keynes', 'multiplicateur', 'demande']),
+    'John Hicks (IS-LM)': dict(
+        famille='auteur',
+        apport="Les courbes IS et LM du chapitre 4 viennent de lui : il a traduit Keynes en deux équilibres, celui des biens et celui de la monnaie.",
+        quand="Pour présenter l'origine du modèle IS-LM avant de l'ouvrir sur l'extérieur.",
+        phrase="« Le modèle IS-LM, formalisé par Hicks en 1937, représente l'équilibre simultané du marché des biens et du marché de la monnaie. »",
+        cles=['IS', 'LM', 'Hicks']),
+    'Léon Walras (loi de Walras)': dict(
+        famille='auteur',
+        apport="La loi de Walras permet de réduire le modèle à trois marchés (biens, monnaie, change) : si les autres sont équilibrés, le dernier l'est aussi.",
+        quand="Pour justifier pourquoi on n'étudie pas le marché du travail (ou des titres) séparément, et pour distinguer équilibre partiel et général.",
+        phrase="« D'après la loi de Walras, lorsque n − 1 marchés sont à l'équilibre, le n-ième l'est aussi. »",
+        cles=['Walras', 'équilibre général', 'équilibre partiel']),
+    'Irving Fisher': dict(
+        famille='auteur',
+        apport="L'équation de Fisher relie le taux réel (qui détermine l'investissement dans IS) au taux nominal (qui détermine la demande de monnaie dans LM).",
+        quand="Pour expliquer pourquoi on peut placer IS et LM sur le même graphique (r = i si l'inflation anticipée est nulle).",
+        phrase="« Selon l'équation de Fisher, le taux d'intérêt nominal est égal au taux réel augmenté de l'inflation anticipée. »",
+        cles=['Fisher', 'taux réel', 'inflation anticipée']),
+    'Fonds monétaire international (FMI)': dict(
+        famille='organisme',
+        apport="Fixe la méthode de la balance des paiements du chapitre 1 (manuel BPM6) ; né à Bretton Woods, il est aussi au cœur de l'histoire des changes fixes.",
+        quand="Pour citer la source des règles de la balance des paiements, ou dans une introduction historique sur les régimes de change.",
+        phrase="« La balance des paiements est établie selon les normes du FMI (manuel BPM6), qui imposent un enregistrement en partie double. »",
+        cles=['FMI', 'Bretton Woods', 'revenus secondaires']),
+    'Banque centrale européenne (BCE)': dict(
+        famille='organisme',
+        apport="L'acteur des interventions du cours : elle seule crée ou détruit des euros, mène l'open market et, en change fixe, fait varier ses réserves pour défendre une parité.",
+        quand="Dans tout mécanisme où la masse monétaire ou les réserves de change bougent.",
+        phrase="« Seule la BCE peut créer ou détruire des euros : en change fixe, ses interventions font varier à la fois ses réserves et la masse monétaire. »",
+        cles=['BCE', 'banque centrale', 'masse monétaire', 'réserves']),
 }
 
 KIND_FAMILLE = {'auteur': 'Auteurs', 'ouvrage': 'Manuels & ouvrages', 'texte': 'Textes de référence', 'organisme': 'Institutions & cabinets'}

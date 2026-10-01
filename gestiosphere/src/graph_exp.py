@@ -199,6 +199,13 @@ EXP = {
 }
 
 
+try:
+    from macro_exp import EXP_MACRO
+    EXP.update(EXP_MACRO)
+except ImportError:
+    pass
+
+
 def render(e):
     h = f'<div class="gx"><div class="gx-l">📐 Ce que montrent les axes</div><p>{e["axes"]}</p>'
     h += '<div class="gx-l">👀 Comment lire le graphique</div><ol>' + ''.join(f'<li>{x}</li>' for x in e['lecture']) + '</ol>'

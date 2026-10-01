@@ -35,6 +35,7 @@ def chapitres():
                  dict(t='Plan de comptes', items=['Classes 1-5 : bilan', 'Classes 6-7 : gestion', '28/29/39/49/59 : comptes soustractifs'])],
                  schemas=[dict(t='Chaîne de la clôture', steps=['Opérations courantes', 'Balance avant inventaire', 'Écritures d\'inventaire', 'Balance après inventaire', 'Bilan + CR + annexe'])]),
              liens=[dict(ch='compta-1', pourquoi='Les amortissements sont la première famille d\'écritures d\'inventaire (continuité d\'exploitation, coût historique).'),
+                    dict(ch='macro-1', pourquoi='La balance des paiements d\'un pays repose sur la même partie double : chaque opération avec le reste du monde a une contrepartie, d\'où CC + CK − CF + EO = 0.'),
                     dict(ch='compta-2', pourquoi='Les dépréciations et provisions appliquent la prudence et la séparation des exercices.'),
                     dict(ch='compta-3', pourquoi='Les régularisations sont l\'application directe de la séparation des exercices.'),
                     dict(ch='compta-4', pourquoi='Le bilan, le compte de résultat et l\'annexe sont le produit final de l\'inventaire.')]),
