@@ -1,0 +1,1406 @@
+
+
+########## CHAPITRE 1 — Pauvreté Monétaire, Circuit Économique & Consommation
+# Capitalisme · CN · Investissement · Multiplicateur · Accélérateur · Conso · État · Fiscalité · PIB
+# 15 auteurs
+
+- John Maynard Keynes  [1883-1946]  <Keynésien>  (aussi: )
+  IDEE: Demande effective ; chômage involontaire ; rôle de l'État
+  OEUVRES: Théorie générale de l'emploi, de l'intérêt et de la monnaie (1936)
+  DETAIL: Rompt avec l'idée d'autorégulation parfaite des marchés et justifie les politiques publiques de soutien à la demande.
+  PHRASE: Keynes montre qu'une insuffisance de demande peut installer durablement le chômage.
+
+- Paul Samuelson  [1915-2009]  <Néo-keynésien>  (aussi: 21)
+  IDEE: Synthèse néoclassique ; oscillateur ; formalisation économique
+  OEUVRES: Foundations of Economic Analysis (1947)
+  DETAIL: Prolonge la synthèse néo-keynésienne et, en macro, relie multiplicateur et accélérateur dans le modèle de l'oscillateur.
+  PHRASE: Samuelson formalise l'économie moderne et systématise la synthèse néo-keynésienne.
+
+- David Plihon  [1953-]  <Capitalisme contemporain>  (aussi: 8)
+  IDEE: Polycrise du capitalisme contemporain
+  OEUVRES: Les capitalismes contemporains
+  DETAIL: Décrit la coexistence de crises économique, climatique, démocratique et géopolitique.
+  PHRASE: Plihon montre que le capitalisme contemporain est traversé par une polycrise multidimensionnelle.
+
+- Orain  [Contemporain]  <Capitalisme contemporain>  (aussi: )
+  IDEE: Le capitalisme est entré dans une phase de finitude
+  OEUVRES: Dans le monde confisqué
+  DETAIL: Analyse la montée des monopoles, la privatisation d'espaces et la constitution d'empires privés puissants.
+  PHRASE: Orain explique que le capitalisme actuel se heurte à des limites et à une concentration extrême du pouvoir.
+
+- Aftalion  [1874-1956]  <Macroéconomie>  (aussi: )
+  IDEE: Principe de l'accélérateur
+  OEUVRES: Travaux sur l'accélérateur (1909)
+  DETAIL: Une variation de la demande provoque une variation plus que proportionnelle de l'investissement.
+  PHRASE: Aftalion montre qu'une hausse de la demande peut amplifier fortement l'investissement.
+
+- Milton Friedman  [1912-2006]  <Monétariste>  (aussi: 8)
+  IDEE: Revenu permanent ; la consommation est lissée dans le temps
+  OEUVRES: The Quantity Theory of Money: A Restatement (1956) | A Theory of the Consumption Function (1957) | A Monetary History of the United States (1963) | Capitalism and Freedom (1962)
+  DETAIL: La consommation dépend surtout du revenu permanent et non des variations temporaires du revenu courant.
+  PHRASE: Friedman montre que les ménages lissent leur consommation en fonction de leur revenu permanent.
+
+- James Duesenberry  [1918-2009]  <Consommation>  (aussi: )
+  IDEE: Revenu relatif ; effet de démonstration ; effet de cliquet
+  OEUVRES: Income, Saving and the Theory of Consumer Behavior (1949)
+  DETAIL: La consommation dépend aussi du regard social et du niveau de vie passé, pas seulement du revenu courant.
+  PHRASE: Duesenberry montre que la consommation est influencée par la comparaison sociale et la rigidité à la baisse.
+
+- Franco Modigliani  [1918-2003]  <Consommation>  (aussi: )
+  IDEE: Cycle de vie
+  OEUVRES: Life Cycle Hypothesis of Saving
+  DETAIL: Les individus empruntent jeunes, épargnent à l'âge adulte puis désépargnent à la retraite.
+  PHRASE: Modigliani explique que la consommation dépend du patrimoine, de l'âge et du revenu sur l'ensemble du cycle de vie.
+
+- Ernst Engel  [1821-1896]  <Statistique / consommation>  (aussi: )
+  IDEE: Loi d'Engel
+  OEUVRES: Travaux sur les budgets des ménages
+  DETAIL: Quand le revenu augmente, la part du budget consacrée à l'alimentation diminue.
+  PHRASE: La loi d'Engel montre que la structure de consommation se transforme avec le revenu.
+
+- Richard Easterlin  [1926-2024]  <Bonheur / économie>  (aussi: )
+  IDEE: Paradoxe d'Easterlin
+  OEUVRES: Does Economic Growth Improve the Human Lot? (1974)
+  DETAIL: Au-delà d'un certain niveau, la hausse du revenu moyen n'accroît pas nécessairement le bonheur moyen.
+  PHRASE: Easterlin montre que l'enrichissement d'un pays ne se traduit pas toujours par davantage de bonheur.
+
+- Alexis Spire  [1973-]  <Sociologie fiscale>  (aussi: )
+  IDEE: Résistances à l'impôt et attachement ambivalent à l'État
+  OEUVRES: Résistances à l'impôt, attachement à l'État (2018)
+  DETAIL: Explique le rejet fiscal par l'incompréhension des dépenses publiques, leur faible visibilité et le doute sur leur efficacité.
+  PHRASE: Spire montre que le consentement à l'impôt dépend aussi de la compréhension et de la confiance dans l'action publique.
+
+- Gabriel Zucman  [1986-]  <Fiscalité / inégalités>  (aussi: )
+  IDEE: Taxe plancher sur les très grands patrimoines
+  OEUVRES: Travaux sur la taxation des ultra-riches
+  DETAIL: Le cours évoque une taxe de 2 % sur les patrimoines supérieurs à 100 millions d'euros.
+  PHRASE: Zucman défend l'idée d'une taxation minimale des très grandes fortunes pour limiter la concentration patrimoniale.
+
+- Xavier Jaravel  [1989-]  <Fiscalité / innovation>  (aussi: )
+  IDEE: Réformer la fiscalité des plus-values et des holdings
+  OEUVRES: Travaux sur fiscalité et innovation
+  DETAIL: Le cours mentionne des pistes de réformes pour mieux taxer certains patrimoines et transmissions.
+  PHRASE: Jaravel propose des réformes ciblées pour limiter les rentes et mieux orienter la fiscalité.
+
+- Pierre Rosanvallon  [1948-]  <État-providence>  (aussi: )
+  IDEE: Crise de l'État providence
+  OEUVRES: La crise de l'État-providence (1981)
+  DETAIL: Analyse les tensions financières, sociales et politiques qui fragilisent l'État social.
+  PHRASE: Rosanvallon met en évidence les difficultés structurelles rencontrées par l'État-providence.
+
+- Richard Musgrave  [1910-2007]  <Finances publiques>  (aussi: )
+  IDEE: 3 fonctions de l'État providence : allocation, stabilisation, redistribution
+  OEUVRES: The Theory of Public Finance (1959)
+  DETAIL: Économiste américain. Formalise les 3 fonctions de l'État : corriger les défaillances du marché (allocation), stabiliser l'activité (stabilisation), réduire les inégalités (redistribution).
+  PHRASE: Musgrave identifie trois fonctions essentielles de l'État : l'allocation des ressources, la stabilisation économique et la redistribution des revenus.
+
+
+########## CHAPITRE 2 — Le Financement de l'Économie
+# Formes de monnaie · Agrégats M1/M2/M3 · Création monétaire · Banques · BCE · Marchés financiers
+# 11 auteurs
+
+- John Palmstruch  [1611-1671]  <Histoire monétaire>  (aussi: )
+  IDEE: Premier billet de banque en Europe
+  OEUVRES: Banque de Stockholm (1661)
+  DETAIL: Associé à l'émission des premiers billets de banque européens.
+  PHRASE: Palmstruch est souvent cité comme l'initiateur du billet de banque moderne en Europe.
+
+- John Law  [1671-1729]  <Histoire monétaire>  (aussi: )
+  IDEE: Système de Law ; bulle spéculative ; monnaie papier
+  OEUVRES: Système du Mississippi
+  DETAIL: Le cours évoque la spéculation autour de la Banque Royale et de la Compagnie, utile pour penser confiance et monnaie.
+  PHRASE: L'expérience de Law montre que la confiance monétaire est centrale mais fragile.
+
+- Christine Lagarde  [1956-]  <Politique monétaire>  (aussi: )
+  IDEE: BCE ; taux directeurs ; permacrises
+  OEUVRES: Présidente de la BCE
+  DETAIL: Le cours la cite pour illustrer la conduite contemporaine de la politique monétaire européenne.
+  PHRASE: Lagarde incarne la politique monétaire de la BCE dans un contexte de crises successives.
+
+- François Villeroy de Galhau  [1959-]  <Politique monétaire>  (aussi: )
+  IDEE: Gouverneur de la Banque de France
+  OEUVRES: Banque de France
+  DETAIL: Mentionné comme acteur institutionnel de la politique monétaire française et européenne.
+  PHRASE: Villeroy de Galhau représente l'articulation entre Banque de France et Eurosystème.
+
+- Jerome Powell  [1953-]  <Politique monétaire>  (aussi: )
+  IDEE: Président de la Fed
+  OEUVRES: Federal Reserve
+  DETAIL: Mentionné dans le cours pour comparer la politique monétaire américaine à celle de la BCE.
+  PHRASE: Powell illustre la politique monétaire de la Réserve fédérale américaine.
+
+- Robert Mundell  [1932-2021]  <Monétariste / économie internationale>  (aussi: )
+  IDEE: Triangle d'incompatibilité (trilemme) : impossible d'avoir simultanément libre circulation des capitaux, politique monétaire autonome et change stable
+  OEUVRES: International Economics (1968)
+  DETAIL: Fondateur de la théorie des zones monétaires optimales. Son triangle montre les compromis fondamentaux de la politique monétaire en économie ouverte.
+  PHRASE: Mundell montre qu'une union monétaire impose des contraintes : les pays membres renoncent à leur politique monétaire autonome.
+
+- Paul Krugman  [1953-]  <Nouvelle économie internationale>  (aussi: )
+  IDEE: 6 fonctions de la monnaie internationale ; nouvelle théorie du commerce international
+  OEUVRES: The Age of Diminished Expectations | Pop Internationalism
+  DETAIL: Prix Nobel 2008. Distingue les fonctions privées et officielles d'une monnaie internationale. Contribue à la nouvelle géographie économique.
+  PHRASE: Krugman montre que le dollar remplit toutes les fonctions d'une monnaie internationale, tant pour le secteur privé que pour les banques centrales.
+
+- John Law  [1671-1729]  <Histoire monétaire / proto-keynésien>  (aussi: )
+  IDEE: Système de papier-monnaie et de crédit ; bulle du Mississippi (1716-1720)
+  OEUVRES: Banque Générale (1716) | Compagnie du Mississippi
+  DETAIL: Premier grand système de papier-monnaie en France. Bulle spéculative effondrée en 1720. Schumpeter lui rend hommage : 'pré-keynésien et monétariste'.
+  PHRASE: John Law montre qu'une création monétaire excessive sans contrepartie productive mène inévitablement à la crise de confiance.
+
+- Éric Monnet  [1983-]  <Histoire économique / banques centrales>  (aussi: )
+  IDEE: La banque centrale tend à devenir un acteur plus large de la gouvernance économique
+  OEUVRES: La Banque Providence (2021)
+  DETAIL: Montre que les banques centrales contemporaines vont au-delà de la stabilité des prix : transition écologique, monnaie digitale, gestion de la dette publique.
+  PHRASE: Monnet montre que les banques centrales contemporaines tendent à devenir des institutions au cœur de la gouvernance économique et sociale.
+
+- Stephanie Kelton  [1969-]  <Théorie Monétaire Moderne (TMM)>  (aussi: )
+  IDEE: Un État souverain monétairement peut financer sa dette sans contrainte financière ; le seul risque est l'inflation
+  OEUVRES: Le mythe du déficit (2021)
+  DETAIL: Représentante de la TMM. Conteste l'idée que la dette publique est un problème en soi pour les États ayant leur propre monnaie.
+  PHRASE: Kelton défend l'idée que la contrainte budgétaire d'un État souverain monétairement n'est pas financière mais réelle (risque d'inflation).
+
+- Abba Lerner  [1903-1982]  <Post-keynésien / TMM (précurseur)>  (aussi: 9)
+  IDEE: Finance fonctionnelle : l'État doit se mettre au service de la prospérité, la contrainte financière est secondaire
+  OEUVRES: Functional Finance (1943)
+  DETAIL: Précurseur de la Théorie Monétaire Moderne. Défend l'idée que les États souverains monétairement ne sont pas contraints financièrement mais seulement par les ressources réelles.
+  PHRASE: Lerner défend une 'finance fonctionnelle' : l'État doit ajuster ses dépenses et recettes non pour équilibrer son budget mais pour maintenir la prospérité économique.
+
+
+########## CHAPITRE 3 — Grands Courants de l'Analyse Économique
+# Mercantilistes · Physiocrates · Classiques (Smith, Ricardo, Malthus, Say) · Marx · Néoclassiques · Keynésiens
+# 20 auteurs
+
+- Adam Smith  [1723-1790]  <Classique>  (aussi: 21)
+  IDEE: Main invisible ; division du travail ; libéralisme économique
+  OEUVRES: Recherches sur la nature et les causes de la richesse des nations (1776)
+  DETAIL: Fondateur majeur du courant classique. Montre que la division du travail accroît fortement la productivité et que la poursuite de l'intérêt individuel peut servir l'intérêt général.
+  PHRASE: Smith montre que le marché peut coordonner les intérêts individuels grâce à la main invisible.
+
+- David Ricardo  [1772-1823]  <Classique>  (aussi: 21)
+  IDEE: Avantages comparatifs ; rendements décroissants ; état stationnaire
+  OEUVRES: Principes de l'économie politique et de l'impôt (1817)
+  DETAIL: Explique le libre-échange par les avantages comparatifs et montre que les terres moins fertiles entraînent des rendements décroissants.
+  PHRASE: Ricardo montre que même un pays moins efficace partout peut gagner à l'échange grâce aux avantages comparatifs.
+
+- Thomas Malthus  [1766-1834]  <Classique>  (aussi: 7)
+  IDEE: Piège malthusien ; la population tend à croître plus vite que les subsistances
+  OEUVRES: Essai sur le principe de population (1798)
+  DETAIL: Vision pessimiste selon laquelle la population augmente plus vite que la production agricole, ce qui conduit à la pauvreté et aux crises.
+  PHRASE: Malthus défend l'idée que la dynamique démographique peut bloquer durablement l'amélioration du niveau de vie.
+
+- Jean-Baptiste Say  [1767-1832]  <Classique>  (aussi: )
+  IDEE: L'offre crée sa propre demande
+  OEUVRES: Traité d'économie politique (1803)
+  DETAIL: La loi des débouchés affirme qu'une production crée les revenus permettant d'acheter la production.
+  PHRASE: Say soutient qu'il ne peut pas y avoir durablement de crise générale de surproduction car produire distribue des revenus.
+
+- Karl Marx  [1818-1883]  <Marxiste>  (aussi: 7,10)
+  IDEE: Plus-value ; exploitation ; lutte des classes
+  OEUVRES: Le Capital (1867) | Manifeste du Parti communiste (1848)
+  DETAIL: Analyse du capitalisme fondée sur la valeur-travail, l'exploitation du prolétariat et les contradictions internes du système.
+  PHRASE: Marx montre que le profit capitaliste repose sur l'appropriation de la plus-value créée par le travail.
+
+- Friedrich Engels  [1820-1895]  <Marxiste>  (aussi: )
+  IDEE: Co-auteur du marxisme ; critique du capitalisme industriel
+  OEUVRES: Manifeste du Parti communiste (1848) | La situation de la classe laborieuse en Angleterre (1845)
+  DETAIL: Compagnon intellectuel de Marx, il participe à l'élaboration de la critique du capitalisme et de la lutte des classes.
+  PHRASE: Engels accompagne Marx dans la construction d'une critique historique et sociale du capitalisme.
+
+- François Quesnay  [1694-1774]  <Physiocrate>  (aussi: )
+  IDEE: La richesse vient de la terre ; circuit économique ; produit net
+  OEUVRES: Tableau économique (1758)
+  DETAIL: Chef de file des physiocrates. Il voit l'agriculture comme seule activité productive et pense l'économie comme un circuit entre classes sociales.
+  PHRASE: Quesnay est le premier à raisonner l'économie comme un circuit de la richesse entre classes sociales.
+
+- Jean Bodin  [1530-1596]  <Mercantiliste>  (aussi: )
+  IDEE: Populationniste ; richesse et puissance d'un État reposent sur les hommes
+  OEUVRES: Les Six Livres de la République (1576)
+  DETAIL: Auteur mercantiliste pour qui la puissance d'une nation dépend aussi de sa population.
+  PHRASE: Bodin affirme qu'il n'est richesse ni force que d'hommes.
+
+- Colbert  [1619-1683]  <Mercantiliste>  (aussi: )
+  IDEE: Colbertisme ; manufactures ; protectionnisme sélectif
+  OEUVRES: Politique mercantiliste sous Louis XIV
+  DETAIL: Met l'accent sur l'industrie, les manufactures et le rôle actif de l'État pour stimuler la production nationale.
+  PHRASE: Colbert défend un État producteur et protecteur pour renforcer la puissance économique du royaume.
+
+- Bernard Mandeville  [1670-1733]  <Pré-classique>  (aussi: )
+  IDEE: Les vices privés peuvent produire des bénéfices publics
+  OEUVRES: La Fable des abeilles (1714)
+  DETAIL: Montre provocativement que la recherche des intérêts individuels peut alimenter l'activité économique.
+  PHRASE: Mandeville suggère que les comportements intéressés peuvent avoir des effets collectifs positifs.
+
+- Vincent de Gournay  [1712-1759]  <Physiocrate / libéral>  (aussi: )
+  IDEE: Laissez faire, laissez passer
+  OEUVRES: Formule de référence du libéralisme économique
+  DETAIL: Associe prospérité économique et liberté de produire, d'échanger et de faire circuler les marchandises.
+  PHRASE: Gournay résume le programme libéral par la formule laissez faire, laissez passer.
+
+- Léon Walras  [1834-1910]  <Néoclassique / marginaliste>  (aussi: )
+  IDEE: Équilibre général ; formalisation mathématique de l'économie
+  OEUVRES: Éléments d'économie politique pure (1874)
+  DETAIL: Veut faire de l'économie une science rigoureuse, mathématisée, fondée sur la rationalité des agents.
+  PHRASE: Walras formalise l'économie en équations et cherche à montrer l'équilibre général des marchés.
+
+- William Stanley Jevons  [1835-1882]  <Marginaliste>  (aussi: )
+  IDEE: Utilité marginale ; révolution marginaliste
+  OEUVRES: The Theory of Political Economy (1871)
+  DETAIL: Participe à la révolution marginaliste en faisant de l'utilité marginale un concept central de la valeur.
+  PHRASE: Jevons place le raisonnement marginal au cœur de la théorie économique moderne.
+
+- Carl Menger  [1840-1921]  <Marginaliste / École autrichienne>  (aussi: )
+  IDEE: Valeur subjective ; individualisme méthodologique
+  OEUVRES: Principes d'économie politique (1871)
+  DETAIL: Fonde l'école autrichienne et insiste sur les préférences individuelles et la valeur subjective.
+  PHRASE: Menger explique la valeur par l'utilité subjective des biens pour les individus.
+
+- John Hicks  [1904-1989]  <Néo-keynésien>  (aussi: )
+  IDEE: Formalisation IS-LM ; synthèse keynésienne
+  OEUVRES: Mr. Keynes and the 'Classics' (1937)
+  DETAIL: Traduit la pensée de Keynes dans un cadre plus formalisé, notamment avec le schéma IS-LM.
+  PHRASE: Hicks contribue à la synthèse entre la tradition classique et l'analyse keynésienne.
+
+- Thorstein Veblen  [1857-1929]  <Institutionnaliste>  (aussi: )
+  IDEE: Consommation ostentatoire ; critique des normes sociales du capitalisme
+  OEUVRES: Théorie de la classe de loisir (1899) | Théorie de l'entreprise d'affaires (1904)
+  DETAIL: Analyse les comportements de consommation comme des phénomènes sociaux de distinction et non comme de purs choix rationnels.
+  PHRASE: Veblen montre que la consommation sert aussi à afficher un statut social.
+
+- Michel Aglietta  [1938-]  <Régulationniste>  (aussi: )
+  IDEE: Le capitalisme doit être analysé comme un système historique traversé par des crises structurelles
+  OEUVRES: Régulation et crises du capitalisme (1976)
+  DETAIL: Figure centrale de l'école de la régulation, il insiste sur les institutions, les compromis sociaux et les régimes d'accumulation.
+  PHRASE: Aglietta analyse les crises comme le produit de transformations structurelles du capitalisme.
+
+- Robert Boyer  [1943-]  <Régulationniste>  (aussi: )
+  IDEE: Mode de régulation ; cohérence institutionnelle de la croissance
+  OEUVRES: La théorie de la régulation (1986)
+  DETAIL: Prolonge l'école de la régulation en montrant que la croissance dépend de compromis institutionnels historiquement situés.
+  PHRASE: Boyer montre qu'un régime de croissance n'est viable que s'il repose sur des institutions cohérentes.
+
+- Vilfredo Pareto  [1848-1923]  <Néoclassique / Économie du bien-être>  (aussi: )
+  IDEE: Optimum de Pareto : situation où améliorer la situation d'un agent nécessite de détériorer celle d'un autre
+  OEUVRES: Manuel d'économie politique (1906)
+  DETAIL: Statisticien et économiste franco-suisse. Concept fondamental : une allocation est Pareto-optimale si aucun agent ne peut être amélioré sans en détériorer un autre.
+  PHRASE: Pareto montre que l'équilibre concurrentiel est efficace au sens de l'optimum de Pareto, mais pas nécessairement équitable.
+
+- Kenneth Arrow  [1921-2017]  <Néoclassique / Économie du bien-être>  (aussi: )
+  IDEE: Équilibre général Arrow-Debreu ; théorème d'impossibilité de Arrow
+  OEUVRES: Social Choice and Individual Values (1951) | General Competitive Analysis (1971, avec Debreu)
+  DETAIL: Prix Nobel 1972. Formalise avec Debreu les conditions d'existence d'un équilibre général. Son théorème d'impossibilité montre les limites des choix collectifs.
+  PHRASE: Arrow formalise les conditions nécessaires à l'existence d'un équilibre général compétitif, tout en montrant que ces conditions sont très restrictives.
+
+
+########## CHAPITRE 4 — Analyse Microéconomique (I) : Le Consommateur
+# Utilité · Courbes d'indifférence · 4 hypothèses · TMS · Contrainte budgétaire · Théorie du producteur
+# 10 auteurs
+
+- Steve Keen  [1953-]  <Hétérodoxe>  (aussi: )
+  IDEE: Critique radicale de la microéconomie standard
+  OEUVRES: L'imposture économique (2014)
+  DETAIL: Conteste notamment les hypothèses de rationalité et de transitivité des modèles microéconomiques classiques.
+  PHRASE: Steve Keen critique le caractère irréaliste de nombreuses hypothèses de la microéconomie standard.
+
+- Kate Raworth  [1970-]  <Économie écologique>  (aussi: )
+  IDEE: Critique de la non-satiété et de la croissance infinie
+  OEUVRES: Doughnut Economics (2017)
+  DETAIL: Remet en cause l'idée selon laquelle les individus veulent toujours plus et que la croissance doit être illimitée.
+  PHRASE: Raworth critique l'idée que plus de consommation signifie toujours plus de bien-être.
+
+- Hermann Heinrich Gossen  [1810-1858]  <Marginaliste>  (aussi: )
+  IDEE: Utilité marginale décroissante
+  OEUVRES: Développement des lois des échanges humains (1854)
+  DETAIL: Sa loi explique que chaque unité supplémentaire consommée apporte une satisfaction additionnelle plus faible.
+  PHRASE: La loi de Gossen montre que l'utilité marginale décroît avec la quantité consommée.
+
+- Herbert Simon  [1916-2001]  <Comportemental>  (aussi: 9)
+  IDEE: Rationalité limitée
+  OEUVRES: Administrative Behavior (1947)
+  DETAIL: Montre que les individus n'optimisent pas parfaitement car leur information et leurs capacités cognitives sont limitées.
+  PHRASE: Simon remplace l'hypothèse de rationalité parfaite par celle de rationalité limitée.
+
+- Daniel Kahneman  [1934-2024]  <Économie comportementale>  (aussi: 10)
+  IDEE: Biais cognitifs ; heuristiques
+  OEUVRES: Thinking, Fast and Slow (2011)
+  DETAIL: Montre que les choix réels s'écartent souvent de la rationalité standard.
+  PHRASE: Kahneman montre que les décisions économiques sont souvent guidées par des biais cognitifs.
+
+- Richard Thaler  [1945-]  <Économie comportementale>  (aussi: )
+  IDEE: Nudges ; écarts à la rationalité standard
+  OEUVRES: Nudge (2008)
+  DETAIL: Étudie les anomalies de comportement et les moyens doux d'orienter les choix.
+  PHRASE: Thaler montre que les individus ne se comportent pas comme des optimiseurs parfaits.
+
+- Herbert Simon  [1916-2001]  <Comportemental / Institutionnaliste>  (aussi: )
+  IDEE: Rationalité limitée (bounded rationality) ; les agents ne maximisent pas mais 'satisfont'
+  OEUVRES: Administrative Behavior (1947) | Models of Man (1957)
+  DETAIL: Prix Nobel 1978, Prix Turing. Montre que l'information est limitée, les capacités cognitives bornées → rationalité procédurale plutôt que substantielle.
+  PHRASE: Simon montre que les agents économiques ne maximisent pas mais cherchent des solutions satisfaisantes, dans les limites de leur information et de leur capacité cognitive.
+
+- Daniel Kahneman  [1934-2024]  <Économie comportementale / Psychologie>  (aussi: )
+  IDEE: Biais cognitifs ; Système 1 et Système 2 ; la rationalité parfaite est un mythe
+  OEUVRES: Thinking, Fast and Slow (2011)
+  DETAIL: Prix Nobel 2002. Distingue le Système 1 (rapide, intuitif) du Système 2 (lent, réfléchi). Montre que la plupart des décisions utilisent le Système 1 → biais inévitables.
+  PHRASE: Kahneman montre que les individus utilisent généralement leur Système 1 pour décider, ce qui produit des erreurs systématiques de jugement incompatibles avec l'homo œconomicus.
+
+- Richard Thaler  [1945-]  <Économie comportementale>  (aussi: )
+  IDEE: Nudge ; les préférences sont manipulables par le cadrage des choix
+  OEUVRES: Nudge (2008, avec Sunstein)
+  DETAIL: Prix Nobel 2017. Montre que nos préférences ne sont pas stables : elles dépendent de la manière dont on formule le choix. Développe le nudge (coup de pouce).
+  PHRASE: Thaler montre que les comportements peuvent être orientés vers de meilleures décisions sans contrainte, simplement en modifiant l'architecture des choix.
+
+- Robert Merton  [1910-2003]  <Sociologie / Économie comportementale>  (aussi: )
+  IDEE: Prophétie autoréalisatrice : une croyance qui provoque les comportements qui la rendent vraie
+  OEUVRES: Social Theory and Social Structure (1949)
+  DETAIL: Sociologue américain. Concept clé en économie : les représentations collectives influencent directement la réalité. Ex : panique bancaire, bulle spéculative.
+  PHRASE: Merton montre que les croyances collectives peuvent devenir auto-réalisatrices, remettant en cause l'idée que les marchés reflètent uniquement des fondamentaux objectifs.
+
+
+########## CHAPITRE 5 — Analyse Microéconomique (II) : Défaillances du Marché
+# Monopole · Externalités · Biens collectifs et communs · Asymétrie d'information · Pigou · Coase
+# 10 auteurs
+
+- Arthur Pigou  [1877-1959]  <Économie du bien-être>  (aussi: )
+  IDEE: Externalités ; intervention publique légitime quand le marché est défaillant
+  OEUVRES: The Economics of Welfare (1920)
+  DETAIL: Justifie taxes, subventions ou réglementation pour corriger les écarts entre coûts privés et coûts sociaux.
+  PHRASE: Pigou montre que l'État peut améliorer l'allocation des ressources lorsque des externalités perturbent le marché.
+
+- Ronald Coase  [1910-2013]  <Institutionnaliste / droits de propriété>  (aussi: 9)
+  IDEE: Théorème de Coase ; rôle des coûts de transaction
+  OEUVRES: The Problem of Social Cost (1960)
+  DETAIL: Si les droits de propriété sont bien définis et les coûts de transaction faibles, les agents peuvent négocier une solution à certaines externalités.
+  PHRASE: Coase montre que la correction des externalités peut aussi passer par la négociation privée sous certaines conditions.
+
+- George Akerlof  [1940-]  <Information imparfaite>  (aussi: )
+  IDEE: Sélection adverse ; marché des lemons
+  OEUVRES: The Market for Lemons (1970)
+  DETAIL: Montre que l'asymétrie d'information avant le contrat peut faire disparaître les bons produits ou les bons risques du marché.
+  PHRASE: Akerlof explique que l'information imparfaite peut conduire à l'effondrement d'un marché.
+
+- Michael Spence  [1943-]  <Information imparfaite>  (aussi: )
+  IDEE: Signalement ; le diplôme comme signal
+  OEUVRES: Job Market Signaling (1973)
+  DETAIL: Montre comment les agents mieux informés peuvent envoyer des signaux coûteux et crédibles pour révéler leur qualité.
+  PHRASE: Spence explique que certains signaux, comme le diplôme, servent à révéler une information cachée.
+
+- Elinor Ostrom  [1933-2012]  <Institutionnaliste>  (aussi: 7)
+  IDEE: Les communs peuvent être gérés collectivement sans privatisation ni étatisation totale
+  OEUVRES: Governing the Commons (1990)
+  DETAIL: Conteste l'idée d'une tragédie inévitable des communs et met en avant des règles locales de gestion collective efficaces.
+  PHRASE: Ostrom montre que des communautés peuvent gérer durablement des ressources communes grâce à des règles adaptées.
+
+- Garrett Hardin  [1915-2003]  <Économie de l'environnement>  (aussi: 7)
+  IDEE: Tragédie des communs
+  OEUVRES: The Tragedy of the Commons (1968)
+  DETAIL: Affirme qu'une ressource commune librement accessible risque d'être surexploitée si aucun mécanisme de régulation n'existe.
+  PHRASE: Hardin alerte sur le risque de surexploitation des ressources communes lorsqu'aucune règle ne limite les usages.
+
+- Mancur Olson  [1932-1998]  <Choix collectif>  (aussi: )
+  IDEE: Logique de l'action collective ; passager clandestin
+  OEUVRES: The Logic of Collective Action (1965)
+  DETAIL: Explique pourquoi des individus rationnels peuvent refuser de contribuer à un bien collectif tout en voulant en bénéficier.
+  PHRASE: Olson montre que l'action collective rencontre un problème structurel de passager clandestin.
+
+- James Buchanan  [1919-2013]  <Public Choice>  (aussi: )
+  IDEE: Critique de la défaillance de l'État ; les acteurs publics poursuivent aussi leurs intérêts
+  OEUVRES: The Calculus of Consent (1962)
+  DETAIL: Figure du Public Choice, il applique le raisonnement microéconomique aux décisions politiques et administratives.
+  PHRASE: Buchanan rappelle que l'État n'est pas toujours un correcteur parfait car les décideurs publics ont aussi leurs propres intérêts.
+
+- George Stigler  [1911-1991]  <École de Chicago / Public Choice>  (aussi: )
+  IDEE: Capture réglementaire
+  OEUVRES: The Theory of Economic Regulation (1971)
+  DETAIL: Montre que les régulateurs peuvent être influencés ou capturés par les groupes qu'ils sont censés encadrer.
+  PHRASE: Stigler met en garde contre une réglementation qui finit par servir les intérêts des acteurs régulés.
+
+- Michael Heller  [1962-]  <Économie du droit / Institutionnaliste>  (aussi: )
+  IDEE: Tragédie des anti-communs : trop de droits de propriété bloquent l'usage efficace des ressources
+  OEUVRES: The Gridlock Economy (2008)
+  DETAIL: Juriste et économiste. Conteste l'idée que plus de propriété = plus d'efficacité. Montre que la multiplication des brevets peut bloquer l'innovation ('enclosures de la connaissance').
+  PHRASE: Heller montre que trop de droits de propriété peut créer une 'tragédie des anti-communs' qui bloque l'accès aux ressources, contrairement à ce que prévoit Coase.
+
+
+########## CHAPITRE 6 — La Croissance Économique
+# PIB · Faits stylisés · Solow · Croissance endogène · Institutions · Inégalités · Soutenabilité
+# 30 auteurs
+
+- Douglass North  [1920-2015]  <Institutionnaliste>  (aussi: 8)
+  IDEE: Les institutions sont les règles du jeu qui réduisent l'incertitude
+  OEUVRES: Institutions, Institutional Change and Economic Performance (1990)
+  DETAIL: Les droits de propriété, la qualité des règles et la stabilité institutionnelle expliquent les trajectoires de croissance.
+  PHRASE: North explique que les marchés ont besoin d'institutions crédibles pour fonctionner efficacement.
+
+- Joseph Schumpeter  [1883-1950]  <Évolutionniste>  (aussi: 8)
+  IDEE: Destruction créatrice ; entrepreneur innovateur
+  OEUVRES: Capitalisme, socialisme et démocratie (1942) | Théorie de l'évolution économique (1911)
+  DETAIL: L'innovation bouleverse les structures productives en détruisant les activités anciennes et en créant de nouvelles.
+  PHRASE: Schumpeter montre que la croissance capitaliste avance par vagues d'innovation et destruction créatrice.
+
+- Robert Solow  [1924-2023]  <Néoclassique>  (aussi: )
+  IDEE: Croissance exogène ; résidu de Solow ; convergence conditionnelle
+  OEUVRES: A Contribution to the Theory of Economic Growth (1956)
+  DETAIL: Explique la croissance par l'accumulation du capital, du travail et un progrès technique exogène mesuré par le résidu.
+  PHRASE: Solow montre qu'une grande partie de la croissance de long terme vient d'un progrès technique non expliqué par les seuls facteurs.
+
+- Roy Harrod  [1900-1978]  <Post-keynésien>  (aussi: )
+  IDEE: Instabilité de la croissance ; fil du rasoir
+  OEUVRES: An Essay in Dynamic Theory (1939)
+  DETAIL: Avec Domar, il montre qu'une croissance équilibrée est difficile à maintenir car l'économie peut s'écarter durablement de sa trajectoire.
+  PHRASE: Harrod insiste sur l'instabilité intrinsèque de la croissance dans une perspective keynésienne.
+
+- Evsey Domar  [1914-1997]  <Post-keynésien>  (aussi: )
+  IDEE: Modèle Harrod-Domar ; rôle de l'investissement
+  OEUVRES: Capital Expansion, Rate of Growth, and Employment (1946) | Expansion and Employment (1947)
+  DETAIL: Souligne que l'investissement crée à la fois de la demande et des capacités de production, ce qui peut générer des déséquilibres.
+  PHRASE: Domar montre que la croissance dépend du lien entre investissement, capacité productive et demande.
+
+- Paul Romer  [1955-]  <Croissance endogène>  (aussi: )
+  IDEE: La R&D et les idées sont des moteurs internes de la croissance
+  OEUVRES: Endogenous Technological Change (1990) | Increasing Returns and Long-Run Growth (1986)
+  DETAIL: La croissance ne vient plus d'un progrès technique tombé du ciel mais de l'accumulation de connaissances et d'innovations.
+  PHRASE: Romer montre que les idées et la recherche sont des moteurs endogènes de la croissance.
+
+- Robert Lucas  [1937-2023]  <Croissance endogène>  (aussi: )
+  IDEE: Capital humain comme moteur de la croissance
+  OEUVRES: On the Mechanics of Economic Development (1988)
+  DETAIL: L'éducation, l'apprentissage et l'accumulation de compétences soutiennent la croissance à long terme.
+  PHRASE: Lucas place le capital humain au cœur de la croissance endogène.
+
+- Robert Barro  [1944-]  <Croissance endogène>  (aussi: )
+  IDEE: Capital public et infrastructures comme moteurs de la croissance
+  OEUVRES: Government Spending in a Simple Model of Endogenous Growth (1990)
+  DETAIL: Montre que certaines dépenses publiques productives peuvent soutenir durablement la croissance.
+  PHRASE: Barro montre que les infrastructures publiques peuvent nourrir la croissance de long terme.
+
+- François Perroux  [1903-1987]  <Croissance / développement>  (aussi: )
+  IDEE: Définition rigoureuse de la croissance ; croissance ≠ développement
+  OEUVRES: L'économie du XXe siècle (1961)
+  DETAIL: Définit la croissance comme une augmentation soutenue d'un indicateur réel sur longue période.
+  PHRASE: Perroux rappelle que la croissance est un phénomène quantitatif durable qu'il faut distinguer du développement.
+
+- Jean Arrous  [Contemporain]  <Croissance>  (aussi: )
+  IDEE: La croissance est un processus cumulatif fondé sur la productivité
+  OEUVRES: Définition reprise dans le cours
+  DETAIL: Insiste sur la dimension dynamique, cumulative et interactionnelle de la croissance.
+  PHRASE: Arrous met au centre le caractère cumulatif de la croissance et le rôle de la productivité.
+
+- Nicholas Kaldor  [1908-1986]  <Post-keynésien>  (aussi: )
+  IDEE: Faits stylisés de la croissance
+  OEUVRES: A Model of Economic Growth (1957)
+  DETAIL: Met en évidence des régularités statistiques de long terme pour décrire la croissance moderne.
+  PHRASE: Kaldor propose de partir des faits stylisés pour comprendre les grandes régularités de la croissance.
+
+- Walt Whitman Rostow  [1916-2003]  <Développement>  (aussi: 7)
+  IDEE: Les étapes de la croissance ; take-off
+  OEUVRES: Les étapes de la croissance économique (1960) | The Stages of Economic Growth (1960)
+  DETAIL: Propose une vision linéaire du développement en cinq étapes, dont le décollage est le moment décisif.
+  PHRASE: Rostow voit la croissance comme un processus en étapes menant à la consommation de masse.
+
+- Alexander Gerschenkron  [1904-1978]  <Développement>  (aussi: 7)
+  IDEE: Avantage du retard ; trajectoires différenciées d'industrialisation
+  OEUVRES: Economic Backwardness in Historical Perspective (1962)
+  DETAIL: Un pays en retard ne suit pas forcément la trajectoire britannique ; il peut rattraper grâce à des institutions spécifiques.
+  PHRASE: Gerschenkron montre que le retard peut devenir un avantage si des institutions adaptées soutiennent le rattrapage.
+
+- Alvin Hansen  [1887-1975]  <Keynésien>  (aussi: 7)
+  IDEE: Stagnation séculaire
+  OEUVRES: Economic Progress and Declining Population Growth (1938)
+  DETAIL: Théorise le risque d'un ralentissement durable de la croissance dans les économies mûres.
+  PHRASE: Hansen alerte sur la possibilité d'une stagnation séculaire dans les économies développées.
+
+- Daniel Cohen  [1953-2023]  <Croissance / mondialisation>  (aussi: )
+  IDEE: Le capitalisme se heurte à des limites physiques et à un ralentissement possible
+  OEUVRES: Le monde est clos et le désir infini (2015)
+  DETAIL: Interroge les limites écologiques et matérielles du modèle de croissance moderne.
+  PHRASE: Daniel Cohen souligne que le capitalisme se déploie désormais dans un monde aux ressources limitées.
+
+- Colin Clark  [1905-1989]  <Structure sectorielle>  (aussi: )
+  IDEE: Transformation sectorielle de l'emploi liée aux gains de productivité
+  OEUVRES: Les conditions du progrès économique (1941)
+  DETAIL: Avec Fourastié, explique le déplacement de l'emploi du primaire vers le secondaire puis le tertiaire.
+  PHRASE: Clark montre que les écarts de productivité entre secteurs transforment la structure de l'emploi.
+
+- Alfred Sauvy  [1898-1990]  <Démographie / structure sectorielle>  (aussi: )
+  IDEE: Théorie du déversement
+  OEUVRES: La machine et le chômage (1980)
+  DETAIL: Montre comment la main-d'œuvre libérée par les gains de productivité se transfère vers d'autres secteurs.
+  PHRASE: Sauvy explique que les gains de productivité déplacent la main-d'œuvre d'un secteur à l'autre.
+
+- Thomas Piketty  [1971-]  <Inégalités>  (aussi: 21)
+  IDEE: Si r > g, le patrimoine se concentre
+  OEUVRES: Le Capital au XXIe siècle (2013)
+  DETAIL: Étudie l'évolution longue des patrimoines et montre qu'un rendement du capital supérieur à la croissance favorise la concentration des richesses.
+  PHRASE: Piketty montre que lorsque le rendement du capital dépasse la croissance, les inégalités patrimoniales tendent à se creuser.
+
+- Simon Kuznets  [1901-1985]  <Croissance / inégalités>  (aussi: )
+  IDEE: Courbe de Kuznets en cloche
+  OEUVRES: Economic Growth and Income Inequality (1955)
+  DETAIL: Selon lui, les inégalités augmentent au début du développement puis diminuent ensuite, même si cette loi est discutée.
+  PHRASE: Kuznets avance que les inégalités suivent une courbe en cloche au cours du développement.
+
+- Branko Milanovic  [1953-]  <Inégalités>  (aussi: 21)
+  IDEE: Courbe de l'éléphant ; gagnants et perdants de la mondialisation
+  OEUVRES: Global Inequality (2016) | The Three Eras of Global Inequality (2022)
+  DETAIL: Analyse les inégalités mondiales et les effets différenciés de la mondialisation selon les groupes sociaux.
+  PHRASE: Milanovic montre que la mondialisation a profité à certains groupes et en a fragilisé d'autres.
+
+- Dani Rodrik  [1957-]  <Développement / mondialisation>  (aussi: )
+  IDEE: Les trajectoires de développement dépendent des institutions et des compromis
+  OEUVRES: The Globalization Paradox (2011)
+  DETAIL: Souvent mobilisé pour penser les arbitrages entre mondialisation, souveraineté et démocratie.
+  PHRASE: Rodrik rappelle qu'il n'existe pas un seul modèle universel de développement.
+
+- Daron Acemoglu  [1967-]  <Institutionnaliste>  (aussi: 7,8,21)
+  IDEE: Institutions inclusives vs extractives
+  OEUVRES: Why Nations Fail (2012)
+  DETAIL: Avec James Robinson, explique les écarts de développement par la qualité des institutions politiques et économiques.
+  PHRASE: Acemoglu montre que des institutions inclusives favorisent l'innovation et la croissance durable.
+
+- James A. Robinson  [1960-]  <Institutionnaliste>  (aussi: 21)
+  IDEE: Institutions et trajectoires nationales
+  OEUVRES: Why Nations Fail (2012)
+  DETAIL: Co-auteur avec Acemoglu d'une analyse institutionnelle des réussites et échecs de développement.
+  PHRASE: Robinson montre que la qualité des institutions explique largement la réussite ou l'échec des nations.
+
+- Abhijit Banerjee  [1961-]  <Développement>  (aussi: )
+  IDEE: La croissance dépend aussi d'une meilleure allocation du capital
+  OEUVRES: Poor Economics (2011)
+  DETAIL: Avec Esther Duflo, insiste sur l'inclusion économique, l'expérimentation et les mécanismes concrets du développement.
+  PHRASE: Banerjee rappelle que le manque de croissance vient aussi d'une mauvaise allocation des ressources.
+
+- Esther Duflo  [1972-]  <Développement>  (aussi: )
+  IDEE: Inclusion économique ; expérimentation ; meilleure allocation des ressources
+  OEUVRES: Poor Economics (2011)
+  DETAIL: Travaille avec Banerjee sur le développement à partir de méthodes empiriques et d'expérimentations.
+  PHRASE: Duflo montre que le développement doit être analysé à partir de mécanismes concrets et testés empiriquement.
+
+- Robert Gordon  [1940-]  <Croissance>  (aussi: )
+  IDEE: Ralentissement structurel de la productivité
+  OEUVRES: The Rise and Fall of American Growth (2016)
+  DETAIL: Considère que les grandes innovations du XXe siècle ont eu un impact plus fort que les innovations numériques récentes.
+  PHRASE: Gordon défend l'idée d'un ralentissement structurel de la productivité dans les pays développés.
+
+- Jean-Baptiste Fressoz  [1976-]  <Histoire des sciences et des techniques>  (aussi: )
+  IDEE: Critique de la vision linéaire de la transition énergétique ; empilement des énergies plutôt que substitution
+  OEUVRES: L'Apocalypse joyeuse (2012) | L'Empilement des énergies (2023)
+  DETAIL: Historien des sciences. Montre que l'histoire de l'énergie n'est pas une succession de substitutions mais un empilement. Relativise le récit optimiste de la transition verte.
+  PHRASE: Fressoz montre que la transition énergétique n'est pas une rupture propre mais un processus d'empilement des sources d'énergie, plus lent et complexe que le discours dominant le laisse croire.
+
+- François Jarrige  [1975-]  <Histoire / Études des techniques>  (aussi: )
+  IDEE: La voiture électrique déplace la pollution plutôt qu'elle ne la supprime ; enjeu des métaux critiques
+  OEUVRES: Technocritiques (2014) | La Rouille et la Foudre
+  DETAIL: Historien. Critique le récit techno-optimiste de la transition écologique. Montre que la voiture électrique crée de nouvelles dépendances (métaux critiques, lithium, cobalt).
+  PHRASE: Jarrige montre que la voiture électrique déplace les coûts écologiques vers l'extraction minière et les infrastructures, remettant en cause l'idée d'une solution miracle.
+
+- Pierre Veltz  [1945-]  <Économie territoriale / Sociologie économique>  (aussi: )
+  IDEE: Nous sommes hyper-industriels, pas post-industriels ; l'industrie et les services sont imbriqués
+  OEUVRES: Mondialisation, villes et territoires (1996) | La Société hyper-industrielle (2017)
+  DETAIL: Ingénieur-sociologue. Conteste l'idée d'une désindustrialisation comme 'fin de l'industrie'. Les services numériques reposent sur de lourdes infrastructures industrielles.
+  PHRASE: Veltz montre que nous ne sommes pas entrés dans une société post-industrielle mais hyper-industrielle, où services et industrie sont profondément imbriqués.
+
+- Mario Draghi  [1947-]  <Politique économique européenne>  (aussi: )
+  IDEE: Rapport Draghi (2024) : plan massif d'investissement pour restaurer la compétitivité européenne
+  OEUVRES: The future of European competitiveness (2024)
+  DETAIL: Ancien président de la BCE et ancien Premier ministre italien. Son rapport propose 800 Mds€/an d'investissement, une intégration des marchés et une simplification réglementaire.
+  PHRASE: Le rapport Draghi diagnostique un déficit d'investissement et de productivité en Europe, proposant une stratégie combinant investissement massif et intégration des marchés.
+
+
+########## CHAPITRE 7 — Développement : stratégies, inégalités et soutenabilité
+# Développement · sous-développement · stratégies · inégalités · Chine · ODD · climat · soutenabilité
+# 31 auteurs
+
+- Thomas Malthus  [1766-1834]  <Classique>  (aussi: 3)
+  IDEE: Piège malthusien ; la population tend à croître plus vite que les subsistances
+  OEUVRES: Essai sur le principe de population (1798)
+  DETAIL: Vision pessimiste selon laquelle la population augmente plus vite que la production agricole, ce qui conduit à la pauvreté et aux crises.
+  PHRASE: Malthus défend l'idée que la dynamique démographique peut bloquer durablement l'amélioration du niveau de vie.
+
+- Karl Marx  [1818-1883]  <Marxiste>  (aussi: 3,10)
+  IDEE: Plus-value ; exploitation ; lutte des classes
+  OEUVRES: Le Capital (1867) | Manifeste du Parti communiste (1848)
+  DETAIL: Analyse du capitalisme fondée sur la valeur-travail, l'exploitation du prolétariat et les contradictions internes du système.
+  PHRASE: Marx montre que le profit capitaliste repose sur l'appropriation de la plus-value créée par le travail.
+
+- Elinor Ostrom  [1933-2012]  <Institutionnaliste>  (aussi: 5)
+  IDEE: Les communs peuvent être gérés collectivement sans privatisation ni étatisation totale
+  OEUVRES: Governing the Commons (1990)
+  DETAIL: Conteste l'idée d'une tragédie inévitable des communs et met en avant des règles locales de gestion collective efficaces.
+  PHRASE: Ostrom montre que des communautés peuvent gérer durablement des ressources communes grâce à des règles adaptées.
+
+- Garrett Hardin  [1915-2003]  <Économie de l'environnement>  (aussi: 5)
+  IDEE: Tragédie des communs
+  OEUVRES: The Tragedy of the Commons (1968)
+  DETAIL: Affirme qu'une ressource commune librement accessible risque d'être surexploitée si aucun mécanisme de régulation n'existe.
+  PHRASE: Hardin alerte sur le risque de surexploitation des ressources communes lorsqu'aucune règle ne limite les usages.
+
+- Walt Whitman Rostow  [1916-2003]  <Développement>  (aussi: 6)
+  IDEE: Les étapes de la croissance ; take-off
+  OEUVRES: Les étapes de la croissance économique (1960) | The Stages of Economic Growth (1960)
+  DETAIL: Propose une vision linéaire du développement en cinq étapes, dont le décollage est le moment décisif.
+  PHRASE: Rostow voit la croissance comme un processus en étapes menant à la consommation de masse.
+
+- Alexander Gerschenkron  [1904-1978]  <Développement>  (aussi: 6)
+  IDEE: Avantage du retard ; trajectoires différenciées d'industrialisation
+  OEUVRES: Economic Backwardness in Historical Perspective (1962)
+  DETAIL: Un pays en retard ne suit pas forcément la trajectoire britannique ; il peut rattraper grâce à des institutions spécifiques.
+  PHRASE: Gerschenkron montre que le retard peut devenir un avantage si des institutions adaptées soutiennent le rattrapage.
+
+- Alvin Hansen  [1887-1975]  <Keynésien>  (aussi: 6)
+  IDEE: Stagnation séculaire
+  OEUVRES: Economic Progress and Declining Population Growth (1938)
+  DETAIL: Théorise le risque d'un ralentissement durable de la croissance dans les économies mûres.
+  PHRASE: Hansen alerte sur la possibilité d'une stagnation séculaire dans les économies développées.
+
+- Daron Acemoglu  [1967-]  <Institutionnaliste>  (aussi: 6,8,21)
+  IDEE: Institutions inclusives vs extractives
+  OEUVRES: Why Nations Fail (2012)
+  DETAIL: Avec James Robinson, explique les écarts de développement par la qualité des institutions politiques et économiques.
+  PHRASE: Acemoglu montre que des institutions inclusives favorisent l'innovation et la croissance durable.
+
+- Amartya Sen  [1933-]  <Développement humain>  (aussi: )
+  IDEE: Développement comme extension des capabilités et libertés réelles
+  OEUVRES: Development as Freedom (1999)
+  DETAIL: Développement comme extension des capabilités et libertés réelles
+  PHRASE: Sen permet de dépasser le PIB : développer, c’est élargir les libertés réelles des individus.
+
+- Walt Rostow  [1916-2003]  <Développement / étapes>  (aussi: )
+  IDEE: Modèle des étapes de la croissance et take-off
+  OEUVRES: Les étapes de la croissance économique (1960)
+  DETAIL: Modèle des étapes de la croissance et take-off
+  PHRASE: Rostow propose une lecture linéaire du développement par étapes, centrée sur le décollage.
+
+- Arthur Lewis  [1915-1991]  <Développement dualiste>  (aussi: )
+  IDEE: Dualisme entre secteur traditionnel et secteur moderne
+  OEUVRES: Economic Development with Unlimited Supplies of Labour (1954)
+  DETAIL: Dualisme entre secteur traditionnel et secteur moderne
+  PHRASE: Lewis explique le développement par le transfert de main-d’œuvre du secteur traditionnel vers l’industrie.
+
+- Ragnar Nurkse  [1907-1959]  <Développement>  (aussi: 21)
+  IDEE: Cercle vicieux de la pauvreté et insuffisance d’investissement
+  OEUVRES: Problems of Capital Formation in Underdeveloped Countries (1953)
+  DETAIL: Cercle vicieux de la pauvreté et insuffisance d’investissement
+  PHRASE: Nurkse montre comment faible revenu, faible épargne et faible investissement peuvent s’auto-entretenir.
+
+- Alexander Gerschenkron  [1904-1978]  <Histoire économique>  (aussi: )
+  IDEE: Le retard peut être compensé par l’État, les banques ou grandes institutions
+  OEUVRES: Economic Backwardness in Historical Perspective (1962)
+  DETAIL: Le retard peut être compensé par l’État, les banques ou grandes institutions
+  PHRASE: Gerschenkron nuance l’idée d’un modèle unique de développement.
+
+- Raúl Prebisch  [1901-1986]  <Structuralisme / CEPAL>  (aussi: 21)
+  IDEE: Centre-périphérie et détérioration des termes de l’échange
+  OEUVRES: Travaux de la CEPAL
+  DETAIL: Centre-périphérie et détérioration des termes de l’échange
+  PHRASE: Prebisch sert à montrer que l’insertion commerciale peut maintenir une dépendance des pays primaires.
+
+- Hans Singer  [1910-2006]  <Structuralisme>  (aussi: )
+  IDEE: Détérioration des termes de l’échange pour les exportateurs de produits primaires
+  OEUVRES: Thèse Prebisch-Singer
+  DETAIL: Détérioration des termes de l’échange pour les exportateurs de produits primaires
+  PHRASE: Singer est mobilisable avec Prebisch pour expliquer les limites du libre-échange pour les PED.
+
+- Samir Amin  [1931-2018]  <Dépendance / tiers-mondisme>  (aussi: )
+  IDEE: Critique de l’échange inégal et de la dépendance périphérique
+  OEUVRES: Le développement inégal (1973)
+  DETAIL: Critique de l’échange inégal et de la dépendance périphérique
+  PHRASE: Amin montre que le sous-développement peut être produit par l’insertion dominée dans le système mondial.
+
+- Arghiri Emmanuel  [1911-2001]  <Échange inégal>  (aussi: )
+  IDEE: Analyse de l’échange inégal dans le commerce mondial
+  OEUVRES: L’échange inégal (1969)
+  DETAIL: Analyse de l’échange inégal dans le commerce mondial
+  PHRASE: Emmanuel permet de relier commerce international et reproduction des asymétries Nord/Sud.
+
+- Paul Bairoch  [1930-1999]  <Histoire économique>  (aussi: 21)
+  IDEE: Nuance le lien entre libre-échange, protectionnisme et développement
+  OEUVRES: Mythes et paradoxes de l’histoire économique (1993)
+  DETAIL: Le document l’utilise pour rappeler que les trajectoires réelles de développement sont plus complexes qu’une opposition simple ouverture/fermeture.
+  PHRASE: Les trajectoires historiques mêlent souvent protection, marché intérieur et ouverture.
+
+- Daron Acemoglu  [1967-]  <Institutionnaliste>  (aussi: )
+  IDEE: Institutions inclusives/extractives et trajectoires de développement
+  OEUVRES: Why Nations Fail (2012)
+  DETAIL: Institutions inclusives/extractives et trajectoires de développement
+  PHRASE: Acemoglu met l’accent sur la qualité institutionnelle pour expliquer développement ou blocages.
+
+- James A. Robinson  [1960-]  <Institutionnaliste>  (aussi: )
+  IDEE: Co-auteur de l’analyse des institutions inclusives et extractives
+  OEUVRES: Why Nations Fail (2012)
+  DETAIL: Co-auteur de l’analyse des institutions inclusives et extractives
+  PHRASE: Robinson complète Acemoglu pour penser les écarts de trajectoire entre pays.
+
+- David Bloom  [1955-]  <Démographie économique>  (aussi: )
+  IDEE: Dividende démographique : opportunité conditionnelle liée à la part des actifs
+  OEUVRES: Travaux sur le demographic dividend
+  DETAIL: Dividende démographique : opportunité conditionnelle liée à la part des actifs
+  PHRASE: Bloom montre que la démographie devient un atout seulement si emplois, éducation et institutions suivent.
+
+- David Canning  [1950-]  <Démographie économique>  (aussi: )
+  IDEE: Dividende démographique et conditions de transformation en croissance
+  OEUVRES: Travaux sur le demographic dividend
+  DETAIL: Dividende démographique et conditions de transformation en croissance
+  PHRASE: Canning rappelle que la fenêtre démographique n’est pas automatiquement un développement.
+
+- Adolphe Landry  [1874-1956]  <Démographie>  (aussi: )
+  IDEE: Transition démographique et révolution démographique
+  OEUVRES: La Révolution démographique (1934)
+  DETAIL: Transition démographique et révolution démographique
+  PHRASE: Landry est la référence du modèle de transition démographique dans le chapitre.
+
+- Thomas Malthus  [1766-1834]  <Classique / démographie>  (aussi: )
+  IDEE: La population tend à croître plus vite que les subsistances
+  OEUVRES: Essai sur le principe de population (1798)
+  DETAIL: La population tend à croître plus vite que les subsistances
+  PHRASE: Malthus représente la lecture pessimiste du lien population/subsistances.
+
+- Karl Marx  [1818-1883]  <Marxiste>  (aussi: )
+  IDEE: Lecture sociale et économique de la population et du capitalisme
+  OEUVRES: Le Capital (1867)
+  DETAIL: Lecture sociale et économique de la population et du capitalisme
+  PHRASE: Marx sert à discuter les interprétations de la pauvreté et de l’accumulation.
+
+- Ester Boserup  [1910-1999]  <Démographie / agriculture>  (aussi: )
+  IDEE: La pression démographique peut stimuler l’innovation agricole
+  OEUVRES: The Conditions of Agricultural Growth (1965)
+  DETAIL: La pression démographique peut stimuler l’innovation agricole
+  PHRASE: Boserup inverse la lecture malthusienne : la population peut pousser à innover.
+
+- Alvin Hansen  [1887-1975]  <Économie / démographie>  (aussi: )
+  IDEE: Vieillissement, demande et stagnation séculaire
+  OEUVRES: Travaux sur la stagnation séculaire
+  DETAIL: Vieillissement, demande et stagnation séculaire
+  PHRASE: Hansen est mobilisé pour les effets économiques d’une dynamique démographique défavorable.
+
+- Garrett Hardin  [1915-2003]  <Environnement>  (aussi: )
+  IDEE: Tragédie des communs : surexploitation des ressources communes
+  OEUVRES: The Tragedy of the Commons (1968)
+  DETAIL: Tragédie des communs : surexploitation des ressources communes
+  PHRASE: Hardin montre pourquoi la gestion des ressources communes exige coordination ou régulation.
+
+- Elinor Ostrom  [1933-2012]  <Institutionnaliste / communs>  (aussi: )
+  IDEE: Gouvernance collective des biens communs
+  OEUVRES: Governing the Commons (1990)
+  DETAIL: Gouvernance collective des biens communs
+  PHRASE: Ostrom nuance Hardin : les communautés peuvent parfois gérer durablement les communs.
+
+- Gro Harlem Brundtland  [1939-]  <Développement durable>  (aussi: )
+  IDEE: Définition moderne du développement durable via le rapport Brundtland
+  OEUVRES: Notre avenir à tous (1987)
+  DETAIL: Définition moderne du développement durable via le rapport Brundtland
+  PHRASE: Brundtland donne la définition classique : répondre aux besoins présents sans compromettre ceux des générations futures.
+
+- David Autor  [1967-]  <Économie du travail>  (aussi: 8,22)
+  IDEE: Automatisation, tâches et polarisation de l’emploi
+  OEUVRES: Travaux sur skills, tasks and technology
+  DETAIL: Automatisation, tâches et polarisation de l’emploi
+  PHRASE: Autor sert à analyser l’impact des technologies sur les tâches et la structure de l’emploi.
+
+
+########## CHAPITRE 8 — Révolutions industrielles, entreprise, travail et IA
+# Industrialisation anglaise · entreprise · gouvernance · Weber · Fayol · Berle & Means · Chandler · Galbraith · IA
+# 37 auteurs
+
+- Douglass North  [1920-2015]  <Institutionnaliste>  (aussi: 6)
+  IDEE: Les institutions sont les règles du jeu qui réduisent l'incertitude
+  OEUVRES: Institutions, Institutional Change and Economic Performance (1990)
+  DETAIL: Les droits de propriété, la qualité des règles et la stabilité institutionnelle expliquent les trajectoires de croissance.
+  PHRASE: North explique que les marchés ont besoin d'institutions crédibles pour fonctionner efficacement.
+
+- Joseph Schumpeter  [1883-1950]  <Évolutionniste>  (aussi: 6)
+  IDEE: Destruction créatrice ; entrepreneur innovateur
+  OEUVRES: Capitalisme, socialisme et démocratie (1942) | Théorie de l'évolution économique (1911)
+  DETAIL: L'innovation bouleverse les structures productives en détruisant les activités anciennes et en créant de nouvelles.
+  PHRASE: Schumpeter montre que la croissance capitaliste avance par vagues d'innovation et destruction créatrice.
+
+- Daron Acemoglu  [1967-]  <Institutionnaliste>  (aussi: 6,7,21)
+  IDEE: Institutions inclusives vs extractives
+  OEUVRES: Why Nations Fail (2012)
+  DETAIL: Avec James Robinson, explique les écarts de développement par la qualité des institutions politiques et économiques.
+  PHRASE: Acemoglu montre que des institutions inclusives favorisent l'innovation et la croissance durable.
+
+- David Plihon  [1953-]  <Capitalisme contemporain>  (aussi: 1)
+  IDEE: Polycrise du capitalisme contemporain
+  OEUVRES: Les capitalismes contemporains
+  DETAIL: Décrit la coexistence de crises économique, climatique, démocratique et géopolitique.
+  PHRASE: Plihon montre que le capitalisme contemporain est traversé par une polycrise multidimensionnelle.
+
+- Milton Friedman  [1912-2006]  <Monétariste>  (aussi: 1)
+  IDEE: Revenu permanent ; la consommation est lissée dans le temps
+  OEUVRES: The Quantity Theory of Money: A Restatement (1956) | A Theory of the Consumption Function (1957) | A Monetary History of the United States (1963) | Capitalism and Freedom (1962)
+  DETAIL: La consommation dépend surtout du revenu permanent et non des variations temporaires du revenu courant.
+  PHRASE: Friedman montre que les ménages lissent leur consommation en fonction de leur revenu permanent.
+
+- James Watt  [1736-1819]  <Innovation industrielle>  (aussi: )
+  IDEE: Machine à vapeur brevetée en 1769
+  OEUVRES: Brevet de la machine à vapeur (1769)
+  DETAIL: Machine à vapeur brevetée en 1769
+  PHRASE: Watt symbolise la première révolution industrielle, même si l’industrialisation ne se réduit pas à cette invention.
+
+- James Hargreaves  [1720-1778]  <Innovation textile>  (aussi: )
+  IDEE: Spinning Jenny (1764)
+  OEUVRES: Spinning Jenny (1764)
+  DETAIL: Spinning Jenny (1764)
+  PHRASE: Hargreaves illustre les innovations textiles à l’origine des gains de productivité.
+
+- Richard Arkwright  [1732-1792]  <Innovation textile>  (aussi: )
+  IDEE: Water Frame (1769) et organisation industrielle textile
+  OEUVRES: Water Frame (1769)
+  DETAIL: Water Frame (1769) et organisation industrielle textile
+  PHRASE: Arkwright est associé à la mécanisation textile et au développement de l’usine.
+
+- Samuel Crompton  [1753-1827]  <Innovation textile>  (aussi: )
+  IDEE: Mule (1779)
+  OEUVRES: Mule (1779)
+  DETAIL: Mule (1779)
+  PHRASE: Crompton illustre la succession d’innovations cumulatives dans le textile.
+
+- Edmund Cartwright  [1743-1823]  <Innovation textile>  (aussi: )
+  IDEE: Power Loom (1785)
+  OEUVRES: Power Loom (1785)
+  DETAIL: Power Loom (1785)
+  PHRASE: Cartwright est associé à la mécanisation du tissage.
+
+- Edward Jenner  [1749-1823]  <Médecine>  (aussi: )
+  IDEE: Vaccin contre la variole en 1797
+  OEUVRES: Vaccination contre la variole (1797)
+  DETAIL: Vaccin contre la variole en 1797
+  PHRASE: Jenner illustre le rôle des progrès médicaux dans la baisse de la mortalité.
+
+- Kenneth Pomeranz  [1958-]  <Histoire économique>  (aussi: )
+  IDEE: Grande Divergence : rôle charbon proche et empire maritime
+  OEUVRES: La Grande Divergence (2010)
+  DETAIL: Grande Divergence : rôle charbon proche et empire maritime
+  PHRASE: Pomeranz explique l’avance britannique par des avantages géologiques et impériaux.
+
+- Robert Allen  [1947-]  <Histoire économique>  (aussi: )
+  IDEE: Salaires élevés + énergie bon marché rendent la mécanisation rentable
+  OEUVRES: Introduction à l’histoire économique mondiale (2014)
+  DETAIL: Salaires élevés + énergie bon marché rendent la mécanisation rentable
+  PHRASE: Allen explique la mécanisation anglaise par une structure particulière des prix relatifs.
+
+- Douglass North  [1920-2015]  <Institutionnaliste>  (aussi: )
+  IDEE: Droits de propriété, stabilité institutionnelle et investissement
+  OEUVRES: Institutions, Institutional Change and Economic Performance (1990)
+  DETAIL: Droits de propriété, stabilité institutionnelle et investissement
+  PHRASE: North montre que les institutions réduisent l’incertitude et favorisent l’investissement.
+
+- Daron Acemoglu  [1967-]  <Institutionnaliste>  (aussi: )
+  IDEE: Institutions inclusives/extractives ; technologies non neutres
+  OEUVRES: Why Nations Fail (2012)
+  DETAIL: Institutions inclusives/extractives ; technologies non neutres
+  PHRASE: Acemoglu est mobilisé sur institutions, innovation et rôle politique des choix technologiques.
+
+- James A. Robinson  [1960-]  <Institutionnaliste>  (aussi: )
+  IDEE: Co-auteur avec Acemoglu sur les institutions inclusives/extractives
+  OEUVRES: Why Nations Fail (2012)
+  DETAIL: Co-auteur avec Acemoglu sur les institutions inclusives/extractives
+  PHRASE: Robinson complète l’analyse institutionnelle de la trajectoire économique.
+
+- Walt Rostow  [1916-2003]  <Croissance / développement>  (aussi: )
+  IDEE: Take-off et étapes de la croissance
+  OEUVRES: Les étapes de la croissance économique (1960)
+  DETAIL: Take-off et étapes de la croissance
+  PHRASE: Rostow permet de qualifier le décollage industriel britannique comme croissance auto-entretenue.
+
+- Joseph Schumpeter  [1883-1950]  <Innovation / capitalisme>  (aussi: )
+  IDEE: Entrepreneur innovateur, destruction créatrice, grappes d’innovation
+  OEUVRES: Théorie de l’évolution économique (1911) | Capitalisme, socialisme et démocratie (1942)
+  DETAIL: Entrepreneur innovateur, destruction créatrice, grappes d’innovation
+  PHRASE: Schumpeter pense le capitalisme comme dynamique d’innovation et de destruction créatrice.
+
+- Frederick Taylor  [1856-1915]  <Organisation du travail>  (aussi: 9,10)
+  IDEE: Organisation scientifique du travail, division et chronométrage
+  OEUVRES: The Principles of Scientific Management (1911)
+  DETAIL: Organisation scientifique du travail, division et chronométrage
+  PHRASE: Taylor rationalise le travail pour accroître la productivité.
+
+- Henry Ford  [1863-1947]  <Organisation industrielle>  (aussi: )
+  IDEE: Chaîne de montage, standardisation, production et consommation de masse
+  OEUVRES: Fordisme
+  DETAIL: Chaîne de montage, standardisation, production et consommation de masse
+  PHRASE: Ford associe production de masse et salaires favorisant la consommation de masse.
+
+- Taiichi Ohno  [1912-1990]  <Toyotisme>  (aussi: )
+  IDEE: Juste-à-temps, qualité, flexibilité et production au plus juste
+  OEUVRES: Système de production Toyota
+  DETAIL: Juste-à-temps, qualité, flexibilité et production au plus juste
+  PHRASE: Ohno incarne la logique toyotiste fondée sur flexibilité et réduction des gaspillages.
+
+- Max Weber  [1864-1920]  <Sociologie>  (aussi: 10)
+  IDEE: Charisme, bureaucratie, domination rationnelle-légale
+  OEUVRES: Économie et société (1922)
+  DETAIL: Charisme, bureaucratie, domination rationnelle-légale
+  PHRASE: Weber permet d’analyser l’autorité de l’entrepreneur et la rationalisation des organisations.
+
+- Anthony Galluzzo  [Contemporain]  <Sociologie / entreprise>  (aussi: )
+  IDEE: Mythe de l’entrepreneur et construction idéologique de la figure du fondateur
+  OEUVRES: Travaux sur le mythe entrepreneurial
+  DETAIL: Mythe de l’entrepreneur et construction idéologique de la figure du fondateur
+  PHRASE: Galluzzo permet de nuancer la figure héroïque de l’entrepreneur.
+
+- Henri Fayol  [1841-1925]  <Management>  (aussi: )
+  IDEE: Fonctions administratives et professionnalisation de la direction
+  OEUVRES: Administration industrielle et générale (1916)
+  DETAIL: Fonctions administratives et professionnalisation de la direction
+  PHRASE: Fayol analyse l’entreprise comme organisation à administrer par des fonctions managériales.
+
+- Adolf Berle  [1895-1971]  <Gouvernance>  (aussi: )
+  IDEE: Séparation propriété/contrôle dans la grande entreprise
+  OEUVRES: The Modern Corporation and Private Property (1932)
+  DETAIL: Séparation propriété/contrôle dans la grande entreprise
+  PHRASE: Berle montre que les actionnaires possèdent mais ne dirigent plus nécessairement.
+
+- Gardiner Means  [1896-1988]  <Gouvernance>  (aussi: )
+  IDEE: Co-auteur de la séparation propriété/contrôle
+  OEUVRES: The Modern Corporation and Private Property (1932)
+  DETAIL: Co-auteur de la séparation propriété/contrôle
+  PHRASE: Means complète Berle sur le capital dispersé et le pouvoir des managers.
+
+- John Kenneth Galbraith  [1908-2006]  <Institutionnaliste / entreprise>  (aussi: )
+  IDEE: Technostructure et pouvoir des experts
+  OEUVRES: Le Nouvel État industriel (1967)
+  DETAIL: Technostructure et pouvoir des experts
+  PHRASE: Galbraith montre que le pouvoir réel dépend de l’information et des compétences.
+
+- Alfred Chandler  [1918-2007]  <Histoire des entreprises>  (aussi: 9)
+  IDEE: Main visible des managers et grande entreprise moderne
+  OEUVRES: The Visible Hand (1977)
+  DETAIL: Main visible des managers et grande entreprise moderne
+  PHRASE: Chandler explique la coordination interne par les managers dans les grandes firmes.
+
+- Michael Jensen  [1939-]  <Théorie de l’agence>  (aussi: 9)
+  IDEE: Conflit principal-agent et gouvernance actionnariale
+  OEUVRES: Theory of the Firm (1976)
+  DETAIL: Conflit principal-agent et gouvernance actionnariale
+  PHRASE: Jensen analyse les conflits d’intérêt entre managers et actionnaires.
+
+- William Meckling  [1922-1998]  <Théorie de l’agence>  (aussi: 9)
+  IDEE: Co-auteur de la théorie de l’agence
+  OEUVRES: Theory of the Firm (1976)
+  DETAIL: Co-auteur de la théorie de l’agence
+  PHRASE: Meckling est associé à la gouvernance par incitations et contrôle des managers.
+
+- Milton Friedman  [1912-2006]  <Libéralisme / shareholder value>  (aussi: )
+  IDEE: Responsabilité de l’entreprise centrée sur le profit des actionnaires
+  OEUVRES: The Quantity Theory of Money: A Restatement (1956) | The Social Responsibility of Business is to Increase its Profits (1970)
+  DETAIL: Responsabilité de l’entreprise centrée sur le profit des actionnaires
+  PHRASE: Friedman fonde une vision actionnariale stricte de l’entreprise.
+
+- David Autor  [1967-]  <Économie du travail>  (aussi: 7,22)
+  IDEE: Automatisation, tâches et polarisation de l’emploi
+  OEUVRES: Travaux sur skills, tasks and technology
+  DETAIL: Automatisation, tâches et polarisation de l’emploi
+  PHRASE: Autor sert à analyser l’impact des technologies sur les tâches et la structure de l’emploi.
+
+- David Plihon  [1953-]  <Capitalismes contemporains>  (aussi: )
+  IDEE: Financiarisation, plateformes, RSE, polycrise et pluralité des capitalismes
+  OEUVRES: Les capitalismes contemporains (2025)
+  DETAIL: Financiarisation, plateformes, RSE, polycrise et pluralité des capitalismes
+  PHRASE: Plihon relie numérique, finance, travail, gouvernance et crises du capitalisme contemporain.
+
+- Henri Bourguinat  [1933-2021]  <Finance internationale>  (aussi: )
+  IDEE: Les 3D : désintermédiation, décloisonnement, déréglementation
+  OEUVRES: Les Vertiges de la finance internationale
+  DETAIL: Mobilisé dans le passage sur la financiarisation et le retour du pouvoir actionnarial.
+  PHRASE: La finance contemporaine se transforme par les 3D.
+
+- Frank Galluzzo  [dates absentes]  <Capitalisme marchand / entreprise>  (aussi: )
+  IDEE: Transformations contemporaines du commerce, des marques et du capitalisme
+  DETAIL: Mobilisé dans le chapitre sur les formes contemporaines du capitalisme et de l’entreprise.
+  PHRASE: L’entreprise et le commerce changent avec les formes contemporaines du capitalisme.
+
+- James Robinson  [1960-]  <Institutionnalisme>  (aussi: )
+  IDEE: Institutions et développement
+  DETAIL: Co-auteur avec Acemoglu sur les institutions inclusives et extractives.
+  PHRASE: Co-auteur avec Acemoglu sur les institutions inclusives et extractives.
+
+- François et Mercier  [Contemporains]  <Capitalismes>  (aussi: )
+  IDEE: Trois âges du capitalisme
+  DETAIL: Ils distinguent âge du commerce, âge de l’usine et âge de la finance.
+  PHRASE: Ils distinguent âge du commerce, âge de l’usine et âge de la finance.
+
+
+########## CHAPITRE 9 — Taille et stratégies des entreprises en concurrence imparfaite
+# Concentration · croissance interne/externe · pouvoir de marché · cartels et ententes · barrières à l’entrée · marchés contestables · théories de la firme · modèle SCP · politiques de concurrence
+# 20 auteurs
+
+- Ronald Coase  [1910-2013]  <Institutionnaliste / droits de propriété>  (aussi: 5)
+  IDEE: Théorème de Coase ; rôle des coûts de transaction
+  OEUVRES: The Problem of Social Cost (1960)
+  DETAIL: Si les droits de propriété sont bien définis et les coûts de transaction faibles, les agents peuvent négocier une solution à certaines externalités.
+  PHRASE: Coase montre que la correction des externalités peut aussi passer par la négociation privée sous certaines conditions.
+
+- Herbert Simon  [1916-2001]  <Comportemental>  (aussi: 4)
+  IDEE: Rationalité limitée
+  OEUVRES: Administrative Behavior (1947)
+  DETAIL: Montre que les individus n'optimisent pas parfaitement car leur information et leurs capacités cognitives sont limitées.
+  PHRASE: Simon remplace l'hypothèse de rationalité parfaite par celle de rationalité limitée.
+
+- Frederick Taylor  [1856-1915]  <Organisation du travail>  (aussi: 8,10)
+  IDEE: Organisation scientifique du travail, division et chronométrage
+  OEUVRES: The Principles of Scientific Management (1911)
+  DETAIL: Organisation scientifique du travail, division et chronométrage
+  PHRASE: Taylor rationalise le travail pour accroître la productivité.
+
+- Alfred Chandler  [1918-2007]  <Histoire des entreprises>  (aussi: 8)
+  IDEE: Main visible des managers et grande entreprise moderne
+  OEUVRES: The Visible Hand (1977)
+  DETAIL: Main visible des managers et grande entreprise moderne
+  PHRASE: Chandler explique la coordination interne par les managers dans les grandes firmes.
+
+- Michael Jensen  [1939-]  <Théorie de l’agence>  (aussi: 8)
+  IDEE: Conflit principal-agent et gouvernance actionnariale
+  OEUVRES: Theory of the Firm (1976)
+  DETAIL: Conflit principal-agent et gouvernance actionnariale
+  PHRASE: Jensen analyse les conflits d’intérêt entre managers et actionnaires.
+
+- William Meckling  [1922-1998]  <Théorie de l’agence>  (aussi: 8)
+  IDEE: Co-auteur de la théorie de l’agence
+  OEUVRES: Theory of the Firm (1976)
+  DETAIL: Co-auteur de la théorie de l’agence
+  PHRASE: Meckling est associé à la gouvernance par incitations et contrôle des managers.
+
+- Abba Lerner  [1903-1982]  <Post-keynésien / TMM (précurseur)>  (aussi: 2)
+  IDEE: Finance fonctionnelle : l'État doit se mettre au service de la prospérité, la contrainte financière est secondaire
+  OEUVRES: Functional Finance (1943)
+  DETAIL: Précurseur de la Théorie Monétaire Moderne. Défend l'idée que les États souverains monétairement ne sont pas contraints financièrement mais seulement par les ressources réelles.
+  PHRASE: Lerner défend une 'finance fonctionnelle' : l'État doit ajuster ses dépenses et recettes non pour équilibrer son budget mais pour maintenir la prospérité économique.
+
+- Oliver Williamson  [1932-2020]  <Néo-institutionnaliste>  (aussi: )
+  IDEE: Coûts de transaction ; opportunisme ; internalisation
+  DETAIL: Prolonge Coase et Simon. Montre que certaines entreprises internalisent des activités afin de réduire les coûts de transaction. Ses deux hypothèses majeures sont la rationalité limitée et l’opportunisme des agents.
+  PHRASE: Pour Williamson, la firme constitue une alternative au marché : elle réduit les coûts de transaction, l’incertitude et l’opportunisme.
+
+- Armen Alchian  [1914-2013]  <Approche contractuelle>  (aussi: )
+  IDEE: Firme comme nœud de contrats ; travail en équipe
+  DETAIL: Avec Harold Demsetz, analyse la firme comme un « nœud de contrats » entre des acteurs aux intérêts divers tenus de travailler ensemble. La difficulté de mesurer la contribution de chacun justifie le contrôle.
+  PHRASE: Pour Alchian et Demsetz, la firme n’est pas différente du marché : c’est un ensemble de contrats.
+
+- Harold Demsetz  [1930-2019]  <Approche contractuelle>  (aussi: )
+  IDEE: Nœud de contrats ; contrôle du travail en équipe
+  DETAIL: Coauteur avec Armen Alchian de l’analyse contractuelle de la firme, où le créancier résiduel perçoit le revenu restant une fois les autres apporteurs rémunérés et a donc intérêt à l’efficacité.
+  PHRASE: Demsetz montre que le contrôle exercé dans la firme découle de la difficulté à mesurer l’apport de chacun.
+
+- Alfred Marshall  [1842-1924]  <Néoclassique>  (aussi: )
+  IDEE: Districts industriels ; économies externes
+  OEUVRES: Principes d’économie politique (1890)
+  DETAIL: Développe la notion de district industriel : une concentration locale d’entreprises spécialisées qui bénéficient d’une main-d’œuvre, de savoir-faire et de fournisseurs communs.
+  PHRASE: Marshall théorise dès 1890 les avantages de la concentration géographique des activités.
+
+- Edward Chamberlin  [1899-1967]  <Néoclassique>  (aussi: )
+  IDEE: Concurrence monopolistique ; différenciation des produits
+  DETAIL: Développe en 1933 la théorie de la concurrence monopolistique : de nombreuses entreprises vendent des produits différenciés, chacune disposant d’un petit pouvoir de marché sur son segment.
+  PHRASE: Chamberlin montre que la différenciation réduit la substituabilité et confère un pouvoir de marché.
+
+- William Baumol  [1922-2017]  <Économie industrielle>  (aussi: )
+  IDEE: Théorie des marchés contestables
+  DETAIL: Avec John Panzar et Robert Willig, développe dans les années 1980 la théorie des marchés contestables : un marché est contestable si l’entrée et la sortie sont libres, sans coûts irrécupérables importants.
+  PHRASE: Pour Baumol, c’est la menace d’entrée, et non le nombre d’entreprises, qui discipline les prix.
+
+- John Panzar  [dates absentes]  <Économie industrielle>  (aussi: )
+  IDEE: Marchés contestables
+  DETAIL: Coauteur, avec William Baumol et Robert Willig, de la théorie des marchés contestables développée dans les années 1980.
+  PHRASE: Panzar contribue à déplacer le critère de la concurrence de l’atomicité vers la libre entrée.
+
+- Robert Willig  [dates absentes]  <Économie industrielle>  (aussi: )
+  IDEE: Marchés contestables
+  DETAIL: Coauteur, avec William Baumol et John Panzar, de la théorie des marchés contestables développée dans les années 1980.
+  PHRASE: Willig participe à montrer qu’un marché concentré peut rester concurrentiel s’il demeure contestable.
+
+- Edward Mason  [dates absentes]  <Économie industrielle>  (aussi: )
+  IDEE: Modèle SCP (Structure-Comportements-Performances)
+  DETAIL: À l’origine du modèle SCP au sein de l’économie industrielle, repris et formalisé par Joe Bain dans les années 1950.
+  PHRASE: Mason pose l’idée que la structure du marché conditionne les comportements des firmes.
+
+- Joe Bain  [dates absentes]  <Économie industrielle>  (aussi: )
+  IDEE: Modèle SCP ; barrières à l’entrée
+  DETAIL: Formalise dans les années 1950 le modèle Structure-Comportements-Performances, qui relie la configuration du marché aux stratégies des entreprises puis à leurs résultats.
+  PHRASE: Bain systématise le lien entre structure de marché, comportements et performances.
+
+- Emmanuel Combe  [dates absentes]  <Économie de la concurrence>  (aussi: )
+  IDEE: Politique de la concurrence ; cartels ; approche élargie
+  OEUVRES: La politique de la concurrence (2016)
+  DETAIL: Étudie 111 cartels entre 1969 et 2009 et montre qu’ils sont souvent durables, augmentent les prix et apparaissent surtout sur des marchés oligopolistiques. Oppose une approche standard de la concurrence, fondée sur l’atomicité, à une approche élargie fondée sur la contestabilité.
+  PHRASE: Selon Combe, environ 1 % des fusions ont été refusées entre 2010 et 2020.
+
+- John D. Rockefeller  [1839-1937]  <Industriel (figure historique)>  (aussi: )
+  IDEE: Standard Oil ; trust pétrolier ; démantèlement de 1911
+  DETAIL: Fonde la Standard Oil Company en 1870 et bâtit un trust pétrolier dominant, démantelé en 1911 en application des lois antitrust américaines. Dans les années 1990, plusieurs sociétés issues de ce démantèlement refusionnent.
+  PHRASE: Le cas Rockefeller illustre à la fois la puissance des trusts et les limites du démantèlement.
+
+- Jack Welch  [1935-2020]  <Dirigeant d’entreprise (figure historique)>  (aussi: )
+  IDEE: Gestion de General Electric ; logique managériale
+  DETAIL: Dirige General Electric pendant plus de trente ans. Sa stratégie repose sur les rachats d’entreprises, les restructurations, les licenciements massifs et la recherche permanente de performance.
+  PHRASE: Welch incarne la logique managériale du conglomérat diversifié.
+
+
+########## CHAPITRE 10 — Éléments de sociologie des organisations et du travail
+# Weber et la bureaucratie · Durkheim · Mayo et les relations humaines · Bronner et le marché cognitif · Morel et les décisions absurdes · Crozier et l’analyse stratégique · travail, intégration et précarisation
+# 17 auteurs
+
+- Karl Marx  [1818-1883]  <Marxiste>  (aussi: 3,7)
+  IDEE: Plus-value ; exploitation ; lutte des classes
+  OEUVRES: Le Capital (1867) | Manifeste du Parti communiste (1848)
+  DETAIL: Analyse du capitalisme fondée sur la valeur-travail, l'exploitation du prolétariat et les contradictions internes du système.
+  PHRASE: Marx montre que le profit capitaliste repose sur l'appropriation de la plus-value créée par le travail.
+
+- Daniel Kahneman  [1934-2024]  <Économie comportementale>  (aussi: 4)
+  IDEE: Biais cognitifs ; heuristiques
+  OEUVRES: Thinking, Fast and Slow (2011)
+  DETAIL: Montre que les choix réels s'écartent souvent de la rationalité standard.
+  PHRASE: Kahneman montre que les décisions économiques sont souvent guidées par des biais cognitifs.
+
+- Frederick Taylor  [1856-1915]  <Organisation du travail>  (aussi: 8,9)
+  IDEE: Organisation scientifique du travail, division et chronométrage
+  OEUVRES: The Principles of Scientific Management (1911)
+  DETAIL: Organisation scientifique du travail, division et chronométrage
+  PHRASE: Taylor rationalise le travail pour accroître la productivité.
+
+- Max Weber  [1864-1920]  <Sociologie>  (aussi: 8)
+  IDEE: Charisme, bureaucratie, domination rationnelle-légale
+  OEUVRES: Économie et société (1922)
+  DETAIL: Charisme, bureaucratie, domination rationnelle-légale
+  PHRASE: Weber permet d’analyser l’autorité de l’entrepreneur et la rationalisation des organisations.
+
+- Émile Durkheim  [1858-1917]  <Sociologie (holisme méthodologique)>  (aussi: )
+  IDEE: Fait social ; solidarités mécanique et organique ; anomie ; intégration
+  OEUVRES: De la division du travail social (1893) | Les Règles de la méthode sociologique (1895) | Le Suicide (1897)
+  DETAIL: Fondateur de la sociologie française, créateur de la revue L’Année sociologique en 1896. Invite à traiter les faits sociaux comme des choses. Distingue la solidarité mécanique, fondée sur la ressemblance, et la solidarité organique, fondée sur la complémentarité d’individus spécialisés. Analyse les pathologies du lien social : l’anomie, défaut de régulation, et l’égoïsme, défaut d’intégration.
+  PHRASE: Pour Durkheim, le travail intègre parce qu’il crée des relations, rattache à un groupe et fournit des normes.
+
+- Elton Mayo  [1880-1949]  <École des relations humaines>  (aussi: )
+  IDEE: Effet Hawthorne ; facteur humain au travail
+  OEUVRES: The Human Problems of an Industrial Civilization (1933)
+  DETAIL: Mène à partir des années 1920 les enquêtes de la Western Electric Company. L’expérience sur l’éclairage puis la Test Room révèlent que la productivité augmente indépendamment des conditions matérielles. Ses travaux donnent naissance à l’École des relations humaines, qui analyse l’entreprise comme un système social.
+  PHRASE: Mayo critique la conception mécaniste du travail de Taylor : la motivation dépend aussi des relations et du sens.
+
+- Gérald Bronner  [dates absentes]  <Sociologie cognitive>  (aussi: )
+  IDEE: Marché cognitif ; avarice cognitive ; démocratie des crédules
+  OEUVRES: La Démocratie des crédules (2013) | Apocalypse cognitive (2021)
+  DETAIL: Analyse le marché cognitif comme un lieu où se rencontrent une offre et une demande d’informations. Montre que la dérégulation de ce marché par Internet ne garantit pas la progression de la rationalité : les invariants mentaux, dont l’avarice cognitive, et les logiques d’audience favorisent les contenus les plus attractifs.
+  PHRASE: Bronner rapproche l’avarice cognitive du « système 1 » de Kahneman : un mode de pensée rapide, intuitif et automatique.
+
+- Christian Morel  [dates absentes]  <Sociologie des organisations>  (aussi: )
+  IDEE: Décisions absurdes ; métarègles
+  DETAIL: Cherche à comprendre pourquoi des organisations rationnelles composées d’individus compétents produisent des décisions absurdes. Il identifie des causes individuelles (crainte de contester l’autorité, autocensure), collectives (conformisme, pensée de groupe) et cognitives, et propose des métarègles pour les prévenir.
+  PHRASE: Pour Morel, une décision absurde est une œuvre collective, non une faute individuelle.
+
+- Michel Crozier  [1922-2013]  <Sociologie des organisations>  (aussi: )
+  IDEE: Analyse stratégique ; zone d’incertitude ; cercle vicieux bureaucratique
+  OEUVRES: Le Phénomène bureaucratique (1963) | L’Acteur et le système (1977, avec Erhard Friedberg)
+  DETAIL: Enquête dans une entreprise qu’il appelle le « monopole industriel » — en réalité la SEITA — et montre que les ouvriers d’entretien tirent leur pouvoir de la maîtrise de la réparation des machines. Distingue le monde formel de l’organigramme et le monde informel des relations réelles.
+  PHRASE: Pour Crozier, le pouvoir est diffus et relationnel : il appartient à qui maîtrise une zone d’incertitude.
+
+- Erhard Friedberg  [dates absentes]  <Sociologie des organisations>  (aussi: )
+  IDEE: Analyse stratégique des organisations
+  OEUVRES: L’Acteur et le système (1977, avec Michel Crozier)
+  DETAIL: Coauteur avec Michel Crozier de L’Acteur et le système (1977), ouvrage fondateur de l’analyse stratégique des organisations.
+  PHRASE: Friedberg contribue à penser l’organisation comme un jeu d’acteurs disposant de marges de manœuvre.
+
+- Robert Castel  [1933-2013]  <Sociologie du travail>  (aussi: )
+  IDEE: Société salariale ; désaffiliation
+  OEUVRES: Les Métamorphoses de la question sociale (1995)
+  DETAIL: Étudie l’évolution de la condition salariale et sa fragilisation à partir de la montée du chômage et de la précarité. Montre que la société salariale avait fait de l’emploi un support d’intégration en associant au salaire un statut et des droits sociaux.
+  PHRASE: Pour Castel, la perte d’emploi enclenche une désaffiliation : perte de protections, de relations et d’identité.
+
+- Florence Aubenas  [dates absentes]  <Journalisme d’immersion>  (aussi: )
+  IDEE: Travailleurs précaires ; conditions de vie
+  OEUVRES: Le Quai de Ouistreham (2010)
+  DETAIL: Enquête en immersion sur le monde des travailleurs précaires : bas salaires, difficultés de transport, isolement social.
+  PHRASE: Aubenas donne à voir de l’intérieur la réalité quotidienne de l’emploi précaire.
+
+- Solomon Asch  [1907-1996]  <Psychologie sociale>  (aussi: )
+  IDEE: Conformisme ; paradigme d’Asch
+  DETAIL: Son expérience de 1951 montre qu’un individu peut adopter publiquement une réponse qu’il sait pourtant erronée sous l’effet de la pression conformiste exercée par le groupe.
+  PHRASE: L’expérience d’Asch établit le pouvoir du conformisme sur la décision individuelle.
+
+- Irving Janis  [1918-1990]  <Psychologie sociale>  (aussi: )
+  IDEE: Groupthink (pensée de groupe)
+  DETAIL: Développe en 1982 la notion de Groupthink, ou pensée de groupe : la recherche d’unanimité au sein d’un groupe cohésif étouffe les objections et dégrade la qualité de la décision.
+  PHRASE: Pour Janis, l’illusion de l’unanimité fait passer le silence pour un accord.
+
+- Simone Weil  [1909-1943]  <Philosophie>  (aussi: )
+  IDEE: Condition ouvrière ; expérience du travail en usine
+  DETAIL: En 1934, la philosophe fait l’expérience du travail en usine et en tire une analyse de la condition ouvrière vécue de l’intérieur.
+  PHRASE: Simone Weil décrit l’épreuve concrète du travail industriel et ses effets sur la personne.
+
+- Werner Sombart  [1863-1941]  <Sociologie et économie allemandes>  (aussi: )
+  IDEE: Sciences sociales allemandes ; revue fondée avec Weber
+  DETAIL: Participe en 1903, avec Max Weber, à la création d’une importante revue allemande de sciences sociales.
+  PHRASE: Sombart accompagne Weber dans l’institutionnalisation des sciences sociales allemandes.
+
+- James March  [1928-2018]  <Théorie des organisations>  (aussi: )
+  IDEE: Décision en organisation ; rationalité limitée
+  DETAIL: Chercheur américain dont Michel Crozier contribue à faire connaître les travaux en France, aux côtés de ceux d’Herbert Simon et de Robert Merton.
+  PHRASE: March appartient au courant qui analyse la décision organisationnelle sous contrainte de rationalité limitée.
+
+
+########## CHAPITRE 21 — Mondialisation, ouverture internationale et déséquilibres extérieurs
+# Dimensions de l’ouverture · Michalet · asymétries et termes de l’échange · courbe de l’éléphant · balance des paiements · commerce en valeur ajoutée · chaînes de valeur · histoire des mondialisations
+# 18 auteurs
+
+- Adam Smith  [1723-1790]  <Classique>  (aussi: 3)
+  IDEE: Main invisible ; division du travail ; libéralisme économique
+  OEUVRES: Recherches sur la nature et les causes de la richesse des nations (1776)
+  DETAIL: Fondateur majeur du courant classique. Montre que la division du travail accroît fortement la productivité et que la poursuite de l'intérêt individuel peut servir l'intérêt général.
+  PHRASE: Smith montre que le marché peut coordonner les intérêts individuels grâce à la main invisible.
+
+- David Ricardo  [1772-1823]  <Classique>  (aussi: 3)
+  IDEE: Avantages comparatifs ; rendements décroissants ; état stationnaire
+  OEUVRES: Principes de l'économie politique et de l'impôt (1817)
+  DETAIL: Explique le libre-échange par les avantages comparatifs et montre que les terres moins fertiles entraînent des rendements décroissants.
+  PHRASE: Ricardo montre que même un pays moins efficace partout peut gagner à l'échange grâce aux avantages comparatifs.
+
+- Paul Samuelson  [1915-2009]  <Néo-keynésien>  (aussi: 1)
+  IDEE: Synthèse néoclassique ; oscillateur ; formalisation économique
+  OEUVRES: Foundations of Economic Analysis (1947)
+  DETAIL: Prolonge la synthèse néo-keynésienne et, en macro, relie multiplicateur et accélérateur dans le modèle de l'oscillateur.
+  PHRASE: Samuelson formalise l'économie moderne et systématise la synthèse néo-keynésienne.
+
+- Thomas Piketty  [1971-]  <Inégalités>  (aussi: 6)
+  IDEE: Si r > g, le patrimoine se concentre
+  OEUVRES: Le Capital au XXIe siècle (2013)
+  DETAIL: Étudie l'évolution longue des patrimoines et montre qu'un rendement du capital supérieur à la croissance favorise la concentration des richesses.
+  PHRASE: Piketty montre que lorsque le rendement du capital dépasse la croissance, les inégalités patrimoniales tendent à se creuser.
+
+- Branko Milanovic  [1953-]  <Inégalités>  (aussi: 6)
+  IDEE: Courbe de l'éléphant ; gagnants et perdants de la mondialisation
+  OEUVRES: Global Inequality (2016) | The Three Eras of Global Inequality (2022)
+  DETAIL: Analyse les inégalités mondiales et les effets différenciés de la mondialisation selon les groupes sociaux.
+  PHRASE: Milanovic montre que la mondialisation a profité à certains groupes et en a fragilisé d'autres.
+
+- Daron Acemoglu  [1967-]  <Institutionnaliste>  (aussi: 6,7,8)
+  IDEE: Institutions inclusives vs extractives
+  OEUVRES: Why Nations Fail (2012)
+  DETAIL: Avec James Robinson, explique les écarts de développement par la qualité des institutions politiques et économiques.
+  PHRASE: Acemoglu montre que des institutions inclusives favorisent l'innovation et la croissance durable.
+
+- James A. Robinson  [1960-]  <Institutionnaliste>  (aussi: 6)
+  IDEE: Institutions et trajectoires nationales
+  OEUVRES: Why Nations Fail (2012)
+  DETAIL: Co-auteur avec Acemoglu d'une analyse institutionnelle des réussites et échecs de développement.
+  PHRASE: Robinson montre que la qualité des institutions explique largement la réussite ou l'échec des nations.
+
+- Ragnar Nurkse  [1907-1959]  <Développement>  (aussi: 7)
+  IDEE: Cercle vicieux de la pauvreté et insuffisance d’investissement
+  OEUVRES: Problems of Capital Formation in Underdeveloped Countries (1953)
+  DETAIL: Cercle vicieux de la pauvreté et insuffisance d’investissement
+  PHRASE: Nurkse montre comment faible revenu, faible épargne et faible investissement peuvent s’auto-entretenir.
+
+- Raúl Prebisch  [1901-1986]  <Structuralisme / CEPAL>  (aussi: 7)
+  IDEE: Centre-périphérie et détérioration des termes de l’échange
+  OEUVRES: Travaux de la CEPAL
+  DETAIL: Centre-périphérie et détérioration des termes de l’échange
+  PHRASE: Prebisch sert à montrer que l’insertion commerciale peut maintenir une dépendance des pays primaires.
+
+- Paul Bairoch  [1930-1999]  <Histoire économique>  (aussi: 7)
+  IDEE: Nuance le lien entre libre-échange, protectionnisme et développement
+  OEUVRES: Mythes et paradoxes de l’histoire économique (1993)
+  DETAIL: Le document l’utilise pour rappeler que les trajectoires réelles de développement sont plus complexes qu’une opposition simple ouverture/fermeture.
+  PHRASE: Les trajectoires historiques mêlent souvent protection, marché intérieur et ouverture.
+
+- Charles-Albert Michalet  [dates absentes]  <Économie internationale>  (aussi: )
+  IDEE: Mondialisation multidimensionnelle ; trois configurations
+  OEUVRES: Qu’est-ce que la mondialisation ? (2002)
+  DETAIL: Montre que la mondialisation ne peut pas être réduite au commerce international. Il distingue trois configurations : internationale, centrée sur les échanges commerciaux ; multinationale, centrée sur l’implantation des firmes et l’investissement direct ; globale, marquée par la fragmentation productive et l’unification financière.
+  PHRASE: Pour Michalet, la mondialisation est un processus multidimensionnel et cumulatif.
+
+- Pierre-Noël Giraud  [dates absentes]  <Économie internationale>  (aussi: )
+  IDEE: Globalisations ; généralisation des compétitions
+  DETAIL: Analyse les globalisations comme une généralisation des compétitions : les territoires ne rivalisent plus seulement par leurs produits, mais pour attirer capitaux, activités et compétences.
+  PHRASE: Pour Giraud, la mondialisation met les territoires eux-mêmes en concurrence.
+
+- Friedrich List  [1789-1846]  <Économie nationale>  (aussi: )
+  IDEE: Protectionnisme éducateur ; industries naissantes
+  DETAIL: Affirme en 1841 qu’une industrie naissante ne peut pas toujours affronter immédiatement une industrie étrangère déjà compétitive, et qu’elle doit être temporairement protégée pour acquérir les capacités productives nécessaires.
+  PHRASE: Pour List, la protection doit être transitoire et orientée vers l’acquisition de compétences.
+
+- Richard Baldwin  [dates absentes]  <Économie internationale>  (aussi: )
+  IDEE: Dégroupages ; chaînes de valeur mondiales
+  DETAIL: Analyse la mondialisation à travers le concept de « dégroupage ». Le premier dégroupage sépare le lieu de production du lieu de consommation, rendu possible par la baisse des coûts de transport.
+  PHRASE: Pour Baldwin, chaque dégroupage redéfinit la géographie de la production mondiale.
+
+- Hélène Rey  [dates absentes]  <Macroéconomie internationale>  (aussi: )
+  IDEE: Déséquilibres mondiaux ; modèles de croissance
+  DETAIL: Montre que les déséquilibres extérieurs mondiaux ne sont pas de simples anomalies comptables : ils reflètent des stratégies nationales de croissance elles-mêmes déséquilibrées et les faiblesses structurelles des modèles nationaux.
+  PHRASE: Pour Hélène Rey, le déséquilibre extérieur renvoie au modèle de croissance qui le produit.
+
+- Wolfgang Stolper  [dates absentes]  <Commerce international>  (aussi: )
+  IDEE: Théorème Stolper-Samuelson
+  DETAIL: Coauteur avec Paul Samuelson du théorème montrant que l’ouverture commerciale produit des effets distributifs : elle modifie différemment la rémunération des facteurs de production selon leur abondance et leur usage dans les secteurs exposés.
+  PHRASE: Le théorème Stolper-Samuelson explique pourquoi le commerce fait des gagnants et des perdants à l’intérieur d’un pays.
+
+- Alain Béraud  [dates absentes]  <Histoire de la pensée économique>  (aussi: )
+  IDEE: Structure des flux de capitaux de la première mondialisation
+  DETAIL: Montre que 80 à 90 % des mouvements de capitaux de la première mondialisation correspondent à des investissements de portefeuille, les IDE n’en représentant qu’une faible part.
+  PHRASE: Selon Béraud, la première mondialisation financière était d’abord une mondialisation de portefeuille.
+
+- Paul Volcker  [1927-2019]  <Politique monétaire>  (aussi: )
+  IDEE: Désinflation ; choc de taux de 1979
+  DETAIL: Arrive à la tête de la Réserve fédérale américaine en 1979 dans un contexte d’inflation élevée, et engage une politique de forte hausse des taux d’intérêt.
+  PHRASE: Le tournant Volcker de 1979 marque le passage à une politique monétaire résolument anti-inflationniste.
+
+
+########## CHAPITRE 22 — Les acteurs de la mondialisation économique : FMN et États
+# Stratégies d'internationalisation et IDE · chaînes de valeur mondiales · dumping et désindustrialisation · chocs chinois · compétitivité et attractivité · politique industrielle et souveraineté.
+# 10 auteurs
+
+- Jean Fourastié  [1907-1990]  <Structure sectorielle>  (aussi: )
+  IDEE: Loi des trois secteurs ; tertiarisation
+  OEUVRES: Le grand espoir du XXe siècle (1949)
+  DETAIL: Explique pourquoi l'emploi se déverse progressivement vers les services à mesure que la productivité progresse ailleurs.
+  PHRASE: Fourastié montre que la croissance transforme la structure sectorielle de l'économie.
+
+- David Autor  [1967-]  <Économie du travail>  (aussi: 8,7)
+  IDEE: Automatisation, tâches et polarisation de l’emploi
+  OEUVRES: Travaux sur skills, tasks and technology
+  DETAIL: Automatisation, tâches et polarisation de l’emploi
+  PHRASE: Autor sert à analyser l’impact des technologies sur les tâches et la structure de l’emploi.
+
+- Michael Porter  [1947-]  <Stratégie et économie industrielle>  (aussi: )
+  IDEE: Firme globale ; avantage concurrentiel
+  OEUVRES: Competition in Global Industries (1986)
+  DETAIL: Décrit le passage de la firme primaire à la firme globale : l'entreprise ne raisonne plus pays par pays mais à l'échelle du marché mondial.
+  PHRASE: Porter montre que la firme globale prend le marché mondial, et non le territoire national, pour cadre de décision.
+
+- Stan Shih  [1944-]  <Stratégie industrielle>  (aussi: )
+  IDEE: Courbe du sourire ; répartition de la valeur ajoutée
+  DETAIL: Représente la valeur ajoutée le long de la chaîne de valeur : forte en amont (conception, R&D) et en aval (marque, distribution), faible au centre (assemblage).
+  PHRASE: La courbe du sourire de Shih explique pourquoi un pays cantonné à l'assemblage capte peu de valeur.
+
+- Robert Reich  [1946-]  <Économie politique>  (aussi: )
+  IDEE: Firme réseau ; travail et nations
+  OEUVRES: The Work of Nations (1991)
+  DETAIL: Montre que la firme devient le centre organisateur d'un vaste réseau international de filiales, sous-traitants, fournisseurs et centres de R&D.
+  PHRASE: Reich établit que la firme moderne organise une chaîne de valeur mondiale plutôt qu'elle ne produit elle-même.
+
+- Clément Malgouyres  [1988-]  <Économie du commerce international>  (aussi: )
+  IDEE: Exposition française à la concurrence chinoise
+  OEUVRES: Travaux empiriques sur le commerce extérieur français (2018)
+  DETAIL: Prolonge en France les analyses d'Autor en mesurant l'effet de l'exposition aux importations chinoises sur l'emploi local.
+  PHRASE: Malgouyres transpose au cas français la mesure des effets locaux du choc chinois.
+
+- Lionel Fontagné  [1958-]  <Économie internationale>  (aussi: )
+  IDEE: Ambivalence des effets de la mondialisation
+  OEUVRES: La feuille de paye et le caddie (2021)
+  DETAIL: Montre que la mondialisation produit des effets opposés selon que l'on considère l'individu comme consommateur, comme travailleur ou comme épargnant.
+  PHRASE: Fontagné résume l'ambivalence de la mondialisation par l'opposition entre la feuille de paye et le caddie.
+
+- El Mouhoub Mouhoud  [1958-]  <Économie du développement et des délocalisations>  (aussi: )
+  IDEE: Effets de compensation des délocalisations
+  OEUVRES: Mondialisation et délocalisation des entreprises (2017)
+  DETAIL: Montre qu'une délocalisation détruit directement des emplois peu qualifiés mais engendre des effets indirects positifs par la compétitivité et la baisse des prix.
+  PHRASE: Mouhoud rappelle que le bilan des délocalisations ne peut se limiter aux destructions directes d'emplois.
+
+- Mariana Mazzucato  [1968-]  <Économie de l'innovation>  (aussi: )
+  IDEE: État entrepreneur ; création de marchés
+  OEUVRES: The Entrepreneurial State (2013)
+  DETAIL: Soutient qu'une grande partie des technologies devenues rentables dans le privé repose initialement sur des investissements publics risqués.
+  PHRASE: Mazzucato montre que l'État ne corrige pas seulement les défaillances du marché : il assume la prise de risque initiale.
+
+- Élie Cohen  [1947-]  <Économie industrielle>  (aussi: )
+  IDEE: Souveraineté industrielle ; politiques industrielles asiatiques
+  OEUVRES: Souveraineté industrielle. Vers un nouveau modèle productif (2022)
+  DETAIL: Souligne que l'industrialisation asiatique ne résulte pas de la seule « magie du marché » mais de politiques industrielles délibérées.
+  PHRASE: Cohen établit que le rattrapage industriel asiatique a reposé sur des politiques publiques ciblées.
