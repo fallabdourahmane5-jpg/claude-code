@@ -1,0 +1,93 @@
+
+<script id="eco-ch22-correctifs">
+(function(){
+'use strict';
+if(window.__ECO_CH22_FIX) return;
+window.__ECO_CH22_FIX = true;
+
+var TAGS = {"ch22-qcm-1":["fmn","ide"],"ch22-qcm-2":["fmn","ide","chaînes de valeur"],"ch22-qcm-3":["ide","chaînes de valeur"],"ch22-qcm-4":["fmn","gouvernance"],"ch22-qcm-5":["fmn"],"ch22-qcm-6":["fmn"],"ch22-qcm-7":["chaînes de valeur","mondialisation"],"ch22-qcm-8":["chaînes de valeur"],"ch22-qcm-9":["chaînes de valeur","innovation"],"ch22-qcm-10":["fmn"],"ch22-qcm-11":["gouvernance"],"ch22-qcm-12":["gouvernance"],"ch22-qcm-13":["fmn","gouvernance","dumping"],"ch22-qcm-14":["chaînes de valeur"],"ch22-qcm-15":["dumping","politique industrielle","protectionnisme"],"ch22-qcm-16":["dumping","compétitivité","politique industrielle"],"ch22-qcm-17":["dumping","attractivité"],"ch22-qcm-18":["désindustrialisation","attractivité"],"ch22-qcm-19":["désindustrialisation"],"ch22-qcm-20":["choc chinois","mondialisation","compétitivité"],"ch22-qcm-21":["choc chinois","protectionnisme"],"ch22-qcm-22":["fmn","choc chinois","attractivité","politique industrielle","innovation"],"ch22-qcm-23":["choc chinois","politique industrielle","transition écologique"],"ch22-qcm-24":["mondialisation","politique industrielle"],"ch22-qcm-25":["mondialisation"],"ch22-qcm-26":["compétitivité","protectionnisme","souveraineté"],"ch22-qcm-27":["compétitivité"],"ch22-qcm-28":["compétitivité","innovation","protectionnisme"],"ch22-qcm-29":["compétitivité","innovation"],"ch22-qcm-30":["compétitivité"],"ch22-qcm-31":["fmn","chaînes de valeur","attractivité"],"ch22-qcm-32":["attractivité","politique industrielle"],"ch22-qcm-33":["attractivité","politique industrielle"],"ch22-qcm-34":["fmn","attractivité"],"ch22-qcm-35":["ide","politique industrielle"],"ch22-qcm-36":["protectionnisme"],"ch22-qcm-37":["gouvernance","dumping","innovation"],"ch22-qcm-38":["ide","innovation"],"ch22-qcm-39":["politique industrielle","innovation"],"ch22-qcm-40":["politique industrielle","protectionnisme"],"ch22-qcm-41":["protectionnisme","souveraineté"],"ch22-qcm-42":["fmn","souveraineté"],"ch22-qcm-43":["ide","attractivité","politique industrielle","souveraineté"],"ch22-qcm-44":["chaînes de valeur","transition écologique"],"ch22-qcm-45":["fmn","ide","chaînes de valeur","désindustrialisation","politique industrielle","transition écologique"],"ch22-vraifa-46":["fmn"],"ch22-vraifa-47":["ide","chaînes de valeur"],"ch22-vraifa-48":["chaînes de valeur"],"ch22-vraifa-49":["chaînes de valeur"],"ch22-vraifa-50":["désindustrialisation"],"ch22-vraifa-51":["compétitivité","politique industrielle","souveraineté"],"ch22-vraifa-52":["compétitivité"],"ch22-vraifa-53":["compétitivité"],"ch22-vraifa-54":["attractivité","politique industrielle"],"ch22-vraifa-55":["attractivité"],"ch22-vraifa-56":["ide","politique industrielle"],"ch22-vraifa-57":["compétitivité","protectionnisme"],"ch22-vraifa-58":["innovation"],"ch22-vraifa-59":["souveraineté"],"ch22-vraifa-60":["fmn","gouvernance","dumping"],"ch22-vraifa-61":["mondialisation","politique industrielle"],"ch22-vraifa-62":["ide","choc chinois"],"ch22-vraifa-63":["innovation"],"ch22-vraifa-64":["fmn"],"ch22-vraifa-65":["choc chinois","souveraineté","transition écologique"],"ch22-questi-66":["fmn","ide","chaînes de valeur"],"ch22-questi-67":["chaînes de valeur","dumping","innovation"],"ch22-questi-68":["désindustrialisation","mondialisation","compétitivité"],"ch22-questi-69":["désindustrialisation","choc chinois","politique industrielle","transition écologique"],"ch22-questi-70":["mondialisation","politique industrielle"],"ch22-questi-71":["dumping","compétitivité","souveraineté"],"ch22-questi-72":["dumping","attractivité","politique industrielle","innovation"],"ch22-questi-73":["ide","politique industrielle","innovation"],"ch22-questi-74":["innovation","protectionnisme"],"ch22-questi-75":["innovation"],"ch22-questi-76":["ide","souveraineté"],"ch22-questi-77":["choc chinois","souveraineté","transition écologique"],"ch22-questi-78":["fmn","gouvernance","dumping"],"ch22-questi-79":["ide","chaînes de valeur"],"ch22-questi-80":["fmn","ide","attractivité","politique industrielle","protectionnisme","souveraineté"],"ch22-questi-81":["mondialisation","politique industrielle"],"ch22-questi-82":["ide","compétitivité","politique industrielle","souveraineté","transition écologique"]};
+var N = 22;
+
+/* --- 1. Tags thématiques des questions du chapitre 22 ---------------------
+   Elles n'avaient que deux tags d'identification ; les autres chapitres en
+   proposent une quinzaine, par thème. */
+function poserTags(){
+  var A = window.__ECO_ADV_ALL_BANK;
+  if(!A) return false;
+  var n = 0;
+  A.forEach(function(q){
+    if(Number(q.ch) !== N) return;
+    var t = TAGS[q.id];
+    if(!t) return;
+    var base = ['deuxième année', 'chapitre 22'];
+    var voulu = base.concat(t);
+    if((q.tags || []).length === voulu.length) return;
+    q.tags = voulu;
+    n++;
+  });
+  return n > 0;
+}
+
+/* --- 2. Onglet et carte du chapitre 22 dans la section Sujets ---------------
+   Le rendu de base construit les chapitres 1 à 8 ; chaque chapitre ajouté
+   depuis complète la liste lui-même. Le chapitre 22 ne le faisait pas. */
+function nbSujets(){
+  try{
+    return (SUBJECTS_BANK_PREMIUM || []).filter(function(s){ return Number(s.chapter) === N; }).length;
+  }catch(e){ return 0; }
+}
+function poserSujets(){
+  var n = nbSujets();
+  if(!n) return;
+  var tabs = document.getElementById('subjTabsPremium');
+  if(tabs && !tabs.querySelector('[data-ch22]')){
+    tabs.insertAdjacentHTML('beforeend',
+      '<button class="subj-tab" data-ch22="1" onclick="setSubjectChapterPremium(' + N + ')">' +
+      '2ᵉ année — Ch. 2</button>');
+  }
+  var grid = document.getElementById('subjChaptersPremium');
+  if(grid && grid.children.length && !grid.querySelector('[data-ch22]')){
+    grid.insertAdjacentHTML('beforeend',
+      '<div class="subj-ch-card" data-ch22="1" onclick="setSubjectChapterPremium(' + N + ')">' +
+      '<div class="subj-ch-num">2ᵉ année — Chapitre 2</div>' +
+      '<div class="subj-ch-title">Sujets corrigés</div>' +
+      '<div class="subj-ch-count">' + n + ' dissertations corrigées</div></div>');
+  }
+  /* marquer l'onglet actif */
+  try{
+    var actif = (window.currentSubjChapter === N);
+    var b = tabs && tabs.querySelector('[data-ch22]');
+    if(b) b.classList.toggle('on', !!actif);
+  }catch(e){}
+}
+
+function tout(){ try{ poserTags(); poserSujets(); }catch(e){} }
+
+if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', tout);
+else tout();
+[300, 900, 2000, 3500, 6000].forEach(function(t){ setTimeout(tout, t); });
+
+if(typeof window.showPg === 'function'){
+  var old = window.showPg;
+  window.showPg = function(pg){
+    var r = old.apply(this, arguments);
+    if(pg === 'subjects' || pg === 'quiz'){
+      setTimeout(tout, 50); setTimeout(tout, 300);
+    }
+    return r;
+  };
+}
+if(typeof window.setSubjectChapterPremium === 'function'){
+  var oldS = window.setSubjectChapterPremium;
+  window.setSubjectChapterPremium = function(){
+    var r = oldS.apply(this, arguments);
+    setTimeout(tout, 40);
+    return r;
+  };
+}
+try{
+  var z = document.getElementById('pg-subjects');
+  if(z) new MutationObserver(function(){ poserSujets(); }).observe(z, {childList:true, subtree:true});
+}catch(e){}
+})();
+</script>
