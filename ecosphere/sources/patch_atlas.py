@@ -100,6 +100,14 @@ STYLE = """
 #pg-atlas .at-bl.ex .at-txt{color:var(--txt2)}
 #pg-atlas .at-bl.di{background:rgba(124,106,247,.07);border:1px solid rgba(124,106,247,.22);
   border-radius:9px;padding:10px 12px;margin-top:14px}
+#pg-atlas .at-bl.po{background:rgba(106,247,196,.06);border:1px solid rgba(106,247,196,.2);
+  border-radius:9px;padding:10px 12px;margin-top:14px}
+#pg-atlas .at-bl.co{background:var(--s1);border:1px solid var(--bdr2);border-left:3px solid var(--acc2);
+  border-radius:9px;padding:10px 12px;margin-top:14px}
+#pg-atlas .at-bl.co .at-txt{font-style:italic;color:var(--txt)}
+#pg-atlas .at-cop{margin-left:auto;background:transparent;border:1px solid var(--bdr2);color:var(--txt3);
+  border-radius:6px;padding:2px 8px;font-size:.62rem;font-family:inherit;cursor:pointer;letter-spacing:.04em}
+#pg-atlas .at-cop:hover{color:var(--txt);border-color:var(--acc2)}
 #pg-atlas .at-bl.ou{font-size:.78rem;color:var(--acc2);margin-top:12px;font-style:italic}
 #pg-atlas .at-liens{margin-top:14px;border-top:1px dashed var(--bdr);padding-top:10px}
 #pg-atlas .at-lien{font-size:.78rem;line-height:1.55;color:var(--txt2);margin-bottom:6px;padding-left:20px;position:relative}
@@ -153,7 +161,7 @@ DATA.chapitres.forEach(function(ch){
   ch.e.forEach(function(e, i){
     e.id = 'at-' + ch.k + '-' + i;
     e.lib = ch.lib;
-    e.rech = norm([e.n, e.ti, e.c, e.af, e.me, e.ex, e.di, e.ou, e.no.join(' '),
+    e.rech = norm([e.n, e.ti, e.c, e.af, e.me, e.ex, e.po, e.di, e.co, e.ou, e.no.join(' '),
                    e.li.map(function(x){return x.a + ' ' + x.t;}).join(' '), ch.lib, ch.titre].join(' '));
     PLAT.push(e);
   });
@@ -202,8 +210,9 @@ function construire(){
     '<div class="at-wrap">' +
       '<h1 class="at-h1">\\ud83d\\uddfa\\ufe0f Atlas des id\\u00e9es</h1>' +
       '<p class="at-sub">Toutes les id\\u00e9es des auteurs du programme, class\\u00e9es par ann\\u00e9e puis par chapitre. ' +
-        'Pour chacune : ce que l\\u2019auteur affirme, le m\\u00e9canisme de son raisonnement, un exemple concret, ' +
-        'le moment de la dissertation o\\u00f9 la mobiliser, et l\\u2019ouvrage lorsqu\\u2019il est \\u00e9tabli.</p>' +
+        'Pour chacune : la th\\u00e8se d\\u00e9velopp\\u00e9e, le m\\u00e9canisme \\u00e9tape par \\u00e9tape, un exemple concret, ' +
+        'ce qu\\u2019elle permet de d\\u00e9montrer dans le chapitre, le moment de la dissertation o\\u00f9 la mobiliser, ' +
+        'une formulation directement r\\u00e9utilisable en copie, et l\\u2019ouvrage lorsqu\\u2019il est \\u00e9tabli.</p>' +
       '<div class="at-diff">' +
         '<div><b>\\ud83d\\udc64 Auteurs</b>Pr\\u00e9sente chaque penseur dans son ensemble : biographie, courant, \\u0153uvres, id\\u00e9e g\\u00e9n\\u00e9rale.</div>' +
         '<div class="b"><b>\\ud83d\\uddfa\\ufe0f Atlas des id\\u00e9es</b>Part des chapitres : un m\\u00eame auteur y revient autant de fois qu\\u2019il sert, avec \\u00e0 chaque fois l\\u2019id\\u00e9e pr\\u00e9cise utile dans ce chapitre.</div>' +
@@ -277,12 +286,27 @@ function surligner(txt, mots){
 
 /* ---------------------------------------------------- rendu */
 function carte(e, mots){
-  var autres = (PAR_AUTEUR[norm(e.n)] || []).filter(function(x){ return x.ch !== e.ch; });
-  var aussi = autres.length
-    ? '<div class="at-aussi">Le m\\u00eame auteur sert aussi en ' + autres.map(function(x){
+  var memeAuteur = PAR_AUTEUR[norm(e.n)] || [];
+  /* autres chapitres : un lien par chapitre, sans doublon de libell\u00e9 */
+  var vusCh = {}, autres = [];
+  memeAuteur.forEach(function(x){
+    if(x.ch === e.ch || vusCh[x.ch]) return;
+    vusCh[x.ch] = 1; autres.push(x);
+  });
+  /* autres id\u00e9es du m\u00eame auteur dans CE chapitre */
+  var ici = memeAuteur.filter(function(x){ return x.ch === e.ch && x.id !== e.id; });
+  var aussi = '';
+  if(ici.length){
+    aussi += '<div class="at-aussi">Dans ce chapitre, cet auteur est trait\\u00e9 en ' + (ici.length + 1) +
+      ' id\\u00e9es distinctes \\u2014 voir aussi ' + ici.map(function(x){
+        return '<a data-go="' + x.id + '">' + esc(x.ti) + '</a>';
+      }).join(', ') + '.</div>';
+  }
+  if(autres.length){
+    aussi += '<div class="at-aussi">Le m\\u00eame auteur sert aussi en ' + autres.map(function(x){
         return '<a data-go="' + x.id + '">' + esc(x.lib) + '</a>';
-      }).join(', ') + ' \\u2014 avec une autre id\\u00e9e.</div>'
-    : '';
+      }).join(', ') + ' \\u2014 avec une autre id\\u00e9e.</div>';
+  }
   return '<div class="at-card' + (ouverts[e.id] ? ' open' : '') + '" id="' + e.id + '">' +
     '<div class="at-ch2" data-t="' + e.id + '">' +
       '<div class="at-nom">' + surligner(e.n, mots) +
@@ -299,10 +323,14 @@ function carte(e, mots){
 
 function corps(e){
   var h = '';
-  h += '<div class="at-bl"><div class="at-lab"><i>\\ud83c\\udfaf</i> Ce que l\\u2019auteur affirme</div><div class="at-txt">' + esc(e.af) + '</div></div>';
-  h += '<div class="at-bl"><div class="at-lab"><i>\\u2699\\ufe0f</i> Le m\\u00e9canisme du raisonnement</div><div class="at-txt">' + esc(e.me) + '</div></div>';
+  h += '<div class="at-bl"><div class="at-lab"><i>\\ud83c\\udfaf</i> La th\\u00e8se de l\\u2019auteur</div><div class="at-txt">' + esc(e.af) + '</div></div>';
+  h += '<div class="at-bl"><div class="at-lab"><i>\\u2699\\ufe0f</i> Le m\\u00e9canisme, \\u00e9tape par \\u00e9tape</div><div class="at-txt">' + esc(e.me) + '</div></div>';
   h += '<div class="at-bl ex"><div class="at-lab"><i>\\ud83d\\udd0e</i> Exemple concret</div><div class="at-txt">' + esc(e.ex) + '</div></div>';
+  h += '<div class="at-bl po"><div class="at-lab"><i>\\ud83e\\udde9</i> Ce que cette id\\u00e9e permet de d\\u00e9montrer dans le chapitre</div><div class="at-txt">' + esc(e.po) + '</div></div>';
   h += '<div class="at-bl di"><div class="at-lab"><i>\\u270d\\ufe0f</i> En dissertation : quels sujets, \\u00e0 quel moment</div><div class="at-txt">' + esc(e.di) + '</div></div>';
+  h += '<div class="at-bl co"><div class="at-lab"><i>\\ud83d\\udcdd</i> Formulation pour la copie' +
+       '<button class="at-cop" data-cop="' + e.id + '" title="Copier">copier</button></div>' +
+       '<div class="at-txt" id="cop-' + e.id + '">' + esc(e.co) + '</div></div>';
   if(e.ou) h += '<div class="at-bl ou">\\ud83d\\udcd8 ' + esc(e.ou) + '</div>';
   if(e.li && e.li.length){
     h += '<div class="at-liens"><div class="at-lab" style="margin-bottom:7px"><i>\\ud83d\\udd17</i> Liens avec d\\u2019autres id\\u00e9es</div>';
@@ -386,6 +414,24 @@ function clic(ev){
     var dispo = [].slice.call(sel.options).some(function(o){ return o.value === v; });
     if(dispo){ sel.value = v; S.no = v; } else { document.getElementById('at-q').value = v; S.q = v; }
     rendre();
+    return;
+  }
+
+  var cop = t.closest('[data-cop]');
+  if(cop){
+    ev.stopPropagation();
+    var src = document.getElementById('cop-' + cop.getAttribute('data-cop'));
+    if(src){
+      var txt = src.textContent;
+      var fini = function(){ cop.textContent = 'copi\\u00e9'; setTimeout(function(){ cop.textContent = 'copier'; }, 1400); };
+      try{
+        if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(txt).then(fini, fini); }
+        else{
+          var ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta);
+          ta.select(); try{ document.execCommand('copy'); }catch(e){} document.body.removeChild(ta); fini();
+        }
+      }catch(e){ fini(); }
+    }
     return;
   }
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Assemble l'Atlas des idées : vérifie la couverture, fusionne avec les
-métadonnées d'AUTHORS (dates, courant) et produit atlas.json."""
+"""Assemble l'Atlas des idées : base rédigée + couche d'approfondissement,
+vérifie la couverture et produit atlas.json."""
 import io, json, unicodedata, sys
 
 from atlas_a import A
@@ -10,23 +10,29 @@ from atlas_c import C
 from atlas_d import D
 from atlas_e import E
 
+import enr_ch1, enr_ch2, enr_ch3, enr_ch45, enr_ch6, enr_ch7, enr_ch8, enr_ch910, enr_ch2122, enr_meca, enr_meca2, enr_meca2
+
 ATLAS = {}
 for src in (A, B, C, D, E):
     ATLAS.update(src)
 
+ENR, SPLIT = {}, {}
+for m in (enr_meca, enr_meca2, enr_ch1, enr_ch2, enr_ch3, enr_ch45, enr_ch6, enr_ch7, enr_ch8, enr_ch910, enr_ch2122):
+    for c, dic in getattr(m, 'ENR', {}).items():
+        cible = ENR.setdefault(c, {})
+        for t, v in dic.items():
+            cible.setdefault(t, {}).update(v)
+    for k, v in getattr(m, 'SPLIT', {}).items():
+        SPLIT.setdefault(k, []).extend(v)
+
 ORDRE = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 21, 22]
 
-# fusions documentées : un même auteur apparaît sous deux graphies dans AUTHORS
 ALIAS = {
     'walt rostow': 'Walt Whitman Rostow',
     'james robinson': 'James A. Robinson',
     'frank galluzzo': 'Anthony Galluzzo',
 }
-
-# entrées ajoutées à partir du texte du cours (et non d'AUTHORS)
-HORS_AUTHORS = {
-    22: ['Ronald Coase', 'Richard Baldwin', 'Charles-Albert Michalet', 'Paul Krugman'],
-}
+HORS_AUTHORS = {22: ['Ronald Coase', 'Richard Baldwin', 'Charles-Albert Michalet', 'Paul Krugman']}
 
 
 def norm(s):
@@ -36,8 +42,7 @@ def norm(s):
 
 
 def cle(nom):
-    n = norm(nom)
-    return norm(ALIAS.get(n, nom))
+    return norm(ALIAS.get(norm(nom), nom))
 
 
 data = json.load(io.open('data.json', encoding='utf-8'))
@@ -50,27 +55,21 @@ def chapitres_de(a):
     return sorted({c for c in src if c is not None})
 
 
-# ---- index des métadonnées par (clé auteur) : on garde la fiche la plus riche
 meta = {}
 for a in AUT:
     k = cle(a['name'])
-    cur = meta.setdefault(k, {'name': a['name'], 'dates': '', 'courant': '', 'oeuvres': [], 'poids': -1})
-    poids = len(a.get('detail') or '') + len(a.get('idea') or '')
+    cur = meta.setdefault(k, {'name': a['name'], 'dates': '', 'courant': '', 'poids': -1})
     if a.get('dates') and len(a['dates']) > len(cur['dates']):
         cur['dates'] = a['dates']
     if a.get('courant') and len(a['courant']) > len(cur['courant']):
         cur['courant'] = a['courant']
-    for o in (a.get('oeuvres') or []):
-        if o not in cur['oeuvres']:
-            cur['oeuvres'].append(o)
+    poids = len(a.get('detail') or '') + len(a.get('idea') or '')
     if poids > cur['poids']:
         cur['poids'] = poids
         cur['name'] = a['name']
 
-# ---- couples (chapitre, auteur) attendus
-attendu = {}
-for c in ORDRE:
-    attendu[c] = set()
+# ---------------------------------------------------------------- couverture
+attendu = {c: set() for c in ORDRE}
 for a in AUT:
     for c in chapitres_de(a):
         if c in attendu:
@@ -79,29 +78,70 @@ for c, noms in HORS_AUTHORS.items():
     for n in noms:
         attendu[c].add(cle(n))
 
-# ---- couples effectivement rédigés
 ecrit = {c: {cle(e[0]) for e in ATLAS.get(c, [])} for c in ORDRE}
-
 erreurs = []
 for c in ORDRE:
-    manquants = attendu[c] - ecrit[c]
-    surplus = ecrit[c] - attendu[c]
-    if manquants:
-        erreurs.append('ch%s MANQUE : %s' % (c, ', '.join(sorted(manquants))))
-    if surplus:
-        erreurs.append('ch%s EN TROP : %s' % (c, ', '.join(sorted(surplus))))
-    doublons = [e[0] for e in ATLAS.get(c, [])]
-    vus = set()
-    for n in doublons:
-        if cle(n) in vus:
-            erreurs.append('ch%s DOUBLON : %s' % (c, n))
-        vus.add(cle(n))
-
+    if attendu[c] - ecrit[c]:
+        erreurs.append('ch%s MANQUE : %s' % (c, ', '.join(sorted(attendu[c] - ecrit[c]))))
+    if ecrit[c] - attendu[c]:
+        erreurs.append('ch%s EN TROP : %s' % (c, ', '.join(sorted(ecrit[c] - attendu[c]))))
 if erreurs:
-    print('\n'.join(erreurs))
-    sys.exit('COUVERTURE INCOMPLÈTE')
+    sys.exit('\n'.join(erreurs))
 
-# ---- titre et libellé des chapitres
+# ---------------------------------------------------------------- fusion
+CHAMPS = {'ti': 'ti', 'af': 'affirme', 'me': 'mecanisme', 'ex': 'exemple',
+          'di': 'diss', 'po': 'portee', 'co': 'copie', 'no': 'notions'}
+
+enrichies = 0
+for c in ORDRE:
+    base = ATLAS[c]
+    surcharges = ENR.get(c, {})
+    titres = {t for (_, t, _) in base}
+    inconnus = set(surcharges) - titres
+    if inconnus:
+        sys.exit('ch%s : surcharge sans cible : %s' % (c, ', '.join(sorted(inconnus))))
+    neuf = []
+    for nom, titre, d in base:
+        s = surcharges.get(titre)
+        if s:
+            enrichies += 1
+            d = dict(d)
+            titre = s.get('ti', titre)
+            for k, champ in CHAMPS.items():
+                if k == 'ti':
+                    continue
+                if k in s:
+                    d[champ] = s[k]
+        neuf.append((nom, titre, d))
+    neuf.extend(SPLIT.get(c, []))
+    ATLAS[c] = neuf
+
+# ---------------------------------------------------------------- contrôles
+MINI = {'affirme': 600, 'mecanisme': 400, 'exemple': 110, 'diss': 140, 'portee': 250, 'copie': 150}
+
+noms_connus = set()
+for c in ORDRE:
+    noms_connus |= {cle(e[0]) for e in ATLAS[c]}
+
+for c in ORDRE:
+    vus = set()
+    for nom, titre, d in ATLAS[c]:
+        if titre in vus:
+            sys.exit('ch%s : titre en double : %s' % (c, titre))
+        vus.add(titre)
+        for champ, mini in MINI.items():
+            v = (d.get(champ) or '').strip()
+            if not v:
+                sys.exit('ch%s / %s : champ %s absent' % (c, nom, champ))
+            if len(v) < mini:
+                sys.exit('ch%s / %s : champ %s trop court (%d < %d)' % (c, nom, champ, len(v), mini))
+        for ln in d.get('liens') or []:
+            if cle(ln[0]) not in noms_connus:
+                sys.exit('ch%s / %s : lien vers un auteur absent : %s' % (c, nom, ln[0]))
+            if ln[1] not in ('complement', 'opposition', 'prolonge'):
+                sys.exit('ch%s / %s : relation inconnue %r' % (c, nom, ln[1]))
+
+
 def libelle(c):
     if c == 21:
         return '2ᵉ année — Chapitre 1'
@@ -110,71 +150,44 @@ def libelle(c):
     return 'Chapitre %d' % c
 
 
-CHAMPS = ('affirme', 'mecanisme', 'exemple', 'diss')
-
-out = {'chapitres': [], 'genere': True}
-total = 0
-liens_total = 0
-noms_connus = set()
-for c in ORDRE:
-    noms_connus |= ecrit[c]
-
+out = {'chapitres': []}
+total = liens_total = 0
 for c in ORDRE:
     info = CHAP[str(c)]
     entrees = []
     for nom, titre, d in ATLAS[c]:
-        k = cle(nom)
-        m = meta.get(k, {})
-        for ch in CHAMPS:
-            v = (d.get(ch) or '').strip()
-            if len(v) < 60:
-                sys.exit('ch%s / %s : champ %s trop court (%d)' % (c, nom, ch, len(v)))
-        liens = []
-        for ln in d.get('liens') or []:
-            if len(ln) != 3:
-                sys.exit('ch%s / %s : lien mal formé' % (c, nom))
-            cible, rel, txt = ln
-            if rel not in ('complement', 'opposition', 'prolonge'):
-                sys.exit('ch%s / %s : relation inconnue %r' % (c, nom, rel))
-            if cle(cible) not in noms_connus:
-                sys.exit('ch%s / %s : lien vers un auteur absent de l\'Atlas : %s' % (c, nom, cible))
-            liens.append({'a': cible, 'r': rel, 't': txt})
+        m = meta.get(cle(nom), {})
+        liens = [{'a': a, 'r': r, 't': t} for (a, r, t) in (d.get('liens') or [])]
         liens_total += len(liens)
         entrees.append({
-            'n': m.get('name') or nom,
-            'd': m.get('dates') or '',
-            'c': m.get('courant') or '',
-            'ti': titre,
-            'af': d['affirme'], 'me': d['mecanisme'], 'ex': d['exemple'], 'di': d['diss'],
-            'ou': (d.get('ouvrage') or '').strip(),
-            'no': d.get('notions') or [],
-            'li': liens,
-            'ch': c,
+            'n': m.get('name') or nom, 'd': m.get('dates') or '', 'c': m.get('courant') or '',
+            'ti': titre, 'af': d['affirme'], 'me': d['mecanisme'], 'ex': d['exemple'],
+            'po': d['portee'], 'di': d['diss'], 'co': d['copie'],
+            'ou': (d.get('ouvrage') or '').strip(), 'no': d.get('notions') or [],
+            'li': liens, 'ch': c,
         })
         total += 1
-    out['chapitres'].append({
-        'k': c,
-        'annee': 2 if c >= 21 else 1,
-        'lib': libelle(c),
-        'titre': info.get('title') or '',
-        'sous': info.get('sub') or '',
-        'e': entrees,
-    })
+    out['chapitres'].append({'k': c, 'annee': 2 if c >= 21 else 1, 'lib': libelle(c),
+                             'titre': info.get('title') or '', 'sous': info.get('sub') or '',
+                             'e': entrees})
 
 io.open('atlas.json', 'w', encoding='utf-8').write(json.dumps(out, ensure_ascii=False, separators=(',', ':')))
 
-notions = set()
-for ch in out['chapitres']:
-    for e in ch['e']:
-        notions |= {n for n in e['no']}
 auteurs = {e['n'] for ch in out['chapitres'] for e in ch['e']}
+multi = sum(1 for ch in out['chapitres'] for e in ch['e']
+            if sum(1 for ch2 in out['chapitres'] for e2 in ch2['e']
+                   if e2['ch'] == e['ch'] and cle(e2['n']) == cle(e['n'])) > 1)
 sans_ouvrage = sum(1 for ch in out['chapitres'] for e in ch['e'] if not e['ou'])
+car = sum(len(e['af']) + len(e['me']) + len(e['ex']) + len(e['po']) + len(e['di']) + len(e['co'])
+          for ch in out['chapitres'] for e in ch['e'])
+caf = sum(len(e['af']) for ch in out['chapitres'] for e in ch['e'])
 
 print('OK atlas.json')
-print('  %d idées (couples auteur x chapitre) sur %d chapitres' % (total, len(ORDRE)))
-print('  %d auteurs distincts, %d notions distinctes, %d liens' % (len(auteurs), len(notions), liens_total))
+print('  %d idées · %d auteurs distincts · %d liens' % (total, len(auteurs), liens_total))
+print('  %d entrées enrichies, %d idées supplémentaires issues de séparations' % (enrichies, sum(len(v) for v in SPLIT.values())))
+print('  %d idées appartiennent à un auteur traité plusieurs fois dans le même chapitre' % multi)
 print('  %d entrées sans ouvrage cité (aucune référence inventée)' % sans_ouvrage)
+print('  %d caractères rédigés (%d par idée), dont %d pour « la thèse » (%d par idée)'
+      % (car, car // total, caf, caf // total))
 for ch in out['chapitres']:
     print('   %-26s %2d idées' % (ch['lib'], len(ch['e'])))
-car = sum(len(e['af']) + len(e['me']) + len(e['ex']) + len(e['di']) for ch in out['chapitres'] for e in ch['e'])
-print('  %d caractères d\'explication rédigée (%d en moyenne par idée)' % (car, car // total))
