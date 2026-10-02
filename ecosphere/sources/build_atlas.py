@@ -10,18 +10,18 @@ from atlas_c import C
 from atlas_d import D
 from atlas_e import E
 
-import enr_ch1, enr_ch2, enr_ch3, enr_ch45, enr_ch6, enr_ch7, enr_ch8, enr_ch910, enr_ch2122, enr_meca, enr_meca2, enr_meca2
+import enr_ch1, enr_ch2, enr_ch3, enr_ch45, enr_ch6, enr_ch7, enr_ch8, enr_ch910, enr_ch2122, enr_meca, enr_meca2, enr_v194, enr_meca2
 
 ATLAS = {}
 for src in (A, B, C, D, E):
     ATLAS.update(src)
 
-ENR, SPLIT = {}, {}
-for m in (enr_meca, enr_meca2, enr_ch1, enr_ch2, enr_ch3, enr_ch45, enr_ch6, enr_ch7, enr_ch8, enr_ch910, enr_ch2122):
-    for c, dic in getattr(m, 'ENR', {}).items():
-        cible = ENR.setdefault(c, {})
-        for t, v in dic.items():
-            cible.setdefault(t, {}).update(v)
+# les modules sont appliqués dans l'ordre : une surcharge peut viser un titre
+# produit par un module antérieur, ou une entrée ajoutée par lui
+MODULES = (enr_meca, enr_meca2, enr_ch1, enr_ch2, enr_ch3, enr_ch45, enr_ch6,
+           enr_ch7, enr_ch8, enr_ch910, enr_ch2122, enr_v194)
+SPLIT = {}
+for m in MODULES:
     for k, v in getattr(m, 'SPLIT', {}).items():
         SPLIT.setdefault(k, []).extend(v)
 
@@ -32,7 +32,8 @@ ALIAS = {
     'james robinson': 'James A. Robinson',
     'frank galluzzo': 'Anthony Galluzzo',
 }
-HORS_AUTHORS = {22: ['Ronald Coase', 'Richard Baldwin', 'Charles-Albert Michalet', 'Paul Krugman']}
+HORS_AUTHORS = {22: ['Ronald Coase', 'Richard Baldwin', 'Charles-Albert Michalet', 'Paul Krugman'],
+                3: ['John Maynard Keynes']}
 
 
 def norm(s):
@@ -78,7 +79,7 @@ for c, noms in HORS_AUTHORS.items():
     for n in noms:
         attendu[c].add(cle(n))
 
-ecrit = {c: {cle(e[0]) for e in ATLAS.get(c, [])} for c in ORDRE}
+ecrit = {c: ({cle(e[0]) for e in ATLAS.get(c, [])} | {cle(e[0]) for e in SPLIT.get(c, [])}) for c in ORDRE}
 erreurs = []
 for c in ORDRE:
     if attendu[c] - ecrit[c]:
@@ -93,28 +94,30 @@ CHAMPS = {'ti': 'ti', 'af': 'affirme', 'me': 'mecanisme', 'ex': 'exemple',
           'di': 'diss', 'po': 'portee', 'co': 'copie', 'no': 'notions'}
 
 enrichies = 0
-for c in ORDRE:
-    base = ATLAS[c]
-    surcharges = ENR.get(c, {})
-    titres = {t for (_, t, _) in base}
-    inconnus = set(surcharges) - titres
-    if inconnus:
-        sys.exit('ch%s : surcharge sans cible : %s' % (c, ', '.join(sorted(inconnus))))
-    neuf = []
-    for nom, titre, d in base:
-        s = surcharges.get(titre)
-        if s:
-            enrichies += 1
-            d = dict(d)
-            titre = s.get('ti', titre)
-            for k, champ in CHAMPS.items():
-                if k == 'ti':
-                    continue
-                if k in s:
-                    d[champ] = s[k]
-        neuf.append((nom, titre, d))
-    neuf.extend(SPLIT.get(c, []))
-    ATLAS[c] = neuf
+for m in MODULES:
+    for c, ajouts in getattr(m, 'SPLIT', {}).items():
+        ATLAS[c] = list(ATLAS.get(c, [])) + list(ajouts)
+    for c, surcharges in getattr(m, 'ENR', {}).items():
+        base = ATLAS[c]
+        titres = {t for (_, t, _) in base}
+        inconnus = set(surcharges) - titres
+        if inconnus:
+            sys.exit('%s / ch%s : surcharge sans cible : %s'
+                     % (m.__name__, c, ', '.join(sorted(inconnus))))
+        neuf = []
+        for nom, titre, d in base:
+            sur = surcharges.get(titre)
+            if sur:
+                enrichies += 1
+                d = dict(d)
+                titre = sur.get('ti', titre)
+                for k, champ in CHAMPS.items():
+                    if k == 'ti':
+                        continue
+                    if k in sur:
+                        d[champ] = sur[k]
+            neuf.append((nom, titre, d))
+        ATLAS[c] = neuf
 
 # ---------------------------------------------------------------- contrôles
 MINI = {'affirme': 600, 'mecanisme': 400, 'exemple': 110, 'diss': 140, 'portee': 250, 'copie': 150}
