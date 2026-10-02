@@ -16538,6 +16538,37 @@ else boot();
     });
   }
 
+  /* ------------------------------------------- 8. position du bouton Frise */
+  /* La section « Frise chronologique » est inchangée, mais son bouton était
+     inséré juste après celui de « Chronologie ». Cette dernière section ayant
+     été supprimée, le bouton se retrouvait rejeté en fin de barre : on le
+     replace à l'emplacement qu'il occupait, après « Formules ». */
+  function placeFrise(){
+    var b = document.getElementById('fr-nav');
+    if (!b) return false;
+    var nav = b.parentNode;
+    if (!nav) return false;
+    var ref = null;
+    nav.querySelectorAll('.nt').forEach(function(x){
+      if ((x.getAttribute('onclick') || '').indexOf("'formulas'") >= 0) ref = x;
+    });
+    if (!ref) return false;
+    if (ref.nextSibling === b) return true;          /* déjà en place */
+    nav.insertBefore(b, ref.nextSibling);
+    return true;
+  }
+  (function(){
+    var essais = 0;
+    function essayer(){
+      essais++;
+      if (placeFrise() || essais > 40) return;
+      setTimeout(essayer, 300);
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', essayer);
+    else essayer();
+    [3000, 6000].forEach(function(ms){ setTimeout(placeFrise, ms); });
+  })();
+
   /* ------------------------------------------- rafraîchir ce qui est visible */
   function refresh(){
     try { if (typeof window.renderAuthors === 'function' && document.getElementById('ag')) window.renderAuthors(); } catch(e){}
