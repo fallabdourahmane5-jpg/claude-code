@@ -12,6 +12,7 @@ from atlas_e import E
 
 import enr_ch1, enr_ch2, enr_ch3, enr_ch45, enr_ch6, enr_ch7, enr_ch8, enr_ch910, enr_ch2122, enr_meca, enr_meca2, enr_v194, enr_meca2
 import enr_v195a, enr_v195b, enr_v195c, enr_v195d
+import enr_v196a, enr_v196b, enr_v196c
 
 ATLAS = {}
 for src in (A, B, C, D, E):
@@ -21,10 +22,11 @@ for src in (A, B, C, D, E):
 # produit par un module antérieur, ou une entrée ajoutée par lui
 MODULES = (enr_meca, enr_meca2, enr_ch1, enr_ch2, enr_ch3, enr_ch45, enr_ch6,
            enr_ch7, enr_ch8, enr_ch910, enr_ch2122, enr_v194,
-           enr_v195a, enr_v195b, enr_v195c, enr_v195d)
+           enr_v195a, enr_v195b, enr_v195c, enr_v195d,
+           enr_v196a, enr_v196b, enr_v196c)
 # modules de l'audit des auteurs : leurs auteurs ne sont pas dans data.json
 # (ils sont ajoutés à la base AUTHORS de l'application par patch_v195.py)
-AUDIT = (enr_v195a, enr_v195b, enr_v195c, enr_v195d)
+AUDIT = (enr_v195a, enr_v195b, enr_v195c, enr_v195d, enr_v196a, enr_v196b, enr_v196c)
 SPLIT = {}
 for m in MODULES:
     for k, v in getattr(m, 'SPLIT', {}).items():
