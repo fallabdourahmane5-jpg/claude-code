@@ -13,6 +13,7 @@ from atlas_e import E
 import enr_ch1, enr_ch2, enr_ch3, enr_ch45, enr_ch6, enr_ch7, enr_ch8, enr_ch910, enr_ch2122, enr_meca, enr_meca2, enr_v194, enr_meca2
 import enr_v195a, enr_v195b, enr_v195c, enr_v195d
 import enr_v196a, enr_v196b, enr_v196c
+import enr_v197a, enr_v197b, enr_v197c
 
 ATLAS = {}
 for src in (A, B, C, D, E):
@@ -23,16 +24,18 @@ for src in (A, B, C, D, E):
 MODULES = (enr_meca, enr_meca2, enr_ch1, enr_ch2, enr_ch3, enr_ch45, enr_ch6,
            enr_ch7, enr_ch8, enr_ch910, enr_ch2122, enr_v194,
            enr_v195a, enr_v195b, enr_v195c, enr_v195d,
-           enr_v196a, enr_v196b, enr_v196c)
+           enr_v196a, enr_v196b, enr_v196c,
+           enr_v197a, enr_v197b, enr_v197c)
 # modules de l'audit des auteurs : leurs auteurs ne sont pas dans data.json
 # (ils sont ajoutés à la base AUTHORS de l'application par patch_v195.py)
-AUDIT = (enr_v195a, enr_v195b, enr_v195c, enr_v195d, enr_v196a, enr_v196b, enr_v196c)
+AUDIT = (enr_v195a, enr_v195b, enr_v195c, enr_v195d, enr_v196a, enr_v196b, enr_v196c,
+         enr_v197a, enr_v197b, enr_v197c)
 SPLIT = {}
 for m in MODULES:
     for k, v in getattr(m, 'SPLIT', {}).items():
         SPLIT.setdefault(k, []).extend(v)
 
-ORDRE = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 21, 22]
+ORDRE = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 21, 22, 23]
 
 ALIAS = {
     'walt rostow': 'Walt Whitman Rostow',
@@ -58,7 +61,13 @@ def cle(nom):
 
 data = json.load(io.open('data.json', encoding='utf-8'))
 AUT = data['AUTHORS']
-CHAP = data['chapitres']
+CHAP = dict(data['chapitres'])
+CHAP.setdefault('23', {
+    'title': "L’analyse économique du commerce international",
+    'sub': "Théories traditionnelles et contemporaines de l’échange · gains et perdants du "
+           "libre-échange · instruments et évaluation des politiques commerciales · retour du "
+           "protectionnisme et fragmentation géo-économique.",
+})
 
 
 def chapitres_de(a):
@@ -78,6 +87,15 @@ for a in AUT:
     if poids > cur['poids']:
         cur['poids'] = poids
         cur['name'] = a['name']
+
+for _m in AUDIT:
+    for _n, _d in getattr(_m, 'META', {}).items():
+        _k = cle(_n)
+        _cur = meta.setdefault(_k, {'name': _n, 'dates': '', 'courant': '', 'poids': -1})
+        if _d.get('dates') and not _cur['dates']:
+            _cur['dates'] = _d['dates']
+        if _d.get('courant') and not _cur['courant']:
+            _cur['courant'] = _d['courant']
 
 # ---------------------------------------------------------------- couverture
 attendu = {c: set() for c in ORDRE}
@@ -160,6 +178,8 @@ def libelle(c):
         return '2ᵉ année — Chapitre 1'
     if c == 22:
         return '2ᵉ année — Chapitre 2'
+    if c == 23:
+        return '2ᵉ année — Chapitre 3'
     return 'Chapitre %d' % c
 
 
