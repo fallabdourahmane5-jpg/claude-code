@@ -11,8 +11,10 @@ les autres sections et les formulations pour la dissertation.
 import io
 import json
 
-SRC = 'app_v205.html'
-DST = 'app_v206.html'
+import sys
+
+SRC = sys.argv[1] if len(sys.argv) > 1 else 'app_v205.html'
+DST = sys.argv[2] if len(sys.argv) > 2 else 'app_v206.html'
 
 s = io.open(SRC, encoding='utf-8').read()
 assert s.rstrip().endswith('</script>')

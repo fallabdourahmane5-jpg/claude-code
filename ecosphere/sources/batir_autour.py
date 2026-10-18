@@ -18,7 +18,11 @@ import unicodedata
 import notions_liste
 import liens
 import doss_base
-import doss28a, doss28b, doss28c, doss28d, doss28e, doss28f, doss28g, doss28h  # noqa: F401
+import glob as _glob
+import importlib as _il
+
+for _f in sorted(_glob.glob('doss[0-9][0-9]*.py')):
+    _il.import_module(_f[:-3])
 
 # correspondance entre le libellé de la liste et la clé du dossier rédigé
 CLES = {
@@ -57,6 +61,44 @@ CLES = {
 
 REDIGES = {x['cle']: x for x in doss_base.DOSSIERS}
 assert len(REDIGES) == len(doss_base.DOSSIERS), 'clés de dossier en double'
+
+
+def _nz(s):
+    s = unicodedata.normalize('NFD', str(s or '')).lower()
+    s = ''.join(c for c in s if unicodedata.category(c) != 'Mn')
+    return re.sub(r'[^a-z0-9 ]+', ' ', s.replace('\u2019', ' ')).strip()
+
+
+def _rattacher():
+    """Associe chaque dossier rédigé au libellé de la liste qu'il traite.
+
+    Le rattachement se fait à l'intérieur d'un même ensemble, par similarité
+    de titre. Les correspondances écrites à la main dans CLES l'emportent.
+    """
+    from difflib import SequenceMatcher
+    pris = set(CLES.values())
+    for x in doss_base.DOSSIERS:
+        if x['cle'] in pris:
+            continue
+        cands = []
+        for e in notions_liste.ENSEMBLES:
+            if e['num'] != x['ens']:
+                continue
+            for lib in e['dossiers']:
+                if lib in CLES:
+                    continue
+                r = SequenceMatcher(None, _nz(x['titre']), _nz(lib)).ratio()
+                cands.append((r, lib))
+        cands.sort(reverse=True)
+        if cands and cands[0][0] >= 0.70:
+            CLES[cands[0][1]] = x['cle']
+            pris.add(x['cle'])
+        else:
+            raise SystemExit('dossier non rattaché : %s (%s)'
+                             % (x['cle'], x['titre']))
+
+
+_rattacher()
 
 
 def slug(ens, titre):
