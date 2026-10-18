@@ -167,3 +167,40 @@ ALIAS.update({
    ["cout du protectionnisme", "prix a la consommation", "consommation intermediaire",
     "intrant", "pouvoir d'achat", "surplus du consommateur"],
 })
+
+ALIAS.update({
+ "Syndrome hollandais":
+   ["syndrome hollandais", "dutch disease", "maladie hollandaise"],
+ "Dépendance économique":
+   ["dependance economique", "dependance exterieure", "dependance commerciale",
+    "theorie de la dependance", "dependantiste", "echange inegal",
+    "insertion subordonnee"],
+ "Aide au développement":
+   ["aide au developpement", "aide publique au developpement", "aide financiere",
+    "annulation de la dette", "allegement", "reechelonnement", "ppte"],
+ "Ajustement structurel":
+   ["ajustement structurel", "plan d'ajustement structurel",
+    "plans d'ajustement structurel", "conditionnalite"],
+ "Consensus de Washington":
+   ["consensus de washington", "williamson", "neoliberale",
+    "dereglementation"],
+})
+
+ALIAS["Malédiction des ressources naturelles"] = [
+    "malediction des ressources", "paradoxe de l'abondance",
+    "economie de rente", "ressources naturelles", "matieres premieres",
+    "institutions extractives"]
+
+ALIAS["Malédiction des ressources naturelles"] = [
+    "malediction des ressources", "paradoxe de l'abondance",
+    "economie de rente", "institutions extractives"]
+ALIAS["Consensus de Washington"] = [
+    "consensus de washington", "williamson", "neoliberal"]
+
+ALIAS["Consensus de Washington"] = [
+    "consensus de washington", "williamson", "plan d'ajustement structurel",
+    "plans d'ajustement structurel"]
+
+ALIAS["Consensus de Washington"] = [
+    "consensus de washington", "john williamson",
+    "plan d'ajustement structurel", "plans d'ajustement structurel"]
