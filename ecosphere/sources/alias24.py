@@ -204,3 +204,72 @@ ALIAS["Consensus de Washington"] = [
 ALIAS["Consensus de Washington"] = [
     "consensus de washington", "john williamson",
     "plan d'ajustement structurel", "plans d'ajustement structurel"]
+
+ALIAS.update({
+ "Discrimination par les prix":
+   ["monopole discriminant", "tarification differentielle",
+    "yield management", "tarification differenciee", "elasticite-prix"],
+ "Coordination par les prix":
+   ["coordination par les prix", "signal-prix", "systeme de prix",
+    "prix d'equilibre", "main invisible"],
+ "Équilibre de marché":
+   ["equilibre de marche", "prix d'equilibre", "offre et demande",
+    "equilibre partiel"],
+ "Optimum de Pareto":
+   ["optimum de pareto", "pareto", "efficacite allocative",
+    "optimum collectif"],
+ "Politique de la concurrence":
+   ["politique de la concurrence", "politique de concurrence",
+    "autorite de la concurrence", "droit de la concurrence",
+    "sherman act", "antitrust"],
+ "Concentration économique":
+   ["concentration economique", "concentration horizontale",
+    "concentration verticale", "fusion", "concentration conglomerale"],
+ "Efficacité économique":
+   ["efficacite economique", "efficacite allocative",
+    "allocation optimale", "optimum collectif"],
+})
+
+ALIAS.update({
+ "Marchés incomplets":
+   ["marches complets", "marche incomplet", "marches incomplets",
+    "arrow-debreu", "marche a terme"],
+ "Capture du régulateur":
+   ["capturees par des interets prives", "capture", "lobbying",
+    "groupes organises", "public choice"],
+ "Défaillances de coordination":
+   ["defaillance de coordination", "defaillances de coordination",
+    "probleme de coordination", "dilemme du prisonnier",
+    "equilibre de nash"],
+ "Recherche de rente":
+   ["recherche de rente", "chercheurs de rente", "rent seeking",
+    "lobbying", "public choice"],
+ "Défaillances de l’État":
+   ["defaillance de l'etat", "defaillances de l'etat", "public choice",
+    "choix publics", "buchanan", "tullock"],
+ "Choix publics":
+   ["choix publics", "public choice", "buchanan", "tullock", "stigler",
+    "marche politique"],
+ "Bureaucratie":
+   ["bureaucratie", "bureaucratique", "weber", "organisation",
+    "hauts fonctionnaires"],
+})
+
+ALIAS.update({
+ "Filière inversée": ["filiere inversee"],
+ "Contrainte budgétaire":
+   ["contrainte budgetaire", "droite de budget", "droite budgetaire",
+    "ensemble budgetaire", "revenu et prix"],
+ "Choix du consommateur":
+   ["choix du consommateur", "panier optimal", "courbe d'indifference",
+    "tms", "maximisation de l'utilite"],
+ "Élasticités":
+   ["elasticite", "elasticites", "elasticite-prix", "elasticite-revenu",
+    "elasticite croisee"],
+ "Effets d’imitation et de distinction":
+   ["imitation", "emulation sociale", "distinction", "veblen",
+    "consommation ostentatoire", "effet de mode"],
+ "Propension à consommer":
+   ["propension a consommer", "propension marginale", "propension moyenne",
+    "multiplicateur"],
+})
