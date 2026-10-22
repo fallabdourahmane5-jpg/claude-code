@@ -273,3 +273,111 @@ ALIAS.update({
    ["propension a consommer", "propension marginale", "propension moyenne",
     "multiplicateur"],
 })
+
+# ensembles 8 à 10 : libellés trop larges ou trop pauvres pour le découpage
+# automatique. Les expressions restent celles qu'emploient les cours.
+ALIAS.update({
+ "Entreprise":
+   ["theories de la firme", "nœud de contrats", "nature de la firme",
+    "l'entreprise comme", "qu'est-ce qu'une entreprise",
+    "la firme est", "firme et marche", "approche contractuelle",
+    "approche transactionnelle"],
+ "Entrepreneur":
+   ["entrepreneur", "entrepreneuriat", "esprit d'entreprise",
+    "proprietaire-dirigeant"],
+ "Profit":
+   ["profit", "taux de marge", "creancier residuel", "maximiser le profit"],
+ "Risque et incertitude":
+   ["incertitude", "prise de risque", "preneur de risque",
+    "responsabilite illimitee", "probabilisable", "avenir incertain",
+    "aversion au risque"],
+ "Frontières de la firme":
+   ["frontieres de la firme", "faire ou faire faire", "internaliser",
+    "internalisation", "taille de l'entreprise", "firme et marche"],
+ "Relation d’agence":
+   ["relation d'agence", "relations d'agence", "theorie de l'agence",
+    "couts d'agence", "divergence d'interets"],
+ "Séparation entre propriété et contrôle":
+   ["separation propriete", "propriete et controle", "propriete / controle",
+    "berle", "means", "technostructure", "capitalisme managerial"],
+ "Gouvernance d’entreprise":
+   ["gouvernance d'entreprise", "corporate governance",
+    "conseil d'administration", "stock-options"],
+ "Valeur actionnariale":
+   ["valeur actionnariale", "shareholder", "creation de valeur",
+    "rentabilite financiere"],
+ "Parties prenantes":
+   ["parties prenantes", "stakeholder", "polanyi"],
+ "Responsabilité sociale des entreprises":
+   ["responsabilite sociale", "loi pacte", "raison d'etre",
+    "entreprise a mission", "greenwashing"],
+ "Concentration et croissance des entreprises":
+   ["concentration des entreprises", "concentration horizontale",
+    "concentration verticale", "concentration conglomerale",
+    "croissance interne", "croissance externe", "conglomerat"],
+ "Intégration verticale":
+   ["integration verticale", "concentration verticale",
+    "filiere de production"],
+ "Externalisation":
+   ["externalisation", "externaliser", "sous-traitance", "firme-reseau",
+    "firmes-reseaux"],
+ "Organisation scientifique du travail":
+   ["organisation scientifique du travail", "organisation scientifique",
+    "one best way", "chronometrage", "parcellisation",
+    "division verticale", "division horizontale", "flanerie systematique"],
+ "École des relations humaines":
+   ["relations humaines", "mayo", "hawthorne", "western electric",
+    "test room", "effet d'observation"],
+ "Coopération":
+   ["cooperation conflictuelle", "lieu de cooperation", "travail en equipe",
+    "equipes semi autonomes", "esprit de groupe", "cohesion du groupe"],
+ "Autorité et pouvoir":
+   ["autorite", "domination legale", "domination charismatique",
+    "domination traditionnelle", "source de pouvoir", "sources de pouvoir",
+    "rapports de pouvoir", "relation de subordination", "charisme"],
+ "Acteur stratégique":
+   ["acteur strategique", "analyse strategique", "marge de manœuvre",
+    "marges de manœuvre", "marginal secant", "crozier"],
+ "Culture d’entreprise":
+   ["culture d'entreprise", "normes informelles", "norme informelle",
+    "monde informel", "organisation informelle", "relations informelles",
+    "sociogramme", "routines"],
+ "Contrôle du travail":
+   ["controle du travail", "contremaitre", "instrument de controle",
+    "dispositifs de surveillance", "controle des performances",
+    "subordination"],
+ "Souffrance et sens du travail":
+   ["travail en miettes", "alienation", "perte de sens", "sens du travail",
+    "souffrance", "penibilite", "monotonie", "intensification du travail"],
+ "Travail et emploi":
+   ["travail et emploi", "salarisation", "condition salariale",
+    "societe salariale", "travail integrateur", "desaffiliation",
+    "halo du chomage", "facteur d'integration"],
+ "Marché du travail":
+   ["marche du travail", "offre de travail", "demande de travail",
+    "contrat de travail"],
+ "Chômage conjoncturel et structurel":
+   ["chomage conjoncturel", "chomage structurel", "chomage durable",
+    "chomage de masse", "taux de chomage naturel", "chomage naturel"],
+ "Chômage classique et keynésien":
+   ["chomage keynesien", "chomage classique", "chomage involontaire",
+    "equilibre de sous-emploi", "demande effective", "malinvaud",
+    "theorie du desequilibre"],
+ "Chômage frictionnel": ["chomage frictionnel"],
+ "Chômage de longue durée": ["chomage de longue duree"],
+ "Appariement":
+   ["appariement sur le marche du travail", "fonction d'appariement",
+    "courbe de beveridge"],
+ "Salaire minimum":
+   ["salaire minimum", "smic", "prix plancher", "trappe a bas salaires",
+    "allegements de cotisations"],
+ "Précarité":
+   ["precarite", "precarisation", "emplois precaires", "pauvrete laborieuse",
+    "temps partiel subi", "contrats courts", "uberisation"],
+ "Progrès technique biaisé":
+   ["progres technique biaise", "biaise en faveur", "biais technologique",
+    "demande de travail qualifie", "taches routinieres"],
+ "Politiques actives et passives de l’emploi":
+   ["politique active de l'emploi", "politiques actives de l'emploi",
+    "politique passive de l'emploi", "traitement social du chomage"],
+})
