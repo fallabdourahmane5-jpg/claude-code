@@ -381,3 +381,134 @@ ALIAS.update({
    ["politique active de l'emploi", "politiques actives de l'emploi",
     "politique passive de l'emploi", "traitement social du chomage"],
 })
+
+# ensembles 11 à 13 : libellés trop larges, trop pauvres, ou dont le terme
+# canonique est absent des cours. Les expressions restent celles des cours.
+ALIAS.update({
+ "Fonctions de la monnaie":
+   ["fonctions de la monnaie", "unite de compte", "intermediaire des echanges",
+    "reserve de valeur", "pouvoir liberateur", "monnaie de libelle",
+    "monnaie vehiculaire", "monnaie de reserve"],
+ "Confiance monétaire":
+   ["confiance", "fiducia", "pouvoir liberateur", "monnaie fiduciaire"],
+ "Création monétaire":
+   ["creation monetaire", "les credits font les depots",
+    "monetisation d'une creance", "contreparties a la masse monetaire"],
+ "Banques commerciales":
+   ["banque commerciale", "banques commerciales", "banque de second rang",
+    "banque universelle", "banques universelles", "banque de depot",
+    "banques de depots"],
+ "Banque centrale":
+   ["banque centrale", "bce", "eurosysteme", "taux directeur",
+    "taux directeurs"],
+ "Liquidité":
+   ["liquidite", "actif liquide", "trappe a liquidite"],
+ "Taux d’intérêt nominal et réel":
+   ["taux d'interet nominal et reel", "taux d'interet reel",
+    "taux nominal et taux reel"],
+ "Préférence pour la liquidité":
+   ["preference pour la liquidite", "prix du renoncement", "thesauriser",
+    "thesaurisation", "trappe a liquidite", "garder la monnaie"],
+ "Multiplicateur et diviseur de crédit":
+   ["multiplicateur de credit", "multiplicateur bancaire",
+    "diviseur de credit", "diviseur monetaire", "base monetaire",
+    "monnaie centrale", "reserves obligatoires"],
+ "Prêteur en dernier ressort":
+   ["preteur en dernier ressort", "paniques de liquidite",
+    "liquidite du systeme bancaire"],
+ "Indépendance de la banque centrale":
+   ["independance de la banque centrale", "independance de la bc",
+    "monetisation de la dette", "helicoptere monetaire",
+    "theorie monetaire moderne"],
+ "Neutralité de la monnaie":
+   ["neutralite de la monnaie", "monnaie est neutre", "monnaie n'est qu'un voile",
+    "monnaie voile", "la monnaie est un voile"],
+ "Monnaie et activité économique":
+   ["monnaie est endogene", "monnaie endogene", "monnaie exogene",
+    "canal des taux", "canaux de transmission", "politique monetaire",
+    "sphere monetaire", "sphere reel"],
+ "Besoin et capacité de financement":
+   ["besoin de financement", "capacite de financement",
+    "agents a besoin de financement", "agents a capacite de financement"],
+ "Financement direct et indirect":
+   ["financement direct", "financement indirect", "financement intermedie",
+    "economie d'endettement", "economie de marches financiers",
+    "intermediation de marche"],
+ "Désintermédiation":
+   ["desintermediation", "trois d", "3d", "regle des 3d"],
+ "Actions et obligations":
+   ["titre de propriete", "titre de creance", "obligataire", "coupon",
+    "dividende", "valeurs mobilieres", "emission de titres",
+    "marche obligataire", "marche actions"],
+ "Marchés financiers":
+   ["marche financier", "marches financiers", "marche au comptant",
+    "marche a terme", "marche de gre a gre", "bourse", "euronext",
+    "marche monetaire"],
+ "Allocation de l’épargne":
+   ["allocation de l'epargne", "offreurs et demandeurs de capitaux",
+    "capital est mal distribue", "projets les plus productifs",
+    "allocation du capital", "drainer l'epargne"],
+ "Diversification du risque":
+   ["diversification du risque", "diversifier les placements",
+    "portefeuille diversifie", "couvrir des risques", "couverture contre le risque"],
+ "Efficience des marchés":
+   ["parfaitement efficace", "information de prix", "opacite",
+    "capital est mal distribue", "fournir une information"],
+ "Spéculation":
+   ["speculation", "speculer", "speculatif", "vente a decouvert",
+    "parier sur la baisse"],
+ "Bulles financières":
+   ["bulle", "krach", "effondrement du cours", "compagnie du mississippi"],
+ "Financiarisation":
+   ["financiarisation", "globalisation financiere", "shadow banking",
+    "titrisation", "produits derives"],
+ "Finance et croissance":
+   ["financement de l'economie", "finance et croissance",
+    "financement de l'investissement", "soutien au credit",
+    "capacite de financement de l'economie"],
+ "Régulation financière":
+   ["regulation financiere", "regles prudentielles", "prudentiel",
+    "dereglementation", "too big to fail", "separer les activites",
+    "loi bancaire", "surveillance des marches"],
+ "Cycles économiques":
+   ["cycles economiques", "cycle court", "cycle moyen", "cycle long",
+    "juglar", "kitchin", "kondratiev", "grappes d'innovations",
+    "phase ascendante", "phase descendante"],
+ "Crises de surproduction":
+   ["surproduction", "sous-consommation", "demande effective",
+    "regulation concurrentielle", "crise de 1929"],
+ "Crises de demande":
+   ["crise de demande", "insuffisance de la demande", "sous-consommation",
+    "demande effective"],
+ "Chocs d’offre et de demande":
+   ["choc petrolier", "choc de demande", "choc d'offre", "choc asymetrique",
+    "choc externe", "stagflation"],
+ "Accélérateur d’investissement":
+   ["accelerateur", "aftalion", "variation de l'investissement",
+    "variation demande"],
+ "Cycle du crédit":
+   ["cycle du credit", "fluctuations du credit", "emballements speculatifs",
+    "blocage du credit", "canal du credit", "surinvestissement"],
+ "Instabilité financière":
+   ["instabilite financiere", "risque systemique", "crise financiere",
+    "titrisation", "shadow banking", "crise de 2008"],
+ "Paradoxe de la tranquillité": ["paradoxe de la tranquillite", "minsky"],
+ "Surendettement": ["surendettement", "endettement excessif"],
+ "Déflation par la dette": ["deflation par la dette", "debt deflation"],
+ "Crise bancaire":
+   ["crise bancaire", "faillites systemiques", "faillite d'une grande banque",
+    "crise des banques", "banque n'a plus de reserves", "risque de liquidite"],
+ "Panique bancaire":
+   ["panique", "paniques de liquidite", "ruee", "echanger leurs billets"],
+ "Risque systémique":
+   ["risque systemique", "effet de contagion", "faillites systemiques",
+    "too big to fail"],
+ "Contagion financière":
+   ["contagion", "diffusion mondiale du risque", "se propage",
+    "chaine de pertes"],
+ "Aléa moral des sauvetages":
+   ["alea moral", "too big to fail", "socialisation des pertes",
+    "implicitement proteges"],
+ "Régulation macroprudentielle":
+   ["regulation macroprudentielle", "macroprudentiel", "coussin contracyclique"],
+})
