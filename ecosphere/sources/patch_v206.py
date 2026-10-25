@@ -334,6 +334,14 @@ function filtrer(){
     return true;
   });
 }
+/* un dossier dont le titre porte tous les mots cherchés passe devant : taper
+   « bretton woods » doit donner le dossier Bretton Woods, pas seulement les
+   dossiers qui le citent */
+function titreOk(x, mots){
+  var t = nz(x.titre);
+  for(var i = 0; i < mots.length; i++) if(t.indexOf(mots[i]) < 0) return false;
+  return true;
+}
 function surligner(t, mots){
   var o = esc(t);
   mots.forEach(function(m){
@@ -364,11 +372,27 @@ function rendre(){
     box.innerHTML = '<div class="an-vide">Aucun dossier ne correspond à ces critères.</div>';
     return;
   }
+  if(mots.length){
+    res = res.slice().sort(function(a, b){
+      return (titreOk(a, mots) ? 0 : 1) - (titreOk(b, mots) ? 0 : 1);
+    });
+  }
   var parEns = {};
   res.forEach(function(x){ (parEns[x.ens] = parEns[x.ens] || []).push(x); });
   var filtre = !!(mots.length || S.etat);
+  var ordre = D.ensembles;
+  if(mots.length){
+    ordre = D.ensembles.slice().sort(function(a, b){
+      function p(e){
+        var l = parEns[e.num] || [];
+        for(var i = 0; i < l.length; i++) if(titreOk(l[i], mots)) return 0;
+        return 1;
+      }
+      return p(a) - p(b);
+    });
+  }
   var h = '';
-  D.ensembles.forEach(function(e){
+  ordre.forEach(function(e){
     var l = parEns[e.num];
     if(!l) return;
     var ouvert = filtre || !!S.ens || deplies[e.num];

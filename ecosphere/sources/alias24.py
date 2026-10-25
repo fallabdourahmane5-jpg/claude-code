@@ -512,3 +512,255 @@ ALIAS.update({
  "Régulation macroprudentielle":
    ["regulation macroprudentielle", "macroprudentiel", "coussin contracyclique"],
 })
+
+# ---- ensemble 14 : l'inflation et la stabilité des prix ----
+ALIAS.update({
+ "Inflation":
+   ["inflation", "niveau general des prix", "indice des prix a la consommation",
+    "inflation sous-jacente"],
+ "Désinflation":
+   ["desinflation", "baisse de l'inflation", "volcker",
+    "politique monetaire restrictive"],
+ "Déflation":
+   ["deflation", "eviter la deflation", "lutte contre la deflation"],
+ "Hyperinflation":
+   ["hyperinflation", "hyper inflation", "inflation a 2 chiffres"],
+ "Inflation par la demande":
+   ["inflation par la demande", "la demande augmente + vite que l'offre",
+    "tension inflationniste", "surchauffe"],
+ "Inflation par les coûts":
+   ["inflation par les couts", "hausse des couts", "choc petrolier",
+    "stagflation"],
+ "Inflation importée":
+   ["inflation importee", "importations plus cheres", "spirale inflationniste"],
+ "Boucle prix-salaires":
+   ["boucle prix-salaires", "hausses de salaires", "salaires nominaux",
+    "indexation des salaires"],
+ "Anticipations d’inflation":
+   ["anticipations d'inflation", "anticipations adaptatives",
+    "anticipations rationnelles", "illusion monetaire"],
+ "Courbe de Phillips":
+   ["courbe de phillips", "phillips", "nairu", "nawru", "chomage naturel"],
+ "Stagflation":
+   ["stagflation", "choc petrolier", "inflation et chomage"],
+ "Pouvoir d’achat":
+   ["pouvoir d'achat", "revenu reel", "effet d'encaisse", "effet pigou",
+    "fuite devant la monnaie"],
+ "Crédibilité monétaire":
+   ["credibilite", "regle de k", "regles simples"],
+ "Ancrage des anticipations":
+   ["ancrer les anticipations", "anticipations d'inflation",
+    "forward guidance", "canal des anticipations"],
+})
+
+# ---- ensemble 15 : l'Etat et les politiques economiques ----
+ALIAS.update({
+ "État minimal":
+   ["main invisible", "absence de politique economique",
+    "laisser faire le marche", "non seulement inutile", "liberalisme"],
+ "État interventionniste":
+   ["etat providence", "etat-providence", "interventionnisme",
+    "role stabilisateur", "carre magique"],
+ "Fonctions d’allocation, de redistribution et de stabilisation":
+   ["musgrave", "fonction d'allocation", "fonction de stabilisation",
+    "fonction de redistribution", "finances publiques"],
+ "Politique budgétaire":
+   ["politique budgetaire", "politiques budgetaires", "depenses publiques",
+    "policy mix"],
+ "Politique monétaire":
+   ["politique monetaire", "taux directeurs", "banque centrale europeenne"],
+ "Politique de relance":
+   ["politique de relance", "politiques de relance", "relance budgetaire",
+    "plan biden"],
+ "Politique de rigueur":
+   ["politique de rigueur", "politiques de rigueur", "austerite",
+    "freiner demande"],
+ "Multiplicateur budgétaire":
+   ["multiplicateur", "hausse des depenses publiques", "propension a consommer"],
+ "Stabilisateurs automatiques":
+   ["allocations chomage", "prestations sociales", "recettes de l'etat",
+    "role stabilisateur"],
+ "Effet d’éviction":
+   ["effet d'eviction", "eviction du capital prive"],
+ "Équivalence ricardienne":
+   ["equivalence ricardienne"],
+ "Déficit public":
+   ["deficit public", "deficits publics", "emission d'obligations"],
+ "Dette publique":
+   ["dette publique", "dette souveraine", "charge de la dette"],
+ "Soutenabilité de la dette":
+   ["soutenabilite de la dette", "dette soutenable", "spirale de la dette",
+    "insoutenable"],
+ "Policy mix":
+   ["policy mix", "politique monetaire ou budgetaire",
+    "politiques conjoncturelles"],
+ "Règles et discrétion":
+   ["politiques discretionnaires", "discretionnaire", "regles simples",
+    "regle de k", "absence de politique economique"],
+ "Anticipations":
+   ["anticipations adaptatives", "anticipations rationnelles",
+    "illusion monetaire", "canal des anticipations"],
+ "Contrainte extérieure":
+   ["contrainte exterieure", "triangle de mundell", "autonomie strategique"],
+ "Modèles IS-LM et IS-LM-BP":
+   ["is-lm", "triangle de mundell", "courbe is", "courbe lm"],
+ "Trappe à liquidité":
+   ["trappe a liquidite", "helicoptere monetaire", "taux negatifs"],
+})
+
+# ---- ensembles 16 et 17 : commerce international et mondialisation ----
+ALIAS.update({
+ "Avantages absolus": ["avantage absolu", "avantages absolus"],
+ "Demande représentative": ["demande representative", "linder"],
+ "Écart technologique": ["ecart technologique", "posner"],
+ "Dépendance commerciale":
+   ["dependance commerciale", "dependance du centre", "montesquieu",
+    "doux commerce"],
+ "Mobilité internationale du capital":
+   ["mobilite internationale du capital", "mobilite des capitaux",
+    "libre circulation des capitaux", "flux de capitaux"],
+ "Fragmentation de la production":
+   ["fragmentation de la production", "fragmentation internationale",
+    "chaines de valeur"],
+ "Dépendances stratégiques":
+   ["dependances strategiques", "dependance strategique",
+    "autonomie strategique"],
+ "Migrations internationales": ["migrations internationales", "migratoires"],
+ "Intégration économique": ["integration economique", "balassa"],
+})
+
+# — Ensembles 18 à 20 : resserrage des libellés trop larges —
+ALIAS.update({
+ "Investissement direct à l’étranger":
+   ["investissement direct", "investissements directs", "ide a l'etranger"],
+ "Rapports entre firmes et États":
+   ["fmn et etats", "rapport entre fmn", "filtrage des ide",
+    "concurrence entre territoires"],
+ "Firme multinationale": ["firme multinationale", "firmes multinationales"],
+ "Stratégies horizontales et verticales":
+   ["strategie horizontale", "strategie verticale", "integration verticale",
+    "concentration verticale"],
+ "Internalisation": ["internalisation"],
+ "Transferts de technologie":
+   ["transfert de technologie", "transferts de technologie"],
+ "Effets d’entraînement des IDE":
+   ["effets d'entrainement", "effet d'entrainement", "retombee"],
+ "Concurrence fiscale": ["concurrence fiscale", "moins-disant fiscal"],
+ "Optimisation fiscale": ["optimisation fiscale"],
+ "Prix de transfert": ["prix de transfert"],
+ "Pouvoir des multinationales":
+   ["pouvoir des firmes", "pouvoir de negociation", "firme multinationale"],
+ # — ensemble 19 —
+ "Compétitivité-prix": ["competitivite-prix"],
+ "Compétitivité-coût": ["competitivite-cout"],
+ "Compétitivité hors prix": ["competitivite hors prix", "hors-prix"],
+ "Productivité et coût salarial unitaire":
+   ["cout salarial unitaire", "cout unitaire du travail"],
+ "Montée en gamme": ["montee en gamme"],
+ "Industries stratégiques":
+   ["industries strategiques", "secteurs strategiques"],
+ "Champions nationaux": ["champions nationaux", "champion national"],
+ "Économies d’agglomération": ["agglomeration"],
+ "Clusters": ["cluster"],
+ "Souveraineté économique": ["souverainete economique"],
+ "Autonomie stratégique": ["autonomie strategique"],
+ # — ensemble 20 —
+ "Balance des paiements": ["balance des paiements"],
+ "Balance commerciale": ["balance commerciale"],
+ "Solde courant": ["solde courant", "deficit courant", "excedent courant"],
+ "Position extérieure nette": ["position exterieure"],
+ "Épargne et investissement en économie ouverte":
+   ["epargne nationale", "epargne et investissement", "epargne interieure"],
+ "Capacité et besoin de financement extérieur":
+   ["capacite de financement", "besoin de financement"],
+ "Taux de change nominal et réel":
+   ["taux de change", "cours d'une monnaie", "marche des changes"],
+ "Appréciation et dépréciation": ["appreciation", "depreciation"],
+ "Dévaluation et réévaluation": ["devaluation", "reevaluation"],
+ "Parité de pouvoir d’achat":
+   ["parite de pouvoir d'achat", "parite de pouvoir", "en ppa"],
+ "Courbe en J": ["courbe en j"],
+ "Changes fixes et flottants":
+   ["change fixe", "change flottant", "regime de change"],
+ "Triangle d’incompatibilité":
+   ["triangle d'incompatibilite", "triangle de mundell"],
+ "Crise de change":
+   ["sudden stop", "dette en devises", "reserves de change"],
+ "Déséquilibres mondiaux": ["desequilibres mondiaux"],
+})
+
+# — Ensembles 21 et 22 —
+ALIAS.update({
+ "Régionalisation": ["regionalisation", "regionalise"],
+ "Accords commerciaux régionaux":
+   ["accords commerciaux regionaux", "accord commercial regional", "acr "],
+ "Zone de libre-échange": ["zone de libre-echange", "zlecaf", "asean"],
+ "Union douanière": ["union douaniere", "viner"],
+ "Marché commun": ["marche commun", "balassa"],
+ "Union économique et monétaire":
+   ["union economique et monetaire", "zone euro", "monnaie unique"],
+ "Création et détournement de commerce":
+   ["creation de trafic", "detournement de trafic",
+    "detournement de commerce"],
+ "Multilatéralisme": ["multilateralisme"],
+ "Gouvernance mondiale": ["gouvernance mondiale"],
+ "Coopération internationale":
+   ["cooperation internationale", "stabilite hegemonique", "kindleberger"],
+ "Biens publics mondiaux": ["biens publics mondiaux", "bien public mondial"],
+ "OMC": ["omc", "organisation mondiale du commerce"],
+ "FMI": ["fmi", "fonds monetaire international"],
+ "Système monétaire international": ["systeme monetaire international"],
+ "Bretton Woods": ["bretton woods"],
+ "Monnaie internationale": ["monnaie internationale", "monnaie d'ancrage",
+                            "monnaie de reserve"],
+ "Hégémonie du dollar": ["privilege exorbitant", "role international du dollar",
+                         "hegemonie"],
+ "Convergence européenne": ["convergence", "zone euro"],
+ "Chocs asymétriques": ["choc asymetrique", "chocs asymetriques"],
+ "Coordination des politiques économiques":
+   ["coordination des politiques", "coordination economique",
+    "coordination fiscale"],
+ # — ensemble 22 —
+ "Inégalités de revenus": ["inegalites de revenu", "inegalite des revenus"],
+ "Inégalités de patrimoine": ["inegalites de patrimoine", "patrimoine"],
+ "Inégalités entre pays et au sein des pays":
+   ["inegalites entre pays", "inegalites au sein des pays",
+    "courbe de l'elephant"],
+ "Pauvreté absolue et relative":
+   ["pauvrete absolue", "pauvrete monetaire", "seuil de pauvrete"],
+ "Travailleurs pauvres":
+   ["travailleurs pauvres", "travail ne garantit", "sortie de la pauvrete"],
+ "Exclusion sociale":
+   ["exclusion sociale", "desaffiliation", "question sociale"],
+ "Répartition primaire des revenus":
+   ["revenu primaire", "revenus primaires", "repartition des revenus"],
+ "Partage de la valeur ajoutee": ["taux de marge", "partage de la va"],
+ "Partage de la valeur ajoutée":
+   ["taux de marge", "part de la va", "excedent brut d'exploitation"],
+ "Rente": ["rente de monopole", "rente fonciere", "recherche de rente",
+           "captation de rente"],
+ "Héritage": ["heritage"],
+ "Courbe de Kuznets": ["courbe de kuznets", "kuznets"],
+ "Justice sociale": ["justice sociale", "injustice sociale"],
+ "Égalité et équité": ["equite", "egalite des revenus"],
+ "Redistribution": ["redistribution", "redistribue"],
+ "Fiscalité progressive": ["fiscalite progressive", "progressivite"],
+ "Protection sociale": ["protection sociale"],
+ "État-providence": ["etat-providence", "etat providence"],
+})
+
+ALIAS.update({
+    'Travailleurs pauvres': ['pauvrete laborieuse', 'travailleurs pauvres',
+                             'travail ne garantit', 'temps partiel subi'],
+    'Héritage': ['heritage', 'donation', 'transmission intergenerationnelle'],
+    'Fiscalité progressive': ['fiscalite progressive', 'impot progressif',
+                              'progressivite', 'quotient familial'],
+    'Justice sociale': ['justice sociale', 'injustice sociale',
+                        'justice fiscale', 'impot juste'],
+})
+
+ALIAS.update({
+    'Héritage': ['par heritage', 'retour de l\'heritage', 'donation',
+                 'transmission intergenerationnelle', 'plus-values latentes',
+                 'holding familial', 'abolir l\'heritage'],
+})

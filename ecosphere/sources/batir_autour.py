@@ -59,6 +59,30 @@ CLES = {
  "Protection commerciale, sécurité économique et souveraineté": "le28-securite-souverainete",
 }
 
+# un même libellé peut figurer dans deux ensembles (« Libre-échange » en 16
+# et en 28, « Rente » en 22 et en 27…). On indexe donc par (ensemble, libellé) ;
+# les correspondances écrites à la main ci-dessus portent toutes sur l'ens. 28.
+CLES = {(28, lib): cle for lib, cle in CLES.items()}
+
+# Libellés dont le terme apparaît dans les cours, mais dans un sens étranger
+# à la notion visée : le comptage automatique les classerait « à venir », ce
+# qui laisserait croire qu'un dossier est possible. On les déclare hors-cours.
+HORS_COURS = {
+ (21, "Convergence européenne"):
+     "la convergence des cours est celle de Solow, du rattrapage asiatique "
+     "et de la « grande convergence » de Baldwin ; ni la convergence "
+     "européenne ni les critères de Maastricht n'y figurent",
+ (22, "Méritocratie"):
+     "seul le terme « mérite » apparaît, dans l'analyse du mythe de "
+     "l'entrepreneur par Galluzzo, et non une discussion de la méritocratie",
+ (22, "Assurance et assistance"):
+     "les cours ne construisent pas cette typologie de la protection "
+     "sociale : « minima sociaux » et Beveridge en sont absents",
+ (22, "Universalité et ciblage"):
+     "le « ciblage » des cours est celui de la politique industrielle, non "
+     "le ciblage des prestations sociales",
+}
+
 REDIGES = {x['cle']: x for x in doss_base.DOSSIERS}
 assert len(REDIGES) == len(doss_base.DOSSIERS), 'clés de dossier en double'
 
@@ -85,10 +109,10 @@ def _rattacher():
             if e['num'] != x['ens']:
                 continue
             for lib in e['dossiers']:
-                if lib in CLES:
+                if (e['num'], lib) in CLES:
                     continue
                 r = SequenceMatcher(None, _nz(x['titre']), _nz(lib)).ratio()
-                cands.append((r, lib))
+                cands.append((r, (e['num'], lib)))
         cands.sort(reverse=True)
         if cands and cands[0][0] >= 0.70:
             CLES[cands[0][1]] = x['cle']
@@ -116,7 +140,7 @@ def batir():
         sortie['ensembles'].append({'num': e['num'], 'titre': e['titre'],
                                     'questions': e['questions']})
         for titre in e['dossiers']:
-            cle = CLES.get(titre)
+            cle = CLES.get((e['num'], titre))
             redige = REDIGES.get(cle) if cle else None
             if cle is None or redige is None:
                 cle = slug(e['num'], titre)
@@ -135,7 +159,7 @@ def batir():
             total = sum(c['n'] for c in L['ch'])
             if redige:
                 etat = 'redige'
-            elif total == 0:
+            elif total == 0 or (e['num'], titre) in HORS_COURS:
                 etat = 'hors-cours'
             else:
                 etat = 'a-venir'
