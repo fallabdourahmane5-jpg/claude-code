@@ -81,6 +81,30 @@ HORS_COURS = {
  (22, "Universalité et ciblage"):
      "le « ciblage » des cours est celui de la politique industrielle, non "
      "le ciblage des prestations sociales",
+ (23, "Stratification sociale"):
+     "le terme est absent ; les cours exposent des typologies de classes "
+     "d'auteurs (Quesnay, Ricardo, Marx, Veblen), traitées dans le dossier "
+     "« Classes sociales », et non une théorie de la stratification",
+ (23, "Mobilité intergénérationnelle"):
+     "« mobilité sociale » n'apparaît qu'en mention (Rostow, éducation, "
+     "institutions inclusives) et la « transmission intergénérationnelle » "
+     "des cours porte sur l'éducation et le développement : la question est "
+     "traitée dans « Reproduction sociale »",
+ (23, "Fluidité sociale"):
+     "le terme est absent et les tables de mobilité, qui seules permettent "
+     "de l'établir, ne figurent dans aucun chapitre",
+ (23, "Trajectoires sociales"):
+     "« trajectoire » désigne dans les cours des trajectoires de croissance, "
+     "démographiques ou d'ajustement, jamais des parcours sociaux "
+     "individuels",
+ (24, "Incitations sélectives"):
+     "les cours exposent le paradoxe d'Olson mais non la solution qu'il lui "
+     "donne ; cette absence est signalée dans le dossier « Action "
+     "collective »",
+ (25, "Massification scolaire"):
+     "le terme est absent : la scolarisation est traitée comme indicateur "
+     "de développement (IDH) et comme levier d'autonomie, non comme "
+     "processus d'élargissement de l'accès aux diplômes",
 }
 
 REDIGES = {x['cle']: x for x in doss_base.DOSSIERS}
