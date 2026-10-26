@@ -852,3 +852,37 @@ ALIAS.update({
                               'mobilite des facteurs', 'exode rural',
                               'cout de la mobilite'],
 })
+
+# Ensembles 26 et 27. On n'ajoute d'alias que pour les libellés dont le
+# découpage automatique donne des expressions trop rares (« monnaie active »,
+# « holisme ») ou trop larges pour être fiables.
+ALIAS.update({
+    'Monnaie neutre et monnaie active':
+        ['monnaie neutre', 'monnaie non neutre', 'neutralite de la monnaie',
+         'simple voile', 'illusion monetaire', 'monnaie n\'est pas neutre'],
+    'Rationalité parfaite et rationalité limitée':
+        ['rationalite limitee', 'rationalite parfaite', 'biais cognitif',
+         'satisficing', 'homo economicus', 'systeme 1'],
+    'Individualisme méthodologique et holisme':
+        ['individualisme methodologique', 'holisme', 'fait social',
+         'sociologie comprehensive', 'ideal-type'],
+    'Intérêts individuels et intérêt collectif':
+        ['interet collectif', 'interet general', 'passager clandestin',
+         'free rider', 'bien collectif', 'tragedie des communs'],
+    'Coopération':
+        ['cooperation', 'gestion collective', 'arrangements institutionnels',
+         'action collective', 'surveillance mutuelle'],
+    'Transformation structurelle':
+        ['transformation structurelle', 'tertiarisation', 'deversement',
+         'desindustrialisation', 'dualisme', 'secteur traditionnel'],
+    'Soutenabilité':
+        ['soutenabilite', 'developpement durable', 'capital naturel',
+         'generations futures', 'insoutenabilite'],
+    'Capital humain':
+        ['capital humain', 'duree moyenne de scolarisation',
+         'duree attendue de scolarisation', 'education des filles',
+         'diffusion de l\'education'],
+    'Autorégulation et instabilité':
+        ['autoregulation', 'auto-regulation', 'main invisible',
+         'instabilite', 'loi des debouches', 'equilibre de sous-emploi'],
+})
