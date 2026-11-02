@@ -416,7 +416,7 @@ d('n2-revolutions-tech', 2, "Révolutions technologiques",
          "techniques, à l’apparition de nouvelles activités et à la disparition "
          "d’anciennes : la révolution technologique n’est donc pas un accident "
          "mais le mode de fonctionnement normal du capitalisme."},
-   {'n': "David Plihon",
+   {'n': "Dominique Plihon",
     'i': "Le capitalisme contemporain se caractérise par la financiarisation, "
          "les plateformes et une pluralité de formes.",
     'p': "Il parle de polycrise pour désigner la superposition de crises "

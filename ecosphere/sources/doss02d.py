@@ -252,7 +252,7 @@ d('n2-numerique', 2, "Économie numérique",
     'p': "Dans La civilisation du poisson rouge, il analyse la captation de "
          "l’attention comme source de valeur : le modèle économique repose non "
          "sur la vente d’un service mais sur le temps passé par l’utilisateur."},
-   {'n': "David Plihon",
+   {'n': "Dominique Plihon",
     'i': "Le capitalisme contemporain associe financiarisation, plateformes et "
          "pluralité de formes.",
     'p': "Il parle de polycrise pour désigner la superposition d’une crise "
@@ -697,7 +697,7 @@ d('n2-plateforme', 2, "Capitalisme de plateforme",
     'rep': "L’analyse élargit le débat au-delà de la concurrence : si la "
            "ressource exploitée est l’attention, la question devient celle des "
            "effets sur les comportements et non seulement sur les prix."}],
-  [{'n': "David Plihon",
+  [{'n': "Dominique Plihon",
     'i': "Le capitalisme contemporain associe financiarisation, plateformes et "
          "responsabilité sociale dans une configuration traversée de crises.",
     'p': "Il parle de polycrise : crise économique et sociale, crise écologique, "

@@ -524,7 +524,7 @@ C[8] = [
   'ouvrage': "The Social Responsibility of Business is to Increase its Profits (1970)",
   'notions': ['shareholder value', 'RSE', 'mandat', 'parties prenantes', 'profit'],
   'liens': [('Michael Jensen', 'complement', "Fondement normatif de la gouvernance actionnariale."),
-            ('David Plihon', 'opposition', "Plihon décrit la gouvernance hybride et la RSE qui contestent cette doctrine."),
+            ('Dominique Plihon', 'opposition', "Plihon décrit la gouvernance hybride et la RSE qui contestent cette doctrine."),
             ('Arthur Pigou', 'opposition', "Si des externalités existent, le profit privé ne mesure pas la contribution sociale.")],
  }),
  ('David Autor', 'IA et emploi : tâches plutôt que métiers', {
@@ -538,7 +538,7 @@ C[8] = [
             ('Alfred Sauvy', 'opposition', "Le déversement ne garantit pas la qualité des emplois de destination."),
             ('Joseph Schumpeter', 'complement', "L'IA comme nouvelle grappe d'innovation à effet destructeur et créateur.")],
  }),
- ('David Plihon', 'Financiarisation, plateformes et pluralité des capitalismes', {
+ ('Dominique Plihon', 'Financiarisation, plateformes et pluralité des capitalismes', {
   'affirme': "Le capitalisme contemporain se caractérise par la financiarisation, la montée des plateformes et la pluralité des modèles nationaux : il n'existe pas un capitalisme mais des capitalismes, traversés par une polycrise.",
   'mecanisme': "La financiarisation donne la primauté aux exigences de rentabilité des investisseurs, ce qui raccourcit l'horizon des décisions, favorise les rachats d'actions sur l'investissement et transfère le risque vers les salariés. Les plateformes ajoutent une logique propre : les effets de réseau produisent des positions dominantes rapides, la valeur se déplace vers les données, et le statut d'indépendant se substitue au salariat. S'y ajoute la pluralité : capitalismes anglo-saxon, rhénan, nordique, asiatique d'État et chinois diffèrent par leur rapport salarial, leur financement et le rôle de l'État. La RSE et la gouvernance hybride tentent de répondre à la contestation du modèle actionnarial.",
   'exemple': "Une même entreprise cotée peut simultanément verser des dividendes élevés, recourir à des travailleurs de plateforme et publier un rapport de responsabilité sociale : les trois traits caractérisent le même régime.",
@@ -556,7 +556,7 @@ C[8] = [
   'diss': "Grille d'analyse à poser en première partie des sujets sur la globalisation financière, les crises et la financiarisation de l'entreprise. Très efficace comme structure de sous-partie.",
   'ouvrage': "Les Vertiges de la finance internationale",
   'notions': ['3D', 'désintermédiation', 'décloisonnement', 'déréglementation', 'globalisation financière'],
-  'liens': [('David Plihon', 'complement', "Plihon décrit les conséquences de ces 3D sur l'entreprise et le travail."),
+  'liens': [('Dominique Plihon', 'complement', "Plihon décrit les conséquences de ces 3D sur l'entreprise et le travail."),
             ('Michael Jensen', 'complement', "La globalisation financière rend opérante la discipline actionnariale."),
             ('Robert Mundell', 'complement', "La mobilité des capitaux est précisément le sommet du trilemme que les 3D consacrent.")],
  }),

@@ -16,7 +16,7 @@
   DETAIL: Prolonge la synthèse néo-keynésienne et, en macro, relie multiplicateur et accélérateur dans le modèle de l'oscillateur.
   PHRASE: Samuelson formalise l'économie moderne et systématise la synthèse néo-keynésienne.
 
-- David Plihon  [1953-]  <Capitalisme contemporain>  (aussi: 8)
+- Dominique Plihon  [1953-]  <Capitalisme contemporain>  (aussi: 8)
   IDEE: Polycrise du capitalisme contemporain
   OEUVRES: Les capitalismes contemporains
   DETAIL: Décrit la coexistence de crises économique, climatique, démocratique et géopolitique.
@@ -819,7 +819,7 @@
   DETAIL: Avec James Robinson, explique les écarts de développement par la qualité des institutions politiques et économiques.
   PHRASE: Acemoglu montre que des institutions inclusives favorisent l'innovation et la croissance durable.
 
-- David Plihon  [1953-]  <Capitalisme contemporain>  (aussi: 1)
+- Dominique Plihon  [1953-]  <Capitalisme contemporain>  (aussi: 1)
   IDEE: Polycrise du capitalisme contemporain
   OEUVRES: Les capitalismes contemporains
   DETAIL: Décrit la coexistence de crises économique, climatique, démocratique et géopolitique.
@@ -993,7 +993,7 @@
   DETAIL: Automatisation, tâches et polarisation de l’emploi
   PHRASE: Autor sert à analyser l’impact des technologies sur les tâches et la structure de l’emploi.
 
-- David Plihon  [1953-]  <Capitalismes contemporains>  (aussi: )
+- Dominique Plihon  [1953-]  <Capitalismes contemporains>  (aussi: )
   IDEE: Financiarisation, plateformes, RSE, polycrise et pluralité des capitalismes
   OEUVRES: Les capitalismes contemporains (2025)
   DETAIL: Financiarisation, plateformes, RSE, polycrise et pluralité des capitalismes

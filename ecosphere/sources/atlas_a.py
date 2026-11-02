@@ -35,7 +35,7 @@ A[1] = [
   'liens': [('Aftalion', 'prolonge', "Samuelson intègre formellement l'accélérateur d'Aftalion au cadre keynésien du multiplicateur."),
             ('Roy Harrod', 'complement', "Harrod tire de la même instabilité une conclusion plus radicale : la croissance équilibrée est sur le fil du rasoir.")],
  }),
- ('David Plihon', 'Polycrise du capitalisme contemporain', {
+ ('Dominique Plihon', 'Polycrise du capitalisme contemporain', {
   'affirme': "Le capitalisme actuel n'est pas traversé par une crise mais par plusieurs crises simultanées et imbriquées — économique, climatique, démocratique, géopolitique — qui s'alimentent mutuellement.",
   'mecanisme': "Chaque crise réduit la capacité de réponse aux autres : la contrainte budgétaire limite l'investissement climatique, le coût social de la transition nourrit la défiance politique, la défiance politique rend les compromis plus difficiles, et la fragmentation géopolitique renchérit l'énergie et les matières premières. Le système perd ses marges d'ajustement.",
   'exemple': "Après 2022, la flambée énergétique a simultanément creusé les déficits publics, nourri l'inflation et les tensions sociales, et compliqué la sortie des hydrocarbures : aucune des quatre crises ne pouvait être traitée isolément.",
