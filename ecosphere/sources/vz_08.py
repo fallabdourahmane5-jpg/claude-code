@@ -66,7 +66,8 @@ v('vz-libre-echange', 'Libre-échange et protectionnisme',
                    "théorie : les arguments favorables au libre-échange "
                    "n’ont pas été la cause de son adoption."}],
       termes=['libre echange', 'protectionnisme', 'politique commerciale'],
-      dos=['le28-libre-echange', 'le28-protectionnisme']),
+      dos=['le28-libre-echange', 'le28-protectionnisme',
+           'le28-tentation-libre-echange', 'le28-tentation-protectionnisme']),
 
    # ---------------------------------------- colonne 1 : les gains de l’échange
    nd('allocatif', 'L’argument allocatif', 'pilier',
@@ -217,7 +218,8 @@ v('vz-libre-echange', 'Libre-échange et protectionnisme',
             'i': "La réciprocité canalisait le mercantilisme ; sa disparition "
                  "libère les ripostes."}],
       termes=['reciprocite', 'nation la plus favorisee', 'gatt'],
-      dos=['le28-reciprocite', 'n17-integration-economique']),
+      dos=['le28-reciprocite', 'n17-integration-economique',
+           'le28-mercantilisme']),
 
    # ------------------------------------- colonne 2 : les raisons de protéger
    nd('educateur', 'Le protectionnisme éducateur', 'pilier',
@@ -406,7 +408,8 @@ v('vz-libre-echange', 'Libre-échange et protectionnisme',
             'i': "La sécurité des approvisionnements est devenue un objectif "
                  "des politiques économiques."}],
       termes=['securite economique', 'souverainete', 'relocalisation'],
-      dos=['le28-securite-souverainete', 'n17-dependances-strategiques']),
+      dos=['le28-securite-souverainete', 'n17-dependances-strategiques',
+           'le28-nouveaux-objectifs']),
 
    # ------------------------------------------------- bas : ce qui tranche
    nd('conditions', 'Les cinq conditions de validité', 'sortie',
@@ -443,7 +446,8 @@ v('vz-libre-echange', 'Libre-échange et protectionnisme',
                     "exploiter."}],
       termes=['conditions de validite', 'mobilite des facteurs',
               'gains a l echange'],
-      dos=['le28-arguments-le', 'le28-ouverture-progressive']),
+      dos=['le28-arguments-le', 'le28-ouverture-progressive',
+           'le28-taille-pouvoir']),
 
    nd('representailles', 'Représailles et guerres commerciales', 'limite',
       "Chaque mesure en appelle une autre, les exportateurs les plus "
@@ -495,7 +499,8 @@ v('vz-libre-echange', 'Libre-échange et protectionnisme',
                    "échanges."}],
       termes=['representailles', 'guerre commerciale',
               'fragmentation geoeconomique'],
-      dos=['le28-representailles', 'le28-couts-protectionnisme']),
+      dos=['le28-representailles', 'le28-couts-protectionnisme',
+           'le28-efficacite-protectionnisme']),
   ],
   [
    ln('question', 'allocatif', 'examinée d’abord par',

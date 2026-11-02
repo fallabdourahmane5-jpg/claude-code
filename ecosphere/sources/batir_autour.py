@@ -57,6 +57,12 @@ CLES = {
      "le28-couts-protectionnisme",
  "Recherche de rente et maintien artificiel d’activités inefficaces": "le28-rente",
  "Protection commerciale, sécurité économique et souveraineté": "le28-securite-souverainete",
+ "La tentation du protectionnisme": "le28-tentation-protectionnisme",
+ "La tentation du libre-échange": "le28-tentation-libre-echange",
+ "Le protectionnisme peut-il être efficace ?": "le28-efficacite-protectionnisme",
+ "Mercantilisme et logique de l’excédent commercial": "le28-mercantilisme",
+ "Taille du pays, pouvoir de marché et effets d’un droit de douane": "le28-taille-pouvoir",
+ "Les nouveaux objectifs de la politique commerciale": "le28-nouveaux-objectifs",
 }
 
 # un même libellé peut figurer dans deux ensembles (« Libre-échange » en 16

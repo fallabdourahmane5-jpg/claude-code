@@ -886,3 +886,31 @@ ALIAS.update({
         ['autoregulation', 'auto-regulation', 'main invisible',
          'instabilite', 'loi des debouches', 'equilibre de sous-emploi'],
 })
+
+# Ensemble 28 — les six dossiers ajoutés. Les expressions sont choisies parmi
+# celles qui figurent réellement dans les chapitres, de façon à ce que les
+# liens vers les chapitres, les fiches, l'Atlas, les sujets et les auteurs
+# restent calculés et non écrits à la main.
+ALIAS.update({
+ "La tentation du protectionnisme":
+   ["retour du protectionnisme", "tendanciellement protectionnistes",
+    "groupes de pression", "bloc social", "gains concentres",
+    "demande de protection", "protectionnisme"],
+ "La tentation du libre-échange":
+   ["gains a l'echange", "pouvoir d'achat", "effet variete",
+    "ouverture commerciale", "liberalisation des echanges",
+    "elargissement du marche", "libre-echange"],
+ "Le protectionnisme peut-il être efficace ?":
+   ["machines a laver", "tariff jumping", "cout du protectionnisme",
+    "represaille", "detournement de commerce", "protectionnisme"],
+ "Mercantilisme et logique de l’excédent commercial":
+   ["mercantilis", "excedent commercial", "metaux precieux", "colbertisme",
+    "jeu de puissance", "balance commerciale", "debouches exterieurs"],
+ "Taille du pays, pouvoir de marché et effets d’un droit de douane":
+   ["petit pays", "grand pays", "perte seche", "termes de l'echange",
+    "pouvoir de negociation", "tarif preferentiel", "droit de douane"],
+ "Les nouveaux objectifs de la politique commerciale":
+   ["habits neufs", "paradigme productiviste", "securite economique",
+    "securisation des approvisionnements", "autonomie strategique",
+    "politique commerciale"],
+})

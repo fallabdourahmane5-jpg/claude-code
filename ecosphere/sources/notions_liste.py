@@ -467,11 +467,14 @@ ens(27, "Les dossiers transversaux", [
 
 ens(28, "Le libre-échange, les protectionnismes et les stratégies commerciales", [
     "Libre-échange",
+    "La tentation du libre-échange",
+    "Mercantilisme et logique de l’excédent commercial",
     "Arguments en faveur du libre-échange et conditions de validité",
     "Gains du commerce et répartition de ces gains",
     "Coûts de l’ouverture et ajustements économiques et sociaux",
     "Ouverture commerciale progressive et maîtrisée",
     "Protectionnisme",
+    "La tentation du protectionnisme",
     "Protectionnisme éducateur et industries naissantes",
     "Protectionnisme défensif",
     "Protectionnisme offensif",
@@ -479,6 +482,7 @@ ens(28, "Le libre-échange, les protectionnismes et les stratégies commerciales
     "Protectionnisme temporaire et protectionnisme permanent",
     "Protectionnisme sélectif et protectionnisme généralisé",
     "Protectionnisme tarifaire : droits de douane",
+    "Taille du pays, pouvoir de marché et effets d’un droit de douane",
     "Protectionnisme non tarifaire : quotas, licences, normes et procédures administratives",
     "Subventions à la production et aux exportations",
     "Politique commerciale stratégique",
@@ -493,8 +497,10 @@ ens(28, "Le libre-échange, les protectionnismes et les stratégies commerciales
     "Représailles et guerres commerciales",
     "Détournement des échanges",
     "Coûts du protectionnisme pour les consommateurs et les entreprises utilisatrices de produits importés",
+    "Le protectionnisme peut-il être efficace ?",
     "Recherche de rente et maintien artificiel d’activités inefficaces",
     "Protection commerciale, sécurité économique et souveraineté",
+    "Les nouveaux objectifs de la politique commerciale",
 ], [
     "Le libre-échange est-il toujours préférable au protectionnisme ?",
     "Dans quelles conditions le libre-échange profite-t-il à un pays ?",
@@ -516,6 +522,14 @@ ens(28, "Le libre-échange, les protectionnismes et les stratégies commerciales
     "Peut-on protéger l’environnement sans créer de protectionnisme déguisé ?",
     "La souveraineté économique justifie-t-elle de limiter les échanges ?",
     "Libre-échange et intervention de l’État sont-ils compatibles ?",
+    "Comment expliquer le retour du protectionnisme ?",
+    "Pourquoi un pays hésite-t-il entre ouverture et protection ?",
+    "Le protectionnisme peut-il être efficace ?",
+    "Un pays peut-il gagner à se protéger ?",
+    "Un excédent commercial est-il un succès économique ?",
+    "Le commerce international est-il un jeu à somme nulle ?",
+    "La politique commerciale doit-elle poursuivre d’autres objectifs que l’efficacité économique ?",
+    "Le protectionnisme a-t-il changé de nature ?",
 ])
 
 TOTAL_DOSSIERS = sum(len(e['dossiers']) for e in ENSEMBLES)
