@@ -1,0 +1,794 @@
+manques retenus : 650 (écartés : 168)
+familles        : 160
+
+### croissance (23)
+    croissance durable                           16  ch 6,23                     [encadre,intitule,libelle]
+    croissance effective                         16  ch 6                        [encadre,intitule,libelle,phrase]
+    croissance de long                           13  ch 6,8,22                   [encadre,intitule,libelle]
+    croissance de long terme                     13  ch 6,8,22                   [encadre,intitule,libelle,phrase]
+    croissance depend                            10  ch 3,6                      [intitule,libelle]
+    croissance extravertie                        9  ch 7,23                     [intitule,libelle]
+    croissance des entreprises                    9  ch 8,9                      [intitule,libelle]
+    croissance du commerce                        8  ch 21,24                    [intitule]
+    croissance equilibree                         7  ch 6                        [encadre,intitule,libelle,phrase]
+    croissance repose                             6  ch 3,6,22                   [encadre,libelle]
+    croissance mondiale                           6  ch 6,21                     [intitule,phrase]
+    croissance rapide                             6  ch 6,7,21,23                [intitule]
+    croissance du commerce mondial                6  ch 21,24                    [intitule]
+    croissance cumulative                         5  ch 6                        [intitule,libelle]
+### cout (14)
+    cout de production                           45  ch 1,3,4,6,7,8,9,21,22,23,2 [encadre,libelle]
+    cout du travail                              37  ch 1,6,21,22,23             [encadre,intitule,libelle]
+    cout economique                              11  ch 7,22,23,24               [intitule,libelle]
+    cout reel                                     9  ch 3,5,21                   [intitule,phrase]
+    cout total                                    8  ch 1,4,8,22,23              [encadre,libelle,phrase]
+    cout social                                   8  ch 5,6,7,8,22,23            [encadre,libelle]
+    cout salarial                                 7  ch 22                       [intitule,libelle]
+    cout eleve                                    5  ch 22,23,24                 [encadre,intitule]
+    cout des echanges                             4  ch 21,23,24                 [intitule]
+    cout salarial unitaire                        4  ch 22                       [libelle]
+    cout ecologique                               3  ch 6,7                      [encadre]
+    cout environnemental                          3  ch 7,22                     [intitule]
+    cout minimal                                  3  ch 21,22                    [encadre,libelle,phrase]
+    cout horaire                                  3  ch 22                       [encadre]
+### concurrence (11)
+    concurrence internationale                   65  ch 6,7,10,21,22,23,24       [encadre,intitule,libelle,phrase]
+    concurrence deloyale                         21  ch 8,9,21,22,23,24          [intitule,phrase]
+    concurrence parfaite                         13  ch 3,4,8,9                  [intitule,libelle]
+    concurrence mondiale                         11  ch 7,9,21,22,23             [encadre,intitule,libelle]
+    concurrence des importations                 10  ch 22,23                    [intitule]
+    concurrence entre territoires                 8  ch 21,22,23,24              [encadre,intitule]
+    concurrence interne                           6  ch 22,23                    [intitule]
+    concurrence chinoise                          5  ch 22                       [intitule,libelle]
+    concurrence pour attirer                      4  ch 22                       [intitule]
+    concurrence entre etats                       4  ch 22,23                    [encadre]
+    concurrence accrue                            3  ch 23,24                    [libelle]
+### marche (12)
+    marche interieur                             37  ch 7,9,21,22,23             [encadre,intitule,libelle,phrase]
+    marche mondial                               20  ch 7,21,22,23               [encadre,intitule,libelle]
+    marche europeen                              16  ch 6,21,22,23,24            [intitule]
+    marche national                              15  ch 6,7,8,21,22,23,24        [libelle,phrase]
+    marche interbancaire                          9  ch 2                        [encadre,libelle,phrase]
+    marche domestique                             8  ch 21,22,23                 [intitule]
+    marche americain                              7  ch 7,21,22,23               [intitule]
+    marche des capitaux                           5  ch 2,4,6                    [intitule]
+    marche echoue                                 5  ch 5                        [encadre,intitule]
+    marche concurrentiel                          4  ch 4,5,9                    [encadre,libelle]
+    marche important                              3  ch 2,22,23                  [libelle]
+    marche du carbone                             3  ch 7                        [intitule]
+### prix (23)
+    prix international                           12  ch 23                       [intitule,libelle,phrase]
+    prix d'equilibre                             10  ch 3,4,5,6,23               [encadre,intitule]
+    prix des exportations                        10  ch 7,21,23                  [encadre,intitule,libelle]
+    prix du carbone                              10  ch 7,22,23,24               [intitule,libelle,phrase]
+    prix mondial                                 10  ch 22,23                    [encadre,intitule,libelle,phrase]
+    prix d'un                                     9  ch 4,7,21                   [encadre,libelle]
+    prix eleves                                   7  ch 3,5,6,9,21               [libelle]
+    prix des facteurs                             6  ch 21,23                    [intitule,libelle,phrase]
+    prix des produits                             5  ch 1,4,21,23                [libelle]
+    prix nobel                                    5  ch 4,5,7                    [intitule]
+    prix plus eleve                               5  ch 22,23                    [encadre,libelle]
+    prix de l'energie                             4  ch 1,22                     [encadre,libelle]
+    prix croisee                                  4  ch 4                        [intitule,libelle]
+    prix des matieres                             4  ch 7,21,23                  [intitule]
+### economie (14)
+    economie mondiale                            64  ch 3,6,7,8,9,21,22,23,24    [encadre,intitule,libelle,phrase]
+    economie politique                           14  ch 3,7,22,23                [encadre,intitule,libelle]
+    economie nationale                            8  ch 1,6,21,22,23             [intitule,libelle]
+    economie agricole                             6  ch 4,6,8                    [encadre,intitule,libelle]
+    economie francaise                            6  ch 6,10,22                  [encadre,intitule]
+    economie classique                            5  ch 3                        [libelle]
+    economie ouverte                              4  ch 2,21,23                  [intitule,libelle]
+    economie fermee                               3  ch 1,6                      [intitule,libelle]
+    economie peut rester                          3  ch 3                        [libelle]
+    economie keynesienne                          3  ch 3                        [libelle]
+    economie mondialisee                          3  ch 6,22                     [libelle]
+    economie en rattrapage                        3  ch 7,22                     [libelle]
+    economie duale                                3  ch 7,22                     [intitule]
+    economie de facteurs                          3  ch 23                       [encadre]
+### taux (11)
+    taux d'interet                               43  ch 1,2,3,5,6,7,21,22,23     [encadre,intitule,libelle,phrase]
+    taux de croissance                           24  ch 2,6,7                    [encadre,intitule]
+    taux de profit                               13  ch 3,6,21,23                [intitule,libelle]
+    taux d'epargne                               10  ch 6,21                     [intitule,libelle,phrase]
+    taux d'ouverture mondial                      8  ch 21                       [intitule,phrase]
+    taux d'investissement                         7  ch 1,6,21,23                [intitule,libelle,phrase]
+    taux de couverture                            7  ch 7,21                     [intitule,libelle]
+    taux de chomage                               5  ch 2,3,6,7,10               [encadre,libelle]
+    taux d'ouverture chinois                      4  ch 21                       [intitule]
+    taux negatifs                                 3  ch 2                        [intitule]
+    taux minimal                                  3  ch 22                       [intitule,libelle]
+### production (11)
+    production mondiale                          27  ch 3,6,21,22,23,24          [encadre,intitule,libelle,phrase]
+    production nationale                         24  ch 7,21,22,23,24            [encadre,intitule,libelle,phrase]
+    production domestique                        21  ch 6,21,22,23,24            [encadre,intitule,libelle,phrase]
+    production de masse                          14  ch 6,8,9                    [intitule,libelle]
+    production industrielle                      11  ch 6,8,21,22                [intitule,libelle]
+    production afin                               5  ch 3,9,22,24                [libelle]
+    production industrielle mondiale              4  ch 6,8,21                   [intitule]
+    production europeenne                         4  ch 22                       [encadre,libelle]
+    production finale                             3  ch 1,6,21                   [encadre]
+    production varie                              3  ch 4                        [encadre,libelle]
+    production precedemment                       3  ch 22                       [encadre]
+### commerce (4)
+    commerce mondial                             89  ch 2,7,21,22,23,24          [encadre,intitule,libelle,phrase]
+    commerce exterieur                           13  ch 6,7,21,22,23             [intitule,libelle,phrase]
+    commerce de differences                       6  ch 21,23                    [encadre]
+    commerce en ligne                             4  ch 1,9                      [intitule]
+### politique (15)
+    politique de concurrence                     24  ch 9,22                     [encadre,intitule,libelle,phrase]
+    politique economique                         22  ch 1,3,7,21,22,23,24        [encadre,intitule,libelle,phrase]
+    politique industrielle francaise              9  ch 22                       [encadre,intitule,phrase]
+    politique de soutien                          7  ch 23,24                    [intitule,libelle]
+    politique fiscale                             6  ch 1,22,23                  [intitule]
+    politique industrielle verte                  6  ch 22                       [intitule,phrase]
+    politique industrielle efficace               5  ch 22                       [encadre,libelle,phrase]
+    politique monetaire agit                      4  ch 2                        [encadre,libelle]
+    politique industrielle face                   4  ch 22                       [intitule]
+    politique conjoncturelle                      3  ch 6,24                     [libelle]
+    politique budgetaire expansionniste           3  ch 21                       [intitule]
+    politique industrielle offensive              3  ch 22,24                    [intitule]
+    politique verticale                           3  ch 22                       [libelle]
+    politique horizontale                         3  ch 22                       [encadre,libelle]
+### valeur (9)
+    valeur mondiales                             61  ch 6,7,21,22,23,24          [encadre,intitule,libelle]
+    valeur ajoutee etrangere                     10  ch 21                       [intitule]
+    valeur mondiale                               7  ch 21,22                    [intitule,libelle,phrase]
+    valeur d'un                                   5  ch 1,3,9,22,23              [encadre,libelle]
+    valeur brute                                  4  ch 21                       [libelle]
+    valeur d'une                                  3  ch 1,2,9                    [encadre,libelle]
+    valeur reelle                                 3  ch 1,2,22                   [encadre,libelle]
+    valeur pour l'actionnaire                     3  ch 8,9                      [libelle]
+    valeur des diplomes                           3  ch 8                        [intitule]
+### crise (10)
+    crise financiere                             23  ch 2,3,6,7,21,22,24         [encadre,libelle]
+    crise du multilateralisme                    16  ch 21,22,23,24              [intitule]
+    crise sanitaire                              11  ch 10,21,22,23              [encadre]
+    crise des annees                              9  ch 3,6,7,8,10,24            [intitule,libelle]
+    crise financiere mondiale                     7  ch 7,21,22,24               [libelle]
+    crise economique                              5  ch 1,7,24                   [intitule]
+    crise de legitimite                           4  ch 1,24                     [intitule,libelle]
+    crise du covid                                4  ch 1,6                      [intitule]
+    crise immobiliere                             4  ch 21                       [intitule]
+    crise systemique                              3  ch 2,6,24                   [encadre,intitule,libelle]
+### theorie (12)
+    theorie standard                             14  ch 3,4,6,7,8,9              [encadre,intitule,libelle]
+    theorie economique                            8  ch 3,4,5,9,23               [encadre,intitule,libelle]
+    theorie du commerce                           8  ch 21,22,23                 [libelle]
+    theorie neoclassique                          7  ch 3,4,6,9                  [libelle]
+    theorie du desequilibre                       7  ch 3                        [libelle]
+    theorie du commerce international             7  ch 21,22,23                 [libelle,phrase]
+    theorie de l'echange                          6  ch 7,21,23                  [intitule]
+    theorie de l'echange inegal                   6  ch 7,21,23                  [intitule]
+    theorie des jeux                              5  ch 4,24                     [libelle]
+    theorie du donut                              4  ch 3                        [libelle]
+    theorie de l'entreprise                       3  ch 3                        [intitule]
+    theorie de l'entreprise d'affaires            3  ch 3                        [intitule]
+### logique (13)
+    logique de marche                             9  ch 2,21,22,24               [intitule,libelle]
+    logique mercantiliste                         9  ch 21,23,24                 [intitule]
+    logique economique                            7  ch 2,4,6,7                  [intitule]
+    logique cumulative                            7  ch 6,8,21,23                [intitule]
+    logique marchande                             6  ch 5,8                      [intitule]
+    logique industrielle                          5  ch 3,8,21,22                [intitule]
+    logique d'approvisionnement                   5  ch 21,22                    [intitule]
+    logique de puissance                          5  ch 21,22,24                 [intitule]
+    logique d'ide                                 4  ch 21,22                    [intitule]
+    logique productive                            3  ch 8,21                     [libelle]
+    logique de court                              3  ch 8                        [intitule]
+    logique de court terme                        3  ch 8                        [intitule]
+    logique multilaterale                         3  ch 23                       [intitule]
+### demande (9)
+    demande globale                              20  ch 1,2,3,4,6                [encadre,libelle,phrase]
+    demande mondiale                             14  ch 7,21,22,23               [encadre]
+    demande de credit                             6  ch 2                        [encadre,libelle]
+    demande exterieure                            6  ch 7,21,23                  [intitule]
+    demande de variete                            6  ch 23                       [intitule]
+    demande de biens                              4  ch 8,22,24                  [libelle]
+    demande est inelastique                       3  ch 4                        [encadre,libelle]
+    demande de produits                           3  ch 8,23                     [intitule]
+    demande nationale                             3  ch 21,23                    [intitule,libelle,phrase]
+### modele (14)
+    modele de croissance                          8  ch 3,6,8,21                 [libelle]
+    modele de modigliani                          7  ch 1,9                      [intitule,phrase]
+    modele du vol d'oies                          7  ch 7,21                     [libelle]
+    modele de solow                               6  ch 6                        [intitule,libelle]
+    modele neoclassique                           5  ch 3,4,6                    [libelle]
+    modele economique                             5  ch 7,8,10,23                [intitule,libelle]
+    modele productif                              4  ch 6,22                     [encadre,libelle]
+    modele actionnarial                           4  ch 8                        [intitule,phrase]
+    modele standard                               3  ch 4                        [libelle]
+    modele de concurrence                         3  ch 4,9                      [intitule]
+    modele central                                3  ch 7                        [intitule]
+    modele sert                                   3  ch 7                        [encadre]
+    modele precedent                              3  ch 8,24                     [intitule]
+    modele darpa                                  3  ch 22                       [intitule,phrase]
+### organisation (9)
+    organisation du travail                      26  ch 6,8,9,22                 [encadre,intitule,libelle]
+    organisation rationnelle                      8  ch 10                       [intitule]
+    organisation hierarchique                     6  ch 8,9,10                   [intitule]
+    organisation officielle                       5  ch 10                       [intitule,phrase]
+    organisation mondiale                         4  ch 7,21,23                  [libelle]
+    organisation des echanges                     4  ch 21,24                    [encadre,libelle,phrase]
+    organisation des grandes                      3  ch 8,9                      [intitule]
+    organisation des grandes entreprises          3  ch 8,9                      [intitule]
+    organisation des entreprises                  3  ch 9                        [intitule,libelle]
+### effet (11)
+    effet pervers                                15  ch 1,2,5,7,9,10,22          [encadre,libelle]
+    effet de serre                                6  ch 6,7,22,23,24             [libelle]
+    effet qualitatif                              6  ch 8                        [intitule,libelle,phrase]
+    effet reel                                    5  ch 2,3                      [encadre,libelle]
+    effet prix                                    5  ch 4,21                     [intitule]
+    effet d'offre                                 5  ch 23                       [intitule]
+    effet d'aubaine                               4  ch 6,22                     [intitule]
+    effet d'optique                               4  ch 6                        [intitule]
+    effet quantitatif                             4  ch 8                        [intitule,libelle,phrase]
+    effet richesse                                3  ch 2,21                     [libelle]
+    effet direct                                  3  ch 7,22                     [encadre,libelle]
+### premiere (11)
+    premiere guerre                               9  ch 2,21,23                  [intitule]
+    premiere guerre mondiale                      9  ch 2,21,23                  [intitule]
+    premiere industrialisation                    7  ch 8                        [intitule]
+    premiere puissance                            7  ch 8,21                     [intitule]
+    premiere mondialisation repose                5  ch 9,21                     [libelle]
+    premiere raison                               5  ch 21                       [intitule]
+    premiere etape                                4  ch 7,21,22,24               [intitule,libelle]
+    premiere rupture                              4  ch 8,22                     [intitule,phrase]
+    premiere critique                             4  ch 22,23                    [intitule]
+    premiere difficulte                           3  ch 8,22,23                  [intitule]
+    premiere logique                              3  ch 9,21,22                  [intitule,phrase]
+### rapport (4)
+    rapport de force                             45  ch 3,7,8,21,22,23,24        [intitule,libelle]
+    rapport interdecile                           9  ch 6                        [intitule,libelle,phrase]
+    rapport meadows                               3  ch 7                        [intitule]
+    rapport de force social                       3  ch 8                        [intitule]
+### deficit (5)
+    deficit commercial                           40  ch 6,7,21,22,23             [encadre,intitule,libelle,phrase]
+    deficit americain                             9  ch 21                       [intitule,phrase]
+    deficit bilateral                             4  ch 21,22,23                 [libelle]
+    deficit courant n'est                         3  ch 21                       [intitule]
+    deficit peut reveler                          3  ch 21                       [intitule]
+### integration (7)
+    integration regionale                        15  ch 7,21,24                  [encadre,intitule,libelle]
+    integration commerciale                      13  ch 7,21,23,24               [encadre,intitule,libelle]
+    integration croissante                       11  ch 7,9,21                   [intitule]
+    integration des marches                       8  ch 6,7,21                   [intitule]
+    integration internationale                    4  ch 7,21                     [libelle]
+    integration subordonnee                       3  ch 7                        [intitule]
+    integration financiere                        3  ch 7,21                     [intitule]
+### systeme (8)
+    systeme economique                           13  ch 2,3,4,8,24               [encadre,libelle]
+    systeme productif                            12  ch 6,7,8                    [intitule,phrase]
+    systeme educatif                              8  ch 7                        [intitule]
+    systeme commercial multilateral               8  ch 22,23,24                 [encadre,intitule,libelle]
+    systeme international                         4  ch 7,21                     [libelle]
+    systeme social                                4  ch 10                       [intitule,libelle]
+    systeme national                              3  ch 22,23                    [libelle]
+    systeme commercial mondial                    3  ch 24                       [intitule]
+### revenu (9)
+    revenu courant                               14  ch 1,3                      [encadre,libelle]
+    revenu intermediaire                         10  ch 7,21,22                  [intitule,libelle]
+    revenu moyen                                  9  ch 1,6,7                    [intitule]
+    revenu reel                                   6  ch 1,4,6                    [encadre,libelle]
+    revenu nominal                                3  ch 1,4                      [encadre]
+    revenu supplementaire                         3  ch 1,23                     [libelle]
+    revenu par tete                               3  ch 6,7                      [libelle]
+    revenu detenue                                3  ch 6                        [libelle]
+    revenu a l'interieur                          3  ch 21                       [libelle]
+### choc (5)
+    choc chinois                                 35  ch 21,22                    [encadre,intitule,libelle,phrase]
+    choc petrolier                                4  ch 1,2,4,21                 [encadre,intitule]
+    choc volcker                                  4  ch 21                       [intitule,libelle]
+    choc local                                    4  ch 22                       [intitule]
+    choc volcker montre                           3  ch 21                       [intitule]
+### industrie (8)
+    industrie lourde                             13  ch 6,7,8,22                 [encadre,libelle]
+    industrie nationale                          10  ch 7,21,22,23,24            [encadre]
+    industrie legere                              6  ch 7                        [encadre,libelle,phrase]
+    industrie europeenne                          6  ch 22                       [intitule]
+    industrie textile                             5  ch 7,21,23                  [intitule]
+    industrie mondiale                            3  ch 8,24                     [libelle]
+    industrie concentre                           3  ch 22                       [intitule]
+    industrie possede                             3  ch 22                       [intitule]
+### dependance (8)
+    dependance exterieure                        15  ch 6,7,21,22                [encadre,intitule,libelle]
+    dependance technologique                      9  ch 7,21,22                  [encadre]
+    dependance energetique                        6  ch 21,22                    [intitule]
+    dependance accrue                             4  ch 7,21                     [encadre,libelle]
+    dependance aux capitaux                       4  ch 21,22                    [intitule]
+    dependance aux capitaux etrangers             4  ch 21,22                    [intitule]
+    dependance au sentier                         3  ch 3,6,23                   [encadre,libelle]
+    dependance europeenne                         3  ch 21,22                    [intitule]
+### investissement (7)
+    investissement productif                     12  ch 6,8,21,22                [encadre,intitule,libelle]
+    investissement prive                         11  ch 6,21,22                  [encadre,phrase]
+    investissement des entreprises                7  ch 1,2,6,8,22               [intitule]
+    investissement insuffisant                    5  ch 6,21,24                  [encadre,intitule,libelle]
+    investissement eleve                          5  ch 21,23                    [intitule,libelle]
+    investissement superieur                      3  ch 21                       [intitule]
+    investissement industriel                     3  ch 22                       [libelle]
+### rattrapage (7)
+    rattrapage spectaculaire                      9  ch 7,21,22,23               [intitule]
+    rattrapage rapide                             8  ch 6,21,23                  [intitule]
+    rattrapage technologique                      8  ch 21,22,23                 [intitule]
+    rattrapage industriel                         7  ch 7,22,23                  [libelle]
+    rattrapage japonais                           7  ch 7,22                     [intitule]
+    rattrapage historique                         4  ch 7,21                     [encadre,intitule]
+    rattrapage des emergents                      3  ch 21,23                    [intitule]
+### activite (2)
+    activite economique                          24  ch 1,2,3,5,6,7,8,9,10,21,22 [encadre,intitule,libelle,phrase]
+    activite productive                          20  ch 1,6,7,8,21,22            [encadre,intitule,libelle]
+### allocation (4)
+    allocation des ressources                    26  ch 1,3,4,5,6,7,8,22,23,24   [intitule,libelle,phrase]
+    allocation efficace                           6  ch 4,5,22                   [encadre,libelle]
+    allocation du capital                         6  ch 6,21                     [intitule,libelle]
+    allocation chomage                            5  ch 1,4                      [encadre]
+### fragmentation (4)
+    fragmentation internationale                 23  ch 21,22,23,24              [encadre,intitule,libelle]
+    fragmentation des chaines                    12  ch 6,21,22                  [encadre,intitule]
+    fragmentation geopolitique                    4  ch 21,24                    [intitule]
+    fragmentation complete                        3  ch 24                       [encadre,intitule]
+### transformation (9)
+    transformation profonde                       9  ch 2,6,10,21,22             [intitule]
+    transformation du capitalisme                 8  ch 8,9,23                   [libelle]
+    transformation majeure                        4  ch 6,8,22                   [intitule]
+    transformation sectorielle                    4  ch 6,8,10                   [libelle]
+    transformation des objectifs                  4  ch 8                        [intitule]
+    transformation interne                        3  ch 7,8,24                   [libelle]
+    transformation du role                        3  ch 8                        [intitule]
+    transformation du monde                       3  ch 10                       [intitule]
+    transformation progressive                    3  ch 21,22,23                 [encadre,intitule,libelle]
+### capital (8)
+    capital fixe                                  9  ch 1,3,6,7,23               [encadre,libelle]
+    capital par travailleur                       7  ch 6,7,23                   [encadre,libelle]
+    capital variable                              5  ch 2,3                      [encadre,phrase]
+    capital par tete                              5  ch 6                        [libelle,phrase]
+    capital au travail                            4  ch 6,8                      [intitule]
+    capital technologique                         4  ch 6,8                      [encadre,intitule]
+    capital social                                3  ch 1,6,8                    [encadre,intitule]
+    capital materiel                              3  ch 6                        [intitule]
+### capacite (6)
+    capacite de production                       20  ch 1,2,3,6,7,9,21,22,23     [libelle]
+    capacite de calcul                            4  ch 4,9                      [libelle]
+    capacite d'un                                 4  ch 6,7,10,21                [encadre,libelle]
+    capacite d'action                             4  ch 7,23,24                  [intitule,libelle]
+    capacite d'adaptation                         4  ch 7,9                      [intitule]
+    capacite a vendre                             3  ch 21,22                    [libelle]
+### developpement (9)
+    developpement industriel                      8  ch 7,10,21,22               [libelle]
+    developpement des pays                        5  ch 21,22                    [intitule]
+    developpement du capitalisme                  4  ch 3,8,10                   [intitule]
+    developpement du capital                      4  ch 7,21,22                  [intitule]
+    developpement du pays                         4  ch 21,22                    [intitule]
+    developpement des marches                     3  ch 8,21                     [intitule]
+    developpement des marches financiers          3  ch 8,21                     [intitule]
+    developpement des pays neufs                  3  ch 21                       [intitule]
+    developpement different                       3  ch 22,23                    [encadre]
+### productivite (3)
+    productivite du travail                      18  ch 4,6,7,8,22,23            [encadre,intitule,libelle,phrase]
+    productivite moyenne                         13  ch 4,6,7,23                 [intitule,libelle,phrase]
+    productivite faible                           5  ch 6,21,22                  [encadre,intitule,libelle]
+### deuxieme (10)
+    deuxieme raison                               5  ch 21                       [intitule]
+    deuxieme limite                               5  ch 21,22,23,24              [intitule,phrase]
+    deuxieme facteur                              4  ch 4,21,24                  [intitule,phrase]
+    deuxieme etape                                3  ch 7,22,24                  [intitule,libelle]
+    deuxieme vague                                3  ch 21,22,23                 [intitule]
+    deuxieme cause                                3  ch 21,22                    [intitule]
+    deuxieme risque                               3  ch 22                       [intitule]
+    deuxieme principe                             3  ch 23,24                    [intitule,libelle]
+    deuxieme objectif                             3  ch 23,24                    [intitule]
+    deuxieme scenario                             3  ch 24                       [encadre,intitule]
+### mondialisation (6)
+    mondialisation repose                         8  ch 9,21,24                  [libelle]
+    mondialisation commerciale                    7  ch 21,22,24                 [intitule,libelle]
+    mondialisation economique                     6  ch 21,22                    [intitule]
+    mondialisation heureuse                       6  ch 24                       [intitule]
+    mondialisation financiere permet              4  ch 21                       [intitule]
+    mondialisation transforme                     4  ch 21,22                    [intitule]
+### epargne (6)
+    epargne domestique                           12  ch 21,22                    [intitule,phrase]
+    epargne nationale                             8  ch 21,22                    [intitule]
+    epargne etrangere                             5  ch 21                       [intitule,libelle]
+    epargne disponible                            4  ch 1,21                     [libelle]
+    epargne brute                                 3  ch 1                        [encadre,libelle]
+    epargne trop                                  3  ch 6,21                     [intitule]
+### capitalisme (5)
+    capitalisme contemporain                     14  ch 8,9                      [libelle,phrase]
+    capitalisme industriel                        7  ch 3,8,9                    [libelle,phrase]
+    capitalisme mondial                           6  ch 7,8,21                   [intitule]
+    capitalisme familial                          4  ch 6,8                      [intitule]
+    capitalisme change                            3  ch 8                        [intitule]
+### analyse (5)
+    analyse economique                           19  ch 1,3,5,6,7,8,9,23         [intitule,libelle,phrase]
+    analyse ricardienne                           6  ch 23                       [intitule,phrase]
+    analyse scientifique                          3  ch 3,10                     [libelle]
+    analyse de milanovic                          3  ch 6,22,23                  [intitule]
+    analyse demographique                         3  ch 7                        [intitule]
+### ouverture (8)
+    ouverture mondial                             8  ch 21                       [intitule,phrase]
+    ouverture exterieure                          4  ch 7,21,23                  [encadre]
+    ouverture du marche                           4  ch 7,23                     [intitule]
+    ouverture chinois                             4  ch 21                       [intitule]
+    ouverture progressive                         3  ch 7,21                     [intitule]
+    ouverture encadree                            3  ch 7                        [intitule]
+    ouverture au commerce                         3  ch 7                        [intitule]
+    ouverture maitrisee                           3  ch 21                       [intitule]
+### protection (2)
+    protection temporaire                        28  ch 7,21,22,23,24            [encadre,intitule,libelle]
+    protection tarifaire                          3  ch 23                       [encadre,intitule]
+### grande (5)
+    grande entreprise                            10  ch 8,9,22                   [intitule,libelle]
+    grande echelle                                9  ch 1,6,7,21,22,23           [encadre]
+    grande firme                                  5  ch 8,9                      [intitule,libelle]
+    grande depression                             4  ch 3,9,21,24                [intitule,libelle]
+    grande puissance                              3  ch 7,22,24                  [encadre]
+### secteur (5)
+    secteur prive                                 9  ch 2,6,7,21,22              [intitule,libelle]
+    secteur traditionnel                          8  ch 7,22                     [intitule,libelle]
+    secteur industriel                            4  ch 3,22,23                  [intitule]
+    secteur d'activite                            4  ch 9,10                     [encadre,libelle]
+    secteur public                                4  ch 10,22                    [intitule]
+### monnaie (4)
+    monnaie nationale                            16  ch 2,7,21                   [encadre,libelle]
+    monnaie centrale                              6  ch 2                        [encadre]
+    monnaie metallique                            3  ch 2                        [encadre,libelle]
+    monnaie n'est qu'un                           3  ch 2                        [encadre,intitule]
+### creation (5)
+    creation de l'omc                             8  ch 21,22,24                 [encadre]
+    creation d'un                                 6  ch 5,22                     [intitule]
+    creation d'une                                5  ch 7,10,21,24               [libelle]
+    creation de nouvelles                         5  ch 8,10,22                  [intitule]
+    creation d'emplois                            4  ch 6,7,22                   [encadre,libelle]
+### pouvoir (6)
+    pouvoir economique                            7  ch 7,8,10,21,23             [libelle]
+    pouvoir dans l'entreprise                     5  ch 8                        [libelle]
+    pouvoir de negociation                        5  ch 21,22,23,24              [intitule]
+    pouvoir aux managers                          4  ch 8                        [intitule]
+    pouvoir de decision                           3  ch 8,10                     [libelle,phrase]
+    pouvoir des managers                          3  ch 8                        [intitule]
+### strategie (4)
+    strategie des entreprises                     9  ch 6,8,9,23                 [intitule]
+    strategie repose                              7  ch 7,9,22                   [libelle]
+    strategie de croissance                       7  ch 7,21,22,23               [intitule,libelle]
+    strategie consistant                          3  ch 9,22,23                  [libelle]
+### avantage (5)
+    avantage initial                              9  ch 7,8,22,23                [encadre,phrase]
+    avantage de cout                              5  ch 22,23                    [libelle,phrase]
+    avantage acquis                               5  ch 23                       [encadre]
+    avantage procure                              3  ch 22,23                    [libelle]
+    avantage commercial                           3  ch 22,23                    [libelle,phrase]
+### nouvelle (6)
+    nouvelle vague                                6  ch 2,9,21,22,24             [encadre,intitule]
+    nouvelle phase                                6  ch 3,6,7,21                 [intitule]
+    nouvelle division                             4  ch 7                        [encadre,intitule]
+    nouvelle economie keynesienne                 3  ch 3                        [libelle]
+    nouvelle conception                           3  ch 8                        [intitule]
+    nouvelle mondialisation                       3  ch 21,23,24                 [libelle]
+### zone (1)
+    zone euro                                    24  ch 2,6,21,22,24             [encadre,intitule,libelle,phrase]
+### perte (4)
+    perte d'emplois                              10  ch 21,22,23                 [libelle]
+    perte de sens                                 5  ch 6,8,10                   [encadre,libelle]
+    perte de competitivite                        4  ch 6,21,22,23               [encadre]
+    perte d'un                                    4  ch 22,23                    [libelle]
+### multilateralisme (2)
+    multilateralisme commercial                  20  ch 21,22,23,24              [intitule,libelle]
+    multilateralisme repose                       3  ch 24                       [intitule]
+### libre (3)
+    libre entree                                 10  ch 3,4,9                    [intitule,libelle]
+    libre circulation                             8  ch 2,21,24                  [intitule,libelle]
+    libre sortie                                  4  ch 3,9                      [intitule]
+### gain (4)
+    gain de pouvoir                               7  ch 21,22,23                 [intitule]
+    gain de pouvoir d'achat                       7  ch 21,22,23                 [intitule]
+    gain collectif                                4  ch 21,23                    [encadre]
+    gain d'un                                     3  ch 23                       [libelle]
+### concentration (4)
+    concentration geographique                    6  ch 9,22,23                  [encadre,intitule,libelle]
+    concentration du pouvoir                      5  ch 2,8                      [intitule,libelle]
+    concentration croissante                      5  ch 6,7,21                   [intitule]
+    concentration du capital                      4  ch 1,23                     [encadre,intitule,libelle]
+### produit (3)
+    produit des effets                            9  ch 6,7,8,21,22              [encadre,libelle]
+    produit importe                               8  ch 23,24                    [libelle]
+    produit trop                                  3  ch 5                        [encadre,libelle]
+### specialisation (4)
+    specialisation primaire                       7  ch 7,21,23                  [libelle]
+    specialisation agricole                       5  ch 23,24                    [intitule]
+    specialisation defavorable                    4  ch 7,21                     [intitule]
+    specialisation initiale                       4  ch 22,23                    [encadre]
+### protectionnisme (3)
+    protectionnisme contemporain                  8  ch 21,23                    [encadre,intitule,phrase]
+    protectionnisme americain                     7  ch 21,22,23,24              [encadre,intitule]
+    protectionnisme constitue                     3  ch 23                       [intitule]
+### approche (4)
+    approche macroeconomique                      5  ch 1,3,6                    [intitule]
+    approche tiers                                5  ch 7                        [intitule]
+    approche tiers mondiste                       5  ch 7                        [intitule]
+    approche heterodoxe                           3  ch 3,7                      [encadre,intitule,libelle]
+### chine (5)
+    chine occupe                                  4  ch 7,22,24                  [encadre]
+    chine investit                                4  ch 21                       [intitule]
+    chine est devenue                             4  ch 21                       [encadre,intitule]
+    chine a l'omc                                 3  ch 7,21                     [intitule]
+    chine connait                                 3  ch 21,22                    [encadre]
+### coordination (4)
+    coordination internationale                   8  ch 7,21,24                  [encadre,intitule,libelle]
+    coordination economique                       4  ch 8,9,24                   [intitule]
+    coordination fiscale                          3  ch 22,24                    [intitule]
+    coordination fiscale internationale           3  ch 22,24                    [intitule]
+### premier (5)
+    premier entrant                               5  ch 9,23                     [intitule,libelle]
+    premier effet                                 3  ch 22,23                    [intitule]
+    premier gain                                  3  ch 23                       [intitule]
+    premier objectif                              3  ch 23,24                    [intitule]
+    premier scenario                              3  ch 24                       [intitule,libelle]
+### robert (5)
+    robert lucas                                  4  ch 3,6,21                   [encadre,intitule,libelle]
+    robert allen                                  4  ch 8                        [encadre,intitule,libelle]
+    robert solow                                  3  ch 2,6                      [intitule,libelle]
+    robert boyer                                  3  ch 3                        [libelle]
+    robert lawrence                               3  ch 24                       [intitule,libelle]
+### souverainete (2)
+    souverainete nationale                       12  ch 22,24                    [encadre,intitule,libelle]
+    souverainete technologique                    4  ch 7,21                     [encadre,intitule]
+### moyen (4)
+    moyen terme                                   7  ch 1,2,3,6,7,22             [encadre,libelle]
+    moyen par habitant                            3  ch 7                        [intitule]
+    moyen thailandais                             3  ch 23                       [encadre,phrase]
+    moyen americain                               3  ch 23                       [encadre]
+### classe (3)
+    classe sterile                                7  ch 3                        [encadre,intitule,libelle]
+    classe moyenne                                6  ch 6,21,23                  [libelle]
+    classe ouvriere                               3  ch 10                       [intitule]
+### chomage (3)
+    chomage involontaire                          8  ch 3                        [encadre,libelle]
+    chomage eleve                                 4  ch 2,6,22                   [intitule]
+    chomage naturel                               3  ch 2,3                      [libelle]
+### pauvrete (2)
+    pauvrete mondiale                             8  ch 7                        [intitule]
+    pauvrete monetaire                            7  ch 7                        [intitule]
+### chaine (2)
+    chaine de production                         11  ch 9,10,21                  [encadre,libelle]
+    chaine de montage                             4  ch 8,22                     [libelle]
+### impot (2)
+    impot sur les societes                       10  ch 1,6,22                   [encadre,intitule,libelle]
+    impot recherche                               5  ch 1,22                     [intitule,libelle]
+### courbe (3)
+    courbe d'offre                                6  ch 4                        [encadre]
+    courbe de demande                             5  ch 4                        [encadre,intitule]
+    courbe de cout                                3  ch 4,23                     [encadre]
+### financement (3)
+    financement du developpement                  6  ch 7,21                     [intitule]
+    financement exterieur                         5  ch 21                       [intitule,libelle]
+    financement de l'economie                     3  ch 2                        [encadre]
+### troisieme (4)
+    troisieme vague                               5  ch 21,22                    [intitule,phrase]
+    troisieme etape                               3  ch 7,22,24                  [intitule,libelle]
+    troisieme limite                              3  ch 22,23,24                 [intitule]
+    troisieme scenario                            3  ch 24                       [intitule]
+### limite (3)
+    limite importante                             5  ch 7,21,23                  [intitule]
+    limite de pays                                5  ch 22,24                    [encadre,intitule,libelle]
+    limite de l'approche                          4  ch 7,9,10                   [intitule]
+### cooperation (3)
+    cooperation commerciale                       7  ch 24                       [intitule]
+    cooperation multilaterale                     4  ch 24                       [encadre,intitule]
+    cooperation economique                        3  ch 24                       [libelle]
+### ecole (2)
+    ecole des choix                               7  ch 5                        [encadre,libelle]
+    ecole des choix publics                       7  ch 5                        [encadre,libelle]
+### choix (2)
+    choix de localisation                         8  ch 21,22,23                 [intitule]
+    choix politiques                              6  ch 5,6,8,21                 [encadre,intitule]
+### industrialisation (4)
+    industrialisation anglaise                    4  ch 8                        [intitule,phrase]
+    industrialisation occidentale                 3  ch 7,21                     [intitule]
+    industrialisation tardive                     3  ch 7                        [intitule]
+    industrialisation asiatique                   3  ch 7,21,22                  [encadre,libelle]
+### rationalite (3)
+    rationalite individuelle                      7  ch 4,5,10                   [libelle,phrase]
+    rationalite est limitee                       3  ch 4,9                      [encadre,libelle]
+    rationalite economique                        3  ch 8,9                      [intitule,libelle]
+### droit (2)
+    droit de propriete intellectuelle             7  ch 5,6,24                   [encadre]
+    droit de douane moyen                         6  ch 21,23,24                 [encadre,phrase]
+### consommation (2)
+    consommation d'un                             8  ch 1,4,5,8                  [encadre,libelle]
+    consommation des menages                      5  ch 1,2,7                    [libelle]
+### insertion (2)
+    insertion internationale                      9  ch 3,7,8,21,23              [libelle]
+    insertion dans l'economie                     4  ch 7,22                     [libelle]
+### comportement (1)
+    comportement des entreprises                 13  ch 6,9,23                   [intitule,phrase]
+### bien (4)
+    bien est elastique                            3  ch 4                        [intitule]
+    bien inferieur                                3  ch 4,21                     [libelle]
+    bien superieur                                3  ch 4,22                     [encadre,libelle]
+    bien superieure                               3  ch 6,10,22                  [encadre]
+### dette (4)
+    dette devient trop                            3  ch 1,7                      [encadre,libelle]
+    dette des annees                              3  ch 7                        [intitule]
+    dette excessive                               3  ch 7,22                     [intitule]
+    dette americaine                              3  ch 21                       [intitule]
+### cycle (3)
+    cycle long                                    5  ch 8                        [libelle]
+    cycle de negociation                          4  ch 24                       [libelle]
+    cycle d'uruguay                               3  ch 24                       [intitule,libelle]
+### gouvernance (4)
+    gouvernance economique                        3  ch 2,24                     [libelle]
+    gouvernance climatique                        3  ch 7                        [intitule]
+    gouvernance mondiale reste                    3  ch 7,24                     [intitule]
+    gouvernance multi                             3  ch 7                        [intitule]
+### revolution (2)
+    revolution demographique                      7  ch 7,8                      [encadre,libelle]
+    revolution industrielle britannique           5  ch 7,8                      [intitule]
+### societe (3)
+    societe mere                                  5  ch 22                       [libelle]
+    societe post                                  4  ch 6,22                     [intitule]
+    societe mere detient                          3  ch 22                       [libelle]
+### rente (3)
+    rente differentielle                          5  ch 3,23                     [libelle]
+    rente de monopole                             4  ch 5,6                      [intitule]
+    rente fonciere                                3  ch 3,21                     [libelle]
+### l'ecole (2)
+    l'ecole des choix                             6  ch 5                        [encadre,libelle]
+    l'ecole des choix publics                     6  ch 5                        [encadre,libelle]
+### tarif (3)
+    tarif meline                                  4  ch 21                       [intitule]
+    tarif exterieur                               4  ch 21,24                    [libelle]
+    tarif exterieur commun                        4  ch 21,24                    [libelle]
+### mobilite (2)
+    mobilite des facteurs                         7  ch 3,4,21,23                [intitule]
+    mobilite du capital                           5  ch 21,22,24                 [libelle]
+### produire (2)
+    produire des biens                            6  ch 1,7,24                   [encadre,libelle]
+    produire une unite                            5  ch 3,4,6,7                  [encadre,libelle]
+### autonomie (2)
+    autonomie economique                          6  ch 7,22,24                  [encadre]
+    autonomie productive                          5  ch 21,22,23                 [encadre,libelle]
+### fonction (1)
+    fonction de production                       11  ch 4,6                      [intitule,libelle]
+### risque (3)
+    risque d'une                                  4  ch 7                        [libelle]
+    risque d'un                                   3  ch 7,10,23                  [intitule]
+    risque geopolitique                           3  ch 22                       [intitule,libelle]
+### inflation (2)
+    inflation reduction                           5  ch 22,23                    [encadre,intitule,libelle]
+    inflation reduction act                       5  ch 22,23                    [encadre,intitule,libelle]
+### salaire (2)
+    salaire reel                                  5  ch 2,3,4,23                 [libelle]
+    salaire horaire                               5  ch 6,22                     [encadre,libelle]
+### indice (3)
+    indice des prix                               4  ch 1                        [encadre,libelle]
+    indice de pauvrete                            3  ch 7                        [intitule]
+    indice de pauvrete multidimensionnelle        3  ch 7                        [intitule]
+### l'investissement (2)
+    l'investissement productif                    6  ch 6,8,21,22                [libelle]
+    l'investissement des entreprises              4  ch 1,2,8,22                 [intitule]
+### contexte (2)
+    contexte de crise                             5  ch 3,7,24                   [intitule]
+    contexte de fragmentation                     5  ch 6,24                     [encadre]
+### destruction (1)
+    destruction d'emplois                        10  ch 8,21,22                  [intitule]
+### avance (1)
+    avance technologique                          9  ch 9,21,22,23               [intitule]
+### recherche (2)
+    recherche d'un                                5  ch 10,21,23                 [intitule]
+    recherche fondamentale                        4  ch 22                       [libelle]
+### balance (1)
+    balance courante                              9  ch 21,23                    [encadre,intitule,libelle]
+### compte (2)
+    compte tenu                                   5  ch 1,3,4,21                 [encadre]
+    compte internationale                         3  ch 2,7                      [encadre]
+### change (2)
+    change de marche                              4  ch 7                        [intitule]
+    change de forme                               4  ch 8,10,21,23               [intitule]
+### actif (2)
+    actif financier                               4  ch 1,2,7,21                 [encadre]
+    actif sur mondial                             4  ch 21                       [intitule]
+### innovation (2)
+    innovation chez schumpeter                    4  ch 8                        [intitule]
+    innovation organisationnelle                  3  ch 8,22                     [intitule]
+### critique (2)
+    critique l'idee                               4  ch 5,6,22                   [libelle]
+    critique du modele                            3  ch 1,3,8                    [intitule,libelle]
+### utilite (1)
+    utilite totale                                7  ch 3,4                      [intitule,libelle,phrase]
+### aide (1)
+    aide publique                                 7  ch 6,9,21,22,23             [encadre,libelle]
+### excedent (1)
+    excedent commercial                           7  ch 21,23                    [intitule,libelle]
+### credit (1)
+    credit bancaire                               7  ch 1,2,5                    [encadre,intitule]
+### soutenabilite (2)
+    soutenabilite environnementale                3  ch 6,7,24                   [libelle]
+    soutenabilite ecologique                      3  ch 7                        [intitule]
+### domination (2)
+    domination internationale                     3  ch 7,23                     [intitule]
+    domination europeenne                         3  ch 21                       [intitule]
+### responsabilite (2)
+    responsabilite de l'entreprise                3  ch 6,8                      [intitule,libelle,phrase]
+    responsabilite historique                     3  ch 7                        [intitule]
+### desindustrialisation (2)
+    desindustrialisation des pays                 3  ch 22                       [libelle]
+    desindustrialisation des pays avances         3  ch 22                       [libelle]
+### substitution (2)
+    substitution technique                        3  ch 4,6                      [intitule,phrase]
+    substitution du capital                       3  ch 6,8                      [intitule]
+### mesure (2)
+    mesure des inegalites                         3  ch 6                        [intitule]
+    mesure du commerce                            3  ch 21                       [encadre,libelle]
+### firme (1)
+    firme existe                                  5  ch 9                        [libelle]
+### coefficient (1)
+    coefficient de capital                        5  ch 6                        [intitule,libelle,phrase]
+### cependant (1)
+    cependant pas uniquement                      5  ch 22,23,24                 [intitule]
+### subvention (1)
+    subvention publique                           4  ch 9,23,24                  [libelle]
+### transfert (1)
+    transfert technologique                       4  ch 22,23                    [encadre]
+### repartition (1)
+    repartition du gain                           4  ch 23                       [intitule]
+### david (1)
+    david autor                                   4  ch 22                       [intitule,libelle]
+### internationalisation (1)
+    internationalisation des firmes               4  ch 22                       [intitule]
+### preference (1)
+    preference nationale                          4  ch 21,22,23                 [encadre,intitule,libelle]
+### regime (1)
+    regime d'accumulation                         4  ch 3                        [libelle]
+### conscience (1)
+    conscience individuelle                       4  ch 10                       [intitule]
+### accord (1)
+    accord sur les subventions                    3  ch 23,24                    [libelle]
+### equilibre (1)
+    equilibre existe                              3  ch 4                        [intitule]
+### division (1)
+    division regionale                            3  ch 7                        [intitule,libelle]
+### canal (1)
+    canal commercial                              3  ch 21                       [intitule]
+### efficacite (1)
+    efficacite d'une                              3  ch 23,24                    [libelle]
+### action (1)
+    action publique                               3  ch 1,3,22                   [libelle]
+### competitivite (1)
+    competitivite europeenne                      3  ch 6,21                     [encadre,intitule,libelle]
+### monopole (1)
+    monopole industriel                           3  ch 10                       [intitule,libelle]
+### gerschenkron (1)
+    gerschenkron montre                           3  ch 6,7                      [libelle]
+### regulation (1)
+    regulation commerciale                        3  ch 24                       [intitule]
+### main (1)
+    main d'oeuvre                                 3  ch 2,8                      [encadre]
+### lien (1)
+    lien direct                                   3  ch 4,6,9                    [intitule]
+### s'il (1)
+    s'il faut                                     3  ch 6,7,21                   [encadre]
+### reference (1)
+    reference theorique                           3  ch 5,7                      [intitule]
+### salariat (1)
+    salariat deguise                              3  ch 8                        [intitule]
+### leadership (1)
+    leadership americain                          3  ch 21,24                    [intitule,phrase]
+### jean (1)
+    jean fourastie                                3  ch 6,22                     [libelle]
+### nuance (1)
+    nuance importante                             3  ch 7,22                     [intitule]
+### propension (1)
+    propension moyenne                            3  ch 1                        [libelle]
+### tableau (1)
+    tableau montre                                3  ch 1,23                     [encadre]
+### contrainte (1)
+    contrainte ecologique                         3  ch 6,7                      [intitule]
+### critere (1)
+    critere central                               3  ch 9                        [intitule,phrase]
+### solution (1)
+    solution miracle                              3  ch 6,7                      [intitule]
+### decouplage (1)
+    decouplage strategique                        3  ch 24                       [encadre,intitule,libelle]
+### debat (1)
+    debat economique                              3  ch 6,8                      [intitule]

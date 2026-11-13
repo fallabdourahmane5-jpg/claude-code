@@ -15,10 +15,29 @@ from collections import Counter
 
 import rech_base as R
 import rech_defs
+import rech_defs2
+import rech_defs3
+import rech_defs4
 import rech_moisson
 
 MAX_DEF = 520
 MAX_TXT = 420
+
+
+ART_TETE = re.compile(r"(?i)^(le|la|les|l['\u2019]|un|une)\s+")
+
+
+def sans_article(t):
+    """« Les externalités » devient « Externalité » : le titre doit nommer la
+    notion, pas la phrase du cours. On ne retire l'article que si la forme
+    obtenue désigne la même notion."""
+    t = str(t or '').strip()
+    n = ART_TETE.sub('', t).strip()
+    if not n or len(n) < 3:
+        return t
+    if R.cle(n) != R.cle(t):
+        return t
+    return n[0].upper() + n[1:]
 
 
 def majuscule(t):
@@ -38,6 +57,34 @@ REJET_DEF = {
     'a retenir', 'simple', 'union europeenne', 'transparence de l information',
     'barriere a l entree generale', 'generale', 'biens', 'nomade',
 }
+
+# noms de lieux et de personnes : ils relèvent des faits et des auteurs,
+# pas de la rubrique « Définitions »
+LIEUX = {R.cle(x) for x in """europe chine france allemagne japon inde
+bresil russie russe royaume-uni etats-unis afrique asie amerique oceanie
+coree vietnam mexique canada italie espagne portugal pologne grece turquie
+iran irak israel egypte nigeria kenya maroc algerie tunisie senegal
+bangladesh pakistan indonesie thailande malaisie singapour taiwan australie
+paris londres berlin pekin shanghai tokyo bruxelles washington californie
+bavicre occident orient""".split()}
+LIEUX |= {R.cle(x) for x in ['royaume uni', 'etats unis', 'coree du sud',
+                             'amerique latine', 'union europeenne',
+                             'hong kong', 'new york', 'moyen orient']}
+
+
+def _noms_auteurs():
+    C = R.corpus()
+    s = set()
+    for a in C['auteurs']:
+        n = R.nz(a['name'])
+        s.add(n)
+        s.add(R.cle(n))
+        p = n.split()
+        if p:
+            s.add(p[-1])
+        if len(p) > 1:
+            s.add(p[0] + ' ' + p[-1])
+    return s
 
 
 def _poids_chapitre(terme):
@@ -89,7 +136,8 @@ def definitions(B, NC):
                     lieux[k] = b0
         ou = sorted(lieux.items(), key=lambda z: (-pds.get(z[0], 0),
                                                   R.ORDRE.index(z[0])))[:6]
-        out[c] = {'t': majuscule(v['t']), 'd': court(v['d'], MAX_DEF),
+        out[c] = {'t': sans_article(majuscule(v['t'])),
+                  'd': court(v['d'], MAX_DEF),
                   'o': v['o'], 'ou': [[k, b] for k, b in ou], 'al': []}
     # « Productivité globale des facteurs (PGF) » : la parenthèse devient
     # un alias et sort du titre
@@ -135,14 +183,45 @@ def definitions(B, NC):
 
     # définitions rédigées : elles prennent le pas sur la moisson
     SEC = sections_par_titre(B)
-    for terme, chs, anc, defi, al in rech_defs.DEFS:
+    REDIGEES = ([tuple(x) + ('',) for x in rech_defs.DEFS]
+                + [tuple(x) for x in rech_defs2.DEFS]
+                + [tuple(x) for x in rech_defs3.DEFS]
+                + [tuple(x) for x in rech_defs4.DEFS])
+    for ligne in REDIGEES:
+        terme, chs, anc, defi, al = ligne[0], ligne[1], ligne[2], ligne[3], ligne[4]
+        dist = ligne[5] if len(ligne) > 5 else ''
         c = R.cle(terme)
-        ou = []
+        pds = _poids_chapitre(terme)
+        lieux = {}
         for k in chs:
             b = SEC.get((k, R.cle(anc)), -1)
-            ou.append([k, b])
-        out[c] = {'t': terme, 'd': court(defi, 900), 'o': ['redigee'],
+            if b < 0:
+                b = _premier_bloc(B, k, terme)
+            lieux[k] = b
+        # les autres chapitres où l'expression est employée
+        for k, n in sorted(pds.items(), key=lambda z: -z[1]):
+            if n and k not in lieux and len(lieux) < 7:
+                b0 = _premier_bloc(B, k, terme)
+                if b0 >= 0:
+                    lieux[k] = b0
+        # le chapitre qui traite le plus la notion arrive en tête : c'est lui
+        # que le lien principal doit ouvrir
+        ou = [[k, v] for k, v in sorted(
+            lieux.items(), key=lambda z: (-pds.get(z[0], 0),
+                                          R.ORDRE.index(z[0])))]
+        out[c] = {'t': terme, 'd': court(defi, 1100), 'o': ['redigee'],
                   'ou': ou, 'al': sorted({R.cle(a) for a in al} - {c})}
+        if dist:
+            out[c]['x'] = court(dist, 480)
+
+    # dernier filtrage : ni nom d'auteur, ni nom de lieu
+    AUT = _noms_auteurs()
+    for c in list(out):
+        if 'redigee' in out[c]['o']:
+            continue
+        n = R.nz(out[c]['t'])
+        if n in AUT or c in AUT or c in LIEUX or n in LIEUX:
+            del out[c]
     return out
 
 
