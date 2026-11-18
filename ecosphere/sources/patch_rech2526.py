@@ -13,6 +13,12 @@ import sys
 SRC = sys.argv[1] if len(sys.argv) > 1 else 'app_v221_res.html'
 DST = sys.argv[2] if len(sys.argv) > 2 else 'app_v221_rech.html'
 CHARGE = sys.argv[3] if len(sys.argv) > 3 else 'recherche_payload.json'
+# Une rubrique ne doit jamais s'appauvrir par accident. Un retrait voulu se
+# déclare ici, rubrique par rubrique : « atl=1 » autorise une idée de moins.
+BAISSES = {}
+for _a in sys.argv[4:]:
+    _k, _v = _a.split('=')
+    BAISSES[_k] = int(_v)
 
 s = open(SRC, encoding='utf-8').read()
 
@@ -41,7 +47,10 @@ av, ap = bilan(ancien), bilan(neuf_d)
 print('ancienne charge :', av)
 print('nouvelle charge :', ap)
 for c in ('ch', 'def', 'sec', 'fml', 'fai', 'atl', 'chf', 'res'):
-    assert ap[c] >= av[c], ('rubrique appauvrie', c, av[c], ap[c])
+    assert ap[c] >= av[c] - BAISSES.get(c, 0), \
+        ('rubrique appauvrie', c, av[c], ap[c])
+    if ap[c] < av[c]:
+        print('retrait déclaré : %s passe de %d à %d' % (c, av[c], ap[c]))
 assert ap['ch'] == 16, ap['ch']
 for c in ('25', '26'):
     assert c in neuf_d['ch'], c

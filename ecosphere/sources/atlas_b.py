@@ -350,7 +350,7 @@ B[6] = [
   'notions': ['limites de la croissance', 'numérique', 'soutenabilité', 'désir'],
   'liens': [('Kate Raworth', 'complement', "Même diagnostic de finitude, avec chez Raworth une proposition normative explicite."),
             ('Robert Gordon', 'complement', "Les deux auteurs doutent que le numérique reproduise les gains des révolutions précédentes."),
-            ('Orain', 'complement', "Même thème de la finitude et de la concentration du pouvoir économique.")],
+            ('Arnaud Orain', 'complement', "Même thème de la finitude et de la concentration du pouvoir économique.")],
  }),
  ('Colin Clark', 'Transformation sectorielle de l\'emploi', {
   'affirme': "Le développement économique s'accompagne d'un déplacement régulier de l'emploi du secteur primaire vers le secondaire, puis du secondaire vers le tertiaire, sous l'effet des écarts de gains de productivité.",

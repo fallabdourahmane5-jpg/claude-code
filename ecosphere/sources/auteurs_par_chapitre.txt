@@ -1005,7 +1005,7 @@
   DETAIL: Mobilisé dans le passage sur la financiarisation et le retour du pouvoir actionnarial.
   PHRASE: La finance contemporaine se transforme par les 3D.
 
-- Frank Galluzzo  [dates absentes]  <Capitalisme marchand / entreprise>  (aussi: )
+- Anthony Galluzzo  [dates absentes]  <Capitalisme marchand / entreprise>  (aussi: )
   IDEE: Transformations contemporaines du commerce, des marques et du capitalisme
   DETAIL: Mobilisé dans le chapitre sur les formes contemporaines du capitalisme et de l’entreprise.
   PHRASE: L’entreprise et le commerce changent avec les formes contemporaines du capitalisme.

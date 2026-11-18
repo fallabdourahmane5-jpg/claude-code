@@ -221,7 +221,7 @@ NOTIONS = [
  ("Dilemme de politique économique",
   "Situation dans laquelle la correction d’un déséquilibre risque d’aggraver l’autre. Le croisement des deux situations internes — sous-emploi ou inflation — et des deux situations externes — déficit ou excédent — fait apparaître quatre configurations, dont deux posent un véritable dilemme : sous-emploi avec déficit extérieur et inflation avec excédent extérieur."),
  ("Revenu d’équilibre des transactions courantes",
-  "Niveau de revenu national assurant l’équilibre de la balance des transactions courantes, noté YBTC par Jean Généreux en 2016. Lorsqu’il est inférieur au revenu de plein emploi Ype, le pays connaît un déficit courant avant même d’atteindre le plein emploi ; lorsqu’il lui est supérieur, l’économie peut connaître des tensions inflationnistes tout en conservant un excédent courant."),
+  "Niveau de revenu national assurant l’équilibre de la balance des transactions courantes, noté YBTC par Jacques Généreux en 2016. Lorsqu’il est inférieur au revenu de plein emploi Ype, le pays connaît un déficit courant avant même d’atteindre le plein emploi ; lorsqu’il lui est supérieur, l’économie peut connaître des tensions inflationnistes tout en conservant un excédent courant."),
  ("Tournant de la rigueur",
   "Décision prise en mars 1983 de maintenir le franc dans le Système monétaire européen, qui implique l’abandon de la stratégie de relance engagée en 1981 par le gouvernement de Pierre Mauroy. La politique économique devient plus restrictive afin de défendre la monnaie, contenir l’inflation, réduire les déséquilibres extérieurs et restaurer la crédibilité financière, au prix d’un frein à l’activité."),
  ("Cercle vicieux de la monnaie faible",
