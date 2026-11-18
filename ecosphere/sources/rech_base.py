@@ -10,9 +10,10 @@ import re
 import unicodedata
 
 ORDRE = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10',
-         '21', '22', '23', '24']
+         '21', '22', '23', '24', '25', '26']
 LIB = {'21': '2ᵉ année — ch.1', '22': '2ᵉ année — ch.2',
-       '23': '2ᵉ année — ch.3', '24': '2ᵉ année — ch.4'}
+       '23': '2ᵉ année — ch.3', '24': '2ᵉ année — ch.4',
+       '25': '2ᵉ année — ch.5', '26': '2ᵉ année — ch.6'}
 
 
 def lib(k):
@@ -75,7 +76,7 @@ BRUIT = re.compile(
     r'constat|probleme|enjeu|enjeux|limite|limites|critique|critiques|'
     r'pourquoi|comment|en resume|au total|donc|ainsi|mais|or)$')
 
-MARQUE = re.compile(r'^\s*(?:[IVXLC]{1,6}\.|[A-Z]{1,2}\.|\d{1,2}\s*[-.)])\s*')
+MARQUE = re.compile(r'^\s*(?:[IVXLC]{1,6}\.|[A-Z]{1,2}\.|\d{1,3}\s*[-.)])\s*')
 
 
 def titre_propre(s):
@@ -134,7 +135,7 @@ def fiches():
 def chiffres():
     import importlib
     out = {}
-    for m in ('chif_a', 'chif_b', 'chif_c', 'chif_d'):
+    for m in ('chif_a', 'chif_b', 'chif_c', 'chif_d', 'chif_e'):
         for k, v in importlib.import_module(m).CH.items():
             d = out.setdefault(str(k), [])
             for rang in ('prio', 'comp'):

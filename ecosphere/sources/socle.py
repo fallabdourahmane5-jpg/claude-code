@@ -13,7 +13,8 @@ def nz(s):
     s = ''.join(c for c in s if unicodedata.category(c) != 'Mn')
     return re.sub(r'\s+', ' ', s.replace('’', "'").replace('‘', "'"))
 
-ORDRE = ['1','2','3','4','5','6','7','8','9','10','21','22','23','24']
+ORDRE = ['1','2','3','4','5','6','7','8','9','10','21','22','23','24',
+         '25','26']
 TXT = {k: C['chapitres'][k]['texte'] for k in ORDRE}
 NTXT = {k: nz(v) for k, v in TXT.items()}
 AUTEURS = {a['name'] for a in C['auteurs']}

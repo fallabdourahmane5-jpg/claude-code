@@ -18,6 +18,9 @@ import rech_defs
 import rech_defs2
 import rech_defs3
 import rech_defs4
+import rech_defs5
+import rech_defs6
+import rech_fml2526
 import rech_moisson
 
 MAX_DEF = 520
@@ -186,7 +189,9 @@ def definitions(B, NC):
     REDIGEES = ([tuple(x) + ('',) for x in rech_defs.DEFS]
                 + [tuple(x) for x in rech_defs2.DEFS]
                 + [tuple(x) for x in rech_defs3.DEFS]
-                + [tuple(x) for x in rech_defs4.DEFS])
+                + [tuple(x) for x in rech_defs4.DEFS]
+                + [tuple(x) for x in rech_defs5.DEFS]
+                + [tuple(x) for x in rech_defs6.DEFS])
     for ligne in REDIGEES:
         terme, chs, anc, defi, al = ligne[0], ligne[1], ligne[2], ligne[3], ligne[4]
         dist = ligne[5] if len(ligne) > 5 else ''
@@ -206,6 +211,11 @@ def definitions(B, NC):
                     lieux[k] = b0
         # le chapitre qui traite le plus la notion arrive en tête : c'est lui
         # que le lien principal doit ouvrir
+        # un chapitre dont le passage n'a pas été localisé ne donnerait
+        # qu'un renvoi vide : on ne le garde pas, sauf s'il ne reste rien,
+        # auquel cas le renvoi ouvre le chapitre à son début.
+        lieux = {k: b for k, b in lieux.items() if b >= 0} or \
+            {k: 0 for k in list(lieux)[:1]}
         ou = [[k, v] for k, v in sorted(
             lieux.items(), key=lambda z: (-pds.get(z[0], 0),
                                           R.ORDRE.index(z[0])))]
@@ -284,6 +294,24 @@ def formules(B):
             vus.add(cl)
             out.append({'c': k, 'b': i, 't': court(titre or txt, 90),
                         'd': court(txt, 220)})
+    # chapitres 25 et 26 : les formules sont portées par des blocs
+    # « formula » que l'énumération ne retient pas ; on les ajoute en
+    # vérifiant que chacune se trouve bien au bloc indiqué.
+    import json as _json
+    _fml = _json.load(open('fml2526.json', encoding='utf-8'))
+    _idx = {}
+    for _k in _fml:
+        for _x in _fml[_k]:
+            _idx.setdefault((_k, _x['b']), []).append(R.nz(_x['f']))
+    for k, b, t, f in rech_fml2526.FML:
+        assert 0 <= b < len(B[k]), ('bloc hors bornes', k, b)
+        n = R.nz(f)
+        assert n in _idx.get((k, b), []) or n in R.nz(B[k][b]['x']), \
+            ('formule absente du cours', k, b, f)
+        if n in vus:
+            continue
+        vus.add(n)
+        out.append({'c': k, 'b': b, 't': court(t, 90), 'd': court(f, 220)})
     return out
 
 
@@ -434,7 +462,7 @@ def batir():
         'v': 218,
         'ch': {k: {'t': C['chapitres'][k]['title'], 'l': R.lib(k),
                    'n': len(B[k]),
-                   'a': 2 if k in ('21', '22', '23', '24') else 1}
+                   'a': 2 if k in ('21', '22', '23', '24', '25', '26') else 1}
                for k in R.ORDRE},
         'def': definitions(B, NC),
         'sec': sections(B),
