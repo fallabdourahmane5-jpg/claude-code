@@ -453,7 +453,8 @@ FIX = {
      "décroît, alors le consentement à payer décroît aussi, ce qui donne sa "
      "pente à la demande et fonde la notion de surplus du consommateur."),
 
-'ch4-open-4': f(niv='connaitre', sp='c4-01',
+'ch4-open-4': f(niv='comprendre', sp='c4-01',
+ q="Énoncez les propriétés d’une courbe d’indifférence et justifiez-les.",
  ans={'modele': "Une courbe d’indifférence relie tous les paniers de deux "
       "biens qui procurent le même niveau de satisfaction. Elle est "
       "décroissante — car il faut céder d’un bien pour obtenir de l’autre — "
