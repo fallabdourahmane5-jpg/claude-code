@@ -796,7 +796,12 @@ FIX.update({
      "distincte : ils ne produisent pas mais perçoivent le produit net sous "
      "forme de rente et le remettent en circulation par leurs dépenses."),
 
+# L'énoncé d'origine attribuait la nouvelle économie keynésienne à « Akerlof,
+# Stiglitz, Mankiw ». Stiglitz et Mankiw n'apparaissent dans aucun cours :
+# l'énoncé est réécrit sans liste d'auteurs.
 'ch3-aut195-3': f(niv='raisonner', sp='c3-07',
+ q="Quelle est la rupture de la nouvelle économie keynésienne avec la "
+   "nouvelle économie classique ?",
  exp="La nouvelle économie keynésienne accepte l’exigence de microfondements "
      "posée par la nouvelle économie classique : partir de comportements "
      "individuels rationnels. Mais elle montre que les marchés réels sont "

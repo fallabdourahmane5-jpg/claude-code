@@ -1,0 +1,18 @@
+ch     quest à faire niveaux                            types
+1         90      0  conn:45 comp:28 appl:7 rais:10     qcm:45 qcmm:3 vf:21 assoc:2 ordre:2 courte:17
+2         93      0  conn:44 comp:31 appl:6 rais:12     qcm:48 qcmm:2 vf:22 assoc:1 ordre:3 courte:17
+3         87      0  conn:37 comp:38 appl:3 rais:9      qcm:41 qcmm:3 vf:22 assoc:3 ordre:2 courte:16
+4         83      0  conn:28 comp:34 appl:10 rais:11    qcm:41 qcmm:1 vf:21 assoc:1 ordre:2 courte:17
+5         89      0  conn:38 comp:27 appl:7 rais:17     qcm:46 qcmm:2 vf:22 assoc:1 ordre:2 courte:16
+6        179      0  conn:56 comp:75 appl:14 rais:34    qcm:110 qcmm:13 vf:23 assoc:8 ordre:5 courte:20
+7        154      0  conn:51 comp:60 appl:9 rais:34     qcm:95 qcmm:11 vf:16 assoc:12 ordre:5 courte:15
+8        148      0  conn:41 comp:73 appl:8 rais:26     qcm:92 qcmm:6 vf:21 assoc:5 ordre:3 courte:21
+9        153      0  conn:50 comp:67 appl:13 rais:23    qcm:93 qcmm:12 vf:18 assoc:7 ordre:2 courte:21
+10        78    161  conn:2 comp:74 appl:0 rais:2       qcm:43 vf:20 courte:15
+21        82    165  conn:3 comp:79 appl:0 rais:0       qcm:47 vf:20 courte:15
+22        88    131  conn:3 comp:83 appl:1 rais:1       qcm:51 vf:20 courte:17
+23        95     77  conn:0 comp:89 appl:3 rais:3       qcm:54 vf:20 courte:21
+24       142    124  conn:1 comp:138 appl:1 rais:2      qcm:98 vf:22 courte:22
+25       120     98  conn:0 comp:118 appl:1 rais:1      qcm:76 vf:22 courte:22
+26       140    114  conn:0 comp:135 appl:2 rais:3      qcm:97 vf:27 courte:16
+total : 1821 questions, 870 points à reprendre, 0 doublons
