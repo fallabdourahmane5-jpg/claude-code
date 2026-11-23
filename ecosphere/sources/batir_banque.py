@@ -111,9 +111,13 @@ def main():
                     q['ans'] = (q0.get('ans') == 0)
             elif t == 'courte':
                 a = f.get('ans')
+                modele = q0.get('sample') or q0.get('exp') or ''
                 if not a:
-                    modele = q0.get('sample') or q0.get('exp') or ''
                     a = {'modele': modele, 'cles': []}
+                elif isinstance(a, dict) and not a.get('modele'):
+                    # la grille d'évaluation a été fournie seule : on conserve
+                    # le corrigé rédigé d'origine comme réponse modèle.
+                    a = dict(a, modele=f.get('exp') or modele)
                 q['ans'] = a
             else:
                 q['ans'] = f.get('ans')
