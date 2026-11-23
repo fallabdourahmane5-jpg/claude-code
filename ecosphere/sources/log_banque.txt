@@ -10,9 +10,9 @@ ch     quest à faire niveaux                            types
 9        153      0  conn:50 comp:67 appl:13 rais:23    qcm:93 qcmm:12 vf:18 assoc:7 ordre:2 courte:21
 10       158      0  conn:51 comp:69 appl:13 rais:25    qcm:104 qcmm:6 vf:15 assoc:12 ordre:3 courte:18
 21       154      0  conn:38 comp:64 appl:16 rais:36    qcm:101 qcmm:10 vf:10 assoc:9 ordre:7 courte:17
-22        88    131  conn:3 comp:83 appl:1 rais:1       qcm:51 vf:20 courte:17
+22       171      0  conn:41 comp:69 appl:17 rais:44    qcm:109 qcmm:10 vf:10 assoc:7 ordre:10 courte:25
 23        95     77  conn:0 comp:89 appl:3 rais:3       qcm:54 vf:20 courte:21
 24       142    124  conn:1 comp:138 appl:1 rais:2      qcm:98 vf:22 courte:22
 25       120     98  conn:0 comp:118 appl:1 rais:1      qcm:76 vf:22 courte:22
 26       140    114  conn:0 comp:135 appl:2 rais:3      qcm:97 vf:27 courte:16
-total : 1973 questions, 544 points à reprendre, 0 doublons
+total : 2056 questions, 413 points à reprendre, 0 doublons
