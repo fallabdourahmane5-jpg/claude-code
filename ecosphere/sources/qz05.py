@@ -1076,3 +1076,7 @@ f(id='q5-n14', sp='c5-05', niv='appliquer', type='vf', b=905,
        "la répartition : l’optimum de Pareto est compatible avec des "
        "situations très inégalitaires."),
 ]
+
+from qz05n1 import L as _N1
+
+NEW = NEW + _N1

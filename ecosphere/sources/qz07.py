@@ -2983,3 +2983,7 @@ f(id='q7-n88', sp='c7-18', niv='connaitre', type='qcm', b=4040,
   diss="Notion utile en ouverture ou en conclusion : elle donne une échelle "
        "géologique à un raisonnement économique."),
 ]
+
+from qz07n1 import L as _M1
+
+NEW = NEW + _M1

@@ -568,9 +568,22 @@ function juger(q){
   return {bon:false};
 }
 
+/* « Avez-vous répondu ? » : le test dépend du format, car la réponse
+   d'une question ouverte vit dans la zone de texte et non dans REP. */
+function repVide(q){
+  if(q.type === 'courte')
+    return !((el('qz-txt') || {}).value || '').trim();
+  if(q.type === 'assoc'){
+    var r = REP || {}, n = 0;
+    for(var c in r) if(r[c]) n++;
+    return n === 0;
+  }
+  if(Array.isArray(REP)) return !REP.length;
+  return REP === null || REP === undefined;
+}
+
 function valider(q){
-  if(REP === null || (Array.isArray(REP) && !REP.length) ||
-     (q.type === 'courte' && !((el('qz-txt') || {}).value || '').trim())){
+  if(repVide(q)){
     if(!confirm('Vous n’avez pas répondu. Passer à la correction ?')) return;
   }
   var j = juger(q);
@@ -710,19 +723,109 @@ function correction(q, j){
   return h;
 }
 
+/* ---------------------------------------------- ouvrir le passage du cours
+   Le texte du cours affiché n'est pas toujours celui que la recherche a
+   indexé : selon le chapitre, l'affichage est posé par une couche qui ne
+   porte pas le balisage des blocs. On vise donc d'abord le bloc balisé,
+   puis, à défaut, l'élément dont le texte correspond au bloc enregistré.
+   La comparaison se fait sur une forme réduite — minuscules, sans
+   ponctuation — pour que les encadrés de définition, dont le texte indexé
+   intercale « : » entre le terme et sa définition, soient retrouvés. */
+function reduire(s){
+  return String(s || '').toLowerCase()
+    .replace(/[^0-9a-zàâäçéèêëîïôöùûüÿœæ]+/g, ' ')
+    .replace(/\s+/g, ' ').trim();
+}
+var SEL_COURS = 'h2,h3,h4,h5,p,li,.db,table,blockquote,.dt,.dd';
+
+function texteBloc(ch, bl){
+  try{
+    var L = window.__ECO_RECHERCHE.blocs(String(ch));
+    var o = L && L[bl];
+    if(!o) return '';
+    return o.x || [o.dt, o.dd].filter(Boolean).join(' ') ||
+           (o.p || []).join(' ');
+  }catch(e){ return ''; }
+}
+
+function flasherCours(e){
+  try{ e.scrollIntoView({behavior:'smooth', block:'center'}); }
+  catch(x){ try{ e.scrollIntoView(); }catch(y){} }
+  e.classList.remove('rq-flash');
+  e.classList.remove('qz-vise');
+  void e.offsetWidth;
+  e.classList.add('rq-flash');
+  e.classList.add('qz-vise');
+}
+
+function trouverPassage(bl, cible){
+  var p = document.getElementById('sect-cours');
+  if(!p) return null;
+  var e = p.querySelector('[data-rb="' + bl + '"]');
+  if(e) return e;
+  var tete = cible.slice(0, 55), court = cible.slice(0, 32);
+  var cands = p.querySelectorAll(SEL_COURS), i, z, best = null, plus = 1e9;
+  for(i = 0; i < cands.length; i++){
+    if(cands[i].querySelector(SEL_COURS)) continue;   /* on veut la feuille */
+    z = reduire(cands[i].innerText || cands[i].textContent);
+    if(z.length < 8) continue;
+    if(z.indexOf(tete) === 0 || tete.indexOf(z.slice(0, 40)) === 0 ||
+       (court && z.indexOf(court) >= 0)){
+      if(z.length < plus){ best = cands[i]; plus = z.length; }
+    }
+  }
+  /* un encadré de définition est retrouvé par son seul terme */
+  if(!best){
+    for(i = 0; i < cands.length; i++){
+      z = reduire(cands[i].innerText || cands[i].textContent);
+      if(z.length > 12 && cible.indexOf(z.slice(0, 24)) >= 0){
+        best = cands[i].closest('.db') || cands[i]; break;
+      }
+    }
+  }
+  return best;
+}
+
+var VISE = 0;   /* un seul repérage à la fois : le dernier clic gagne */
+
+function viserPassage(bl, txt){
+  var cible = reduire(txt), essais = 0, gen = ++VISE;
+  if(!cible) return;
+  (function boucle(){
+    if(gen !== VISE) return;
+    essais++;
+    var e = trouverPassage(bl, cible);
+    if(e){
+      flasherCours(e);
+      /* l'ouverture d'un chapitre réécrit la page juste après : on vérifie
+         que le passage visé y est toujours, sinon on recommence. */
+      if(essais < 24) setTimeout(function(){
+        if(gen !== VISE) return;
+        if(!e.isConnected || !e.classList.contains('qz-vise')) boucle();
+      }, 420);
+      return;
+    }
+    if(essais < 24) setTimeout(boucle, 130);
+  })();
+}
+
 function brancherCorr(){
   pg().querySelectorAll('.qz-src').forEach(function(b){
     if(b.__q) return;
     b.__q = 1;
     b.addEventListener('click', function(){
       var ch = b.getAttribute('data-ch'), bl = Number(b.getAttribute('data-b'));
+      /* on remet d'aplomb le texte du cours — d'anciennes couches le vident
+         à chaque ouverture de chapitre — puis on force l'indexation, ce qui
+         repose le balisage des blocs dans le contenu du chapitre. */
+      try{ window.__ECO_GARDE_COURS.restaurer(); }catch(e){}
+      var txt = texteBloc(ch, bl);
       try{
         if(window.__ECO_RECHERCHE && window.__ECO_RECHERCHE.ouvrir){
-          window.__ECO_RECHERCHE.ouvrir(['ch', String(ch), bl]);
-          return;
-        }
-      }catch(e){}
-      try{ openCh(Number(ch)); }catch(e){}
+          window.__ECO_RECHERCHE.ouvrir(['ch', String(ch), -1]);
+        } else { openCh(Number(ch)); }
+      }catch(e){ try{ openCh(Number(ch)); }catch(x){} }
+      viserPassage(bl, txt);
     });
   });
 }
@@ -866,5 +969,6 @@ if(document.readyState === 'loading'){
 window.__ECO_QUIZ = {banque:Q, sousparties:SPS, etat:function(){ return S; },
   filtrer:filtrer, choisir:choisir, lancer:lancer, accueil:accueil,
   demarrer:demarrer, F:F, rejouer:function(){ return P; },
+  texteBloc:texteBloc, viserPassage:viserPassage,
   oublier:function(){ S = {vues:{}, series:[], maj:0}; ecrire(); }};
 })();

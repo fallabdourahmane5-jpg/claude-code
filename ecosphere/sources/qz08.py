@@ -2597,3 +2597,7 @@ f(id='q8-n68', sp='c8-18', niv='raisonner', type='courte', b=3389,
       "qu’elle augmentera les capacités des travailleurs, notamment les moins "
       "qualifiés. Les effets globaux restent débattus."),
 ]
+
+from qz08n1 import L as _M1
+
+NEW = NEW + _M1

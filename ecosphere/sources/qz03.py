@@ -1168,3 +1168,7 @@ FIX['ch3-open-13'] = f(niv='connaitre', sp='c3-08',
  exp="Le courant va de Veblen (1904) à la nouvelle économie "
      "institutionnelle de North, en passant par l’école de la régulation. "
      "Son unité tient au refus d’un individu abstrait et anhistorique.")
+
+from qz03n1 import L as _N1
+
+NEW = NEW + _N1

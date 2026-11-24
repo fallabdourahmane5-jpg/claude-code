@@ -1055,3 +1055,7 @@ f(id='q4-n14', sp='c4-05', niv='raisonner', type='courte', b=705,
        "vient pas d’économistes hétérodoxes mais des fondateurs mêmes de la "
        "théorie de l’équilibre général."),
 ]
+
+from qz04n1 import L as _N1
+
+NEW = NEW + _N1

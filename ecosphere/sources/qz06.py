@@ -3382,3 +3382,7 @@ f(id='q6-n108', sp='c6-18', niv='comprendre', type='vf', b=3594,
        "et Draghi — la compétitivité européenne passe par la capacité à "
        "produire les biens stratégiques."),
 ]
+
+from qz06n1 import L as _M1
+
+NEW = NEW + _M1

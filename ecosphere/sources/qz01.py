@@ -1253,3 +1253,7 @@ f(id='q1-n14', sp='c1-01', niv='appliquer', type='vf', b=47,
        "entièrement commandée par la politique publique qui la précède : on "
        "ne lit pas une série sans connaître le dispositif qui la produit."),
 ]
+
+from qz01n1 import L as _N1
+
+NEW = NEW + _N1

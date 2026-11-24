@@ -191,3 +191,14 @@
   #pg-quiz .qz-btn{width:100%;text-align:center}
   #pg-quiz .qz-act .qz-btn{width:auto;flex:1 1 140px}
 }
+
+/* passage du cours visé depuis une correction */
+.qz-vise{
+  animation: qzvise 2.6s ease-out 1;
+  border-radius: 8px;
+}
+@keyframes qzvise{
+  0%   { background: rgba(124,106,247,.34); box-shadow: 0 0 0 6px rgba(124,106,247,.22); }
+  70%  { background: rgba(124,106,247,.14); box-shadow: 0 0 0 4px rgba(124,106,247,.10); }
+  100% { background: transparent; box-shadow: none; }
+}

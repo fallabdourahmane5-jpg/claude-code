@@ -1237,3 +1237,7 @@ f(id='q2-n14', sp='c2-01', niv='raisonner', type='courte', b=181,
        "ou sur la souveraineté monétaire : l’abandon n’est pas un accident "
        "politique, c’est la contrepartie logique de deux choix assumés."),
 ]
+
+from qz02n1 import L as _N1
+
+NEW = NEW + _N1

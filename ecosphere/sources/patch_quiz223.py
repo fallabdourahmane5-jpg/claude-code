@@ -22,6 +22,7 @@ charge = 'var BQ = ' + json.dumps(B, ensure_ascii=False,
                                   separators=(',', ':')) + ';'
 assert json.loads(charge[len('var BQ = '):-1]) == B
 
+garde = open('garde_cours.js', encoding='utf-8').read()
 js = open('quiz223.js', encoding='utf-8').read()
 assert '/* __PAYLOAD__ */' in js
 js = js.replace('/* __PAYLOAD__ */', charge, 1)
@@ -30,7 +31,8 @@ css = open('quiz223.css', encoding='utf-8').read()
 for interdit in ('</script>', '<script'):
     assert interdit not in charge, 'la charge contient une balise de script'
 
-bloc = ('\n<style id="eco-quiz-v223-style">\n' + css + '\n</style>\n'
+bloc = ('\n<script id="eco-garde-cours">\n' + garde + '\n</script>\n'
+        '<style id="eco-quiz-v223-style">\n' + css + '\n</style>\n'
         '<script id="eco-quiz-v223">\n' + js + '\n</script>\n')
 
 i = s.rfind('</body>')
