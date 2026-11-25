@@ -20,6 +20,9 @@ import rech_defs3
 import rech_defs4
 import rech_defs5
 import rech_defs6
+import rech_defs7
+import rech_defs8
+import rech_defs9
 import rech_fml2526
 import rech_moisson
 
@@ -191,7 +194,11 @@ def definitions(B, NC):
                 + [tuple(x) for x in rech_defs3.DEFS]
                 + [tuple(x) for x in rech_defs4.DEFS]
                 + [tuple(x) for x in rech_defs5.DEFS]
-                + [tuple(x) for x in rech_defs6.DEFS])
+                + [tuple(x) for x in rech_defs6.DEFS]
+                + [tuple(x) for x in rech_defs7.DEFS]
+                + [tuple(x) for x in rech_defs8.DEFS]
+                + [tuple(x) for x in rech_defs9.DEFS]
+                + [tuple(x) for x in rech_defs9.REECRITES])
     for ligne in REDIGEES:
         terme, chs, anc, defi, al = ligne[0], ligne[1], ligne[2], ligne[3], ligne[4]
         dist = ligne[5] if len(ligne) > 5 else ''
@@ -202,6 +209,13 @@ def definitions(B, NC):
             b = SEC.get((k, R.cle(anc)), -1)
             if b < 0:
                 b = _premier_bloc(B, k, terme)
+            # un chapitre secondaire emploie souvent une autre formulation :
+            # on cherche alors les alias avant de renoncer au renvoi
+            if b < 0:
+                for a in al:
+                    b = _premier_bloc(B, k, a)
+                    if b >= 0:
+                        break
             lieux[k] = b
         # les autres chapitres où l'expression est employée
         for k, n in sorted(pds.items(), key=lambda z: -z[1]):
@@ -223,6 +237,32 @@ def definitions(B, NC):
                   'ou': ou, 'al': sorted({R.cle(a) for a in al} - {c})}
         if dist:
             out[c]['x'] = court(dist, 480)
+
+    # faux termes : la moisson a parfois pris pour une notion un intitulé de
+    # lecture de graphique ou un fragment de phrase
+    for c in rech_defs9.REJET:
+        out.pop(c, None)
+
+    # renvois manquants : une définition déjà écrite ailleurs s'applique à
+    # l'un des deux derniers chapitres sans y conduire. On ajoute le renvoi
+    # vers le passage pertinent plutôt que de créer un doublon.
+    for c, k, anc in rech_defs9.RENVOIS:
+        v = out.get(c)
+        if not v or any(str(o[0]) == k for o in v['ou']):
+            continue
+        b = SEC.get((k, R.cle(anc)), -1)
+        if b < 0:
+            b = _premier_bloc(B, k, v['t'])
+        if b >= 0:
+            v['ou'].append([k, b])
+
+    # formulations équivalentes : elles doivent conduire à l'entrée qui
+    # existe déjà, et non à une entrée nouvelle
+    for c, al in rech_defs9.ALIAS:
+        v = out.get(c)
+        if not v:
+            continue
+        v['al'] = sorted((set(v.get('al') or []) | {R.cle(a) for a in al}) - {c})
 
     # dernier filtrage : ni nom d'auteur, ni nom de lieu
     AUT = _noms_auteurs()
