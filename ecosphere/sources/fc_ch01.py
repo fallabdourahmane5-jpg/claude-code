@@ -879,10 +879,6 @@ c('Qu’est-ce que le PIB potentiel ?',
   x='Il n’est pas observé mais estimé : c’est une référence théorique, à laquelle on compare le PIB effectif mesuré.',
   t='def', b=714)
 
-c('Que signale un output gap positif ?',
-  'L’économie produit au-delà de ses capacités : une tension inflationniste apparaît.',
-  x='Faute de pouvoir produire davantage à court terme, les entreprises relèvent leurs prix plutôt que leurs capacités.',
-  t='mec', b=714)
 
 c('Quel ordre de grandeur le travail domestique représente-t-il en France ?',
   'Davantage d’heures que le travail rémunéré.',

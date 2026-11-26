@@ -259,18 +259,66 @@ def couverture(cartes, ch):
     return [(s, n.get(s, 0)) for s in ordre]
 
 
+def parties(cartes, ch):
+    """Couverture des grandes parties (premier niveau du fil d'Ariane)."""
+    ch = str(ch)
+    ordre, vus = [], set()
+    B = blocs(ch)
+    for b in range(len(B)):
+        p = partie(ch, b)
+        if p not in vus and B[b].get('g') not in ('h2', 'h3', 'h4', 'table') \
+                and len(nz(texte_bloc(ch, b))) >= 25:
+            vus.add(p)
+            ordre.append(p)
+    pris = set(partie(ch, k['b']) for k in cartes if k['ch'] == ch)
+    return [(p, p in pris) for p in ordre]
+
+
+def etalement(cartes, ch, rayon=20):
+    """Part des blocs utiles du chapitre situés près d'une carte.
+
+    Mesure si la banque balaie tout le chapitre ou se concentre sur
+    quelques thèmes — ce qu'un simple décompte de cartes ne dit pas.
+    """
+    ch = str(ch)
+    B = blocs(ch)
+    utiles = [b for b in range(len(B))
+              if B[b].get('g') not in ('h2', 'h3', 'h4', 'table')
+              and len(nz(texte_bloc(ch, b))) >= 40]
+    if not utiles:
+        return 1.0
+    ancres = sorted(k['b'] for k in cartes if k['ch'] == ch)
+    if not ancres:
+        return 0.0
+    import bisect
+    n = 0
+    for b in utiles:
+        i = bisect.bisect_left(ancres, b)
+        for j in (i - 1, i):
+            if 0 <= j < len(ancres) and abs(ancres[j] - b) <= rayon:
+                n += 1
+                break
+    return n / len(utiles)
+
+
 def bilan(cartes, ch, taire=False):
     cov = couverture(cartes, ch)
     pleines = [s for s, k in cov if k]
+    par = parties(cartes, ch)
+    pp = [p for p, ok in par if ok]
+    et = etalement(cartes, ch)
     n = len([k for k in cartes if k['ch'] == str(ch)])
     if not taire:
-        print('ch %s : %d cartes · %d/%d sous-parties couvertes'
-              % (ch, n, len(pleines), len(cov)))
-        vides = [s for s, k in cov if not k]
+        print('ch %s : %3d cartes · %d/%d parties · %d/%d sous-parties · '
+              'étalement %d%%'
+              % (ch, n, len(pp), len(par), len(pleines), len(cov), et * 100))
+        vides = [p for p, ok in par if not ok]
         if vides:
-            print('   non couvertes : ' + ' | '.join(v[:52] for v in vides))
+            print('   parties non couvertes : '
+                  + ' | '.join(v[:52] for v in vides))
     return {'ch': str(ch), 'n': n, 'sp': len(pleines), 'spTot': len(cov),
-            'vides': [s for s, k in cov if not k]}
+            'pa': len(pp), 'paTot': len(par), 'et': round(et * 100),
+            'vides': [p for p, ok in par if not ok]}
 
 
 def monter(cartes, sortie='flashcards.json', bilans=None):
