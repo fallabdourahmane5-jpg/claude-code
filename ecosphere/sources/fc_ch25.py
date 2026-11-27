@@ -227,7 +227,7 @@ c('Quelle expression du revenu d’équilibre obtient-on en économie fermée sa
 c('Qu’est-ce qu’un équilibre de sous-emploi ?',
   'Une situation où la production égale la demande globale mais reste insuffisante pour employer l’ensemble des travailleurs.',
   x='Le problème n’est pas l’impossibilité d’atteindre l’équilibre, mais le niveau trop faible auquel il se réalise.',
-  t='def', b=534)
+  t='def', b=534, aussi=['3'])
 
 c('Comment le modèle néoclassique explique-t-il le chômage sur le marché du travail ?',
   'Par un salaire réel supérieur au niveau d’équilibre : l’offre de travail excède alors la demande, et cet excès constitue le chômage.',
@@ -372,7 +372,7 @@ c('Pourquoi la demande spéculative de monnaie est-elle faible quand le taux d�
 c('Qu’est-ce que la trappe à liquidité ?',
   'Une situation où les taux sont si faibles que les agents préfèrent détenir de la monnaie, anticipant une remontée des taux et donc des pertes en capital sur les obligations.',
   x='La demande spéculative devient alors extrêmement sensible au taux, jusqu’à absorber toute monnaie supplémentaire.',
-  t='def', b=1261)
+  t='def', b=1261, aussi=['2'])
 
 c('Pourquoi la trappe à liquidité limite-t-elle la politique monétaire conventionnelle ?',
   'La monnaie supplémentaire est conservée en encaisses, le taux ne baisse plus sensiblement, l’investissement n’est pas stimulé et la demande ne progresse pas par ce canal.',
@@ -547,7 +547,7 @@ c('Quelles hypothèses fortes l’équivalence ricardienne exige-t-elle ?',
 c('Qu’est-ce que le taux de chômage naturel chez Friedman ?',
   'Le taux vers lequel l’économie tend compte tenu du fonctionnement du marché du travail : frictions, adéquation des qualifications, institutions, formation des salaires.',
   x='Il n’est pas immuable, mais ne peut être durablement abaissé par une simple stimulation de la demande.',
-  t='def', b=2109)
+  t='def', b=2109, aussi=['3'])
 
 c('Par quel enchaînement une relance monétaire ramène-t-elle l’économie à son chômage naturel ?',
   'Les agents sous-estiment d’abord la hausse des prix, puis adaptent leurs anticipations : les salariés réclament des hausses nominales et les entreprises révisent leurs prix.',
@@ -562,7 +562,7 @@ c('Comment la critique monétariste explique-t-elle l’échec d’une relance a
 c('Qu’est-ce qui distingue une politique conjoncturelle d’une politique structurelle ?',
   'La première agit à court terme sur la demande globale ; la seconde modifie durablement les capacités de production — formation, innovation, infrastructures, fonctionnement des marchés.',
   x='Quand l’économie est contrainte par sa production potentielle, seules les politiques structurelles élèvent ce que l’économie peut produire.',
-  t='dist', b=2175)
+  t='dist', b=2175, aussi=['1'])
 
 c('Quel paradoxe apparent la position de Barro présente-t-elle ?',
   'Il critique l’efficacité de la relance budgétaire conjoncturelle, mais reconnaît en 1990 que les infrastructures publiques contribuent à la croissance de long terme.',
@@ -638,11 +638,6 @@ c('Quels sont les trois D de la globalisation financière selon Henri Bourguinat
   'Déréglementation, décloisonnement et désintermédiation.',
   x='Réduction des restrictions réglementaires, interconnexion des marchés auparavant séparés, et financements directs au-delà du crédit bancaire.',
   t='aut', b=2621)
-
-c('Qu’appelle-t-on recyclage des pétrodollars ?',
-  'Le replacement sur les marchés financiers internationaux des revenus transférés aux pays exportateurs de pétrole après les chocs des années 1970.',
-  x='Il contribue, avec la fin des changes fixes et la libéralisation financière, à la globalisation des capitaux.',
-  t='def', b=2612)
 
 c('Pourquoi un équilibre interne ne garantit-il pas l’équilibre extérieur ?',
   'Parce que IS et LM peuvent se couper en dehors de BP : l’économie est alors en déficit ou en excédent de balance globale.',

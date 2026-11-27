@@ -669,7 +669,7 @@ c('Quel taux d’investissement Rostow juge-t-il nécessaire au take-off ?',
 c('Qu’appelle-t-on recyclage des pétrodollars ?',
   'La réorientation des excédents financiers des pays de l’OPEP vers les banques occidentales, puis leur prêt aux pays en développement.',
   x='Dans les années 1970, les systèmes financiers des pays exportateurs ne pouvaient absorber toute cette épargne.',
-  t='def', b=2788)
+  t='def', b=2788, aussi=['25'])
 
 c('Que provoque le choc Volcker pour les économies émergentes ?',
   'La forte hausse des taux américains rend les placements aux États-Unis plus attractifs, les capitaux refluent et les émergents subissent un sudden stop.',

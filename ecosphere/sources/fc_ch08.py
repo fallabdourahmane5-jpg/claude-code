@@ -988,3 +988,158 @@ c('Pourquoi Acemoglu considère-t-il que les choix technologiques sont des choix
   'Parce que les technologies ne sont pas neutres : l’État doit accompagner les travailleurs, financer la formation et limiter les inégalités.',
   x='Les effets de l’IA dépendent donc des décisions publiques autant que de la technique.',
   t='aut', b=3336)
+
+c('Quels cinq types d’innovation Schumpeter distingue-t-il ?',
+  'Nouveaux produits, nouvelles méthodes de production, nouveaux débouchés, nouvelles sources de matières premières, nouvelles organisations de la production.',
+  x='L’innovation ne se réduit donc pas à la technique : elle transforme l’ensemble de l’économie.',
+  t='aut', b=1190)
+
+c('Pourquoi Schumpeter parle-t-il de destruction créatrice ?',
+  'Parce que l’innovation crée de nouvelles activités en détruisant les anciennes : des entreprises disparaissent, deviennent obsolètes ou perdent leur position dominante.',
+  x='L’automobile a supplanté les activités liées au cheval, le numérique certaines tâches administratives, les plateformes le commerce traditionnel.',
+  t='aut', b=1199)
+
+c('Qu’est-ce qu’une grappe d’innovations, et quel lien avec les cycles ?',
+  'Les innovations apparaissent par vagues — machine à vapeur, électricité, automobile, numérique, IA — qui provoquent expansion et investissements, puis ralentissement une fois diffusées.',
+  x='Les cycles économiques sont ainsi reliés par Schumpeter au rythme des innovations.',
+  t='mec', b=1217)
+
+c('Quelle contradiction Schumpeter voit-il dans le succès du capitalisme ?',
+  'L’innovation devient organisée et bureaucratisée au sein des grandes firmes, ce qui affaiblit l’esprit entrepreneurial et la prise de risque individuelle.',
+  x='Le capitalisme risque donc de fragiliser sa propre dynamique en réussissant.',
+  t='aut', b=1234)
+
+c('Quelles pressions les nouveaux acteurs financiers exercent-ils sur les entreprises ?',
+  'Fonds d’investissement, private equity et investisseurs institutionnels réclament davantage de rentabilité, une réduction des coûts et des dividendes plus élevés.',
+  x='Les décisions s’orientent alors vers la création de valeur actionnariale : restructurations, licenciements, hausse des dividendes.',
+  t='mec', b=2144)
+
+c('Quelle est la position de Milton Friedman sur la responsabilité de l’entreprise ?',
+  'Sa seule responsabilité sociale est de maximiser le profit : l’entreprise est un instrument au service des actionnaires.',
+  x='Dans ce modèle, les actionnaires sont les propriétaires légitimes et leurs intérêts deviennent prioritaires.',
+  t='aut', b=2160)
+
+c('Quelles critiques sont adressées au capitalisme actionnarial ?',
+  'Une logique de court terme, des scandales financiers, des inégalités croissantes et une pression excessive sur les salariés.',
+  x='L’affaire Enron, en 2001, en est l’illustration la plus citée.',
+  t='fait', b=2173)
+
+c('Qui sont les parties prenantes de l’entreprise ?',
+  'Les salariés, les clients, les fournisseurs, l’État, les territoires et l’environnement.',
+  x='Pour Polanyi, le marché ne peut fonctionner indépendamment de la société : les intérêts en jeu sont multiples.',
+  t='def', b=2183)
+
+c('Quel rôle les plateformes jouent-elles dans le capitalisme numérique ?',
+  'Elles mettent en relation offreurs et demandeurs, réduisent les coûts de transaction et centralisent les échanges.',
+  x='Amazon, Google, Uber, Airbnb et Meta en sont les exemples les plus cités.',
+  t='def', b=2598)
+
+c('Pourquoi le numérique favorise-t-il les positions oligopolistiques ?',
+  'Parce que les plateformes cumulent effets de réseau, économies d’échelle et accumulation massive de données.',
+  x='D’où la domination des GAFAM et des BATX.',
+  t='mec', b=2639)
+
+c('En quoi le capitalisme de plateforme déplace-t-il la propriété vers l’usage ?',
+  'Il vend l’accès à un service plutôt qu’un bien matériel : covoiturage, location de logements, mutualisation des usages.',
+  x='Spotify ou la location automobile illustrent ce basculement vers les services.',
+  t='mec', b=2629)
+
+c('Pourquoi les plateformes peuvent-elles accentuer la précarité du travail ?',
+  'Elles externalisent les coûts, coordonnent des travailleurs indépendants et captent une commission, en favorisant contrats courts et auto-entrepreneuriat.',
+  x='Uber en est l’exemple type : le travail devient plus flexible mais aussi plus précaire.',
+  t='mec', b=2657)
+
+c('Pourquoi parle-t-on d’économie de l’attention à propos des plateformes ?',
+  'Parce qu’elles cherchent à capter le temps, retenir l’attention et multiplier les interactions : l’attention humaine devient une ressource économique.',
+  x='Le numérique crée ainsi un paradoxe d’hyperconnexion et d’isolement social croissant.',
+  t='def', b=2668)
+
+c('Quels risques l’exploitation des données par les plateformes fait-elle courir ?',
+  'Collectées, analysées et revendues, les données alimentent des algorithmes qui influencent opinions, comportements et informations visibles.',
+  x='Le capitalisme numérique peut ainsi renforcer surveillance et manipulation, et devenir un instrument de contrôle.',
+  t='mec', b=2679)
+
+c('Pourquoi le numérique n’est-il pas immatériel ?',
+  'Parce qu’il repose sur des centres de données, des infrastructures, de l’énergie, des câbles et des serveurs.',
+  x='Ses coûts écologiques sont donc importants, malgré son apparence dématérialisée.',
+  t='dist', b=2691)
+
+c('Quelles deux grandes catégories d’emploi faut-il distinguer ?',
+  'Les salariés, qui travaillent pour un employeur avec un contrat de travail, et les indépendants, qui travaillent pour leur propre compte.',
+  x='Le salariat est devenu la forme dominante de l’emploi, mais les plateformes favorisent l’auto-entrepreneuriat.',
+  t='dist', b=3044)
+
+c('Pourquoi des entreprises rentables peuvent-elles supprimer des emplois en investissant dans l’IA ?',
+  'Parce que le progrès technique crée et détruit simultanément des emplois : des entreprises technologiques en croissance réduisent parfois leurs effectifs.',
+  x='La rentabilité n’empêche donc pas les restructurations liées à l’automatisation.',
+  t='mec', b=3364)
+
+c('Pourquoi l’IA reconfigure-t-elle les métiers plutôt qu’elle ne les supprime ?',
+  'Parce qu’un métier est fait de plusieurs tâches : l’IA en automatise certaines — analyser des dossiers, lire des documents — sans remplacer la relation humaine ni le conseil.',
+  x='Le contenu du travail se transforme donc plus souvent que l’emploi ne disparaît.',
+  t='mec', b=3370)
+
+c('Quelle part des tâches Osborne et Frey jugent-ils automatisables ?',
+  'Environ 47 %.',
+  x='Les entreprises devront donc réorganiser les métiers et la répartition des tâches.',
+  t='aut', b=3385)
+
+c('En quoi l’automatisation par l’IA constitue-t-elle une rupture historique ?',
+  'Les révolutions industrielles précédentes remplaçaient la force physique ; l’IA automatise des tâches intellectuelles qualifiées.',
+  x='Finance, droit, comptabilité, management et administration sont désormais concernés : les diplômés aussi.',
+  t='dist', b=3410)
+
+c('Comment l’IA peut-elle valoriser certains travailleurs plutôt que les remplacer ?',
+  'En assistant les salariés, en réduisant les erreurs et en facilitant des tâches complexes, elle rend des travailleurs peu qualifiés plus productifs.',
+  x='Elle augmente alors les capacités humaines au lieu de s’y substituer.',
+  t='mec', b=3428)
+
+c('Quelles protections le développement du salariat a-t-il apportées ?',
+  'Protection sociale, droits syndicaux, assurance chômage, retraites et congés payés.',
+  x='La loi de 1898 sur les accidents du travail marque l’une des premières étapes de cette construction.',
+  t='fait', b=3068)
+
+c('Qui étaient les luddites, et que révèle leur action ?',
+  'Des ouvriers anglais qui détruisent des machines entre 1811 et 1816, par crainte du remplacement du travail humain.',
+  x='Chaque révolution technologique suscite de telles craintes ; les ouvriers dénonçaient aussi les cadences et la perte d’autonomie.',
+  t='fait', b=3079)
+
+c('Qu’est-ce qui distingue un CDI d’un CDD, et comment la précarité peut-elle devenir durable ?',
+  'Le CDI n’a pas de date de fin et garantit une stabilité relative ; le CDD répond à un besoin temporaire. L’enchaînement de contrats courts et d’intérim installe une précarité permanente.',
+  x='Les prud’hommes règlent les conflits du travail, les licenciements et les abus de contrats.',
+  t='dist', b=3107)
+
+c('Qu’est-ce que le temps partiel subi ?',
+  'Une durée de travail inférieure au temps légal imposée par l’impossibilité d’obtenir davantage d’heures, et non choisie pour des études, le sport ou la vie familiale.',
+  x='Il constitue une forme de précarité, à distinguer du temps partiel choisi.',
+  t='def', b=3138)
+
+c('Pourquoi le travail ne garantit-il plus la sortie de la pauvreté ?',
+  'Parce que faibles salaires, temps partiel subi et contrats précaires peuvent maintenir des personnes en emploi dans la pauvreté.',
+  x='Depuis les années 1970, CDD, intérim, contrats courts et auto-entrepreneuriat contraint se sont développés.',
+  t='mec', b=3158)
+
+c('Qu’est-ce que le déclassement, et quels métiers y échappent le mieux ?',
+  'Occuper un emploi inférieur à son niveau de qualification ; infirmiers, aides-soignants, artisans, plombiers et métiers du soin restent difficiles à automatiser.',
+  x='L’IA peut assister ces métiers sans les remplacer : beaucoup seront transformés plutôt que supprimés.',
+  t='def', b=3451)
+
+c('Comment l’IA pourrait-elle fragiliser les finances publiques ?',
+  'En substituant du capital technologique au travail, elle réduirait l’impôt sur le revenu, les cotisations sociales et la TVA, tout en alourdissant les dépenses de chômage et de reconversion.',
+  x='D’où la proposition d’une taxation des robots ou de l’IA pour financer la protection sociale.',
+  t='mec', b=3474)
+
+c('Que soutient Acemoglu sur l’orientation du progrès technique ?',
+  'Que les technologies ne sont pas neutres : les pouvoirs publics doivent accompagner les travailleurs, financer la formation, limiter les inégalités et préserver la cohésion sociale.',
+  x='Les effets de l’IA dépendent donc aussi de choix politiques et sociaux.',
+  t='aut', b=3496)
+
+c('Quelles figures centrales François et Mercier associent-ils aux âges du capitalisme ?',
+  'L’ouvrier puis le manager dans les âges antérieurs, l’actionnaire dans l’âge le plus récent.',
+  x='Les révolutions technologiques transforment ainsi les structures mêmes du capitalisme.',
+  t='aut', b=2713)
+
+c('Qu’est-ce que la responsabilité sociale des entreprises ?',
+  'La prise en compte par l’entreprise des conséquences sociales et environnementales de son activité, au-delà de la seule recherche du profit.',
+  x='Elle prolonge la conception élargie de l’entreprise par ses parties prenantes.',
+  t='def', b=2206)

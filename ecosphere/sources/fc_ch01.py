@@ -619,11 +619,6 @@ c('Quelles sont les trois fonctions de l’État selon Richard Musgrave ?',
   x='Il les formule en 1959 dans sa théorie des finances publiques, et elles structurent encore l’analyse de l’État providence.',
   t='aut', b=449)
 
-c('Qu’est-ce qui distingue une politique conjoncturelle d’une politique structurelle ?',
-  'La première agit à court terme sur la demande ; la seconde transforme à long terme les structures de l’économie.',
-  x='Budget et monnaie d’un côté ; concurrence, fiscalité et politique industrielle de l’autre.',
-  t='dist', b=452)
-
 c('Qu’appelle-t-on le policy mix ?',
   'L’articulation entre la politique budgétaire et la politique monétaire.',
   x='Leur cohérence décide de l’effet final : une relance budgétaire est annulée si la monnaie se resserre au même moment.',
@@ -878,7 +873,6 @@ c('Qu’est-ce que le PIB potentiel ?',
   'Le PIB qu’un pays atteindrait si tous ses facteurs de production étaient employés, sans choc, sans chômage ni inflation.',
   x='Il n’est pas observé mais estimé : c’est une référence théorique, à laquelle on compare le PIB effectif mesuré.',
   t='def', b=714)
-
 
 c('Quel ordre de grandeur le travail domestique représente-t-il en France ?',
   'Davantage d’heures que le travail rémunéré.',

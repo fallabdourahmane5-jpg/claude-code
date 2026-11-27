@@ -535,11 +535,6 @@ c('Comment la politique monétaire agit-elle par le canal du taux de change ?',
   x='La baisse produit l’effet inverse : c’est pourquoi une politique monétaire a toujours des effets internationaux.',
   t='mec', b=615)
 
-c('Qu’est-ce que la trappe à liquidité ?',
-  'La situation où les taux sont déjà très bas, les agents préfèrent conserver des liquidités et l’investissement ne repart pas.',
-  x='Baisser encore les taux n’a plus d’effet : la politique monétaire conventionnelle perd sa prise sur l’économie.',
-  t='def', b=638)
-
 c('Quels objectifs les politiques monétaires non conventionnelles poursuivent-elles ?',
   'Rétablir la liquidité, débloquer le crédit, éviter la déflation, stabiliser les marchés et soutenir l’activité.',
   x='Elles n’agissent plus sur le prix de la monnaie, mais directement sur les bilans, les titres et les anticipations.',

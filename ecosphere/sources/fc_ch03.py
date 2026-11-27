@@ -535,11 +535,6 @@ c('Pourquoi une baisse des salaires ne résorbe-t-elle pas le chômage selon Key
   x='Les salariés négocient d’ailleurs des salaires nominaux, rigides à la baisse : le salaire réel ne s’ajuste pas librement.',
   t='mec', b=785)
 
-c('Qu’est-ce qu’un équilibre de sous-emploi ?',
-  'Une situation stable où entreprises et ménages n’ont aucune raison de changer de comportement, alors que le chômage persiste.',
-  x='Les entreprises produisent peu, donc embauchent peu, donc les revenus sont faibles, ce qui justifie de produire peu : rien ne relance l’économie.',
-  t='def', b=789)
-
 c('Quelle rupture majeure l’équilibre keynésien introduit-il face aux classiques ?',
   'L’économie peut être à l’équilibre sans être au plein emploi.',
   x='L’équilibre cesse d’être un état souhaitable : il peut être un mauvais équilibre dont rien ne fait sortir.',
@@ -634,11 +629,6 @@ c('Quelle critique les monétaristes adressent-ils aux politiques de relance ?',
   'Elles sont inflationnistes et l’intervention discrétionnaire de l’État aggrave les cycles au lieu de les corriger.',
   x='L’État cesse d’être une solution pour devenir, dans cette lecture, une source du problème.',
   t='mec', b=1061)
-
-c('Qu’est-ce que le taux de chômage naturel chez Friedman ?',
-  'Un niveau de chômage incompressible, lié aux frictions du marché du travail comme l’information imparfaite et la mobilité.',
-  x='Toute tentative de descendre sous ce niveau par la relance ne produit que de l’inflation.',
-  t='def', b=1066)
 
 c('Quelle règle monétaire Friedman préconise-t-il ?',
   'Faire croître la masse monétaire à un rythme constant, indépendant de la conjoncture.',

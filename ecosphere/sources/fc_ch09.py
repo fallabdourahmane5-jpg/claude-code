@@ -81,7 +81,7 @@ c('Quelles marques William Durant rachète-t-il pour bâtir General Motors ?',
   x='L’objectif est de créer un grand groupe automobile couvrant plusieurs gammes de produits.',
   t='fait', b=162)
 
-c('Qu’est-ce que la différenciation verticale ?',
+c('Qu’est-ce que la différenciation verticale dans la stratégie d’une entreprise ?',
   'Une stratégie consistant à proposer des produits de qualités et de prix différents afin de toucher plusieurs catégories de consommateurs.',
   x='Chez General Motors, Chevrolet couvre la gamme accessible et Cadillac la gamme de luxe.',
   t='def', b=168)

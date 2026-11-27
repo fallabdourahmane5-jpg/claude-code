@@ -409,7 +409,7 @@ c('Quelles deux logiques encouragent l’endettement des pays en développement 
 c('Qu’est-ce que le service de la dette ?',
   'Le remboursement du capital emprunté auquel s’ajoute le paiement des intérêts.',
   x='La dette est soutenable si revenus futurs, exportations et recettes publiques le couvrent sans asphyxier l’économie.',
-  t='def', b=1374)
+  t='def', b=1374, aussi=['26'])
 
 c('Par quelle spirale une dette excessive s’auto-entretient-elle ?',
   'Les intérêts augmentent, le service absorbe une part croissante des ressources, et le pays emprunte à nouveau pour rembourser ses dettes passées.',
