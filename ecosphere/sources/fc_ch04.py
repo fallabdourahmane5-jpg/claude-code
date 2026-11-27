@@ -485,7 +485,3 @@ c('Qu’est-ce qu’une prophétie autoréalisatrice, et quel exemple le cours e
   x='On croit la banque menacée, les déposants retirent leur argent, et la banque fait effectivement faillite.',
   t='def', b=1016)
 
-c('Qu’est-ce qu’une défaillance de marché ?',
-  'Une situation dans laquelle le marché concurrentiel n’alloue pas efficacement les ressources.',
-  x='Elle apparaît dès qu’une des conditions de la concurrence pure et parfaite cesse d’être vérifiée.',
-  t='def', b=1024)
